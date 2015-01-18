@@ -1,0 +1,10 @@
+{{ partial "header.html" . }}
+
+	<main role="main">
+		<h1 class="list-title">{{.Title}}</h1>
+{{ range .Data.Pages }}
+	{{ .Render "summary"}}
+{{ end }}
+	</main>
+
+{{ partial "footer.html" . }}
