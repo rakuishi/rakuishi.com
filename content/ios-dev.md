@@ -1,0 +1,116 @@
++++
+date = "2013-02-09T10:33:18+09:00"
+draft = false
+title = "iOS アプリ開発情報"
+slug = "ios-dev"
++++
+
+当ブログで書いた iOS アプリの開発情報をまとめたページです。<a href="http://rakuishi.com/category/iossdk/">こちら</a>で最新情報を書いています。
+
+最終更新：2013年2月9日
+
+<h2>UITableView（基本）</h2>
+
+iOS でデータの並びを見せるには、UITableView を利用するのが一般的です。その UITableView でのデータの見せ方をこのブログでは多く紹介しています。
+
+<ul>
+<li><a href="http://rakuishi.com/iossdk/2994/" target="_blank">[iOS SDK] UITableViewCell の ImageView の横幅を統一する</a></li>
+<li><a href="http://rakuishi.com/iossdk/3030/" target="_blank">[iOS SDK] UITableView に UISearchBar を追加する</a></li>
+<li><a href="http://rakuishi.com/iossdk/3039/" target="_blank">[iOS SDK] UITableView で、任意のセルにジャンプするインデックスリストを実装する</a></li>
+<li><a href="http://rakuishi.com/iossdk/3596/" target="_blank">[iOS SDK] UITableView で、上下のスクロール方向を感知する</a></li>
+<li><a href="http://rakuishi.com/iossdk/3881/" target="_blank">[iOS SDK] ネット上の画像を表示させた UITableView をぬるぬる動作させる方法</a></li>
+<li><a href="http://rakuishi.com/iossdk/4520/" target="_blank">[iOS6] 引っ張って更新を簡単に実装できる UIRefreshControl を TableView で使ってみる</a></li>
+<li><a href="http://rakuishi.com/iossdk/5298/" target="_blank">[iOS SDK] UITableViewCell のフォントサイズの最大値と最小値を設定する</a></li>
+<li><a href="http://rakuishi.com/iossdk/5380/" target="_blank">[iOS SDK] UITableView Grouped のセルの枠線に現れる影（シャドウ）を消す方法</a></li>
+<li><a href="http://rakuishi.com/iossdk/5491/" target="_blank">tableView:disSelectRowAtIndexPath: で選択された UITableViewCell の文字列を取得する</a></li>
+</ul>
+
+<h2>UITableView（応用）</h2>
+
+<ul>
+<li><a href="http://rakuishi.com/iossdk/5148/" target="_blank">[iOS SDK] UITableView の上に広告ネットワーク（320×50）を追加した際に、セルが隠れないように余白を設定する</a></li>
+</ul>
+
+<h2>SQLite</h2>
+
+データベースを利用するなら SQLite を利用するのが便利です。実際に、CSV ファイルから SQLite ファイルを作成して、iOS でファイルを読ませるまでの処理を書いています。
+
+<ul>
+<li><a href="http://rakuishi.com/sqlite/4535/" target="_blank">SQLite3 をターミナルから操作する。データベースの作成から CSV ファイルのインポートまで</a></li>
+<li><a href="http://rakuishi.com/iossdk/4543/" target="_blank">Objective-C でデータベースファイル（SQLite）を操作する</a></li>
+</ul>
+
+<h2>Core Data</h2>
+
+<ul>
+<li><a href="http://rakuishi.com/iossdk/2831/" target="_blank">[iOS SDK] Core Data で、デフォルトデータを読み込ませる方法</a></li>
+<li><a href="http://rakuishi.com/iossdk/3922/" target="_blank">[iOS SDK][Core Data] 表示するデータの並び順・セクション名・フィルタを設定する方法</a></li>
+<li><a href="http://rakuishi.com/iossdk/3960/" target="_blank">[iOS SDK] fetchedResultsController をアプリ起動後にリセットする方法</a></li>
+<li><a href="http://rakuishi.com/iossdk/4152/" target="_blank">[iOS SDK] NULL と空白文字列を NSPredicate でフィルタする方法</a></li>
+</ul>
+
+<h2>UI/UX 関連</h2>
+
+iOS アプリの標準的なパーツを使うのは覚えると簡単ですが、そこから先の一歩踏み込んだデザインをするとなると、かなり面倒です。開発中に学んだ Tips を紹介していきます。
+
+<ul>
+<li><a href="http://rakuishi.com/iossdk/5368/" target="_blank">[iOS SDK] UINavigationBar の戻るボタンの見た目をカスタマイズする</a></li>
+</ul>
+
+<h2>iPad 対応</h2>
+
+<ul>
+<li><a href="http://rakuishi.com/iossdk/3733/" target="_blank">[Xcode 4.3] iPhone アプリを iPad 対応のユニバーサルアプリにする方法</a></li>
+<li><a href="http://rakuishi.com/iossdk/3738/" target="_blank">[Xcode 4.3] iPad 対応のユニバーサルアプリにした時の iPad アイコンの追加方法</a></li>
+</ul>
+
+<h2>Evernote OAuth 認証</h2>
+
+Evernote と連携するには、OAuth 認証をする必要があります。認証をする手順を説明しながら、最終的に新規ノートを送るプログラムを動かします。
+
+<ul>
+<li><a href="http://rakuishi.com/iossdk/4174/" target="_blank">[iOS SDK] OAuth 認証による Evernote に新規ノートを作成するアプリを書いてみた</a></li>
+</ul>
+
+<h2>Objective-C</h2>
+
+<ul>
+<li><a href="http://rakuishi.com/objective-c/5122/" target="_blank">[Objective-C] CSV ファイルを読み込んで解析する</a></li>
+<li><a href="http://rakuishi.com/objective-c/5199/" target="_blank">[Objective-C] 特定の文字列が配列に含まれているかどうかを判定する</a></li>
+<li><a href="http://rakuishi.com/objective-c/5463/" target="_blank">[Objective-C] 配列データを文字列に置き換える</a></li>
+</ul>
+
+<h2>Tips</h2>
+
+知っておくと便利なことを紹介します。
+
+<ul>
+<li><a href="http://rakuishi.com/iossdk/2987/" target="_blank">[iOS SDK][Xcode 4.3] フレームワークをプロジェクトに追加する方法</a></li>
+<li><a href="http://rakuishi.com/iossdk/3214/" target="_blank">開発したアプリのプロモーションコードの発行方法</a></li>
+<li><a href="http://rakuishi.com/iossdk/3298/" target="_blank">iTunes ライブラリ App における iOS 5 以降のアイコン光沢の取り扱いについて</a></li>
+<li><a href="http://rakuishi.com/iossdk/3398/" target="_blank">[iOS SDK] アプリがアクティブになる度に呼ばれる applicationDidBecomeActive から View Controller に処理を渡す方法</a></li>
+<li><a href="http://rakuishi.com/iossdk/4072/" target="_blank">[iOS SDK] アプリのバージョン情報を取得する方法</a></li>
+<li><a href="http://rakuishi.com/iossdk/4634/" target="_blank">[Xcode] iOS シミュレータで、スクリーンショットを保存する時は、⌘ + S で OK！</a></li>
+<li><a href="http://rakuishi.com/iossdk/4604/" target="_blank">[iOS SDK] UIWebView でタップされたリンクを Safari で開く方法</a></li>
+<li><a href="http://rakuishi.com/iossdk/4579/" target="_blank">[iOS6] カテゴリによるクラスの拡張で UINavigationController の回転方向を決定する</a></li>
+<li><a href="http://rakuishi.com/iossdk/4551/" target="_blank">[iOS SDK] 通信中を示すインジケータをステータスバーに表示する方法</a></li>
+<li><a href="http://rakuishi.com/iossdk/4561/" target="_blank">[iOS SDK] iPhone5（4-inch retina Display）のデバイスかどうかで、条件分岐をする方法</a></li>
+</ul>
+
+<h2>エラー解決</h2>
+
+開発中に出会ったエラーの対処法を紹介します。
+
+<ul>
+<li><a href="http://rakuishi.com/iossdk/4515/" target="_blank">[Xcode 4.5] 「Could not launch “アプリ名.app”」と警告が出て、実機に転送できない時の対処法</a></li>
+</ul>
+
+<h2>参考書籍</h2>
+
+<div class="amazlet-box" style="margin-bottom:0px;"><div class="amazlet-image" style="float:left;margin:0px 12px 1px 0px;"><a href="http://www.amazon.co.jp/exec/obidos/ASIN/4839941734/rakuishi-22/ref=nosim/" name="amazletlink" target="_blank"><img src="http://ecx.images-amazon.com/images/I/51xePZLKY3L._SL160_.jpg" alt="よくわかるiPhoneアプリ開発の教科書【iOS 5&Xcode 4.2対応版】" style="border: none;" /></a></div><div class="amazlet-info" style="line-height:120%; margin-bottom: 10px"><div class="amazlet-name" style="margin-bottom:10px;line-height:120%"><a href="http://www.amazon.co.jp/exec/obidos/ASIN/4839941734/rakuishi-22/ref=nosim/" name="amazletlink" target="_blank">よくわかるiPhoneアプリ開発の教科書【iOS 5&Xcode 4.2対応版】</a><div class="amazlet-powered-date" style="font-size:80%;margin-top:5px;line-height:120%">posted with <a href="http://www.amazlet.com/" title="amazlet" target="_blank">amazlet</a> at 13.02.09</div></div><div class="amazlet-detail">森 巧尚 <br />マイナビ <br /></div><div class="amazlet-sub-info" style="float: left;"><div class="amazlet-link" style="margin-top: 5px"><a href="http://www.amazon.co.jp/exec/obidos/ASIN/4839941734/rakuishi-22/ref=nosim/" name="amazletlink" target="_blank">Amazon.co.jpで詳細を見る</a></div></div></div><div class="amazlet-footer" style="clear: left"></div></div>
+
+僕が一番最初に読んだ iPhone アプリ開発の書籍です。カラーイラストが多くて、iPhone で出来ることを広く紹介してある、初心者にお勧めです。
+
+<div class="amazlet-box" style="margin-bottom:0px;"><div class="amazlet-image" style="float:left;margin:0px 12px 1px 0px;"><a href="http://www.amazon.co.jp/exec/obidos/ASIN/4797368276/rakuishi-22/ref=nosim/" name="amazletlink" target="_blank"><img src="http://ecx.images-amazon.com/images/I/41VdFg9YqsL._SL160_.jpg" alt="詳解 Objective-C 2.0 第3版" style="border: none;" /></a></div><div class="amazlet-info" style="line-height:120%; margin-bottom: 10px"><div class="amazlet-name" style="margin-bottom:10px;line-height:120%"><a href="http://www.amazon.co.jp/exec/obidos/ASIN/4797368276/rakuishi-22/ref=nosim/" name="amazletlink" target="_blank">詳解 Objective-C 2.0 第3版</a><div class="amazlet-powered-date" style="font-size:80%;margin-top:5px;line-height:120%">posted with <a href="http://www.amazlet.com/" title="amazlet" target="_blank">amazlet</a> at 13.02.09</div></div><div class="amazlet-detail">荻原 剛志 <br />ソフトバンククリエイティブ <br /></div><div class="amazlet-sub-info" style="float: left;"><div class="amazlet-link" style="margin-top: 5px"><a href="http://www.amazon.co.jp/exec/obidos/ASIN/4797368276/rakuishi-22/ref=nosim/" name="amazletlink" target="_blank">Amazon.co.jpで詳細を見る</a></div></div></div><div class="amazlet-footer" style="clear: left"></div></div>
+
+iPhone アプリは、Objective-C というプログラミング言語で記述されます。その Objective-C を詳しく解説しています。読み返すたびに新たな発見がある一冊です。
