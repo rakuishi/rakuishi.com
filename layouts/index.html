@@ -1,8 +1,11 @@
 {{ partial "header.html" . }}
 
 	<main role="main">
-{{ range first 14 .Data.Pages }}
-	{{ .Render "summary"}}
+{{ range first 3 .Data.Pages }}
+		<article itemscope itemtype="http://schema.org/BlogPosting">
+			{{ partial "entry.html" . }}
+		</article>
+		<hr class="separator">
 {{ end }}
 		<nav class="pagenation" role="navigation">
 			<a href="/archives/" class="older">Archives &rarr;</a>
