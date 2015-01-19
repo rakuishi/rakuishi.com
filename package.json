@@ -1,12 +1,12 @@
 {
-  "name": "sp",
+  "name": "rakuishi.com",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "rakuishi",
   "license": "ISC",
   "devDependencies": {
     "gulp": "^3.8.10",
