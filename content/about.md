@@ -45,8 +45,8 @@ OCHIISHI Koichiro, rakuishi
 <ul>
 <li><a href="http://rakuishi.com/archives/6736">One Step Before Publishing</a><br />
 <small style="color:gray">2014/08/12, 記事公開前に確認アラートを表示する, <a href="https://github.com/rakuishi/OneStepBeforePublishing" target="_blank">GitHub</a></small></li>
-<li><a href="http://rakuishi.com/wordpress/6018/">App Store Insert</a><br />
+<li><a href="http://rakuishi.com/archives/6018/">App Store Insert</a><br />
 <small style="color:gray">2013/08/25, 投稿画面から iOS / Mac アプリの紹介リンクを挿入する, <a href="https://github.com/rakuishi/AppStoreInsert" target="_blank">GitHub</a></small></li>
-<li><a href="http://rakuishi.com/wordpress/5886/">LinkShare To PHG</a><br />
+<li><a href="http://rakuishi.com/archives/5886/">LinkShare To PHG</a><br />
 <small style="color:gray">2013/08/24, LinkShare を PHG のアフィリエイトリンクに置き換える, <a href="https://github.com/rakuishi/LinkShareToPHG" target="_blank">GitHub</a></small></li>
 </ul>
