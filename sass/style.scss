@@ -137,11 +137,12 @@ article {
 		background: $light-bg-color;
 		line-height: 133%;
 		vertical-align: baseline;
-		font-size: 90%;
+		font-size: 1.4rem;
 		font-family: Consolas, Menlo, Courier, monospace;
 	}
 	code { padding: 0 .5rem; line-height: 150%; }
 	pre { margin: 1.2rem 0; padding: 1.2rem; }
+	pre > code { padding: 0; line-height: 133%; }
 
 	// img
 	.align-center, .aligncenter { display: block; margin: 0 auto; }
