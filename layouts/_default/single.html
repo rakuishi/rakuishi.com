@@ -3,6 +3,11 @@
 	<main role="main">
 		<article itemscope itemtype="http://schema.org/BlogPosting">
 			{{ partial "entry.html" . }}
+			<div class="share">
+				<div class="twitter"><a href="https://twitter.com/share" class="twitter-share-button" data-via="rakuishi07" data-count="vertical"></a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></div>
+				<div class="facebook"><iframe src="//www.facebook.com/plugins/like.php?href={{ .Permalink }}&width&layout=box_count&action=like&show_faces=false&share=false&height=65" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:65px;" allowTransparency="true"></iframe></div>
+				<div class="pocket"><a data-pocket-label="pocket" data-pocket-count="vertical" class="pocket-btn" data-lang="en"></a><script type="text/javascript">!function(d,i){if(!d.getElementById(i)){var j=d.createElement("script");j.id=i;j.src="https://widgets.getpocket.com/v1/j/btn.js?v=1";var w=d.getElementById(i);d.body.appendChild(j);}}(document,"pocket-btn-js");</script></div>
+			</div>
 <!--
 			<nav class="single-pagenation" role="navigation">
 				{{ if .Prev }}<a class="previous" href="{{.Prev.Permalink}}" class="older">{{.Prev.Title}}</a>{{ end }}
