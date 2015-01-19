@@ -1,4 +1,4 @@
 <article itemscope itemtype="http://schema.org/Blog">
-	<h2 class="summary-title" itemprop="headline"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
-	<span class="meta">Posted at <time itemprop="datePublished" datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">{{ .Date.Format "2006/01/02" }}</time>{{ if .Params.categories }} on {{ range .Params.categories }}<a href="/categories/{{ . | urlize }}">{{ . }}</a>{{ end }}{{ end }}</span>
+	<h2 class="summary-title" itemprop="headline"><a href="{{ .RelPermalink }}">{{ .Title }}{{ if .Draft }} #Draft{{ end }}</a></h2>
+	<span class="meta">Posted at <time itemprop="datePublished" datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006/01/02" }}</time>{{ if .Params.categories }} on {{ range .Params.categories }}<a href="/categories/{{ . | urlize }}">{{ . }}</a>{{ end }}{{ end }}</span>
 </article>
