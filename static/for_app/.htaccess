@@ -1,0 +1,1 @@
+RedirectMatch 301 /quicka2/(.*).json$ http://rakuishi.github.io/for_app/quicka2/$1.json
