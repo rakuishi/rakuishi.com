@@ -89,6 +89,7 @@ article {
 		margin-bottom: 9px;
 		color: $meta-color;
 		a { color: $meta-color; text-decoration: none; }
+		a:hover { text-decoration: underline; }
 	}
 	.excerpt {
 		margin-bottom: 24px + 12px;
