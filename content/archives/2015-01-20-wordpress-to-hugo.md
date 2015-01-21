@@ -63,11 +63,11 @@ WordPress は /feed に、Hugo は /index.xml にフィードを吐き出して�
 
 ### サーバーとデータをシンクする
 
-`rsync` コマンドで同期させている。以下のようなシェルスクリプトを書いた。CI ツールでも生成したファイルを渡せるみたい。
+`rsync` コマンドで同期させている。以下のようなシェルスクリプトを書いた。
 
 	#!/bin/sh
-	$ hugo
-	$ rsync -auv --delete ~/Dropbox/Private/rakuishi.com/public/ rakuishi@rakuishi.sakura.ne.jp:/home/rakuishi/www/
+	hugo
+	rsync -auv --delete ~/Dropbox/Private/rakuishi.com/public/ rakuishi@rakuishi.sakura.ne.jp:/home/rakuishi/www/
 
 ## Hugo 雑感
 
@@ -75,8 +75,8 @@ WordPress は /feed に、Hugo は /index.xml にフィードを吐き出して�
 
 まだ、関連記事やページネーションを導入するのが難しい成長途中のジェネレータですが、細かいところを拘らなければ特に問題ない。そういう細かいところは、これから実装されるみたい。→ [Hugo Roadmap](http://gohugo.io/meta/roadmap/)
 
-それより WordPress のセキュリティとか、データベースとか、バックアップとか、PHP の記述をミスって画面が白くなる、というストレスから開放されるのが良いと思いました。後、当然ですが、記事の読み込みが早くなった。
+それより WordPress のセキュリティとか、データベースとか、バックアップとか、PHP の記述をミスって画面が白くなる、というストレスから開放されるのが良いと思いました。静的サイトジェネレータだから、当然ですが、記事の読み込みが早くなった。
 
-後、このブログを GitHub で管理し始めました。
+それと、ブログを GitHub で管理できるようになりました。
 
 * [rakuishi/rakuishi.com](https://github.com/rakuishi/rakuishi.com)
