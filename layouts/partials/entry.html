@@ -1,5 +1,0 @@
-<h1 class="entry-title" itemprop="headline"><a href="{{ .RelPermalink }}">{{ .Title }}{{ if .Draft }} #Draft{{ end }}</a></h1>
-<span class="meta">Posted at <time itemprop="datePublished" datetime='{{ .Date.Format "2006-01-02" }}'>{{ .Date.Format "2006/01/02" }}</time>{{ if .Params.categories }} on {{ range .Params.categories }}<a href="/categories/{{ . | urlize }}">{{ . }}</a>{{ end }}{{ end }}</span>
-<section itemprop="text">
-	{{ .Content }}
-</section>

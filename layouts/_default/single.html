@@ -2,18 +2,30 @@
 
 	<main role="main">
 		<article itemscope itemtype="http://schema.org/BlogPosting">
-			{{ partial "entry.html" . }}
+			{{ with .Params.image }}<img src="{{ . }}" class="entry-cover-image">{{ end }}
+			<h1 class="entry-title" itemprop="headline"><a href="{{ .RelPermalink }}">{{ .Title }}{{ if .Draft }} #Draft{{ end }}</a></h1>
+			<span class="meta"><time itemprop="datePublished" datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 02, 2006" }}</time>{{ if .Params.categories }} #{{ range .Params.categories }}<a href="/categories/{{ . | urlize }}">{{ . }}</a>{{ end }}{{ end }}</span>
+			<section itemprop="text">
+				{{ .Content }}
+			</section>
 			<div class="share">
 				<div class="twitter"><a href="https://twitter.com/share" class="twitter-share-button" data-via="rakuishi07" data-count="vertical"></a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></div>
 				<div class="facebook"><iframe src="//www.facebook.com/plugins/like.php?href={{ .Permalink }}&width&layout=box_count&action=like&show_faces=false&share=false&height=65" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:65px;" allowTransparency="true"></iframe></div>
 				<div class="pocket"><a data-pocket-label="pocket" data-pocket-count="vertical" class="pocket-btn" data-lang="en"></a><script type="text/javascript">!function(d,i){if(!d.getElementById(i)){var j=d.createElement("script");j.id=i;j.src="https://widgets.getpocket.com/v1/j/btn.js?v=1";var w=d.getElementById(i);d.body.appendChild(j);}}(document,"pocket-btn-js");</script></div>
 			</div>
-<!--
-			<nav class="single-pagenation" role="navigation">
-				{{ if .Prev }}<a class="previous" href="{{.Prev.Permalink}}" class="older">{{.Prev.Title}}</a>{{ end }}
-				{{ if .Next }}<a class="next" href="{{.Next.Permalink}}" class="newer">{{.Next.Title}}</a>{{ end }}
-			</nav>
- -->
+			{{ partial "author.html" . }}
+			<div id="disqus_thread"></div>
+			<script type="text/javascript" async="async">
+			/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+			var disqus_shortname = 'rakuishi'; // required: replace example with your forum shortname
+			/* * * DON'T EDIT BELOW THIS LINE * * */
+			(function() {
+				var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+				dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+				(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+			})();
+			</script>
+			<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 		</article>
 	</main>
 
