@@ -82,20 +82,20 @@ article {
 		color: $black-color;
 		font-size: 1.75rem;
 		line-height: 125%;
-		a:hover { text-decoration: none; }
+		a { text-decoration: none; }
 	}
 	.meta {
 		display: inline-block;
 		margin-bottom: 9px;
 		color: $meta-color;
-		a { color: $meta-color; }
+		a { color: $meta-color; text-decoration: none; }
 	}
 	.excerpt {
 		margin-bottom: 24px + 12px;
 	}
 
 	p { margin: 2.4rem 0; }
-	a:hover { text-decoration: underline; }
+	a { text-decoration: underline; }
 
 	h2 { margin: 3.6rem 0 2.4rem; padding-bottom: 0.5rem; border-bottom: 1px solid $border-color; line-height: 125%; }
 	h3 { margin: 2.4rem 0; line-height: 125%; }
@@ -152,7 +152,10 @@ article {
 	margin: 48px auto;
 	text-align: center;
 	a {
+		display: inline-block;
+		margin: 0 0.25rem 0;
 		padding-bottom: 2px;
+		font-weight: bold;
 		border-bottom: 2px solid $link-color;
 		&:hover { border-bottom-color: $link-hover-color; }
 	}
