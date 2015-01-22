@@ -1,15 +1,14 @@
 /* Theme Name : rakuishi */
 @charset "utf-8";
 
-$link-color    : #002255;
+$link-color       : #002255;
 $link-hover-color : #0077ff;
-
-$white-color   : #FEFEFE;
-$black-color   : #2B2B29;
-$text-color    : #111;
-$meta-color    : #888888;
-$border-color  : #DFDFDF;
-$light-bg-color: #f3f3f3;
+$white-color      : #F7F7F7;
+$black-color      : #2B2B29;
+$text-color       : #111111;
+$meta-color       : #888888;
+$border-color     : #DFDFDF;
+$light-bg-color   : #EAEAEA;
 
 /*! normalize.css | MIT License */
 * { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
@@ -27,8 +26,8 @@ body {
 	text-rendering: optimizeLegibility;
 }
 
-header, main { max-width: 728px; width: 94%; margin: 48px auto; }
-h1, h2, h3 { letter-spacing: -0.025rem; -webkit-font-smoothing: antialiased; }
+header, main { max-width: 728px; width: 90%; margin: 48px auto; }
+h1, h2, h3 { letter-spacing: -0.05rem; -webkit-font-smoothing: antialiased; }
 h1 { font-size: 2.0rem; } h2, h3 { font-size: 1.75rem; }
 p { font-size: 1.5rem; line-height: 150%; } small { font-size: 1.3rem; }
 a { color: $link-color; text-decoration: none; } a:hover { color: $link-hover-color; text-decoration: none; }
@@ -44,11 +43,11 @@ a { color: $link-color; text-decoration: none; } a:hover { color: $link-hover-co
 
 header {
 	text-align: center;
-	margin: 72px auto;
+	margin: 60px auto;
 	a { color: $black-color; }
 	.site-title {
 		display: inline-block;
-		font-size: 2.25rem;
+		font-size: 2.5rem;
 		font-weight: bold;
 		letter-spacing: -0.05rem;
 		text-transform: uppercase;
@@ -76,17 +75,18 @@ article {
 		width: auto;
 	}
 	.entry-title {
-		margin: 0 0 6px 0;
+		margin: 0 0 9px 0;
 		padding: 0;
 		border: 0;
 		color: $black-color;
-		font-size: 1.75rem;
+		font-size: 1.85rem;
 		line-height: 125%;
+		text-shadow: 0 1px 0 rgba(255,255,255,1);
 		a { text-decoration: none; }
 	}
 	.meta {
 		display: inline-block;
-		margin-bottom: 9px;
+		margin-bottom: 12px;
 		color: $meta-color;
 		a { color: $meta-color; text-decoration: none; }
 		a:hover { text-decoration: underline; }
@@ -103,7 +103,7 @@ article {
 
 	code, pre { font-size: 1.4rem; line-height: 150%; border-radius: 2px; background: $light-bg-color; }
 	code { padding: 0 .5rem; vertical-align: baseline; }
-	pre { margin: 1.2rem 0; padding: 1.2rem; }
+	pre { margin: 1.2rem 0; padding: 1.2rem; line-height: 133% }
 	pre > code { padding: 0; }
 
 	ul, ol { margin: 1.2rem 0; padding-left: 2.4rem; }
@@ -154,7 +154,7 @@ article {
 	text-align: center;
 	a {
 		display: inline-block;
-		margin: 0 0.25rem 0;
+		margin: 0 0.5rem 0;
 		padding-bottom: 2px;
 		font-weight: bold;
 		border-bottom: 2px solid $link-color;
@@ -168,7 +168,7 @@ article {
 	max-width: 468px;
 	margin: 24px auto;
 	padding: 12px;
-	font-size: 1.3rem;
+	font-size: 1.4rem;
 	line-height: 150%;
 	border-left: 1px solid $border-color;
 	.img, .txt { display: table-cell; vertical-align: top; }
