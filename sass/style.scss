@@ -14,7 +14,7 @@ $light-bg-color   : #F8F8F8;
 * { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 html { line-height: 1; } body { margin: 0; } h1, h2, h3, p, ul, ol, table, pre { margin-top:0; } a { background: transparent; } a:focus { outline: thin dotted; } a:active, a:hover { outline: 0; } b, strong { font-weight:700; } code, pre { font-family: monospace, serif; } pre { white-space:pre-wrap; } small { font-size:1.25rem; }img { max-width: 100%; height: auto; vertical-align: middle; border: 0; } table { border-collapse: collapse; border-spacing: 0; }
 
-html { font-size: 56.25%; } // smartphone → 9px 基準
+html { font-size: 56.25 + 3.125%; } // smartphone → 9.5px 基準
 @media (min-width: 728px) { html { font-size: 62.5%; } } // pc → 10px 基準
 
 body {
@@ -26,7 +26,7 @@ body {
 	text-rendering: optimizeLegibility;
 }
 
-main { max-width: 728px; width: 90%; margin: 48px auto; }
+main { max-width: 728px; width: 90%; margin: 24px auto; }
 h1, h2, h3 { letter-spacing: -0.1rem; font-weight: 300; }
 h1 { font-size: 2.0rem; } h2, h3 { font-size: 1.75rem; }
 p { font-size: 1.5rem; line-height: 150%; } small { font-size: 1.3rem; }
