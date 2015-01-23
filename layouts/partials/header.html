@@ -8,9 +8,12 @@
 <link rel="stylesheet" href="/css/style.css?cb=150118">
 <link rel="shortcut icon" href="/favicon.ico?cb=150118" type="image/x-icon">
 <link rel="alternate" href="/index.xml" type="application/rss+xml" title="{{ .Site.Title }}">
+<link rel="stylesheet" href="https://yandex.st/highlightjs/8.0/styles/github.min.css">
+<script src="https://yandex.st/highlightjs/8.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
 <title>{{ $isHomePage := eq .Title .Site.Title }}{{ if eq $isHomePage true }}{{ .Site.Title }}{{ else }}{{ .Title }} - {{ .Site.Title }}{{ end }}</title>
 </head>
-<body onload="prettyPrint()">
+<body>
 
 <div class="container">
 

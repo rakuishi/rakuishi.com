@@ -1,14 +1,14 @@
 /* Theme Name : rakuishi */
 @charset "utf-8";
 
-$link-color       : #002255;
-$link-hover-color : #0077ff;
-$white-color      : #F7F7F7;
-$black-color      : #2B2B29;
+$link-color       : #01579B;
+$link-hover-color : #03A9F4;
+$white-color      : #FFFFFF;
+$black-color      : #242429;
 $text-color       : #111111;
-$meta-color       : #888888;
+$meta-color       : #898989;
 $border-color     : #DFDFDF;
-$light-bg-color   : #EAEAEA;
+$light-bg-color   : #F8F8F8;
 
 /*! normalize.css | MIT License */
 * { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
@@ -26,12 +26,13 @@ body {
 	text-rendering: optimizeLegibility;
 }
 
-header, main { max-width: 728px; width: 90%; margin: 48px auto; }
-h1, h2, h3 { letter-spacing: -0.05rem; -webkit-font-smoothing: antialiased; }
+main { max-width: 728px; width: 90%; margin: 48px auto; }
+h1, h2, h3 { letter-spacing: -0.1rem; font-weight: 300; }
 h1 { font-size: 2.0rem; } h2, h3 { font-size: 1.75rem; }
 p { font-size: 1.5rem; line-height: 150%; } small { font-size: 1.3rem; }
 a { color: $link-color; text-decoration: none; } a:hover { color: $link-hover-color; text-decoration: none; }
 
+.container { width: 100%; overflow: hidden; }
 .clearfix:after { content: ""; display: table; clear: both; }
 
 .google-adsense {
@@ -42,18 +43,24 @@ a { color: $link-color; text-decoration: none; } a:hover { color: $link-hover-co
 }
 
 header {
+	position: relative;
+	width: 100%;
+	padding: 6rem 0 6rem;
 	text-align: center;
-	margin: 60px auto;
-	a { color: $black-color; }
+	background: linear-gradient(90deg, $link-hover-color 0%, $link-color 100%);
+	a { color: $white-color; }
+	h1 { margin: 0; padding: 0; }
 	.site-title {
 		display: inline-block;
-		font-size: 2.5rem;
-		font-weight: bold;
-		letter-spacing: -0.05rem;
+		font-size: 2.75rem;
+		letter-spacing: -0.1rem;
 		text-transform: uppercase;
 		padding-bottom: 3px;
-		border-bottom: 2px solid $black-color;
-		&:hover { border-bottom-color: $link-hover-color; }
+		border-bottom: 2px solid $white-color;
+		&:hover {
+			color: $white-color;
+			opacity: 0.75;
+		}
 	}
 }
 
@@ -79,14 +86,14 @@ article {
 		padding: 0;
 		border: 0;
 		color: $black-color;
-		font-size: 1.85rem;
+		font-size: 2rem;
 		line-height: 125%;
-		text-shadow: 0 1px 0 rgba(255,255,255,1);
 		a { text-decoration: none; }
 	}
 	.meta {
 		display: inline-block;
 		margin-bottom: 12px;
+		font-size: 1.75rem;
 		color: $meta-color;
 		a { color: $meta-color; text-decoration: none; }
 		a:hover { text-decoration: underline; }
@@ -103,8 +110,7 @@ article {
 
 	code, pre { font-size: 1.4rem; line-height: 150%; border-radius: 2px; background: $light-bg-color; }
 	code { padding: 0 .5rem; vertical-align: baseline; }
-	pre { margin: 1.2rem 0; padding: 1.2rem; line-height: 133% }
-	pre > code { padding: 0; }
+	pre { margin: 1.2rem 0; line-height: 133% }
 
 	ul, ol { margin: 1.2rem 0; padding-left: 2.4rem; }
 	ul { list-style: square;  }
@@ -149,17 +155,13 @@ article {
 	}
 }
 
-.menu {
-	margin: 48px auto;
-	text-align: center;
-	a {
-		display: inline-block;
-		margin: 0 0.5rem 0;
-		padding-bottom: 2px;
-		font-weight: bold;
-		border-bottom: 2px solid $link-color;
-		&:hover { border-bottom-color: $link-hover-color; }
-	}
+.pagenation {
+	margin: 2.4rem 0;
+	position: relative; height: 3.2rem; font-size: 1.4rem; text-align: center;
+	.older, .newer { position: absolute; padding: 1rem; background: $light-bg-color; color: $link-color;	}
+	.older:hover, .newer:hover { background: $link-color; color: white; text-decoration: none; }
+	.older { right: 0; }
+	.newer { left: 0;  }
 }
 
 .author {
@@ -170,10 +172,9 @@ article {
 	padding: 12px;
 	font-size: 1.4rem;
 	line-height: 150%;
-	border-left: 1px solid $border-color;
 	.img, .txt { display: table-cell; vertical-align: top; }
-	.img { width: 60 + 10px; }
-	.img img { width: 60px; height: 60px; border-radius: 4px; }
+	.img { width: 50 + 10px; }
+	.img img { width: 50px; height: 50px; border-radius: 4px; }
 }
 
 footer {

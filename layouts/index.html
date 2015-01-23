@@ -1,5 +1,7 @@
 {{ partial "header.html" . }}
 
+	{{ partial "author.html" . }}
+
 	<main role="main">
 {{ range first 14 .Data.Pages }}
 		<article itemscope itemtype="http://schema.org/Blog">
@@ -8,8 +10,9 @@
 			<!-- {{ with .Params.excerpt }}<section itemprop="text" class="excerpt">{{ . }}</section>{{ end }} -->
 		</article>
 {{ end }}
+		<nav class="pagenation" role="navigation">
+			<a href="/archives/" class="older">Older Posts &rarr;</a>
+		</nav>
 	</main>
-
-	{{ partial "author.html" . }}
 
 {{ partial "footer.html" . }}
