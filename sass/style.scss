@@ -6,7 +6,7 @@ $link-hover-color : #03A9F4;
 $white-color      : #FFFFFF;
 $black-color      : #242429;
 $text-color       : #111111;
-$meta-color       : #898989;
+$meta-color       : rgba(0,0,0,0.54);
 $border-color     : #DFDFDF;
 $light-bg-color   : #F8F8F8;
 
@@ -27,8 +27,8 @@ body {
 }
 
 h1, h2, h3 { letter-spacing: -0.1rem; font-weight: 300; }
-h1 { font-size: 2.0rem; } h2, h3 { font-size: 1.75rem; }
-p { font-size: 1.5rem; line-height: 150%; } small { font-size: 1.3rem; }
+h1 { font-size: 1.9rem; } h2, h3 { font-size: 1.7rem; }
+p { font-size: 1.5rem; line-height: 150%; } small { font-size: 1.4rem; }
 a { color: $link-color; text-decoration: none; } a:hover { color: $link-hover-color; text-decoration: none; }
 
 .clearfix:after { content: ""; display: table; clear: both; }
@@ -49,7 +49,7 @@ header {
 	h1 { margin: 0; padding: 0; }
 	.site-title {
 		display: inline-block;
-		font-size: 2.75rem;
+		font-size: 3rem;
 		letter-spacing: -0.1rem;
 		text-transform: uppercase;
 		padding-bottom: 3px;
@@ -92,7 +92,7 @@ article {
 	.meta {
 		display: inline-block;
 		margin-bottom: 12px;
-		font-size: 1.75rem;
+		font-size: 1.7rem;
 		color: $meta-color;
 		a { color: $meta-color; text-decoration: none; }
 		a:hover { text-decoration: underline; }
@@ -117,7 +117,7 @@ article {
 	blockquote { margin: 2.4rem 0; padding-left: 1.2rem; font-family: "Hiragino Mincho ProN", "Yu Mincho", "游明朝", "Open Sans", "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif; border-left: 4px solid $border-color; }
 
 	.align-center, .aligncenter { display: block; margin: 0 auto; }
-	.application-icon { margin-right: 1rem; border-radius: 1.8rem; width: 8.8rem; height: 8.8rem; }
+	.application-icon { margin-right: 1rem; width: 80px; height: 80px; }
 
 	.amazlet-box {
 		padding: 1rem;
@@ -129,10 +129,10 @@ article {
 
 	.application-box {
 		margin: 2.4rem 0;
-		font-size: 1.4rem; line-height: 2rem;
+		font-size: 1.4rem; line-height: 150%;
 		color: $black-color;
 		img {
-			width: 100px; height: 100px; margin-right: 1rem;
+			width: 80px; height: 80px; margin-right: 1rem;
 			float: left;
 		}
 	}
@@ -167,16 +167,52 @@ article {
 	margin: 24px auto 48px;
 	font-size: 1.4rem;
 	line-height: 150%;
-	.img, .txt { display: table-cell; vertical-align: top; }
-	.img { width: 50 + 10px; }
-	.img img { width: 50px; height: 50px; border-radius: 4px; }
+	.author-image, .author-text { display: table-cell; vertical-align: top; }
+	.author-image { width: 50 + 10px; }
+	.author-image img { width: 50px; height: 50px; border-radius: 4px; }
 }
 
 footer {
 	margin: 48px 0;
 	.copyright {
 		margin: 0 auto;
-		font-size: 1.3rem;
+		font-size: 1.4rem;
 		text-align: center;
 	}
+}
+
+// https://icomoon.io/app/
+@font-face {
+	font-family: 'icomoon';
+	src:url('/fonts/icomoon.eot?j2lqe');
+	src:url('/fonts/icomoon.eot?#iefixj2lqe') format('embedded-opentype'), url('/fonts/icomoon.woff?j2lqe') format('woff'), url('/fonts/icomoon.ttf?j2lqe') format('truetype'), url('/fonts/icomoon.svg?j2lqe#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-size: 2.25rem;
+	color: $meta-color;
+}
+
+.icon-twitter:before {
+	content: "\ea93";
+}
+
+.icon-feed:before {
+	content: "\ea96";
+}
+
+.icon-github:before {
+	content: "\eab1";
 }
