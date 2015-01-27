@@ -1,6 +1,7 @@
 # 2015-01-18 WordPress to Hugo
-RedirectMatch 301 /feed /index.xml
-RedirectMatch 301 /archives/category/(.*)$ /categories/$1
+RedirectMatch 301 ^/feed$ /index.xml
+RedirectMatch 301 ^/quicka2/$ /archives/quicka2/
+RedirectMatch 301 ^/archives/category/(.*)$ /categories/$1
 ErrorDocument 404 /404.html
 
 AddType image/x-icon .ico
