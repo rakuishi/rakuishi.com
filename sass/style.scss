@@ -169,7 +169,7 @@ article {
 	line-height: 150%;
 	.author-image, .author-text { display: table-cell; vertical-align: top; }
 	.author-image { width: 50 + 10px; }
-	.author-image img { width: 50px; height: 50px; border-radius: 4px; }
+	.author-image img { width: 50px; height: 50px; border-radius: 50%; }
 }
 
 footer {
