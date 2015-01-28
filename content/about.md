@@ -5,11 +5,11 @@ title = "About"
 slug = "about"
 +++
 
-はじめまして。<ruby>落石浩一郎<rt>おちいしこういちろう</rt></ruby>といいます。ハンドルネームの rakuishi は、苗字を重箱読みしています。1989 年福岡県出身です。
+はじめまして。<ruby>落石浩一郎<rt>おちいしこういちろう</rt></ruby>といいます。ハンドルネームの rakuishi は、苗字を重箱読みしています。1989 年生まれ福岡県出身です。
 
 2012 年 1 月に趣味で初めた iOS アプリ開発が高じて、2012 年 8 月から新宿にある [AppBank 株式会社](www.appbank.net)でプログラマとして働いています。会社では、2015 年 1 月現在、Android アプリ開発とフロントエンド・エンジニアをしています。
 
-このサイト rakuishi.com は、僕個人によるブログです。会社とは関係ありません。2011 年 8 月から記事を書いています。当初、WordPress で運営していたブログでしたが、2015 年 1 月からは、静的サイトジェネレータ [Hugo](http://gohugo.io/) で生成しています。[ソースコード](https://github.com/rakuishi/rakuishi.com)を GitHub で公開しています。
+このサイト rakuishi.com は、僕個人によるブログです。会社とは関係ありません。2011 年 8 月から記事を書いています。当初、WordPress で運営していたブログでしたが、2015 年 1 月からは、静的サイトジェネレータ [Hugo](http://gohugo.io/) で運営しています。[ソースコード](https://github.com/rakuishi/rakuishi.com)を GitHub で公開しています。
 
 [Twitter](https://twitter.com/rakuishi07) で呟いています。Facebook は面識のある人だけと友達になります。2015 年は、[GitHub](https://github.com/rakuishi) で積極的に活動していくのが目標です。連絡は、Twitter からか、rakuishi@gmail.com にお願いします。
 
