@@ -5,17 +5,13 @@ title = "About"
 slug = "about"
 +++
 
-<h2>Profile</h2>
+はじめまして。<ruby>落石浩一郎<rt>おちいしこういちろう</rt></ruby>といいます。ハンドルネームの rakuishi は、苗字を重箱読みしています。1989 年福岡県出身です。
 
-OCHIISHI Koichiro, rakuishi
+2012 年 1 月に趣味で初めた iOS アプリ開発が高じて、2012 年 8 月から新宿にある [AppBank 株式会社](www.appbank.net)でプログラマとして働いています。会社では、2015 年 1 月現在、Android アプリ開発とフロントエンド・エンジニアをしています。
 
-1989年福岡県生まれ。都内でアプリ開発（iOS, Android）とウェブ開発（WordPress, PHP, HTML/CSS）をしています。
+このサイト rakuishi.com は、僕個人によるブログです。会社とは関係ありません。2011 年 8 月から記事を書いています。当初、WordPress で運営していたブログでしたが、2015 年 1 月からは、静的サイトジェネレータ [Hugo](http://gohugo.io/) で生成しています。[ソースコード](https://github.com/rakuishi/rakuishi.com)を GitHub で公開しています。
 
-<ul>
-<li><a href="https://twitter.com/rakuishi07" target="_blank">Twitter</a></li>
-<li><a href="https://www.facebook.com/ochiishikoichiro" target="_blank">Facebook</a></li>
-<li><a href="https://github.com/rakuishi" target="_blank">GitHub</a></li>
-</ul>
+[Twitter](https://twitter.com/rakuishi07) で呟いています。Facebook は面識のある人だけと友達になります。2015 年は、[GitHub](https://github.com/rakuishi) で積極的に活動していくのが目標です。連絡は、Twitter からか、rakuishi@gmail.com にお願いします。
 
 <h2>Private Works</h2>
 
@@ -23,30 +19,30 @@ OCHIISHI Koichiro, rakuishi
 
 <ul>
 <li><a href="https://itunes.apple.com/jp/app/quicka2-jian-suowo-kuai-shini/id725195676?mt=8&uo=4&at=11l3RT" target="_blank">Quicka2 - 検索を快適に</a><br />
-<small style="color:gray">Last Update 2013/11/24, v1.2.1, ¥100, iPhone での検索が快適になるアプリ</small></li>
+<small>Last Update 2014/10/08, v1.3, ¥100, iPhone での検索が快適になるアプリ</small></li>
 <li><a href="https://itunes.apple.com/jp/app/ofurain-you-bian-fan-hao-jian/id578073498?mt=8&uo=4&at=11l3RT" target="_blank">オフライン郵便番号検索の決定版！ -  郵便番号検索くん</a><br />
-<small style="color:gray">Last Update 2013/12/21, v1.1.2, Free, オフライン郵便番号検索アプリの決定版！</small></li>
-<li><del>HTML Viewer</del><br /><small style="color:gray">開発終了</small></li>
-<li><del>ImageKit</del><br /><small style="color:gray">開発終了</small></li>
-<li><del>オフ会リスト</del><br /><small style="color:gray">開発終了</small></li>
-<li><del>Qukcka - 検索を快適に</del><br /><small style="color:gray">開発終了</small></li>
-<li><del>StampTime</del><br /><small style="color:gray">開発終了</small></li>
+<small>Last Update 2014/10/08, v1.3, Free, オフライン郵便番号検索アプリの決定版！</small></li>
+<li><del>HTML Viewer</del><br /><small>開発終了</small></li>
+<li><del>ImageKit</del><br /><small>開発終了</small></li>
+<li><del>オフ会リスト</del><br /><small>開発終了</small></li>
+<li><del>Qukcka - 検索を快適に</del><br /><small>開発終了</small></li>
+<li><del>StampTime</del><br /><small>開発終了</small></li>
 </ul>
 
 <h3>Android</h3>
 
 <ul>
 <li><a href="https://play.google.com/store/apps/details?id=com.rakuishi.postalcode" target="_blank">郵便番号検索くん for Android</a><br />
-<small style="color:gray">Last Update 2014/01/15, v1.0.1, Free, オフライン郵便番号検索アプリの決定版！</small></li>
+<small>Last Update 2014/01/15, v1.0.1, Free, オフライン郵便番号検索アプリの決定版！</small></li>
 </ul>
 
 <h3>WordPress Plugins</h3>
 
 <ul>
 <li><a href="http://rakuishi.com/archives/6736">One Step Before Publishing</a><br />
-<small style="color:gray">2014/08/12, 記事公開前に確認アラートを表示する, <a href="https://github.com/rakuishi/OneStepBeforePublishing" target="_blank">GitHub</a></small></li>
+<small>2014/08/12, 記事公開前に確認アラートを表示する</small></li>
 <li><a href="http://rakuishi.com/archives/6018/">App Store Insert</a><br />
-<small style="color:gray">2013/08/25, 投稿画面から iOS / Mac アプリの紹介リンクを挿入する, <a href="https://github.com/rakuishi/AppStoreInsert" target="_blank">GitHub</a></small></li>
+<small>2013/08/25, 投稿画面から iOS / Mac アプリの紹介リンクを挿入する</small></li>
 <li><a href="http://rakuishi.com/archives/5886/">LinkShare To PHG</a><br />
-<small style="color:gray">2013/08/24, LinkShare を PHG のアフィリエイトリンクに置き換える, <a href="https://github.com/rakuishi/LinkShareToPHG" target="_blank">GitHub</a></small></li>
+<small>2013/08/24, LinkShare を PHG のアフィリエイトリンクに置き換える</small></li>
 </ul>
