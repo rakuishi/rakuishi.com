@@ -5,7 +5,7 @@ $link-hl-color  : #03A9F4;
 $white-color    : #FFFFFF;
 $black-color    : #222222;
 $text-color     : #111111;
-$meta-color     : #999999;
+$meta-color     : #9E9E9E;
 $border-color   : #E1E1E1;
 $light-bg-color : #F1F1F1;
 
@@ -13,14 +13,14 @@ html { font-size: 56.25%; }
 @media (min-width: 728px) { html { font-size: 62.5%; } }
 
 body {
-  font-family: "PT Sans", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", Helvetica, Arial, Verdana, sans-serif;
+  font-family: "Roboto", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", Helvetica, Arial, Verdana, sans-serif;
   background: $white-color;
   color: $black-color;
   font-weight: 400;
   font-size: 1.5em;
 }
 
-h1, h2, h3 { font-size: 1.9rem; font-weight: 300; line-height: 150%; letter-spacing: -0.1rem; }
+h1, h2, h3 { font-size: 1.9rem; font-weight: 400; line-height: 150%; letter-spacing: -0.025rem; }
 h2, h3 { font-size: 1.7rem; }
 p { font-size: 1.5rem; line-height: 150%; }
 a { color: $link-color; text-decoration: none; }
@@ -81,7 +81,7 @@ article {
   }
 
   .entry-title {
-    margin: 0;
+    margin: 0 0 0.5rem 0;
     padding: 0;
     font-size: 1.9rem;
     line-height: 125%;
