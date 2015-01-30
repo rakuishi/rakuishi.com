@@ -11,7 +11,7 @@ gulp.task('sass', function() {
         style: 'compressed',
         compass : true
       }))
-      .pipe(gulp.dest('static/css/'));
+      .pipe(gulp.dest('static/assets/css/'));
 });
 
 // $ gulp watch

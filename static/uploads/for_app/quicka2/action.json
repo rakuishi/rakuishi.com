@@ -3,7 +3,7 @@
         "title" : "Search App Store",
         "title_ja": "アプリを検索",
         "url": "quicka2://?action=appstore",
-        "artworkUrl": "http://rakuishi.com/for_app/quicka2/images/appstore.png",
+        "artworkUrl": "http://rakuishi.com/uploads/for_app/quicka2/images/appstore.png",
         "trackId": "",
         "trackName": "Quicka"
     },
@@ -11,7 +11,7 @@
         "title" : "Transit",
         "title_ja": "乗り換え案内",
         "url": "quicka2://?action=transit",
-        "artworkUrl": "http://rakuishi.com/for_app/quicka2/images/transit.png",
+        "artworkUrl": "http://rakuishi.com/uploads/for_app/quicka2/images/transit.png",
         "trackId": "",
         "trackName": "Quicka"
     },
@@ -19,7 +19,7 @@
         "title" : "Consult a Dictionary",
         "title_ja": "辞書を調べる",
         "url": "quicka2://?action=reference",
-        "artworkUrl": "http://rakuishi.com/for_app/quicka2/images/book.png",
+        "artworkUrl": "http://rakuishi.com/uploads/for_app/quicka2/images/book.png",
         "trackId": "",
         "trackName": "Quicka"
     },
@@ -27,7 +27,7 @@
         "title" : "Look up a Map",
         "title_ja": "地図を調べる",
         "url": "comgooglemaps://maps?q=[U]",
-        "artworkUrl": "http://rakuishi.com/for_app/quicka2/images/585027354.png",
+        "artworkUrl": "http://rakuishi.com/uploads/for_app/quicka2/images/585027354.png",
         "trackId": "585027354",
         "trackName": "Google Maps"
     },
@@ -35,7 +35,7 @@
         "title" : "Search",
         "title_ja": "検索する",
         "url": "googlechrome://google.com/search?q=[U]",
-        "artworkUrl": "http://rakuishi.com/for_app/quicka2/images/535886823.png",
+        "artworkUrl": "http://rakuishi.com/uploads/for_app/quicka2/images/535886823.png",
         "trackId": "535886823",
         "trackName": "Google Chrome"
     },
@@ -43,7 +43,7 @@
         "title" : "Search",
         "title_ja": "検索する",
         "url": "sleipnir://google.com/search?q=[U]",
-        "artworkUrl": "http://rakuishi.com/for_app/quicka2/images/404732112.png",
+        "artworkUrl": "http://rakuishi.com/uploads/for_app/quicka2/images/404732112.png",
         "trackId": "404732112",
         "trackName": "Sleipnir"
     },
@@ -51,7 +51,7 @@
         "title" : "Search",
         "title_ja": "検索する",
         "url": "webhub:///http://www.google.com/search?q=[U]",
-        "artworkUrl": "http://rakuishi.com/for_app/quicka2/images/597069002.png",
+        "artworkUrl": "http://rakuishi.com/uploads/for_app/quicka2/images/597069002.png",
         "trackId": "597069002",
         "trackName": "WebHub"
     },
@@ -59,7 +59,7 @@
         "title" : "Search",
         "title_ja": "検索する",
         "url": "dolphin://google.co.jp/search?q=[U]",
-        "artworkUrl": "http://rakuishi.com/for_app/quicka2/images/482508913.png",
+        "artworkUrl": "http://rakuishi.com/uploads/for_app/quicka2/images/482508913.png",
         "trackId": "482508913",
         "trackName": "Dolphin"
     },
@@ -67,7 +67,7 @@
         "title" : "Search Tweet",
         "title_ja": "検索",
         "url": "egobird://search?[U]",
-        "artworkUrl": "http://rakuishi.com/for_app/quicka2/images/702633104.png",
+        "artworkUrl": "http://rakuishi.com/uploads/for_app/quicka2/images/702633104.png",
         "trackId": "702633104",
         "trackName": "egobird"
     },
@@ -75,7 +75,7 @@
         "title" : "Search Tweet",
         "title_ja": "検索",
         "url": "tweetbot:///search?query=[U]",
-        "artworkUrl": "http://rakuishi.com/for_app/quicka2/images/722294701.png",
+        "artworkUrl": "http://rakuishi.com/uploads/for_app/quicka2/images/722294701.png",
         "trackId": "722294701",
         "trackName": "Tweetbot"
     },
@@ -83,7 +83,7 @@
         "title" : "Send Text",
         "title_ja": "テキストを送る",
         "url": "tweetbot:///post?text=[U]",
-        "artworkUrl": "http://rakuishi.com/for_app/quicka2/images/722294701.png",
+        "artworkUrl": "http://rakuishi.com/uploads/for_app/quicka2/images/722294701.png",
         "trackId": "722294701",
         "trackName": "Tweetbot"
     },
@@ -91,7 +91,7 @@
         "title" : "Send Text",
         "title_ja": "テキストを送る",
         "url": "postmania-fb://[U]",
-        "artworkUrl": "http://rakuishi.com/for_app/quicka2/images/542612090.png",
+        "artworkUrl": "http://rakuishi.com/uploads/for_app/quicka2/images/542612090.png",
         "trackId": "542612090",
         "trackName": "Postmania"
     },
@@ -99,7 +99,7 @@
         "title" : "Add Reminder",
         "title_ja": "予定を追加",
         "url": "due://x-callback-url/add?title=[U]",
-        "artworkUrl": "http://rakuishi.com/for_app/quicka2/images/390017969.png",
+        "artworkUrl": "http://rakuishi.com/uploads/for_app/quicka2/images/390017969.png",
         "trackId": "390017969",
         "trackName": "Due"
     },
@@ -107,7 +107,7 @@
         "title" : "Add Record",
         "title_ja": "日記を追加",
         "url": "dayone://post?entry=[U]",
-        "artworkUrl": "http://rakuishi.com/for_app/quicka2/images/421706526.png",
+        "artworkUrl": "http://rakuishi.com/uploads/for_app/quicka2/images/421706526.png",
         "trackId": "421706526",
         "trackName": "Day one"
     },
@@ -115,7 +115,7 @@
         "title" : "Add Event",
         "title_ja": "予定を追加",
         "url": "staccal://event?title=[U]",
-        "artworkUrl": "http://rakuishi.com/for_app/quicka2/images/794729836.png",
+        "artworkUrl": "http://rakuishi.com/uploads/for_app/quicka2/images/794729836.png",
         "trackId": "794729836",
         "trackName": "Staccal 2"
     },
@@ -123,7 +123,7 @@
         "title" : "Search Event",
         "title_ja": "イベントを検索",
         "url": "staccal://search?keyword=[U]",
-        "artworkUrl": "http://rakuishi.com/for_app/quicka2/images/794729836.png",
+        "artworkUrl": "http://rakuishi.com/uploads/for_app/quicka2/images/794729836.png",
         "trackId": "794729836",
         "trackName": "Staccal 2"
     },
@@ -131,7 +131,7 @@
         "title" : "Add Event",
         "title_ja": "予定を追加",
         "url": "staccal://event?title=[U]",
-        "artworkUrl": "http://rakuishi.com/for_app/quicka2/images/546282165.png",
+        "artworkUrl": "http://rakuishi.com/uploads/for_app/quicka2/images/546282165.png",
         "trackId": "546282165",
         "trackName": "Staccal"
     },
@@ -139,7 +139,7 @@
         "title" : "Search Event",
         "title_ja": "イベントを検索",
         "url": "staccal://search?keyword=[U]",
-        "artworkUrl": "http://rakuishi.com/for_app/quicka2/images/546282165.png",
+        "artworkUrl": "http://rakuishi.com/uploads/for_app/quicka2/images/546282165.png",
         "trackId": "546282165",
         "trackName": "Staccal"
     },
@@ -147,7 +147,7 @@
         "title" : "Add Event",
         "title_ja": "予定を追加",
         "url": "choical://[U]",
-        "artworkUrl": "http://rakuishi.com/for_app/quicka2/images/438197745.png",
+        "artworkUrl": "http://rakuishi.com/uploads/for_app/quicka2/images/438197745.png",
         "trackId": "438197745",
         "trackName": "choical"
     },
@@ -155,7 +155,7 @@
         "title" : "Search Note",
         "title_ja": "ノートを検索する",
         "url": "smartever://search?query=[U]",
-        "artworkUrl": "http://rakuishi.com/for_app/quicka2/images/493990103.png",
+        "artworkUrl": "http://rakuishi.com/uploads/for_app/quicka2/images/493990103.png",
         "trackId": "493990103",
         "trackName": "SmartEver"
     },
@@ -163,7 +163,7 @@
         "title" : "Search Note",
         "title_ja": "ノートを検索する",
         "url": "withever://search?[U]&callback=quicka2://",
-        "artworkUrl": "http://rakuishi.com/for_app/quicka2/images/446671363.png",
+        "artworkUrl": "http://rakuishi.com/uploads/for_app/quicka2/images/446671363.png",
         "trackId": "446671363",
         "trackName": "withEver"
     },
@@ -171,7 +171,7 @@
         "title" : "Send Text",
         "title_ja": "テキストを送る",
         "url": "fastever://?text=[U]",
-        "artworkUrl": "http://rakuishi.com/for_app/quicka2/images/364580273.png",
+        "artworkUrl": "http://rakuishi.com/uploads/for_app/quicka2/images/364580273.png",
         "trackId": "364580273",
         "trackName": "FastEver"
     },
@@ -179,7 +179,7 @@
         "title" : "Add Event",
         "title_ja": "予定を追加",
         "url": "moca://addevent?title=[U]",
-        "artworkUrl": "http://rakuishi.com/for_app/quicka2/images/533031474.png",
+        "artworkUrl": "http://rakuishi.com/uploads/for_app/quicka2/images/533031474.png",
         "trackId": "533031474",
         "trackName": "Moca"
     },
@@ -187,7 +187,7 @@
         "title" : "Substract",
         "title_ja": "残高の減額",
         "url": "spendable://subtract?[U]",
-        "artworkUrl": "http://rakuishi.com/for_app/quicka2/images/572236710.png",
+        "artworkUrl": "http://rakuishi.com/uploads/for_app/quicka2/images/572236710.png",
         "trackId": "572236710",
         "trackName": "Spendable"
     },
@@ -195,7 +195,7 @@
         "title" : "View",
         "title_ja": "表示",
         "url": "udwriter://?text=",
-        "artworkUrl": "http://rakuishi.com/for_app/quicka2/images/632058683.png",
+        "artworkUrl": "http://rakuishi.com/uploads/for_app/quicka2/images/632058683.png",
         "trackId": "632058683",
         "trackName": "UDWriter"
     },
@@ -203,7 +203,7 @@
         "title" : "Add Event",
         "title_ja": "追加",
         "url": "quickreminder://?t=[U]",
-        "artworkUrl": "http://rakuishi.com/for_app/quicka2/images/601761533.png",
+        "artworkUrl": "http://rakuishi.com/uploads/for_app/quicka2/images/601761533.png",
         "trackId": "601761533",
         "trackName": "速Reminder"
     },
@@ -211,7 +211,7 @@
         "title" : "Search",
         "title_ja": "検索",
         "url": "postalcode://search?query=[U]",
-        "artworkUrl": "http://rakuishi.com/for_app/quicka2/images/578073498.png",
+        "artworkUrl": "http://rakuishi.com/uploads/for_app/quicka2/images/578073498.png",
         "trackId": "578073498",
         "trackName": "郵便番号検索くん"
     },
@@ -219,7 +219,7 @@
         "title" : "Consult a Dictionary",
         "title_ja": "辞書を検索",
         "url": "mkdaijirin://jp.monokakido.DAIJIRIN/search?text=[U]&srcname=Quicka2&src=quicka2:",
-        "artworkUrl": "http://rakuishi.com/for_app/quicka2/images/299029654.png",
+        "artworkUrl": "http://rakuishi.com/uploads/for_app/quicka2/images/299029654.png",
         "trackId": "299029654",
         "trackName": "大辞林"
     },
@@ -227,7 +227,7 @@
         "title" : "Consult a Dictionary",
         "title_ja": "辞書を検索",
         "url": "mkwisdom2://jp.monokakido.WISDOM2/search?text=[U]&srcname=Quicka2&src=quicka2:",
-        "artworkUrl": "http://rakuishi.com/for_app/quicka2/images/586803362.png",
+        "artworkUrl": "http://rakuishi.com/uploads/for_app/quicka2/images/586803362.png",
         "trackId": "586803362",
         "trackName": "ウィズダム英和・和英辞典2"
     },
@@ -235,7 +235,7 @@
         "title" : "Consult a Dictionary",
         "title_ja": "辞書を検索",
         "url": "mkccjad://jp.monokakido.CCJAD/search?text=[U]",
-        "artworkUrl": "http://rakuishi.com/for_app/quicka2/images/536200184.png",
+        "artworkUrl": "http://rakuishi.com/uploads/for_app/quicka2/images/536200184.png",
         "trackId": "536200184",
         "trackName": "コウビルド英英和辞典"
     },
@@ -243,7 +243,7 @@
         "title" : "Consult a Dictionary",
         "title_ja": "辞書を検索",
         "url": "hmdaijisen:search?text=[U]&searchtype=0",
-        "artworkUrl": "http://rakuishi.com/for_app/quicka2/images/632428156.png",
+        "artworkUrl": "http://rakuishi.com/uploads/for_app/quicka2/images/632428156.png",
         "trackId": "632428156",
         "trackName": "大辞泉"
     },
@@ -251,7 +251,7 @@
         "title" : "Google Blog Search",
         "title_ja": "Google ブログ検索",
         "url": "http://www.google.co.jp/search?tbm=blg&q=[U]",
-        "artworkUrl": "http://rakuishi.com/for_app/quicka2/images/search_ios7.png",
+        "artworkUrl": "http://rakuishi.com/uploads/for_app/quicka2/images/search_ios7.png",
         "trackId": "",
         "trackName": "Quicka"
     },
@@ -259,7 +259,7 @@
         "title" : "Yahoo!Search(Realtime)",
         "title_ja": "Yahoo! 検索（リアルタイム）",
         "url": "http://realtime.search.yahoo.co.jp/search?ei=UTF-8&p=[U]",
-        "artworkUrl": "http://rakuishi.com/for_app/quicka2/images/search_purple.png",
+        "artworkUrl": "http://rakuishi.com/uploads/for_app/quicka2/images/search_purple.png",
         "trackId": "",
         "trackName": "Quicka"
     },
@@ -267,7 +267,7 @@
         "title" : "Search Hatebu",
         "title_ja": "はてブ検索",
         "url": "http://b.hatena.ne.jp/search.touch?q=[U]",
-        "artworkUrl": "http://rakuishi.com/for_app/quicka2/images/search_green.png",
+        "artworkUrl": "http://rakuishi.com/uploads/for_app/quicka2/images/search_green.png",
         "trackId": "",
         "trackName": "Quicka"
     },
@@ -275,7 +275,7 @@
         "title" : "Search NAVER Matome",
         "title_ja": "NAVER まとめ検索",
         "url": "http://matome.naver.jp/m/search?q=[U]",
-        "artworkUrl": "http://rakuishi.com/for_app/quicka2/images/search_orange.png",
+        "artworkUrl": "http://rakuishi.com/uploads/for_app/quicka2/images/search_orange.png",
         "trackId": "",
         "trackName": "Quicka"
     },
@@ -283,7 +283,7 @@
         "title" : "Search Wikipedia",
         "title_ja": "Wikipedia を検索",
         "url": "http://m.wikipedia.org/wiki/[U]",
-        "artworkUrl": "http://rakuishi.com/for_app/quicka2/images/search_pink.png",
+        "artworkUrl": "http://rakuishi.com/uploads/for_app/quicka2/images/search_pink.png",
         "trackId": "",
         "trackName": "Quicka"
     },
@@ -291,7 +291,7 @@
         "title" : "Search Wikipedia(ja)",
         "title_ja": "Wikipedia（日本語）を検索",
         "url": "http://ja.m.wikipedia.org/wiki/[U]",
-        "artworkUrl": "http://rakuishi.com/for_app/quicka2/images/search_red.png",
+        "artworkUrl": "http://rakuishi.com/uploads/for_app/quicka2/images/search_red.png",
         "trackId": "",
         "trackName": "Quicka"
     },
@@ -299,7 +299,7 @@
         "title" : "Seach Tweet",
         "title_ja": "Twitter を検索",
         "url": "https://mobile.twitter.com/search/?q=[U]",
-        "artworkUrl": "http://rakuishi.com/for_app/quicka2/images/search_blue.png",
+        "artworkUrl": "http://rakuishi.com/uploads/for_app/quicka2/images/search_blue.png",
         "trackId": "",
         "trackName": "Quicka"
     },
@@ -307,7 +307,7 @@
         "title" : "Seach Video",
         "title_ja": "YouTube を検索",
         "url": "http://m.youtube.com/results?q=[U]",
-        "artworkUrl": "http://rakuishi.com/for_app/quicka2/images/search_gray.png",
+        "artworkUrl": "http://rakuishi.com/uploads/for_app/quicka2/images/search_gray.png",
         "trackId": "",
         "trackName": "Quicka"
     },
@@ -315,7 +315,7 @@
         "title" : "Search Gmail",
         "title_ja": "Gmail を検索",
         "url": "https://mail.google.com/mail/mu/mp/520/#tl/search/[U]",
-        "artworkUrl": "http://rakuishi.com/for_app/quicka2/images/search_ios7.png",
+        "artworkUrl": "http://rakuishi.com/uploads/for_app/quicka2/images/search_ios7.png",
         "trackId": "",
         "trackName": "Quicka"
     },
@@ -323,7 +323,7 @@
         "title" : "Search kakaku.com",
         "title_ja": "価格.com を検索",
         "url": "http://kakaku.com/search_results/[S]/",
-        "artworkUrl": "http://rakuishi.com/for_app/quicka2/images/search_purple.png",
+        "artworkUrl": "http://rakuishi.com/uploads/for_app/quicka2/images/search_purple.png",
         "trackId": "",
         "trackName": "Quicka"
     },
@@ -331,7 +331,7 @@
         "title" : "Search Amazon Japan",
         "title_ja": "Amazon Japan を検索",
         "url": "http://www.amazon.co.jp/gp/aw/s/ref=is_box_?__mk_ja_JP=%83J%83%5E%83J%83i&k=[S]",
-        "artworkUrl": "http://rakuishi.com/for_app/quicka2/images/search_green.png",
+        "artworkUrl": "http://rakuishi.com/uploads/for_app/quicka2/images/search_green.png",
         "trackId": "",
         "trackName": "Quicka"
     },
@@ -339,7 +339,7 @@
         "title" : "Search Kindle Store",
         "title_ja": "Kindle ストアを検索",
         "url": "http://www.amazon.co.jp/gp/aw/s/ref=kina_tsf_?i=digital-text&phoneType=iPhone&phoneCarrier=wifi&__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A&k=[U]&x=0&y=0",
-        "artworkUrl": "http://rakuishi.com/for_app/quicka2/images/search_orange.png",
+        "artworkUrl": "http://rakuishi.com/uploads/for_app/quicka2/images/search_orange.png",
         "trackId": "",
         "trackName": "Quicka"
     }

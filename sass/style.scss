@@ -1,9 +1,9 @@
 @charset "utf-8";
 
-$link-color     : #01579B;
-$link-hl-color  : #03A9F4;
+$link-color     : #2a6496;
+$link-hl-color  : #6687BC;
 $white-color    : #FFFFFF;
-$black-color    : #222222;
+$black-color    : #2a2a2a;
 $text-color     : #111111;
 $meta-color     : #9E9E9E;
 $border-color   : #E1E1E1;
@@ -13,7 +13,7 @@ html { font-size: 56.25%; }
 @media (min-width: 728px) { html { font-size: 62.5%; } }
 
 body {
-  font-family: "Roboto", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", Helvetica, Arial, Verdana, sans-serif;
+  font-family: "Open Sans", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", Helvetica, Arial, Verdana, sans-serif;
   background: $white-color;
   color: $black-color;
   font-weight: 400;
@@ -26,6 +26,11 @@ p { font-size: 1.5rem; line-height: 150%; }
 a { color: $link-color; text-decoration: none; }
 a:hover { color: $link-hl-color; text-decoration: none; }
 img { max-width: 100%; height: auto; }
+
+.container {
+  width: 100%;
+  overflow: hidden;
+}
 
 .clearfix:after {
   content: "";
@@ -93,7 +98,7 @@ article {
   .entry-meta {
     display: inline-block;
     margin-bottom: 12px;
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     color: $meta-color;
     a { color: $meta-color; text-decoration: none; }
     a:hover { text-decoration: underline; }
@@ -182,8 +187,8 @@ footer {
 // https://icomoon.io/app/
 @font-face {
   font-family: 'icomoon';
-  src: url('/fonts/icomoon.eot?j2lqe');
-  src: url('/fonts/icomoon.eot?#iefixj2lqe') format('embedded-opentype'), url('/fonts/icomoon.woff?j2lqe') format('woff'), url('/fonts/icomoon.ttf?j2lqe') format('truetype'), url('/fonts/icomoon.svg?j2lqe#icomoon') format('svg');
+  src: url('../fonts/icomoon.eot?j2lqe');
+  src: url('../fonts/icomoon.eot?#iefixj2lqe') format('embedded-opentype'), url('../fonts/icomoon.woff?j2lqe') format('woff'), url('../fonts/icomoon.ttf?j2lqe') format('truetype'), url('../fonts/icomoon.svg?j2lqe#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
