@@ -5,7 +5,7 @@
 			{{ with .Params.image }}<img src="{{ . }}" class="entry-cover-image">{{ end }}
 			<h1 class="entry-title" itemprop="headline">{{ .Title }}{{ if .Draft }} #Draft{{ end }}</h1>
 			<span class="entry-meta"><time itemprop="datePublished" datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 02, 2006" }}</time></span>
-			<section itemprop="entry-content">
+			<section itemprop="text">
 				{{ .Content }}
 			</section>
 			<div class="share">

@@ -2,30 +2,32 @@
 
 $link-color     : #3b5998;
 $link-hl-color  : #6687BC;
-$white-color    : #FFFFFF;
-$black-color    : #2a2a2a;
-$text-color     : #1a1a1a;
+$white-color    : #FEFEFE;
+$text-color     : #2a2a2a;
 $meta-color     : #9E9E9E;
 $border-color   : #E1E1E1;
-$light-bg-color : #F1F1F1;
+$light-bg-color : #F7F7F7;
 
 html { font-size: 56.25%; }
-@media (min-width: 660px) { html { font-size: 62.5%; } }
+@media (min-width: 640px) { html { font-size: 62.5%; } }
 
 body {
   font-family: "Open Sans", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", Helvetica, Arial, Verdana, sans-serif;
   background: $white-color;
-  color: $black-color;
+  color: $text-color;
   font-weight: 400;
-  font-size: 1.5em;
+  font-size: 1.5rem;
 }
 
-h1, h2, h3 { font-size: 1.9rem; font-weight: 400; line-height: 1.3; letter-spacing: -0.05rem; }
-h2, h3 { font-size: 1.7rem; }
+h1, h2, h3 { font-weight: 400; line-height: 1.3; letter-spacing: -0.05rem; }
+h1 { font-size: 2.1rem; }
+h2 { font-size: 1.9rem; }
+h3 { font-size: 1.7rem; }
 p { font-size: 1.5rem; line-height: 1.6; letter-spacing: -0.025rem; }
 a { color: $link-color; text-decoration: none; }
 a:hover { color: $link-hl-color; text-decoration: none; }
 img { max-width: 100%; height: auto; }
+code { font-family: Menlo, 'Bitstream Vera Sans Mono', 'DejaVu Sans Mono', Monaco, Consolas, monospace; }
 
 .container {
   width: 100%;
@@ -49,10 +51,12 @@ header {
   margin: 0 auto 48px;
   height: 48px;
   border-bottom: 1px solid $border-color;
+  // background-color: #36465D;
+  // box-shadow: 0 0 0 1px rgba(255,255,255,0.13);
 
   .row {
-    max-width: 660px;
-    width: 90%;
+    max-width: 640px;
+    width: 92%;
     margin: 0 auto;
     &:after { @extend .clearfix; }
   }
@@ -69,12 +73,12 @@ header {
 
   .site-title {
     display: inline-block;
-    font-size: 2.0rem;
+    font-size: 1.9rem;
     letter-spacing: -0.1rem;
     text-transform: uppercase;
     line-height: 48px;
     color: $text-color;
-    &:hover { color: $link-hl-color; }
+    &:hover { opacity: 0.8; }
   }
 
   nav {
@@ -87,12 +91,12 @@ header {
         display: block;
         height: 45px;
         padding: 0 0.5rem;
-        color: $meta-color;
+        color: #abb6c1;
         text-transform: uppercase;
         font-size: 1.4rem;
         &:hover {
-          color: $link-hl-color;
-          border-bottom: 3px solid $link-hl-color;
+          color: #abb6c1;
+          border-bottom: 3px solid #abb6c1;
         }
       }
     }
@@ -100,11 +104,12 @@ header {
 }
 
 main {
-  max-width: 660px;
-  width: 90%;
+  max-width: 640px;
+  width: 92%;
   margin: 24px auto;
   h1 {
     margin-bottom: 24px + 12px;
+    font-weight: 700;
   }
 }
 
@@ -121,16 +126,16 @@ article {
   .entry-title {
     margin: 0 0 0.25rem 0;
     padding: 0;
-    font-size: 1.8rem;
+    font-size: 1.9rem;
+    font-weight: 700;
     line-height: 133%;
-    color: $black-color;
     border: 0;
     a { text-decoration: none; }
   }
 
   .entry-meta {
     display: inline-block;
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     color: $meta-color;
     a { color: $meta-color; text-decoration: none; }
     a:hover { text-decoration: underline; }
@@ -140,16 +145,16 @@ article {
   h3 { margin: 2.4rem 0; }
   p { margin: 2.4rem 0; }
   a { text-decoration: underline; }
-  code { margin: 0 .2rem; padding: .2rem .5rem; font-size: 90%; background: $light-bg-color; border: 1px solid $border-color; border-radius: 4px; }
-  pre > code { display: block; padding: 1rem 1.5rem; border: 1px solid $border-color; }
+  code { margin: 0 .2rem; padding: .1rem .5rem; font-size: 90%; background: $light-bg-color !important; border: 1px solid $border-color; border-radius: 4px; }
+  pre > code { display: block; padding: 1rem 1.5rem !important; border: 1px solid $border-color; white-space: pre-wrap; word-wrap: break-word; }
 
-  ul, ol { margin: 1.2rem 0; padding-left: 2.4rem; }
+  ul, ol { margin: 1.2rem 0; padding-left: 3.6rem; }
   ul { list-style: desc; }
   ol { list-style: decimal; }
   li { font-size: 1.5rem; line-height: 150%; margin-bottom: .5rem; }
 
   iframe {　margin: 2.4rem 0; padding: 0; }
-  blockquote { margin: 2.4rem 0; padding-left: 1.2rem; border-left: 4px solid $border-color; }
+  blockquote { margin: 2.4rem 0 2.4rem 1.2rem; padding-left: 1.2rem; border-left: 4px solid $border-color; }
 
   .align-center, .aligncenter { display: block; margin: 0 auto; }
   .application-icon { margin-right: 1rem; width: 80px; height: 80px; }
@@ -176,7 +181,7 @@ article {
 
 .share {
   margin: 48px 0 12px;
-  text-align: center;
+  text-align: right;
   .twitter, .facebook, .pocket {
     display: inline-block;
     vertical-align: top;
@@ -200,7 +205,7 @@ article {
 }
 
 .author {
-  max-width: 660px;
+  max-width: 640px;
   margin: 24px auto 48px;
   font-size: 1.4rem;
   line-height: 1.8rem;
