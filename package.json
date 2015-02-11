@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "rakuishi",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "critical": "^0.5.3",
     "gulp": "^3.8.10",
