@@ -71,7 +71,7 @@ WordPress は /feed に、Hugo は /index.xml にフィードを吐き出して�
 	hugo
 	rsync -auv --delete ~/Dropbox/Private/rakuishi.com/public/ rakuishi@rakuishi.sakura.ne.jp:/home/rakuishi/www/
 
-## Hugo 雑感
+## 雑感
 
 静的サイトジェネレータだから、WordPress のようにブラウザで記事を書くのではなくて、ローカルに記事を書く。記事はマークダウン形式で書けて、それを html ファイル形式で出力する。それをサーバーにシンクして完了、という流れになります。
 

@@ -10,13 +10,13 @@ title = "シンタックスハイライトに highlight.js を使うことにし
 
 ## 経緯
 
-prettify は、ハイライトするコード部分を `<pre class="prettyprint"> ~ </pre>` で囲う必要があります。
+prettify は、ハイライトするコード部分を `<pre class="prettyprint"> ~ </pre>` で囲う必要がありました。
 
-ですが、先日から記事をマークダウンで記述するようになり、コード部分が、`<code><pre> ~ </pre></code>` に変換されるため、クラス指定のある prettify が使いづらくなりました。
+ですが、先日から記事をマークダウンで記述するようになり、コード部分が、`<code><pre> ~ </pre></code>` に変換されるため、クラスを指定する prettify が使えなくなりました。
 
 ## highlight.js 導入
 
-ブログに JavaScript と、CSS を読み込ませるだけです。また、ハイライトする部分は、`<code><pre> ~ </pre></code>` 形式で囲まれている必要があります。
+ブログに JavaScript と、CSS を読み込ませるだけです。ハイライトする部分は、`<code><pre> ~ </pre></code>` 形式で囲まれている必要があります。
 
 [Getting highlight.js](https://highlightjs.org/download/) からダウンロードすることもできますし、CDN で配信されているので、自分のブログにコードを貼り付けるだけで OK です。
 
