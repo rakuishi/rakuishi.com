@@ -180,6 +180,7 @@ article {
   ol { list-style: decimal; }
   li { font-size: 1.5rem; line-height: 1.6; margin-bottom: .5rem; }
 
+  hr { height: 2px; margin: 2.4rem 0; border: 0; background-color: $border-color; }
   img { max-height: 400px; width: auto; }
   iframe { margin: 2.4rem 0; padding: 0; }
   blockquote { margin: 2.4rem 0 2.4rem 1.2rem; padding-left: 1.2rem; border-left: 4px solid $border-color; }
