@@ -2,15 +2,16 @@
 
 	<main role="main">
 		<h1 class="list-title">{{ .Title }}</h1>
-{{ range first 14 .Data.Pages }}
-		<article itemscope itemtype="http://schema.org/Blog">
-			<h2 class="entry-title" itemprop="headline"><a href="{{ .RelPermalink }}">{{ .Title }}{{ if .Draft }} #Draft{{ end }}</a></h2>
-			<span class="meta"><time itemprop="datePublished" datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 02, 2006" }}</time>{{ if .Params.categories }} #{{ range .Params.categories }}<a href="/categories/{{ . | urlize }}">{{ . }}</a>{{ end }}{{ end }}</span>
-		</article>
+		<ul class="list-entry">
+{{ range .Data.Pages }}
+			<li itemscope itemtype="http://schema.org/Blog">
+				<a href="{{ .RelPermalink }}">
+					<h2 class="entry-title" itemprop="headline">{{ .Title }}{{ if .Draft }} #Draft{{ end }}</h2>
+					<span class="entry-meta"><time itemprop="datePublished" datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 02, 2006" }}</time></span>
+				</a>
+			</li>
 {{ end }}
-		<nav class="pagenation" role="navigation">
-			<a href="/archives/" class="older">Older Posts &rarr;</a>
-		</nav>
+		</ul>
 	</main>
 
 {{ partial "footer.html" . }}
