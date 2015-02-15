@@ -1,8 +1,8 @@
 #!/bin/sh
-# This is publish script with rsync.
+# sh/publish.sh
 
 DIR=$(cd $(dirname ${0})/.. && pwd)
-
+cd ${DIR}
 hugo
 gulp sass
 gulp critical
