@@ -1,20 +1,19 @@
 @charset "utf-8";
 
-@import "normalize", "github.min", "open_sans";
+@import "normalize", "github.min", "noto_sans_cjk_jp";
 
 $link-color     : #6687BC;
 $link-hl-color  : #3b5998;
 $white-color    : #FEFEFE;
 $text-color     : #3d3c40;
-$meta-color     : #9eb7c6;
+$meta-color     : #A5B3BA;
 $border-color   : #E9ECED;
 $light-bg-color : #F7F7F7;
 
-html { font-size: 60%; }
-@media (min-width: 640px) { html { font-size: 62.5%; } }
+html { font-size: 62.5%; }
 
 body {
-  font-family: 'Open Sans', 'Helvetica neue', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
+  font-family: 'Noto Sans Japanese', 'Helvetica neue', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
   background: $white-color;
   color: $text-color;
   font-weight: 400;
@@ -23,8 +22,7 @@ body {
 
 h1, h2, h3 { font-weight: 400; line-height: 1.3; letter-spacing: -0.05rem; }
 h1 { font-size: 1.9rem; }
-h2 { font-size: 1.7rem; }
-h3 { font-size: 1.5rem; }
+h2 , h3 { font-size: 1.7rem; }
 p { font-size: 1.5rem; line-height: 1.6; letter-spacing: -0.025rem; }
 a { color: $link-color; text-decoration: none; }
 a:hover { color: $link-hl-color; text-decoration: none; }
@@ -50,12 +48,12 @@ code { font-family: Menlo, Monaco, Consolas, monospace; }
 }
 
 header {
-  margin: 0 auto 48px;
-  height: 48px;
+  margin: 0 auto 4.8rem;
+  height: 4.8rem;
   border-bottom: 1px solid $border-color;
 
   .row {
-    max-width: 640px;
+    max-width: 64rem;
     width: 92%;
     margin: 0 auto;
     &:after { @extend .clearfix; }
@@ -76,7 +74,7 @@ header {
     font-size: 2.1rem;
     letter-spacing: -0.1rem;
     text-transform: uppercase;
-    line-height: 48px;
+    line-height: 4.8rem;
     color: $text-color;
     &:hover { opacity: 0.5; }
   }
@@ -86,17 +84,17 @@ header {
     ul, li { list-style: none; margin: 0; padding: 0; }
     li {
       display: inline-block;
-      line-height: 48px;
+      line-height: 4.8rem;
       a {
         display: block;
-        height: 46px;
+        height: 4.6rem;
         padding: 0 0.5rem;
         color: $meta-color;
         text-transform: uppercase;
         font-size: 1.4rem;
         &:hover {
           color: $meta-color;
-          border-bottom: 2px solid $meta-color;
+          border-bottom: 0.2rem solid $meta-color;
         }
       }
     }
@@ -104,11 +102,11 @@ header {
 }
 
 main {
-  max-width: 640px;
+  max-width: 64rem;
   width: 92%;
-  margin: 24px auto;
+  margin: 2.4rem auto;
   h1 {
-    margin-bottom: 24px + 12px;
+    margin-bottom: 3.6rem;
     font-size: 1.9rem;
     font-weight: 700;
   }
@@ -121,6 +119,7 @@ main {
   li {
     margin-bottom: 0;
     border-bottom: 2px solid $border-color;
+    &:first-child { border-top: 2px solid $border-color; }
   }
 
   a {
@@ -143,13 +142,13 @@ main {
 }
 
 article {
-  margin-bottom: 24px;
+  margin-bottom: 2.4rem;
 
   .entry-title {
     margin: 0 0 0.25rem 0;
     padding: 0;
     font-size: 1.9rem;
-    font-weight: 700;
+    font-weight: 500;
     line-height: 133%;
     border: 0;
     a { text-decoration: none; }
@@ -163,8 +162,8 @@ article {
     a:hover { text-decoration: underline; }
   }
 
-  h2 { margin: 4.8rem 0 2.4rem; font-weight: 700; padding-bottom: 1rem; border-bottom: 2px solid $border-color; }
-  h3 { margin: 3.6rem 0 2.4rem; font-weight: 700; }
+  h2 { margin: 4.8rem 0 2.4rem; font-weight: 500; padding-bottom: 1rem; border-bottom: 2px solid $border-color; }
+  h3 { margin: 3.6rem 0 2.4rem; font-weight: 500; }
   p  { margin: 2.4rem 0; }
 
   code { margin: 0 .2rem; padding: .1rem .5rem; font-size: 90%; background: $light-bg-color !important; border: 1px solid $border-color; border-radius: 4px; }
@@ -177,11 +176,12 @@ article {
 
   hr { height: 2px; margin: 2.4rem 0; border: 0; background-color: $border-color; }
   img { max-height: 480px; width: auto; }
+  p img { border-radius: 4px; }
   iframe { margin: 2.4rem 0; padding: 0; }
   blockquote { margin: 2.4rem 0 2.4rem 1.2rem; padding-left: 1.2rem; border-left: 4px solid $border-color; }
 
   .align-center, .aligncenter { display: block; margin: 0 auto; }
-  .application-icon { margin-right: 1rem; width: 80px; height: 80px; }
+  .application-icon { margin-right: 1rem; width: 8rem; height: 8rem; }
 
   .amazlet-box {
     padding: 1rem;
@@ -194,12 +194,12 @@ article {
     margin: 2.4rem 0;
     font-size: 1.4rem; 
     line-height: 1.6;
-    img { width: 80px; height: 80px; margin-right: 1rem; float: left; }
+    img { width: 8rem; height: 8rem; margin-right: 1rem; float: left; }
   }
 }
 
 .share {
-  margin: 48px 0 24px;
+  margin: 4.8rem 0 2.4rem;
   text-align: right;
   .twitter, .facebook, .pocket {
     display: inline-block;
@@ -220,17 +220,17 @@ article {
 }
 
 .view-more-posts {
-  margin: 48px 0;
+  margin: 4.8rem 0;
   text-align: center;
   a { font-size: 1.9rem; font-weight: 700; }
   small { color: $meta-color; }
 }
 
 .author {
-  max-width: 640px;
-  margin: 24px auto;
+  max-width: 64rem;
+  margin: 2.4rem auto;
   font-size: 1.4rem;
   line-height: 1.8rem;
-  img { float: left; width: 7.2rem; height: 7.2rem; margin-right: 1rem; border-radius: 3px; }
+  img { float: left; width: 7.2rem; height: 7.2rem; margin-right: 1rem; border-radius: 4px; }
   &:after { @extend .clearfix; }
 }
