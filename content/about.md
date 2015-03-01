@@ -9,11 +9,11 @@ slug = "about"
 
 大学在籍中（微生物学を専攻していました）、2012 年 1 月に趣味で初めた iOS アプリ開発が高じて、2012 年 8 月から新宿にある [AppBank 株式会社](http://www.appbank.net)でプログラマとして働いています。会社では、2015 年 1 月現在、Android アプリ開発とフロントエンド・エンジニアをしています。
 
-このサイト rakuishi.com は、僕個人によるブログです。会社とは関係ありません。2011 年 8 月から記事を書いています。当初、WordPress で運営していたブログでしたが、2015 年 1 月からは、静的サイトジェネレータ [Hugo](http://gohugo.io/) で運営しています。[ソースコード](https://github.com/rakuishi/rakuishi.com)を GitHub で公開しています。
+このサイト rakuishi.com は、僕個人によるブログです。会社とは関係ありません。2011 年 8 月から記事を書いています。当初、WordPress で運営していたブログでしたが、2015 年 1 月からは、静的サイトジェネレータ [Hugo](http://gohugo.io/) で運営しています。[ソースコード](https://github.com/rakuishi/rakuishi.com)を GitHub で公開しています。記事の更新を追いかけるには、<a href="http://cloud.feedly.com/#subscription%2Ffeed%2Fhttp%3A%2F%2Frakuishi.com%2Ffeed%2F" target="blank">Feedly</a> もしくは、<a href="http://rakuishi.com/index.xml" target="_blank">RSS</a> から。
 
 [Twitter](https://twitter.com/rakuishi07) で、呟いています。Facebook は、面識のある人だけと友達になっています。2015 年は、[GitHub](https://github.com/rakuishi) で、積極的に活動していくのが目標です。
 
-連絡は、Twitter か、rakuishi@gmail.com にお願いします。
+連絡は、Twitter もしくは、rakuishi@gmail.com に頂けると返信します。
 
 <h2>Private Works</h2>
 
