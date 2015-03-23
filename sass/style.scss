@@ -10,7 +10,9 @@ $meta-color     : #A5B3BA;
 $border-color   : #E9ECED;
 $light-bg-color : #F7F7F7;
 
-html { font-size: 62.5%; }
+html { font-size: 60%; }
+@media (min-width: 480px) { html { font-size: 62.5%; } }
+
 
 body {
   font-family: 'Noto Sans Japanese', 'Helvetica neue', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;

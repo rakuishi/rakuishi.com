@@ -3,7 +3,7 @@
 	<main role="main">
 		{{ partial "author.html" . }}
 		<ul class="list-entry">
-{{ range first 14 .Data.Pages }}
+{{ range first 21 .Data.Pages }}
 			<li itemscope itemtype="http://schema.org/Blog">
 				<a href="{{ .RelPermalink }}">
 					<h2 class="entry-title" itemprop="headline">{{ .Title }}{{ if .Draft }} #Draft{{ end }}</h2>
