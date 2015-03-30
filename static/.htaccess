@@ -1,11 +1,11 @@
-# 2015-01-18 WordPress to Hugo
+<IfModule mod_rewrite.c>
 RedirectMatch 301 ^/feed$ /index.xml
 RedirectMatch 301 ^/feed/$ /index.xml
+RedirectMatch 301 ^/quicka2$ /archives/quicka2/
 RedirectMatch 301 ^/quicka2/$ /archives/quicka2/
 RedirectMatch 301 ^/archives/category/(.*)$ /categories/$1
 ErrorDocument 404 /404.html
-
-AddType image/x-icon .ico
+</IfModule>
 
 <IfModule mod_deflate.c>
 SetOutputFilter DEFLATE
@@ -27,7 +27,7 @@ AddOutputFilterByType DEFLATE application/x-javascript
 AddOutputFilterByType DEFLATE application/x-httpd-php
 </IfModule>
 
-<ifModule mod_expires.c>
+<IfModule mod_expires.c>
 ExpiresActive On
 ExpiresDefault "access plus 1 seconds"
 ExpiresByType text/css "access plus 300 seconds"
@@ -39,6 +39,4 @@ ExpiresByType image/png "access plus 2419200 seconds"
 ExpiresByType image/x-icon "access plus 2419200 seconds"
 ExpiresByType application/x-javascript "access plus 2419200 seconds"
 ExpiresByType application/x-shockwave-flash "access plus 2419200 seconds"
-</ifModule>
-
-FileETag none
+</IfModule>
