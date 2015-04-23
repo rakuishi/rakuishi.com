@@ -15,9 +15,14 @@ slug = "about"
 
 連絡は、Twitter もしくは、rakuishi@gmail.com に頂けると返信します。
 
-<h2>Private Works</h2>
+## Educatoin
 
-<h3>iOS</h3>
+* National Institute of Technology, Kitakyushu College, 2010.
+* Toyohashi University of Technology, 2012.
+
+## Personal Projects
+
+### iOS
 
 <ul>
 <li><a href="https://itunes.apple.com/jp/app/quicka2-jian-suowo-kuai-shini/id725195676?mt=8&uo=4&at=11l3RT" target="_blank">Quicka2 - 検索を快適に</a><br>
@@ -31,14 +36,14 @@ slug = "about"
 <li><del>StampTime</del><br><small>開発終了</small></li>
 </ul>
 
-<h3>Android</h3>
+### Android
 
 <ul>
 <li><a href="https://play.google.com/store/apps/details?id=com.rakuishi.postalcode" target="_blank">郵便番号検索くん for Android</a><br>
 <small>Last Update 2014/01/15, v1.0.1, Free, オフライン郵便番号検索アプリの決定版！</small></li>
 </ul>
 
-<h3>WordPress Plugins</h3>
+### WordPress Plugins
 
 <ul>
 <li><a href="http://rakuishi.com/archives/6858/">WordPress OB Cache</a><br>
