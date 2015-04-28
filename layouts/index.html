@@ -1,7 +1,7 @@
 {{ partial "header.html" . }}
 
 	<main role="main">
-		{{ partial "author.html" . }}
+		<h2 class="list-title">Latest Posts</h2>
 		<ul class="list-entry">
 {{ range first 21 .Data.Pages }}
 			<li itemscope itemtype="http://schema.org/Blog">

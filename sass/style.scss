@@ -1,20 +1,19 @@
 @charset "utf-8";
 
-@import "normalize", "github.min", "noto_sans_cjk_jp";
+@import "normalize", "github.min", "roboto", "noto_sans_cjk_jp";
 
-$link-color     : #6687BC;
-$link-hl-color  : #3b5998;
+$link-color     : #4285F4;
 $white-color    : #FEFEFE;
-$text-color     : #3d3c40;
-$meta-color     : #A5B3BA;
+$text-color     : #3D3C40;
+$meta-color     : #999C9D;
 $border-color   : #E9ECED;
 $light-bg-color : #F7F7F7;
 
-html { font-size: 60%; }
+html { font-size: 60.5%; }
 @media (min-width: 480px) { html { font-size: 62.5%; } }
 
 body {
-  font-family: 'Noto Sans Japanese', 'Helvetica neue', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
+  font-family: 'Roboto', 'Noto Sans Japanese', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
   background: $white-color;
   color: $text-color;
   font-weight: 400;
@@ -25,9 +24,8 @@ body {
 h1, h2, h3 { font-weight: 400; line-height: 1.3; letter-spacing: -0.075rem; }
 h1 { font-size: 1.9rem; }
 h2 , h3 { font-size: 1.7rem; }
-p { font-size: 1.5rem; line-height: 1.75; }
-a { color: $link-color; text-decoration: none; }
-a:hover { color: $link-hl-color; text-decoration: none; }
+p { font-size: 1.5rem; line-height: 1.65; }
+a, a:hover { color: $link-color; text-decoration: none; }
 img { max-width: 100%; height: auto; }
 code { font-family: Menlo, Monaco, Consolas, monospace; }
 
@@ -74,11 +72,16 @@ header {
 
   .site-title {
     display: inline-block;
-    font-size: 2.1rem;
+    padding-left: 3.2rem + 0.5rem;
+    font-size: 1.9rem;
     letter-spacing: -0.1rem;
     text-transform: uppercase;
     line-height: 4.8rem;
     color: $text-color;
+    background-image: url('../images/logo.png');
+    background-repeat: no-repeat;
+    background-size: 3.2rem;
+    background-position: left center;
     &:hover { opacity: 0.5; }
   }
 
@@ -115,7 +118,15 @@ main {
   }
 }
 
+.list-title {
+  margin: 0;
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: $meta-color;
+}
+
 .list-entry {
+  margin-bottom: 4.8rem;
   padding: 0;
   list-style: none;
 
@@ -134,7 +145,7 @@ main {
 
   .entry-title {
     margin: 0;
-    font-size: 1.6rem;
+    font-size: 1.7rem;
   }
 
   .entry-meta {
@@ -154,17 +165,16 @@ article {
     font-weight: 500;
     line-height: 133%;
     border: 0;
-    a { text-decoration: none; }
   }
 
   .entry-meta {
     display: inline-block;
     font-size: 1.4rem;
     color: $meta-color;
-    a { color: $meta-color; text-decoration: none; }
-    a:hover { text-decoration: underline; }
+    a { color: $meta-color; }
   }
 
+  a:hover { text-decoration: underline; }
   h2 { margin: 4.8rem 0 2.4rem; font-weight: 500; padding-bottom: 1rem; border-bottom: 2px solid $border-color; }
   h3 { margin: 3.6rem 0 2.4rem; font-weight: 500; }
   p  { margin: 2.4rem 0; }
@@ -203,37 +213,27 @@ article {
 
 .share {
   margin: 4.8rem 0 2.4rem;
+  padding-top: 1.2rem;
+  border-top: 1px solid $border-color;
   text-align: right;
   .twitter, .facebook, .pocket {
     display: inline-block;
     padding: 0.5rem;
     border-radius: 2px;
-    background-color: $border-color;
     font-size: 1.2rem;
     color: $white-color;
-    opacity: 0.75;
-    img {
-      display: inline-block;
-      vertical-align: middle;
-    }
+    img { display: inline-block; vertical-align: middle; }
+    &:hover { opacity: 0.75; }
   }
-  .twitter:hover  { background-color: #55ACEE; }
-  .facebook:hover { background-color: #3B5998; }
-  .pocket:hover   { background-color: #F04054; }
+  .twitter  { background-color: #55ACEE; }
+  .facebook { background-color: #3B5998; }
+  .pocket   { background-color: #F04054; }
 }
 
 .view-more-posts {
   margin: 4.8rem 0;
   text-align: center;
   a { font-size: 1.9rem; font-weight: 700; }
+  a:hover { text-decoration: underline; }
   small { color: $meta-color; }
-}
-
-.author {
-  max-width: 64rem;
-  margin: 2.4rem auto;
-  font-size: 1.4rem;
-  line-height: 1.8rem;
-  img { float: left; width: 7.2rem; height: 7.2rem; margin-right: 1rem; border-radius: 4px; }
-  &:after { @extend .clearfix; }
 }
