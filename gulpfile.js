@@ -2,8 +2,8 @@ var gulp = require('gulp');
 var sass = require('gulp-ruby-sass');
 var plumber = require('gulp-plumber');
 var critical = require('critical');
+var browserSync = require('browser-sync');
 
-// $ gulp sass
 gulp.task('sass', function() {
     gulp.src('sass/**/*.scss')
       .pipe(plumber())
@@ -14,9 +14,21 @@ gulp.task('sass', function() {
       .pipe(gulp.dest('static/assets/css/'));
 });
 
-// $ gulp watch
-gulp.task('watch', function() {
+gulp.task('browser-sync', function() {
+  browserSync({
+    server: {
+      baseDir: "./public/"
+    }
+  });
+});
+
+gulp.task('bs-reload', function () {
+  browserSync.reload();
+});
+
+gulp.task('default', ['browser-sync'], function() {
   gulp.watch('sass/**/*.scss', ['sass']);
+  gulp.watch(['./*.html', './css/style.css'], ['bs-reload']);
 });
 
 gulp.task('critical', function () {
