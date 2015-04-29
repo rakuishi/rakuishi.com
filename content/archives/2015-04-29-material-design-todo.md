@@ -8,22 +8,24 @@ title = "Material Design と Realm の勉強がてら作った Todo アプリを
 
 [![](https://raw.githubusercontent.com/rakuishi/Todo-Android/master/todo.png)](https://play.google.com/store/apps/details?id=com.rakuishi.todo)
 
-[Material Design](http://www.google.com/design/spec/material-design/introduction.html) と、流行っている <ruby>[Realm](http://realm.io/)<rt>れるむ</rt></ruby> を勉強するために、適当な Todo アプリを作った。一応、お金を払って Google Play Developer に参加しているのでストアに公開もした。
+[Material Design](http://www.google.com/design/spec/material-design/introduction.html) と、流行っている <ruby>[Realm](http://realm.io/)<rt>れるむ</rt></ruby> を勉強するために、Todo アプリを作りました。一応、お金を払って Google Play Developer に参加しているのでストアに公開もしました。
 
 * Google Play: [Todo - Google Play の Android アプリ](https://play.google.com/store/apps/details?id=com.rakuishi.todo)
 * GitHub: [rakuishi/Todo-Android](https://github.com/rakuishi/Todo-Android)
 
 この記事では、この Todo アプリを実装した上での気付き点を紹介します。
 
-## Material Design
+## [Material Design](http://www.google.com/design/spec/material-design/introduction.html)
 
-Android マテリアルデザインガイドの何が良いかというと、色・サイズ・タイポグラフィが厳密に定義してあること。iOS の[フラットデザイン](https://developer.apple.com/library/ios/documentation/UserExperience/Conceptual/MobileHIG/)は、情報の置き方を詳しく定義しているが、マテリアルデザインガイドまで厳密ではないように思う。後、すりガラスを取り入れれば、フラットデザインっぽいよね、で理解が終わっている気がする。
+Android マテリアルデザインガイドの何が良いかというと、色・サイズ・タイポグラフィが厳密に定義してあること。iOS の[フラットデザイン](https://developer.apple.com/library/ios/documentation/UserExperience/Conceptual/MobileHIG/)は、情報・コンポーネントの置き方を詳しく定義しているのですが、マテリアルデザインガイドまで厳密ではないように思う。乱暴だけれど、磨りガラスを取り入れれば、なんとなくフラットデザインっぽいよね、後は自由にやってねという感じだ。
 
-実際、マテリアルデザインに準じたアプリは見た目がほとんど同じだが、フラットデザインに準じたアプリは見た目が結構異なっている。それ故に、マテリアルデザインのアプリは真似しやすく、フラットデザインのアプリは真似してもこれじゃない感が結構でる。どちらのアプリも個人で作ったことがあるのですが、マテリアルのほうがびしっと決まる。恰好良い。
+実際、マテリアルデザインに準じたアプリは見た目がほとんど同じだけれど、フラットデザインに準じたアプリは見た目が結構異なっている。それ故に、マテリアルデザインのアプリは真似しやすく、フラットデザインのアプリは真似してもこれじゃない感が結構でる。どちらのアプリも個人で作ったことがあるのですが、マテリアルのほうがびしっと決まる。恰好良い。フラットデザインは、ぺらぺら感が出てダサくなる。難しい。
 
 ### 色・サイズ・タイポグラフィ
 
-今回のアプリでは、色・サイズ・タイポグラフィについては、values/ 内に記述し、レイアウトファイルからはそれらを使いまわすようにした。レイアウトファイル内で記述する属性は、レイアウト情報に留め、テーマ（スタイル）は styles.xml に逃すことを意識する。
+今回のアプリでは、色・サイズ・タイポグラフィについては、values/ 内に記述し、レイアウトファイルからはそれらを使いまわすようにした。
+
+レイアウトファイル内で記述する属性は、レイアウト情報（`layout_*` とか）に留め、テーマ（スタイル）は styles.xml に逃すことを意識する。
 
 #### colors.xml
 
@@ -66,7 +68,7 @@ Android マテリアルデザインガイドの何が良いかというと、色
 
 ### ツールバーとナビゲーションドロワー
 
-Android 4.4 → 5.0 になり、印象的だったのが、Navigation Drawer が、Toolbar（Actionbar）上に現れること。その影響なのか Toolbar は、レイアウトファイルに記述すれば使えるようになる。これで重ねることができる。
+Android 4.4 → 5.0 になり、印象的だったのが、Navigation Drawer が、Toolbar（Actionbar）上に現れること。その影響なのか Toolbar は、レイアウトファイルに記述すれば使えるようになる。これでこの上に、ドロワーを重ねることができる。
 
     <android.support.v7.widget.Toolbar
         xmlns:android="http://schemas.android.com/apk/res/android"
@@ -76,15 +78,15 @@ Android 4.4 → 5.0 になり、印象的だったのが、Navigation Drawer が
         android:background="?attr/colorPrimary"
         android:minHeight="@dimen/abc_action_bar_default_height_material" />
 
-これと `DrawerLayout` を使えば、ある程度までは上手く実装できるのですが、これが結構面倒くさい。自分の場合は、何故かドロワーをエッジスワイプするアクションが途中で止まる（？）不具合が発生し、何日か不貞腐れていたのですが、以下のテンプレートを付けば一瞬だった。神。
+これと DrawerLayout を使えば、ある程度までは上手く実装できるのですが、これが結構面倒くさい。自分の場合は、何故かドロワーをエッジスワイプするアクションが途中で止まる（？）不具合が発生し、何日か不貞腐れていたのですが、以下のテンプレートを付けば一瞬だった。神。
 
 * [kanytu/Android-studio-material-template](https://github.com/kanytu/Android-studio-material-template)
 
-## Realm
+## [Realm](http://realm.io/jp/docs/java/)
 
 > Realmは、SQLiteやCoreDataから置き換わるモバイルデータベースです。
 
-という紹介の通り、iOS（Objective-C）や Android（Java）から、簡単に使える。前に、SQLite を iOS/Android から生で触ったことがあるのですが、データベースの置き場所を作ったり、`CREATE TABLE` から始めたりと面倒な印象があるし、CoreData に至ってはよく分からん。
+という紹介の通り、iOS（Objective-C）や Android（Java）から、簡単に使える。前に、SQLite を iOS/Android から生で触ったことがあるのですが、データベースの置き場所を作ったり、`CREATE TABLE` から始めたりと面倒な印象があるし、CoreData に至っては難しくてよく分からん（一応使ってるけれど）。
 
 ### モデル
 
