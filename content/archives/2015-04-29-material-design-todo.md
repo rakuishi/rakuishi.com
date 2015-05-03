@@ -25,7 +25,7 @@ Android マテリアルデザインガイドの何が良いかというと、色
 
 今回のアプリでは、色・サイズ・タイポグラフィについては、values/ 内に記述し、レイアウトファイルからはそれらを使いまわすようにした。
 
-レイアウトファイル内で記述する属性は、レイアウト情報（`layout_*` とか）に留め、テーマ（スタイル）は styles.xml に逃すことを意識する。
+レイアウトファイル内で記述する属性は、レイアウト情報 `layout_*` に留め、テーマ（スタイル）は styles.xml に逃すことを意識する。
 
 #### colors.xml
 
@@ -78,7 +78,7 @@ Android 4.4 → 5.0 になり、印象的だったのが、Navigation Drawer が
         android:background="?attr/colorPrimary"
         android:minHeight="@dimen/abc_action_bar_default_height_material" />
 
-これと DrawerLayout を使えば、ある程度までは上手く実装できるのですが、これが結構面倒くさい。自分の場合は、何故かドロワーをエッジスワイプするアクションが途中で止まる（？）不具合が発生し、何日か不貞腐れていたのですが、以下のテンプレートを付けば一瞬だった。神。
+これと DrawerLayout を使えば、ある程度までは上手く実装できるのですが、これが結構面倒くさい。自分の場合は、何故かドロワーをエッジスワイプするアクションが途中で止まる（？）不具合が発生し、何日か不貞腐れていたのですが、以下のテンプレートを使えば一瞬だった。神。
 
 * [kanytu/Android-studio-material-template](https://github.com/kanytu/Android-studio-material-template)
 
