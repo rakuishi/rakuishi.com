@@ -49,7 +49,7 @@ slug = "about"
 
 <ul>
 <li><a href="http://rakuishi.com/archives/6858/">WordPress OB Cache</a><br>
-<small>2015/12/14, WordPress の出力バッファをキャッシュする</small></li>
+<small>2014/12/14, WordPress の出力バッファをキャッシュする</small></li>
 <li><a href="http://rakuishi.com/archives/6736">One Step Before Publishing</a><br>
 <small>2014/08/12, 記事公開前に確認アラートを表示する</small></li>
 <li><a href="http://rakuishi.com/archives/6018/">App Store Insert</a><br>
