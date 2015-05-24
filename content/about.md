@@ -39,10 +39,10 @@ slug = "about"
 ### Android
 
 <ul>
-<li><a href="https://play.google.com/store/apps/details?id=com.rakuishi.postalcode" target="_blank">郵便番号検索くん for Android</a><br>
-<small>Last Update 2014/01/15, v1.0.1, Free, オフライン郵便番号検索アプリの決定版！</small></li>
 <li><a href="https://play.google.com/store/apps/details?id=com.rakuishi.todo" target="_blank">Todo</a><br>
 <small>Last Update 2015/04/29, v1.0.0, Free, Material Design / Realm</small></li>
+<li><a href="https://play.google.com/store/apps/details?id=com.rakuishi.postalcode" target="_blank">郵便番号検索くん for Android</a><br>
+<small>Last Update 2014/01/15, v1.0.1, Free, オフライン郵便番号検索アプリの決定版！</small></li>
 </ul>
 
 ### WordPress Plugins
