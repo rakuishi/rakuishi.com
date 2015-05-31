@@ -54,8 +54,6 @@ Observable を自作する時に使える。例外が発生するような処理
         };
     }
 
-他には、`Observable<String>` のままだけれど、文字列の末尾にピリオドを追加する処理も `map` で行える。
-
 ## 値の選別 - [filter](http://reactivex.io/documentation/operators/filter.html)
 
 `filter` は、流れてくるデータの状態をチェックし、true/false によってフィルタリングを行える。よく例として、配列に突っ込まれた値を間引いたりするのを見るが、以下のように値が想定とは違う場合に例外を投げるのもなかなか使い勝手が良いと思った。
