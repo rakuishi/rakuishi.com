@@ -5,7 +5,6 @@ DIR=$(cd $(dirname ${0})/.. && pwd)
 cd ${DIR}
 hugo
 gulp sass
-gulp critical
 find ${DIR}/public/ -name ".DS_Store" | xargs rm
 rsync -auv --delete \
       --chmod=Du=rwx,Dg=rx,Do=rx,Fu=rw,Fg=r,Fo=r \
