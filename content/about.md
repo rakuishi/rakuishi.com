@@ -11,7 +11,7 @@ slug = "about"
 
 このサイト rakuishi.com は、僕個人によるブログです。会社とは関係ありません。2011 年 8 月から記事を書いています。当初、WordPress で運営していたブログでしたが、2015 年 1 月からは、静的サイトジェネレータ [Hugo](http://gohugo.io/) で運営しています。[ソースコード](https://github.com/rakuishi/rakuishi.com)を GitHub で公開しています。記事の更新を追いかけるには、<a href="http://cloud.feedly.com/#subscription%2Ffeed%2Fhttp%3A%2F%2Frakuishi.com%2Ffeed%2F" target="blank">Feedly</a> もしくは、<a href="http://rakuishi.com/index.xml" target="_blank">RSS</a> から。
 
-[Twitter](https://twitter.com/rakuishi07) で、呟いています。Facebook は、面識のある人だけと友達になっています。2015 年は、[GitHub](https://github.com/rakuishi) で、積極的に活動していくのが目標です。
+[Twitter](https://twitter.com/rakuishi07) に呟いています。Facebook は、面識のある人だけと友達になっています。2015 年は、[GitHub](https://github.com/rakuishi) で積極的に活動していくのが目標です。[Tumblr](http://zbrush.rakuishi.com/) に、趣味で始めた ZBrush の作品を載せることにしました。
 
 連絡は、Twitter もしくは、rakuishi@gmail.com に頂けると返信します。
 
@@ -32,15 +32,15 @@ slug = "about"
 <li><del>HTML Viewer</del><br><small>開発終了</small></li>
 <li><del>ImageKit</del><br><small>開発終了</small></li>
 <li><del>オフ会リスト</del><br><small>開発終了</small></li>
-<li><del>Qukcka - 検索を快適に</del><br><small>開発終了</small></li>
+<li><del>Quicka - 検索を快適に</del><br><small>開発終了</small></li>
 <li><del>StampTime</del><br><small>開発終了</small></li>
 </ul>
 
 ### Android
 
 <ul>
-<li><a href="https://play.google.com/store/apps/details?id=com.rakuishi.todo" target="_blank">Todo</a><br>
-<small>Last Update 2015/04/29, v1.0.0, Free, Material Design / Realm</small></li>
+<li><a href="https://play.google.com/store/apps/details?id=com.rakuishi.todo" target="_blank">Todo-Android</a><br>
+<small>Last Update 2015/04/29, v1.0.0, Free, <a href="https://github.com/rakuishi/Todo-Android">GitHub</a>, Material Design / Realm</small></li>
 <li><a href="https://play.google.com/store/apps/details?id=com.rakuishi.postalcode" target="_blank">郵便番号検索くん for Android</a><br>
 <small>Last Update 2014/01/15, v1.0.1, Free, オフライン郵便番号検索アプリの決定版！</small></li>
 </ul>
