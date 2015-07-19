@@ -2,7 +2,7 @@
 
 @import "normalize", "github.min", "noto_sans_cjk_jp";
 
-$link-color     : #0084b4;
+$link-color     : #4078c0;
 $white-color    : #FAFAFA;
 $text-color     : #3D3C40;
 $meta-color     : #ABB8C2;
@@ -120,7 +120,7 @@ main {
 
 .list-title {
   margin: 0;
-  font-size: 1.6rem;
+  font-size: 1.7rem;
   font-weight: 400;
   text-transform: uppercase;
   color: $meta-color;
@@ -146,7 +146,7 @@ main {
 
   .entry-title {
     margin: 0;
-    font-size: 1.6rem;
+    font-size: 1.7rem;
   }
 
   .entry-meta {
@@ -168,7 +168,7 @@ article {
     border: 0;
     a {
       color: $text-color;
-      &:hover { color: $meta-color; text-decoration: none; }
+      &:hover { opacity: 0.5; text-decoration: none; }
     }
   }
 
