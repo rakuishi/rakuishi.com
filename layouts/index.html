@@ -1,27 +1,19 @@
 {{ partial "header.html" . }}
 
   <main role="main">
-{{ range first 3 .Data.Pages }}
-    <article itemscope itemtype="http://schema.org/BlogPosting">
-      <h2 class="entry-title" itemprop="headline"><a href="{{ .RelPermalink }}">{{ .Title }}{{ if .Draft }} #Draft{{ end }}</a></h2>
-      <span class="entry-meta"><time itemprop="datePublished" datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 02, 2006" }}</time>{{ if .Params.categories }} #{{ range .Params.categories }}<a href="/categories/{{ . | urlize }}">{{ . }}</a>{{ end }}{{ end }}</span>
-      <section itemprop="text">
-        {{ .Content }}
-      </section>
-      <div class="share">
-        <a href="http://twitter.com/share?url={{ .Permalink }}&text={{ .Title }}" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,height=300,width=600');return false;" class="twitter">
-          <img src="/assets/fonts/twitter.svg" width="18" height="18">
+
+    <h1 class="list-title">Latest Posts</h1>
+    <ul class="list-entry">
+{{ range first 24 .Data.Pages }}
+      <li itemscope itemtype="http://schema.org/Blog">
+        <a href="{{ .RelPermalink }}">
+          <h2 class="entry-title" itemprop="headline">{{ .Title }}{{ if .Draft }} #Draft{{ end }}</h2>
+          <span class="entry-meta"><time itemprop="datePublished" datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 02, 2006" }}</time></span>
         </a>
-        <a href="http://www.facebook.com/sharer.php?u={{ .Permalink }}" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,height=300,width=600');return false;" class="facebook">
-          <img src="/assets/fonts/facebook.svg" width="18" height="18">
-        </a>
-        <a href="http://getpocket.com/edit?url={{ .Permalink }}&title={{ .Title }}" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,scrollbars=yes,height=300,width=600');return false;" class="pocket">
-          <img src="/assets/fonts/pocket.svg" width="18" height="18">
-        </a>
-      </div>
-    </article>
-    <hr class="circle">
+      </li>
 {{ end }}
+    </ul>
+
     <div class="view-more-posts">
       <div class="more"><a href="/archives/">View more posts</a></div>
       <small>{{ len .Data.Pages}} posts since '11</small>
