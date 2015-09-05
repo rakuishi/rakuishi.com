@@ -5,7 +5,7 @@
 $link-color     : #4078c0;
 $white-color    : #FAFAFA;
 $text-color     : #3D3C40;
-$meta-color     : #ABB8C2;
+$meta-color     : #7f929c;
 $border-color   : #E9ECED;
 $light-bg-color : #EEEEEE;
 
@@ -81,7 +81,7 @@ header {
     background-repeat: no-repeat;
     background-size: 3.2rem;
     background-position: left center;
-    &:hover { opacity: 0.65; }
+    &:hover { text-decoration: underline; }
   }
 
   nav {
@@ -140,11 +140,15 @@ main {
     display: block;
     padding: 1.2rem 0;
     color: $text-color;
-    &:hover { opacity: 0.65; }
+    &:hover {
+      .entry-title {
+        text-decoration: underline;
+      }
+    }
   }
 
   .entry-title {
-    margin: 0 0 0.2rem;
+    margin: 0 0 0.4rem;
     font-size: 1.6rem;
   }
 
@@ -159,16 +163,12 @@ article {
   margin-bottom: 2.4rem;
 
   .entry-title {
-    margin: 0 0 0.2rem;
+    margin: 0 0 0.4rem;
     padding: 0;
     font-size: 1.8rem;
     font-weight: 500;
     letter-spacing: -0.1rem;
     border: 0;
-    a {
-      color: $text-color;
-      &:hover { opacity: 0.65; text-decoration: none; }
-    }
   }
 
   .entry-meta {
@@ -189,7 +189,7 @@ article {
   ul, ol { margin: 1.2rem 0; padding-left: 2.4rem; }
   ul { list-style: desc; }
   ol { list-style: decimal; }
-  li { font-size: 1.5rem; line-height: 1.6; margin-bottom: .5rem; }
+  li { font-size: 1.5rem; line-height: 1.6; margin-bottom: 0.4rem; }
 
   hr { height: 2px; margin: 2.4rem 0; border: 0; background-color: $border-color; }
   img { max-height: 480px; width: auto; }
@@ -226,10 +226,9 @@ article {
     background-color: $border-color;
     color: $white-color;
     img {
-      display: inline-block; vertical-align: middle; width: 1.6rem; height: 1.6rem;
+      display: inline-block; vertical-align: middle; width: 1.8rem; height: 1.8rem;
       padding: 0.4rem;
     }
-    &:hover { opacity: 0.75; }
   }
   .twitter:hover  { background-color: #55ACEE; }
   .facebook:hover { background-color: #3B5998; }
