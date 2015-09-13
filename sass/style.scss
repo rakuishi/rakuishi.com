@@ -8,6 +8,7 @@ $text-color     : #3D3C40;
 $meta-color     : #7f929c;
 $border-color   : #E9ECED;
 $light-bg-color : #EEEEEE;
+$max-width: 70rem;
 
 html { font-size: 62.5%; }
 
@@ -20,7 +21,7 @@ body {
   letter-spacing: -0.025rem;
 }
 
-h1, h2, h3 { font-weight: 400; line-height: 1.25; }
+h1, h2, h3 { font-weight: 400; line-height: 1.5; }
 h1 { font-size: 1.8rem; }
 h2 , h3 { font-size: 1.6rem; }
 p { font-size: 1.4rem; line-height: 1.75; }
@@ -53,7 +54,7 @@ header {
   border-bottom: 1px solid $border-color;
 
   .row {
-    max-width: 68rem;
+    max-width: $max-width;
     width: 92%;
     margin: 0 auto;
     &:after { @extend .clearfix; }
@@ -75,13 +76,15 @@ header {
     font-size: 1.8rem;
     letter-spacing: -0.1rem;
     text-transform: uppercase;
-    line-height: 4.8rem;
+    line-height: 4.6rem;
     color: $text-color;
     background-image: url('../images/logo.png');
     background-repeat: no-repeat;
     background-size: 3.2rem;
     background-position: left center;
-    &:hover { text-decoration: underline; }
+    &:hover {
+      border-bottom: 0.2rem solid $meta-color;
+    }
   }
 
   nav {
@@ -107,7 +110,7 @@ header {
 }
 
 main {
-  max-width: 68rem;
+  max-width: $max-width;
   width: 92%;
   margin: 4.8rem auto;
   h1 {
@@ -189,15 +192,15 @@ article {
   ul, ol { margin: 1.2rem 0; padding-left: 2.4rem; }
   ul { list-style: desc; }
   ol { list-style: decimal; }
-  li { font-size: 1.5rem; line-height: 1.6; margin-bottom: 0.4rem; }
+  li { font-size: 1.4rem; line-height: 1.6; margin-bottom: 0.4rem; }
 
   hr { height: 2px; margin: 2.4rem 0; border: 0; background-color: $border-color; }
-  img { max-height: 480px; width: auto; }
+  img { width: auto; max-height: $max-width * 3/4; }
   p img { border-radius: 4px; }
   iframe { margin: 2.4rem 0; padding: 0; }
   blockquote { margin: 2.4rem 0 2.4rem 1.2rem; padding-left: 1.2rem; border-left: 4px solid $border-color; }
 
-  .align-center, .aligncenter { display: block; margin: 0 auto; }
+  .align-center { display: block; margin: 0 auto; }
   .application-icon { margin-right: 1rem; width: 8rem; height: 8rem; }
 
   .amazlet-box {
@@ -209,7 +212,7 @@ article {
 
   .application-box {
     margin: 2.4rem 0;
-    font-size: 1.4rem; 
+    font-size: 1.4rem;
     line-height: 1.6;
     img { width: 8rem; height: 8rem; margin-right: 1rem; float: left; }
   }
@@ -218,7 +221,7 @@ article {
 .share {
   margin: 4.8rem 0 2.4rem;
   padding-top: 1.2rem;
-  border-top: 1px solid $border-color;
+  border-top: 2px solid $border-color;
   text-align: right;
   .twitter, .facebook, .pocket {
     display: inline-block;
