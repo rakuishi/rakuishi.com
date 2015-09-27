@@ -1,19 +1,19 @@
 @charset "utf-8";
 
-@import "normalize", "github.min", "roboto", "noto_sans_cjk_jp";
+@import "normalize", "github.min", "noto_sans_cjk_jp";
 
 $link-color     : #4078c0;
-$white-color    : #FAFAFA;
+$white-color    : #FCFDFC;
 $text-color     : #3D3C40;
 $meta-color     : #7f929c;
 $border-color   : #E9ECED;
 $light-bg-color : #EEEEEE;
-$max-width: 70rem;
+$max-width: 640px;
 
 html { font-size: 62.5%; }
 
 body {
-  font-family: 'Roboto', 'Noto Sans Japanese', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
+  font-family: 'Noto Sans Japanese', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
   background: $white-color;
   color: $text-color;
   font-weight: 400;
@@ -187,7 +187,7 @@ article {
   p  { margin: 2.4rem 0; }
 
   code { margin: 0 .2rem; padding: .1rem .5rem; font-size: 90%; background: $light-bg-color !important; border-radius: 4px; }
-  pre > code { display: block; padding: 1rem 1.5rem !important; white-space: pre-wrap; word-wrap: break-word; }
+  pre > code { display: block; padding: 1rem 1.5rem !important; line-height: 1.5; white-space: pre-wrap; word-wrap: break-word; }
 
   ul, ol { margin: 1.2rem 0; padding-left: 2.4rem; }
   ul { list-style: desc; }
@@ -198,7 +198,7 @@ article {
   img { width: auto; max-height: $max-width * 3/4; }
   p img { border-radius: 4px; }
   iframe { margin: 2.4rem 0; padding: 0; }
-  blockquote { margin: 2.4rem 0 2.4rem 1.2rem; padding-left: 1.2rem; border-left: 4px solid $border-color; }
+  blockquote { margin: 2.4rem 0; font-style: italic; }
 
   .align-center { display: block; margin: 0 auto; }
   .application-icon { margin-right: 1rem; width: 8rem; height: 8rem; }

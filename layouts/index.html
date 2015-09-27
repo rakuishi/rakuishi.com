@@ -4,7 +4,7 @@
 
     <h1 class="list-title">Latest Posts</h1>
     <ul class="list-entry">
-{{ range first 24 .Data.Pages }}
+{{ range first 12 .Data.Pages }}
       <li itemscope itemtype="http://schema.org/Blog">
         <a href="{{ .RelPermalink }}">
           <h2 class="entry-title" itemprop="headline">{{ .Title }}{{ if .Draft }} #Draft{{ end }}</h2>
