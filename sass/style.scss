@@ -5,7 +5,7 @@
 $link-color     : #4078c0;
 $white-color    : #FCFDFC;
 $text-color     : #3D3C40;
-$meta-color     : #7f929c;
+$meta-color     : #757575;
 $border-color   : #E9ECED;
 $light-bg-color : #EEEEEE;
 $max-width: 640px;
@@ -49,14 +49,16 @@ code { font-family: Menlo, Monaco, Consolas, monospace; }
 }
 
 header {
-  margin: 0 auto 4.8rem;
+  margin: 0 auto 3.2rem;
   height: 4.8rem;
   border-bottom: 1px solid $border-color;
 
   .row {
     max-width: $max-width;
-    width: 92%;
+    width: 100%;
     margin: 0 auto;
+    padding: 0 1.6rem;
+    box-sizing: border-box;
     &:after { @extend .clearfix; }
   }
 
@@ -111,8 +113,11 @@ header {
 
 main {
   max-width: $max-width;
-  width: 92%;
-  margin: 4.8rem auto;
+  width: 100%;
+  margin: 3.2rem auto;
+  padding: 0 1.6rem;
+  box-sizing: border-box;
+
   h1 {
     margin-bottom: 4.8rem;
     font-size: 1.8rem;
@@ -121,7 +126,7 @@ main {
 }
 
 .list-title {
-  margin: 0;
+  margin: 3.2rem 0;
   font-size: 1.6rem;
   font-weight: 400;
   text-transform: uppercase;
@@ -129,19 +134,22 @@ main {
 }
 
 .list-entry {
-  margin-bottom: 4.8rem;
+  margin-bottom: 3.2rem;
   padding: 0;
   list-style: none;
 
   li {
     margin-bottom: 0;
+    margin-left:  5.6rem;
     border-bottom: 2px solid $border-color;
     &:first-child { border-top: 2px solid $border-color; }
   }
 
   a {
+    position: relative;
     display: block;
     padding: 1.2rem 0;
+    min-height: 4.0rem;
     color: $text-color;
     &:hover {
       .entry-title {
@@ -149,6 +157,34 @@ main {
       }
     }
   }
+
+  .bubble:after {
+    position: absolute;
+    top: 1.2rem;
+    left: -5.6rem;
+    width: 4.0rem;
+    height: 4.0rem;
+    color: white;
+    content: '*';
+    font-size: 1.8rem;
+    line-height: 4.0rem;
+    text-align: center;
+    border-radius: 100%;
+    background-color: #607D8B;
+  }
+
+  .bubble-ios:after { content: 'i'; background-color: #007AFF; }
+  .bubble-mac:after { content: 'M'; background-color: #212121; }
+  .bubble-os-x:after { content: 'X'; background-color: #007AFF; }
+  .bubble-objective-c:after { content: 'O'; background-color: #007AFF; }
+  .bubble-android:after { content: 'A'; background-color: #6AB344; }
+  .bubble-wordpress:after { content: 'W'; background-color: #21759B; }
+  .bubble-hugo:after { content: 'H'; background-color: #FF4088; }
+  .bubble-development:after { content: 'D'; background-color: #FF9800; }
+  .bubble-evernote:after { content: 'E'; background-color: #2DBE60; }
+  .bubble-web-service:after { content: 'S'; background-color: #3F51B5; }
+  .bubble-css:after { content: 'C'; background-color: #00BCD4; }
+  .bubble-javascript:after { content: 'J'; background-color: #FFC107; }
 
   .entry-title {
     margin: 0 0 0.4rem;
@@ -159,6 +195,12 @@ main {
     margin: 0;
     font-size: 1.4rem;
     color: $meta-color;
+  }
+
+  .entry-excerpt {
+    margin: 0.4rem 0 0; line-height: 1.5;
+    color: $meta-color;
+    font-size: 1.4rem;
   }
 }
 
@@ -219,7 +261,7 @@ article {
 }
 
 .share {
-  margin: 4.8rem 0 2.4rem;
+  margin: 3.2rem 0 2.4rem;
   padding-top: 1.2rem;
   border-top: 2px solid $border-color;
   text-align: right;
@@ -238,17 +280,8 @@ article {
   .pocket:hover   { background-color: #F04054; }
 }
 
-.circle {
-  display: block;
-  width: 1.2rem; height: 1.2rem;
-  margin: 4.8rem auto;
-  background-color: $border-color;
-  border: 0;
-  border-radius: 50%;
-}
-
 .view-more-posts {
-  margin: 4.8rem 0;
+  margin: 3.2rem 0;
   text-align: center;
   a { font-size: 1.8rem; font-weight: 700; }
   a:hover { text-decoration: underline; }

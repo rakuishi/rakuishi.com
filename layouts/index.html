@@ -4,13 +4,8 @@
 
     <h1 class="list-title">Latest Posts</h1>
     <ul class="list-entry">
-{{ range first 12 .Data.Pages }}
-      <li itemscope itemtype="http://schema.org/Blog">
-        <a href="{{ .RelPermalink }}">
-          <h2 class="entry-title" itemprop="headline">{{ .Title }}{{ if .Draft }} #Draft{{ end }}</h2>
-          <span class="entry-meta"><time itemprop="datePublished" datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 02, 2006" }}</time></span>
-        </a>
-      </li>
+{{ range first 24 .Data.Pages }}
+{{ .Render "summary"}}
 {{ end }}
     </ul>
 
