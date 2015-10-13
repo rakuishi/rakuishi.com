@@ -17,16 +17,7 @@
 
   <header role="banner">
     <div class="row">
-      <div class="column">
-        {{ if eq $isHomePage true }}<h1>{{ end }}<a href="/" class="site-title">{{ .Site.Title }}</a>{{ if eq $isHomePage true }}</h1>{{ end }}
-      </div>
-      <div class="column">
-        <nav role="navigation">
-          <ul>
-            <li><a href="/about/">About</a></li>
-            <li><a href="/archives/">Posts</a></li>
-          </ul>
-        </nav>
-      </div>
+      {{ if eq $isHomePage true }}<h1>{{ end }}<a href="/" class="site-title">{{ .Site.Title }}</a>{{ if eq $isHomePage true }}</h1>{{ end }}
+      <a href="/about/" class="site-about">About</a>
     </div>
   </header>
