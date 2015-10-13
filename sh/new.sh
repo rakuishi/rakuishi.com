@@ -1,5 +1,4 @@
 #!/bin/sh
-# sh/new.sh slug
 
 DIR=$(cd $(dirname ${0})/.. && pwd)
 SLUG=${1}
