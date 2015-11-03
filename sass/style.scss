@@ -1,19 +1,19 @@
 @charset "utf-8";
 
-@import "normalize", "github.min", "noto_sans_cjk_jp";
+@import "normalize", "github.min", "roboto";
 
 $link-color     : #4078c0;
 $white-color    : #FCFDFC;
 $text-color     : #3D3C40;
 $meta-color     : #757575;
 $border-color   : #E9ECED;
-$light-bg-color : #EEEEEE;
-$max-width      : 640px;
+$light-bg-color : #F5F5F5;
+$max-width      : 728px;
 
 html { font-size: 62.5%; }
 
 body {
-  font-family: 'Noto Sans Japanese', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
+  font-family: 'Roboto', Hiragino Sans, 'ヒラギノ角ゴシック', Hiragino Kaku Gothic ProN, 'ヒラギノ角ゴ ProN W3', 'Noto Sans Japanese', Meiryo, sans-serif;
   font-weight: 400;
   font-size: 1.4em;
   color: $text-color;
@@ -69,16 +69,19 @@ header {
     &:hover { opacity: 0.65; }
   }
 
-  .site-about {
+  .site-content {
     position: absolute;
     right: 1.6rem;
     display: inline-block;
-    padding: 0 0.5rem;
-    color: $meta-color;
-    font-size: 1.4rem;
-    text-transform: uppercase;
-    line-height: 5.6rem;
-    &:hover { color: $meta-color; opacity: 0.65; }
+    a {
+      display: inline-block;
+      padding-left: 0.8rem;
+      font-size: 1.4rem;
+      text-transform: uppercase;
+      line-height: 5.6rem;
+      color: $meta-color;
+      &:hover { color: $meta-color; opacity: 0.65; }
+    }
   }
 }
 
@@ -106,10 +109,10 @@ header {
     min-height: 4.0rem;
     padding: 1.2rem 0;
     color: $text-color;
-    &:hover .entry-title { text-decoration: underline; }
+    &:hover { opacity: 0.65; }
   }
 
-  .bubble:after { position: absolute; top: 1.2rem; left: -5.6rem; }
+  .bubble { position: absolute; top: 1.2rem; left: -5.6rem; }
   .entry-title { margin: 0 0 0.4rem; font-size: 1.6rem; }
   .entry-meta { color: $meta-color; }
   .entry-excerpt { margin: 0.4rem 0 0; color: $meta-color; line-height: 1.5; }
@@ -121,7 +124,7 @@ article {
   .entry-header {
     position: relative;
     margin-left:  5.6rem;
-    .bubble:after { position: absolute; top: 0.4rem; left: -5.6rem; }
+    .bubble { position: absolute; top: 0.4rem; left: -5.6rem; }
     .entry-title { margin: 0 0 0.4rem; font-size: 1.6rem; font-weight: 500; }
     .entry-meta { color: $meta-color; a { color: $meta-color; } }
     .entry-excerpt { margin: 0.4rem 0 0; color: $meta-color; line-height: 1.5; }
@@ -198,21 +201,13 @@ article {
 .view-more-posts {
   margin: 3.2rem 0;
   text-align: center;
-  a { font-size: 1.8rem; font-weight: 500; }
+  a { font-size: 1.8rem; font-weight: 700; }
   a:hover { text-decoration: underline; }
   small { color: $meta-color; }
 }
 
-.bubble:after { width: 4.0rem; height: 4.0rem; content: '*'; font-size: 1.8rem; text-align: center; line-height: 4.0rem; border-radius: 100%; color: white; background-color: #607D8B; }
-.bubble-ios:after { content: 'i'; background-color: #007AFF; }
-.bubble-mac:after { content: 'M'; background-color: #212121; }
-.bubble-os-x:after { content: 'X'; background-color: #007AFF; }
-.bubble-objective-c:after { content: 'O'; background-color: #007AFF; }
-.bubble-android:after { content: 'A'; background-color: #6AB344; }
-.bubble-wordpress:after { content: 'W'; background-color: #21759B; }
-.bubble-hugo:after { content: 'H'; background-color: #FF4088; }
-.bubble-development:after { content: 'D'; background-color: #FF9800; }
-.bubble-evernote:after { content: 'E'; background-color: #2DBE60; }
-.bubble-web-service:after { content: 'W'; background-color: #3F51B5; }
-.bubble-css:after { content: 'C'; background-color: #00BCD4; }
-.bubble-javascript:after { content: 'J'; background-color: #FFC107; }
+.bubble { width: 4.0rem; height: 4.0rem; border-radius: 100%; background-color: $meta-color; background-size: 24px; background-repeat: no-repeat; background-position: center; background-image: url('../images/ic_format_quote_white_24dp_2x.png'); }
+.bubble-android { background-image: url('../images/ic_phone_android_white_24dp_2x.png'); }
+.bubble-wordpress, .bubble-hugo, .bubble-web-service, .bubble-php, .bubble-javascript, .bubble-css, .bubble-polymer { background-image: url('../images/ic_web_white_24dp_2x.png');  }
+.bubble-mac, .bubble-os-x { background-image: url('../images/ic_laptop_mac_white_24dp_2x.png'); }
+.bubble-ios { background-image: url('../images/ic_phone_iphone_white_24dp_2x.png'); }

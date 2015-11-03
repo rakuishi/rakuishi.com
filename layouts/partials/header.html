@@ -18,6 +18,9 @@
   <header role="banner">
     <div class="row">
       {{ if eq $isHomePage true }}<h1>{{ end }}<a href="/" class="site-title">{{ .Site.Title }}</a>{{ if eq $isHomePage true }}</h1>{{ end }}
-      <a href="/about/" class="site-about">About</a>
+      <div class="site-content">
+        <a href="/about/">About</a>
+        <a href="/archives/">Post</a>
+      </div>
     </div>
   </header>
