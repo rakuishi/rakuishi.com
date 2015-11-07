@@ -2,11 +2,8 @@
 
   <main role="main">
     <article itemscope itemtype="http://schema.org/BlogPosting">
-      <div class="entry-header">
-        <div class="bubble bubble-{{ if .Params.categories }}{{ range .Params.categories }}{{ . | urlize }}{{ end }}{{ end }}"></div>
-        <h1 class="entry-title" itemprop="headline">{{ .Title }}{{ if .Draft }} #Draft{{ end }}</h1>
-        <span class="entry-meta"><time itemprop="datePublished" datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 02, 2006" }}</time>{{ if .Params.categories }} {{ range .Params.categories }}<a href="/categories/{{ . | urlize }}">#{{ . }}</a>{{ end }}{{ end }}</span>{{ with .Params.excerpt }}<p class="entry-excerpt">{{ . }}</p>{{ end }}
-      </div>
+      <h1 class="entry-title" itemprop="headline">{{ .Title }}{{ if .Draft }} #Draft{{ end }}</h1>
+      <span class="entry-meta"><time itemprop="datePublished" datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 02, 2006" }}</time>{{ if .Params.categories }} {{ range .Params.categories }}#{{ . }}{{ end }}{{ end }}</span>
       <section itemprop="text">
         {{ .Content }}
       </section>
@@ -48,6 +45,7 @@
     })();
     </script>
     <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <div class="asterisk"></div>
   </main>
 
 {{ partial "footer.html" . }}

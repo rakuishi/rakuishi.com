@@ -1,11 +1,11 @@
 @charset "utf-8";
 
-@import "normalize", "github.min", "roboto";
+@import "normalize", "github.min", "ubuntu";
 
-$link-color     : #4078c0;
+$link-color     : #2173d9;
 $white-color    : #FCFDFC;
 $text-color     : #3D3C40;
-$meta-color     : #757575;
+$meta-color     : #57626b;
 $border-color   : #E9ECED;
 $light-bg-color : #F5F5F5;
 $max-width      : 728px;
@@ -13,7 +13,7 @@ $max-width      : 728px;
 html { font-size: 62.5%; }
 
 body {
-  font-family: 'Roboto', Hiragino Sans, 'ヒラギノ角ゴシック', Hiragino Kaku Gothic ProN, 'ヒラギノ角ゴ ProN W3', 'Noto Sans Japanese', Meiryo, sans-serif;
+  font-family: 'Ubuntu', Hiragino Sans, 'ヒラギノ角ゴシック', Hiragino Kaku Gothic ProN, 'ヒラギノ角ゴ ProN W3', 'Noto Sans Japanese', Meiryo, sans-serif;
   font-weight: 400;
   font-size: 1.4em;
   color: $text-color;
@@ -60,13 +60,14 @@ header {
     padding-left: 4.2rem + 1.6rem;
     color: $text-color;
     font-size: 1.8rem;
+    font-weight: 500;
     text-transform: uppercase;
     line-height: 5.6rem;
     background-image: url('../images/logo.png');
     background-repeat: no-repeat;
     background-size: 4.0rem;
     background-position: left center;
-    &:hover { opacity: 0.65; }
+    &:hover { color: $link-color; }
   }
 
   .site-content {
@@ -75,14 +76,31 @@ header {
     display: inline-block;
     a {
       display: inline-block;
-      padding-left: 0.8rem;
+      padding: 0 0.4rem;
       font-size: 1.4rem;
+      font-weight: 500;
       text-transform: uppercase;
       line-height: 5.6rem;
       color: $meta-color;
-      &:hover { color: $meta-color; opacity: 0.65; }
+      &:hover { color: $link-color; }
     }
   }
+}
+
+footer {
+  padding: 3.2rem 0;
+  border-width: 20%;
+  border-top: 1px solid $border-color;
+
+  span:before {
+    margin: 0 0.8rem;
+    color: $meta-color;
+    content: '\2219';
+  }
+  span:first-child:before {
+    content: none;
+  }
+  a { color: $meta-color; }
 }
 
 .list-title {
@@ -93,26 +111,23 @@ header {
 }
 
 .list-entry {
+  margin-top: -1.2rem; // リスト内 padding を打ち消し
   margin-bottom: 3.2rem;
   padding: 0;
   list-style: none;
 
   li {
-    margin: 0 0 0 5.6rem;
-    border-bottom: 2px solid $border-color;
-    &:first-child { border-top: 2px solid $border-color; }
+    border-bottom: 1px solid $border-color;
   }
 
   a {
-    position: relative;
     display: block;
     min-height: 4.0rem;
     padding: 1.2rem 0;
     color: $text-color;
-    &:hover { opacity: 0.65; }
+    &:hover { color: $link-color; }
   }
 
-  .bubble { position: absolute; top: 1.2rem; left: -5.6rem; }
   .entry-title { margin: 0 0 0.4rem; font-size: 1.6rem; }
   .entry-meta { color: $meta-color; }
   .entry-excerpt { margin: 0.4rem 0 0; color: $meta-color; line-height: 1.5; }
@@ -121,14 +136,9 @@ header {
 article {
   margin-bottom: 3.2rem;
 
-  .entry-header {
-    position: relative;
-    margin-left:  5.6rem;
-    .bubble { position: absolute; top: 0.4rem; left: -5.6rem; }
-    .entry-title { margin: 0 0 0.4rem; font-size: 1.6rem; font-weight: 500; }
-    .entry-meta { color: $meta-color; a { color: $meta-color; } }
-    .entry-excerpt { margin: 0.4rem 0 0; color: $meta-color; line-height: 1.5; }
-  }
+  .entry-title { margin: 0 0 0.4rem; font-size: 1.8rem; font-weight: 500; }
+  .entry-meta { color: $meta-color; a { color: $meta-color; } }
+  .entry-excerpt { margin: 0.4rem 0 0; color: $meta-color; line-height: 1.5; }
 
   h2 { margin: 4.8rem 0 2.4rem; font-weight: 500; padding-bottom: 0.8rem; border-bottom: 2px solid $border-color; }
   h3 { margin: 3.6rem 0 2.4rem; font-weight: 500; }
@@ -206,8 +216,12 @@ article {
   small { color: $meta-color; }
 }
 
-.bubble { width: 4.0rem; height: 4.0rem; border-radius: 100%; background-color: $meta-color; background-size: 24px; background-repeat: no-repeat; background-position: center; background-image: url('../images/ic_format_quote_white_24dp_2x.png'); }
-.bubble-android { background-image: url('../images/ic_phone_android_white_24dp_2x.png'); }
-.bubble-wordpress, .bubble-hugo, .bubble-web-service, .bubble-php, .bubble-javascript, .bubble-css, .bubble-polymer { background-image: url('../images/ic_web_white_24dp_2x.png');  }
-.bubble-mac, .bubble-os-x { background-image: url('../images/ic_laptop_mac_white_24dp_2x.png'); }
-.bubble-ios { background-image: url('../images/ic_phone_iphone_white_24dp_2x.png'); }
+.asterisk {
+  margin: 3.2rem 0;
+  text-align: center;
+  &:before {
+    font-size: 2.1rem;
+    color: $border-color;
+    content: '* * *';
+  }
+}
