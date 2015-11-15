@@ -58,16 +58,18 @@ header {
     left: 1.6rem;
     display: inline-block;
     height: 5.6rem;
-    padding-left: 4.2rem + 1.6rem;
     color: $text-color;
     font-size: 1.8rem;
     font-weight: 500;
     text-transform: uppercase;
     line-height: 5.6rem;
-    background-image: url('../images/logo.png');
-    background-repeat: no-repeat;
-    background-size: 4.0rem;
-    background-position: left center;
+    @media (min-width: 375px) {
+      padding-left: 4.2rem + 1.6rem;
+      background-image: url('../images/logo.png');
+      background-repeat: no-repeat;
+      background-size: 4.0rem;
+      background-position: left center;
+    }
     &:hover { color: $link-color; }
   }
 
