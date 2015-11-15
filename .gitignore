@@ -3,3 +3,4 @@ node_modules/
 .sass-cache/
 *.css.map
 .DS_Store
+static/assets/css/style.css
