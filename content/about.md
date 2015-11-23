@@ -13,7 +13,7 @@ slug = "about"
 
 [Twitter](https://twitter.com/rakuishi07) に呟いています。Facebook は、面識のある人だけと友達になっています。2015 年は、[GitHub](https://github.com/rakuishi) で積極的に活動していくのが目標です。[Tumblr](http://zbrush.rakuishi.com/) に、趣味で始めた ZBrush の作品を載せることにしました。連絡は、[Twitter](https://twitter.com/rakuishi07) もしくは、[rakuishi@gmail.com](mailto:rakuishi@gmail.com) に頂けるとできるだけ返信します。
 
-## Educatoin
+## Education
 
 * National Institute of Technology, Kitakyushu College, 2010.
 * Toyohashi University of Technology, 2012.
