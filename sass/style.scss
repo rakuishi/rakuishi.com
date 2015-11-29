@@ -19,6 +19,7 @@ body {
   color: $text-color;
   background: $white-color;
   -webkit-font-smoothing: antialiased;
+  letter-spacing: -0.025rem;
 }
 
 h1, h2, h3 { font-weight: 400; line-height: 1.5; }
@@ -92,11 +93,11 @@ header {
 
 footer {
   padding: 3.2rem 0;
-  border-width: 20%;
   border-top: 1px solid $border-color;
 
+  span { color: $meta-color; }
   span:before {
-    margin: 0 0.8rem;
+    margin: 0 0.4rem;
     color: $meta-color;
     content: '\2219';
   }
@@ -130,9 +131,9 @@ footer {
     &:hover { color: $link-color; }
   }
 
-  .entry-title { margin: 0 0 0.4rem; font-size: 1.6rem; }
-  .entry-meta { color: $meta-color; }
-  .entry-excerpt { margin: 0.4rem 0 0; color: $meta-color; line-height: 1.5; }
+  .entry-title { margin: 0 0 0.8rem; font-size: 1.8rem; }
+  .entry-excerpt { margin: 0 0 0.4rem; color: $meta-color; line-height: 1.5; }
+  .entry-meta { margin: 0; color: $meta-color; }
 }
 
 article {
@@ -141,7 +142,6 @@ article {
 
   .entry-title { margin: 0 0 0.4rem; font-size: 1.8rem; font-weight: 500; }
   .entry-meta { color: $meta-color; a { color: $meta-color; } }
-  .entry-excerpt { margin: 0.4rem 0 0; color: $meta-color; line-height: 1.5; }
 
   h2 { margin: 4.8rem 0 2.4rem; font-weight: 500; padding-bottom: 0.8rem; border-bottom: 2px solid $border-color; }
   h3 { margin: 3.6rem 0 2.4rem; font-weight: 500; }
@@ -214,9 +214,20 @@ article {
 .view-more-posts {
   margin: 3.2rem 0;
   text-align: center;
-  a { font-size: 1.8rem; font-weight: 700; }
-  a:hover { text-decoration: underline; }
-  small { color: $meta-color; }
+  a {
+    display: inline-block;
+    font-size: 1.4rem;
+    font-weight: 700;
+    padding: 0.8rem;
+    color: $link-color;
+    border: 2px solid $link-color;
+    border-radius: 4px;
+    transition: all 0.2s;
+  }
+  a:hover {
+    color: $white-color;
+    background-color: $link-color;
+  }
 }
 
 .asterisk {
@@ -225,6 +236,6 @@ article {
   &:before {
     font-size: 2.1rem;
     color: $border-color;
-    content: '* * *';
+    content: '\002A';
   }
 }
