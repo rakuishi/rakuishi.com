@@ -124,16 +124,44 @@ footer {
   }
 
   a {
-    display: block;
+    display: table;
     min-height: 4.0rem;
     padding: 1.2rem 0;
     color: $text-color;
     &:hover { color: $link-color; }
   }
 
-  .entry-title { margin: 0 0 0.8rem; font-size: 1.8rem; }
-  .entry-excerpt { margin: 0 0 0.4rem; color: $meta-color; line-height: 1.5; }
-  .entry-meta { margin: 0; color: $meta-color; }
+  .entry-text, .entry-image {
+    display: table-cell;
+    vertical-align: top;
+  }
+
+  .entry-text {
+    .entry-title { margin: 0 0 0.8rem; font-size: 1.8rem; }
+    .entry-excerpt { margin: 0 0 0.4rem; color: $meta-color; line-height: 1.5; }
+    .entry-meta { margin: 0; color: $meta-color; }
+  }
+
+  .entry-image {
+    width: 12.8rem;
+    img {
+      display: block;
+      margin-left: 0.8rem;
+      width: 12rem; height: 9rem;
+      border-radius: 2px;
+    }
+  }
+
+  @media (min-width: 375px) {
+    .entry-image {
+      width: 16.8rem;
+      img {
+        margin-left: 0.8rem;
+        width: 16rem;
+        height: 12rem;
+      }
+    }
+  }
 }
 
 article {
@@ -144,7 +172,7 @@ article {
   .entry-meta { color: $meta-color; a { color: $meta-color; } }
 
   h2 { margin: 4.8rem 0 2.4rem; font-weight: 500; padding-bottom: 0.8rem; border-bottom: 2px solid $border-color; }
-  h3 { margin: 3.6rem 0 2.4rem; font-weight: 500; }
+  h3 { margin: 2.4rem 0; font-weight: 500; }
   p  { margin: 2.4rem 0; }
   a:hover { text-decoration: underline; }
 
