@@ -4,6 +4,7 @@ date = "2015-02-22T15:51:24+09:00"
 draft = false
 slug = "measuring"
 title = "「単位展 ― あれくらい それくらい どれくらい？」に行ってきた"
+image = "/images/2015/02/measuring_thumb.jpg"
 +++
 
 ![](/images/2015/02/measuring.jpg)
