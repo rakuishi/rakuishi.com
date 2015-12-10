@@ -5,7 +5,6 @@ draft = false
 slug = "wordpress-to-hugo"
 title = "WordPress から Hugo に乗り換えました"
 excerpt = "A Fast and Flexible Static Site Generator"
-image = "/images/2015/01/hugo.png"
 +++
 
 2011年8月25日から数えて3年と半年、このブログは WordPress で運営してきたのですが、この記事から [Hugo](http://gohugo.io/) という静的サイトジェネレータで運用します。
