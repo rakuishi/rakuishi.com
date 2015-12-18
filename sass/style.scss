@@ -15,7 +15,7 @@ html { font-size: 62.5%; }
 body {
   font-family: 'Ubuntu', Hiragino Sans, 'ヒラギノ角ゴシック', Hiragino Kaku Gothic ProN, 'ヒラギノ角ゴ ProN W3', 'Noto Sans Japanese', Meiryo, sans-serif;
   font-weight: 400;
-  font-size: 1.4em;
+  font-size: 1.5em;
   color: $text-color;
   background: $white-color;
   -webkit-font-smoothing: antialiased;
@@ -23,9 +23,9 @@ body {
 }
 
 h1, h2, h3 { font-weight: 400; line-height: 1.5; }
-h1 { font-size: 1.8rem; }
-h2 , h3 { font-size: 1.6rem; }
-p { font-size: 1.4rem; line-height: 1.75; }
+h1 { font-size: 1.9rem; }
+h2 , h3 { font-size: 1.7rem; }
+p, li { font-size: 1.5rem; line-height: 1.75; }
 a, a:hover { color: $link-color; text-decoration: none; }
 img { max-width: 100%; height: auto; }
 code { font-family: Menlo, Monaco, Consolas, monospace; }
@@ -60,7 +60,7 @@ header {
     display: inline-block;
     height: 5.6rem;
     color: $text-color;
-    font-size: 1.8rem;
+    font-size: 1.9rem;
     font-weight: 500;
     text-transform: uppercase;
     line-height: 5.6rem;
@@ -81,7 +81,7 @@ header {
     a {
       display: inline-block;
       padding: 0 0.4rem;
-      font-size: 1.4rem;
+      font-size: 1.5rem;
       font-weight: 500;
       text-transform: uppercase;
       line-height: 5.6rem;
@@ -110,7 +110,7 @@ footer {
 .list-title {
   margin: 3.2rem 0;
   color: $meta-color;
-  font-size: 1.6rem;
+  font-size: 1.7rem;
   text-transform: uppercase;
 }
 
@@ -137,7 +137,7 @@ footer {
   }
 
   .entry-text {
-    .entry-title { margin: 0 0 0.8rem; font-size: 1.8rem; }
+    .entry-title { margin: 0 0 0.8rem; font-size: 1.9rem; }
     .entry-excerpt { margin: 0 0 0.4rem; color: $meta-color; line-height: 1.5; }
     .entry-meta { margin: 0; color: $meta-color; }
   }
@@ -168,7 +168,7 @@ article {
   margin-top: 3.2rem + 1.2rem;
   margin-bottom: 3.2rem;
 
-  .entry-title { margin: 0 0 0.4rem; font-size: 1.8rem; font-weight: 500; }
+  .entry-title { margin: 0 0 0.4rem; font-size: 1.9rem; font-weight: 500; }
   .entry-meta { color: $meta-color; a { color: $meta-color; } }
 
   h2 { margin: 4.8rem 0 2.4rem; font-weight: 500; padding-bottom: 0.8rem; border-bottom: 2px solid $border-color; }
@@ -182,7 +182,6 @@ article {
   ul, ol { margin: 2.4rem 0; padding-left: 2.4rem; }
   ul { list-style: desc; }
   ol { list-style: decimal; }
-  li { margin-bottom: 0.4rem; font-size: 1.4rem; line-height: 1.5; }
 
   hr { height: 2px; margin: 2.4rem 0; border: 0; background-color: $border-color; }
   img { width: auto; max-height: $max-width * 3/4; }
@@ -202,7 +201,6 @@ article {
 
   .application-box {
     margin: 2.4rem 0;
-    font-size: 1.4rem;
     line-height: 1.5;
     img { float: left; width: 8rem; height: 8rem; margin-right: 0.8rem; }
   }
@@ -244,7 +242,6 @@ article {
   text-align: center;
   a {
     display: inline-block;
-    font-size: 1.4rem;
     font-weight: 700;
     padding: 0.8rem;
     color: $link-color;
