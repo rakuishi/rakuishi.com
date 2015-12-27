@@ -8,7 +8,7 @@ $text-color     : #3D3C40;
 $meta-color     : #96A1AD;
 $border-color   : #E9ECED;
 $light-bg-color : #F5F5F5;
-$max-width      : 700px;
+$max-width      : 672px;
 
 html { font-size: 62.5%; }
 
@@ -25,7 +25,7 @@ body {
 h1, h2, h3 { font-weight: 400; line-height: 1.5; }
 h1 { font-size: 1.9rem; }
 h2 , h3 { font-size: 1.7rem; }
-p, li { font-size: 1.5rem; line-height: 1.75; }
+p { font-size: 1.5rem; line-height: 1.75; }
 a, a:hover { color: $link-color; text-decoration: none; }
 img { max-width: 100%; height: auto; }
 code { font-family: Menlo, Monaco, Consolas, monospace; }
@@ -137,16 +137,16 @@ footer {
   }
 
   .entry-text {
-    .entry-title { margin: 0 0 0.8rem; font-size: 1.9rem; }
+    .entry-title { margin: 0 0 0.4rem; font-size: 1.9rem; }
     .entry-excerpt { margin: 0 0 0.4rem; color: $meta-color; line-height: 1.5; }
-    .entry-meta { margin: 0; color: $meta-color; }
+    .entry-meta { color: $meta-color; }
   }
 
   .entry-image {
     width: 12.8rem;
     img {
       display: block;
-      margin-left: 0.8rem;
+      margin-left: 1.2rem;
       width: 12rem; height: 9rem;
       border-radius: 2px;
     }
@@ -169,7 +169,11 @@ article {
   margin-bottom: 3.2rem;
 
   .entry-title { margin: 0 0 0.4rem; font-size: 1.9rem; font-weight: 500; }
-  .entry-meta { color: $meta-color; a { color: $meta-color; } }
+  .entry-meta {
+    color: $meta-color;
+    span:before { margin: 0 0.4rem; content: '\2219'; }
+    span:first-child:before { content: none; }
+  }
 
   h2 { margin: 4.8rem 0 2.4rem; font-weight: 500; padding-bottom: 0.8rem; border-bottom: 2px solid $border-color; }
   h3 { margin: 2.4rem 0; font-weight: 500; }
@@ -182,6 +186,7 @@ article {
   ul, ol { margin: 2.4rem 0; padding-left: 2.4rem; }
   ul { list-style: desc; }
   ol { list-style: decimal; }
+  li { font-size: 1.5rem; line-height: 1.75; }
 
   hr { height: 2px; margin: 2.4rem 0; border: 0; background-color: $border-color; }
   img { width: auto; max-height: $max-width * 3/4; }
