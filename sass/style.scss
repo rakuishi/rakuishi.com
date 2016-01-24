@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-@import "normalize", "github.min", "roboto";
+@import "normalize", "github.min", "noto_sans_cjk_jp";
 
 $link-color     : #2173D9;
 $white-color    : #FCFDFC;
@@ -13,7 +13,7 @@ $max-width      : 672px;
 html { font-size: 62.5%; }
 
 body {
-  font-family: 'Roboto', Hiragino Sans, 'ヒラギノ角ゴシック', Hiragino Kaku Gothic ProN, 'ヒラギノ角ゴ ProN W3', 'Noto Sans Japanese', Meiryo, sans-serif;
+  font-family: 'Noto Sans Japanese', Hiragino Sans, 'ヒラギノ角ゴシック', Hiragino Kaku Gothic ProN, 'ヒラギノ角ゴ ProN W3', Meiryo, sans-serif;
   font-weight: 400;
   font-size: 1.5em;
   color: $text-color;
