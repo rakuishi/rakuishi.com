@@ -7,11 +7,13 @@ slug = "about"
 
 はじめまして。<ruby>落石浩一郎<rt>おちいしこういちろう</rt></ruby>といいます。苗字を重箱読みした rakuishi がハンドルネームです。1989 年生まれ福岡県出身です。
 
-大学在籍中（微生物学を専攻していました）、2012 年 1 月に趣味で初めた iOS アプリ開発が高じて、2012 年 8 月から新宿にある [AppBank 株式会社](http://www.appbank.net)でプログラマとして働いています。会社では、2015 年 1 月現在、Android アプリ開発とフロントエンド・デベロッパをしています。
+大学在籍中（微生物学を専攻）の 2012 年 1 月に趣味で初めた iOS アプリ開発が高じて、2012 年 8 月から新宿にある [AppBank 株式会社](http://www.appbank.net)でプログラマとして働いています。2015 年 3 月からは子会社である apprime 株式会社に転籍。会社では、2016 年 1 月現在、Android アプリ開発とフロントエンド・デベロッパをしています。
 
-このサイト rakuishi.com は、僕個人によるブログです。会社とは関係ありません。2011 年 8 月から記事を書いています。当初、WordPress で運営していたブログでしたが、2015 年 1 月からは、静的サイトジェネレータ [Hugo](http://gohugo.io/) で運営しています。[ソースコード](https://github.com/rakuishi/rakuishi.com)を GitHub で公開しています。記事の更新を追いかけるには、<a href="http://cloud.feedly.com/#subscription%2Ffeed%2Fhttp%3A%2F%2Frakuishi.com%2Ffeed%2F" target="blank">Feedly</a> もしくは、<a href="http://rakuishi.com/index.xml" target="_blank">RSS</a> から。
+このサイト rakuishi.com は、僕個人によるブログです。会社とは関係ありません。2011 年 8 月から記事を書いています。当初、WordPress で運営していたブログでしたが、2015 年 1 月からは、静的サイトジェネレータ [Hugo](http://gohugo.io/) で運営しています。[ソースコード](https://github.com/rakuishi/rakuishi.com)を [GitHub](https://github.com/rakuishi) で公開しています。記事の更新を追いかけるには、<a href="http://cloud.feedly.com/#subscription%2Ffeed%2Fhttp%3A%2F%2Frakuishi.com%2Ffeed%2F" target="blank">Feedly</a> もしくは、<a href="http://rakuishi.com/index.xml" target="_blank">RSS</a> から。
 
-[Twitter](https://twitter.com/rakuishi07) に呟いています。Facebook は、面識のある人だけと友達になっています。2015 年は、[GitHub](https://github.com/rakuishi) で積極的に活動していくのが目標です。[Tumblr](http://zbrush.rakuishi.com/) に、趣味で始めた ZBrush の作品を載せることにしました。連絡は、[Twitter](https://twitter.com/rakuishi07) もしくは、[rakuishi@gmail.com](mailto:rakuishi@gmail.com) に頂けるとできるだけ返信します。
+[Twitter](https://twitter.com/rakuishi07) に呟いています。Facebook は、面識のある人だけと友達になっています。[Tumblr](http://zbrush.rakuishi.com/) に、趣味で始めた ZBrush の作品を載せることにしました（更新が途絶えました）。連絡は、[Twitter](https://twitter.com/rakuishi07) もしくは、[rakuishi@gmail.com](mailto:rakuishi@gmail.com) に頂けるとできるだけ返信します。
+
+2015 年は、[GitHub](https://github.com/rakuishi) で積極的に活動していくのが目標でした（密かに目標にしていた累計 100 スター達成）。2016 年は、サーバー構築・Ruby on Rails・Interactive design への苦手感を克服するのが目標です。将来の夢は、山小屋を建てることです。
 
 ## Education
 
@@ -20,9 +22,7 @@ slug = "about"
 
 ## Personal Projects
 
-### iOS
-
-<a href="https://itunes.apple.com/jp/developer/koichiro-ochiishi/id452568751" target="_blank">https://itunes.apple.com/jp/developer/koichiro-ochiishi/id452568751</a>
+### <a href="https://itunes.apple.com/jp/developer/koichiro-ochiishi/id452568751" target="_blank">iPhone App</a>
 
 <ul>
 <li><a href="https://itunes.apple.com/jp/app/id725195676?mt=8&uo=4&at=11l3RT" target="_blank">Quicka2 - 検索を快適に</a><br>
@@ -41,9 +41,7 @@ slug = "about"
 <small>Ending Development on 2013/10/08</small></li>
 </ul>
 
-### Android
-
-<a href="https://play.google.com/store/apps/developer?id=rakuishi&hl=ja" target="_blank">https://play.google.com/store/apps/developer?id=rakuishi&hl=ja</a>
+### <a href="https://play.google.com/store/apps/developer?id=rakuishi&hl=ja" target="_blank">Android App</a>
 
 <ul>
 <li><a href="https://play.google.com/store/apps/details?id=com.rakuishi.todo" target="_blank">Todo-Android</a><br>
@@ -52,9 +50,7 @@ slug = "about"
 <small>Last Updated on 2014/01/15, オフライン郵便番号検索アプリの決定版！</small></li>
 </ul>
 
-### WordPress Plugins
-
-<a href="https://profiles.wordpress.org/rakuishi/" target="_blank">https://profiles.wordpress.org/rakuishi/</a>
+### <a href="https://profiles.wordpress.org/rakuishi/" target="_blank">WordPress Plugin</a>
 
 <ul>
 <li><a href="http://rakuishi.com/archives/6858/">WordPress OB Cache</a><br>
