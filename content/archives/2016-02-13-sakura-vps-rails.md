@@ -6,7 +6,7 @@ slug = "sakura-vps-rails"
 title = "さくらの VPS：WEBrick と Unicorn + Nginx で Ruby on Rails の表示まで"
 +++
 
-さくらの VPS に Ruby on Rails の環境を導入するまでの手順をまとめました。まずは、Ruby 付属の Web サーバー WEBrick による動作を確認し、その後に Unicorn + Nginx を立ち上げるところまでを行います。
+さくらの VPS に Ruby on Rails の環境を導入するまでの手順をまとめました。まずは、Ruby 付属の Web サーバー WEBrick による動作を確認し、その後に Unicorn + Nginx による動作を確認します。
 
 ## Create user account
 
@@ -241,7 +241,7 @@ server {
   listen 80;
   server_name localhost;
 
-  root /home/rakuishi/app/public;
+  root /home/apps/rails/public;
   access_log /var/log/nginx/access.log;
   error_log /var/log/nginx/error.log;
   error_page 404 /404.html;
