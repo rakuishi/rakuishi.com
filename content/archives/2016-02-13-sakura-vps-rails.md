@@ -328,7 +328,7 @@ case "$1" in
     start
     ;;
   *)
-    echo $"Usage: $0 {start|stop|restart|force-reload|reload}"
+    echo $"Usage: $0 {start|stop|restart}"
     exit 2
 esac
 ```
