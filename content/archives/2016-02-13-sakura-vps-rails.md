@@ -64,9 +64,10 @@ PermitRootLogin no
 $ ssh apps@${id_address}
 ```
 
-パスワードから鍵認証に切り替えます。鍵を置く場所を作って、作業マシンに戻ります。
+ホームディレクトリのパーミッションを 701 に変更します。また、パスワードから鍵認証に切り替えます。鍵を置く場所を作って、作業マシンに戻ります。
 
 ```bash
+$ chmod 701 /home/apps/
 $ mkdir .ssh
 $ chmod 700 .ssh/
 $ exit
@@ -247,14 +248,6 @@ server {
   error_page 404 /404.html;
   error_page 500 502 503 504 /500.html;
   client_max_body_size 10M;
-
-  location ~ ^/assets/ {
-    gzip_static on;
-    expires max;
-    add_header Cache-Control public;
-    add_header X-Frame-Options SAMEORIGIN;
-    add_header X-Content-Type-Options nosniff;
-  }
 
   try_files $uri $uri/index.html $uri.html @unicorn;
 
