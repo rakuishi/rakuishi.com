@@ -13,7 +13,7 @@ $max-width      : 672px;
 html { font-size: 62.5%; }
 
 body {
-  font-family: 'Noto Sans Japanese', Hiragino Sans, 'ヒラギノ角ゴシック', Hiragino Kaku Gothic ProN, 'ヒラギノ角ゴ ProN W3', Meiryo, sans-serif;
+  font-family: 'Ubuntu', 'Noto Sans Japanese', Hiragino Sans, 'ヒラギノ角ゴシック', Hiragino Kaku Gothic ProN, 'ヒラギノ角ゴ ProN W3', Meiryo, sans-serif;
   font-weight: 400;
   font-size: 1.5em;
   color: $text-color;
@@ -22,8 +22,8 @@ body {
 }
 
 h1, h2, h3 { font-weight: 400; line-height: 1.5; }
-h1 { font-size: 1.9rem; }
-h2 , h3 { font-size: 1.7rem; }
+h1 { font-size: 2.1rem; }
+h2 , h3 { font-size: 1.9rem; }
 p { font-size: 1.5rem; line-height: 1.75; }
 a, a:hover { color: $link-color; text-decoration: none; }
 img { max-width: 100%; height: auto; }
@@ -81,7 +81,7 @@ header {
       display: inline-block;
       padding: 0 0.4rem;
       font-size: 1.5rem;
-      font-weight: 500;
+      font-weight: 400;
       text-transform: uppercase;
       line-height: 5.6rem;
       color: $meta-color;
@@ -138,7 +138,10 @@ footer {
   .entry-text {
     .entry-title { margin: 0 0 0.4rem; font-size: 1.9rem; }
     .entry-excerpt { margin: 0 0 0.4rem; color: $meta-color; line-height: 1.5; }
-    .entry-meta { color: $meta-color; }
+    .entry-meta {
+      color: $meta-color;
+      span:after { margin: 0 0.4rem; content: '\2219'; }
+    }
   }
 
   .entry-image {
@@ -167,7 +170,7 @@ article {
   margin-top: 3.2rem + 1.2rem;
   margin-bottom: 3.2rem;
 
-  .entry-title { margin: 0 0 0.4rem; font-size: 1.9rem; font-weight: 500; }
+  .entry-title { margin: 0 0 0.4rem; font-size: 2.1rem; font-weight: 500; }
   .entry-meta {
     color: $meta-color;
     span:before { margin: 0 0.4rem; content: '\2219'; }
