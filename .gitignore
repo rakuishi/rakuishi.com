@@ -1,6 +1,5 @@
-public/
-node_modules/
-.sass-cache/
-*.css.map
 .DS_Store
-static/assets/css/style.css
+/public
+/static/assets/css/style.css
+/static/assets/css/style.css.map
+/.sass-cache

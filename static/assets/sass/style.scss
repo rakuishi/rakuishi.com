@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-@import "normalize", "github.min", "noto_sans_cjk_jp";
+@import "normalize", "github.min", "Lato", "noto_sans_cjk_jp";
 
 $link-color     : #2173D9;
 $white-color    : #FCFDFC;
@@ -13,12 +13,14 @@ $max-width      : 672px;
 html { font-size: 62.5%; }
 
 body {
-  font-family: 'Ubuntu', 'Noto Sans Japanese', Hiragino Sans, 'ヒラギノ角ゴシック', Hiragino Kaku Gothic ProN, 'ヒラギノ角ゴ ProN W3', Meiryo, sans-serif;
+  font-family: 'Lato', 'Noto Sans Japanese', Hiragino Sans, 'ヒラギノ角ゴシック', Hiragino Kaku Gothic ProN, 'ヒラギノ角ゴ ProN W3', Meiryo, sans-serif;
   font-weight: 400;
   font-size: 1.5em;
   color: $text-color;
   background: $white-color;
   letter-spacing: -0.02rem;
+  word-break: break-all;
+  text-align: justify;
 }
 
 h1, h2, h3 { font-weight: 400; line-height: 1.5; }
@@ -60,7 +62,7 @@ header {
     height: 5.6rem;
     color: $text-color;
     font-size: 1.9rem;
-    font-weight: 500;
+    font-weight: 700;
     text-transform: uppercase;
     line-height: 5.6rem;
     @media (min-width: 375px) {
@@ -137,8 +139,9 @@ footer {
 
   .entry-text {
     .entry-title { margin: 0 0 0.4rem; font-size: 1.9rem; }
-    .entry-excerpt { margin: 0 0 0.4rem; color: $meta-color; line-height: 1.5; }
     .entry-meta {
+      margin: 0;
+      line-height: 1.5;
       color: $meta-color;
       span:after { margin: 0 0.4rem; content: '\2219'; }
     }
@@ -170,15 +173,15 @@ article {
   margin-top: 3.2rem + 1.2rem;
   margin-bottom: 3.2rem;
 
-  .entry-title { margin: 0 0 0.4rem; font-size: 2.1rem; font-weight: 500; }
+  .entry-title { margin: 0 0 0.4rem; font-size: 2.1rem; font-weight: 700; }
   .entry-meta {
     color: $meta-color;
     span:before { margin: 0 0.4rem; content: '\2219'; }
     span:first-child:before { content: none; }
   }
 
-  h2 { margin: 4.8rem 0 2.4rem; font-weight: 500; padding-bottom: 0.8rem; border-bottom: 2px solid $border-color; }
-  h3 { margin: 2.4rem 0; font-weight: 500; }
+  h2 { margin: 4.8rem 0 2.4rem; font-weight: 700; padding-bottom: 0.8rem; border-bottom: 2px solid $border-color; }
+  h3 { margin: 2.4rem 0; font-weight: 700; }
   p  { margin: 2.4rem 0; }
   a:hover { text-decoration: underline; }
 
