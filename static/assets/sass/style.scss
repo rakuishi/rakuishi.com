@@ -3,12 +3,12 @@
 @import "normalize", "github.min", "Lato", "noto_sans_cjk_jp";
 
 $link-color     : #2173D9;
-$white-color    : #FCFDFC;
+$white-color    : #FFFFFF;
 $text-color     : #3D3C40;
 $meta-color     : #96A1AD;
 $border-color   : #E9ECED;
 $light-bg-color : #F5F5F5;
-$max-width      : 672px;
+$max-width      : 728px + 32px;
 
 html { font-size: 62.5%; }
 
@@ -140,6 +140,8 @@ footer {
   .entry-text {
     .entry-title { margin: 0 0 0.4rem; font-size: 1.9rem; }
     .entry-meta {
+      height: 1.5 * 1.5 * 2rem;
+      overflow: hidden;
       margin: 0;
       line-height: 1.5;
       color: $meta-color;
@@ -194,7 +196,7 @@ article {
   li { font-size: 1.5rem; line-height: 1.75; }
 
   hr { height: 2px; margin: 2.4rem 0; border: 0; background-color: $border-color; }
-  img { width: auto; max-height: $max-width * 3/4; }
+  img { width: auto; }
   p img { border-radius: 4px; }
   iframe { margin: 2.4rem 0; padding: 0; }
   blockquote { margin: 2.4rem 0; font-style: italic; }
