@@ -1,6 +1,6 @@
 +++
 date = ""
-draft = false
+draft = true
 title = ""
 categories = ["Blog"]
 slug = ""
