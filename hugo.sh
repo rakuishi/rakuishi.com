@@ -27,7 +27,7 @@ hugo_server() {
 publish() {
   build_sass
   hugo
-  find ${DIR}/public/ -name ".DS_Store" | xargs rm
+  find ${DIR}/public/ -name '.DS_Store' | xargs rm
   aws s3 sync --delete ${DIR}/public s3://rakuishi.com
 }
 
