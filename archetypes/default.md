@@ -1,7 +1,8 @@
-+++
-date = ""
-draft = true
-title = ""
-categories = ["Blog"]
-slug = ""
-+++
+---
+categories:
+  - Blog
+date:
+draft: true
+slug:
+title:
+---
