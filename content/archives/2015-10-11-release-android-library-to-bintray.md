@@ -1,10 +1,11 @@
-+++
-categories = ["Android"]
-date = "2015-10-11T14:51:01+09:00"
-draft = false
-slug = "release-android-library-to-bintray"
-title = "Android のライブラリの作りかたと Bintray にアップロードするまでの手順"
-+++
+---
+categories:
+  - Android
+date: 2015-10-11T14:51:01+09:00
+draft: false
+slug: release-android-library-to-bintray
+title: "Android のライブラリの作りかたと Bintray にアップロードするまでの手順"
+---
 
 [Aileron](https://github.com/rakuishi/aileron) という Android のライブラリを作成しました。Activity や Fragment の生成時に、Intent に詰めた引数を取り出す手間を減らすためのライブラリです。ちなみに、Aileron（エルロン）とは、飛行機の補助翼のことです。
 

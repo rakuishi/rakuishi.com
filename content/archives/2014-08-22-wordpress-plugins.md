@@ -1,10 +1,11 @@
-+++
-date = "2014-08-11T22:43:55+09:00"
-draft = false
-title = "WordPress Plugins"
-slug = "wordpress-plugins"
-categories = ["WordPress"]
-+++
+---
+categories:
+  - WordPress
+date: 2014-08-11T22:43:55+09:00
+draft: false
+slug: wordpress-plugins
+title: "WordPress Plugins"
+---
 
 ## One Step Before Publishing
 

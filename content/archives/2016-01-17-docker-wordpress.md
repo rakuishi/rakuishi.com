@@ -1,10 +1,11 @@
-+++
-categories = ["WordPress"]
-date = "2016-01-17T14:53:50+09:00"
-draft = false
-slug = "docker-wordpress"
-title = "Docker で WordPress サイト開発を始める"
-+++
+---
+categories:
+  - WordPress
+date: 2016-01-17T14:53:50+09:00
+draft: false
+slug: docker-wordpress
+title: "Docker で WordPress サイト開発を始める"
+---
 
 以前、WordPress のローカル仮想環境の構築を Vagrant を利用した [VCCW](http://vccw.cc/) で試したことがあるのですが、以下の理由から使うのを諦めたことがありました。
 

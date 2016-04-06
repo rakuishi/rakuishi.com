@@ -1,11 +1,11 @@
-+++
-categories = ["Blog"]
-date = "2015-04-29T18:44:49+09:00"
-draft = false
-slug = "talking-about-diary"
-title = "日記を書いているということ"
-
-+++
+---
+categories:
+  - Blog
+date: 2015-04-29T18:44:49+09:00
+draft: false
+slug: talking-about-diary
+title: "日記を書いているということ"
+---
 
 BOOK OFF で森鴎外の日記を見かけたのでぱらぱらと捲ってみた。森鴎外と言えば、僕の地元である北九州市小倉に居を構えていた人物である。確かその邸宅を覗いた覚えがあるのだが、小学生の頃に訪れた山口県萩市、半年前に訪れた新潟県の笹川邸とダブり、最早、明瞭に思い出せない。
 

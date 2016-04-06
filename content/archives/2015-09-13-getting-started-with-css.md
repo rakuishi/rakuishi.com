@@ -1,11 +1,11 @@
-+++
-categories = ["CSS"]
-date = "2015-09-13T13:26:04+09:00"
-draft = false
-slug = "getting-started-with-css"
-title = "CSS 初学者だった頃に知りたかったこと"
-
-+++
+---
+categories:
+  - CSS
+date: 2015-09-13T13:26:04+09:00
+draft: false
+slug: getting-started-with-css
+title: "CSS 初学者だった頃に知りたかったこと"
+---
 
 この記事では、自分が CSS 初学者だった頃に知りたかったことをまとめています。
 

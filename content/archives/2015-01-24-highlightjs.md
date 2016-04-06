@@ -1,10 +1,11 @@
-+++
-categories = ["JavaScript"]
-date = "2015-01-24T18:16:24+09:00"
-draft = false
-slug = "highlightjs"
-title = "シンタックスハイライトに highlight.js を使うことにしました"
-+++
+---
+categories:
+  - JavaScript
+date: 2015-01-24T18:16:24+09:00
+draft: false
+slug: highlightjs
+title: "シンタックスハイライトに highlight.js を使うことにしました"
+---
 
 ブラウザで実行されるクライアントサイドのシンタックスハイライト（ソースコードを意味ごとに色付けしてくれる）に、[google-code-prettify](https://code.google.com/p/google-code-prettify/) を使用していたのですが、[highlight.js](https://highlightjs.org/) に乗り換えました。
 

@@ -1,10 +1,11 @@
-+++
-categories = ["Web Service"]
-date = "2016-01-31T21:04:03+09:00"
-draft = false
-slug = "sakura-vps"
-title = "さくらの VPS：環境設定から Web ページの表示まで"
-+++
+---
+categories:
+  - Web Service
+date: 2016-01-31T21:04:03+09:00
+draft: false
+slug: sakura-vps
+title: "さくらの VPS：環境設定から Web ページの表示まで"
+---
 
 こういうのは数日後に確実に忘れるのでメモしておきます。
 

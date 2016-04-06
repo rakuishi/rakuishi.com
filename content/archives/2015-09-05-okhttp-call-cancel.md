@@ -1,10 +1,11 @@
-+++
-categories = ["Android"]
-date = "2015-09-05T22:02:53+09:00"
-draft = false
-slug = "okhttp-call-cancel"
-title = "OkHttp: Call.cancel が MainThread で実行されてクラッシュする"
-+++
+---
+categories:
+  - Android
+date: 2015-09-05T22:02:53+09:00
+draft: false
+slug: okhttp-call-cancel
+title: "OkHttp: Call.cancel が MainThread で実行されてクラッシュする"
+---
 
 会社で開発している Android アプリで、通信に Square の [OkHttp](https://github.com/square/okhttp) ライブラリを使っているのだけれど、HTTPS 通信時 `Call.cancel()` が MainThread を触ってクラッシュすることがあった。Android 3（API Level 11）以降、同期的な通信は OS によって許されていないためだ。
 

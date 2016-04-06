@@ -1,10 +1,11 @@
-+++
-categories = ["Android"]
-date = "2015-04-29T08:40:12+09:00"
-draft = false
-slug = "material-design-todo"
-title = "Material Design と Realm の勉強がてら作った Todo アプリを公開しました"
-+++
+---
+categories:
+  - Android
+date: 2015-04-29T08:40:12+09:00
+draft: false
+slug: material-design-todo
+title: "Material Design と Realm の勉強がてら作った Todo アプリを公開しました"
+---
 
 [![](https://raw.githubusercontent.com/rakuishi/Todo-Android/master/todo.png)](https://play.google.com/store/apps/details?id=com.rakuishi.todo)
 

@@ -1,11 +1,11 @@
-+++
-categories = ["Blog"]
-date = "2015-03-15T09:39:40+09:00"
-draft = false
-slug = "freshwater-shrimp"
-title = "株式投資と Money Foward／あれも足りないこれも足りない／ヌマエビの綺麗な消化管"
-
-+++
+---
+categories:
+  - Blog
+date: 2015-03-15T09:39:40+09:00
+draft: false
+slug: freshwater-shrimp
+title: "株式投資と Money Foward／あれも足りないこれも足りない／ヌマエビの綺麗な消化管"
+---
 
 [Bloodborne](http://www.jp.playstation.com/scej/title/bloodborne/) の発売を待ちわびている今日この頃である。「今日この頃」は便利な言葉であるが、重複表現に値するんじゃないかと疑問に思い続けている。
 

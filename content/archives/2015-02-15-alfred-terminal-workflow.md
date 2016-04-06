@@ -1,11 +1,11 @@
-+++
-categories = ["Mac"]
-date = "2015-02-15T11:32:16+09:00"
-draft = false
-slug = "alfred-terminal-workflow"
-title = "現在 Finder で表示しているフォルダ位置を Terminal で開く Alfred WorkFlow を作りました"
-
-+++
+---
+categories:
+  - Mac
+date: 2015-02-15T11:32:16+09:00
+draft: false
+slug: alfred-terminal-workflow
+title: "現在 Finder で表示しているフォルダ位置を Terminal で開く Alfred WorkFlow を作りました"
+---
 
 ランチャーアプリ Alfred の Powerpack を買うと、ユーザーが組んだスクリプト（Workflow）を動かすことができる。以前から自分も作ってみようと思っていたが、どこから手を付ければよいかよく分からなった。
 

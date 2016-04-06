@@ -1,10 +1,11 @@
-+++
-categories = ["Web Service"]
-date = "2016-02-13T00:23:58+09:00"
-draft = false
-slug = "sakura-vps-rails"
-title = "さくらの VPS：WEBrick と Unicorn + Nginx で Ruby on Rails の表示まで"
-+++
+---
+categories:
+  - Web Service
+date: 2016-02-13T00:23:58+09:00
+draft: false
+slug: sakura-vps-rails
+title: "さくらの VPS：WEBrick と Unicorn + Nginx で Ruby on Rails の表示まで"
+---
 
 さくらの VPS に Ruby on Rails の環境を導入するまでの手順をまとめました。まずは、Ruby 付属の Web サーバー WEBrick による動作を確認し、その後に Unicorn + Nginx による動作を確認します。
 

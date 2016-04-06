@@ -1,10 +1,11 @@
-+++
-categories = ["Android"]
-date = "2015-05-30T11:40:00+09:00"
-draft = false
-slug = "rxjava-cheatsheet"
-title = "RxJava Operators 私的チートシート"
-+++
+---
+categories:
+  - Android
+date: 2015-05-30T11:40:00+09:00
+draft: false
+slug: rxjava-cheatsheet
+title: "RxJava Operators 私的チートシート"
+---
 
 RxJava には、それを扱うための数多くの関数（オペレーター）が用意されているが、頻繁に使うのは極一部だったから、今までに使ったオペレーターとその使用例をまとめてみた。
 

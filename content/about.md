@@ -1,9 +1,9 @@
-+++
-date = "2011-08-26T00:00:31+09:00"
-draft = false
-title = "ABOUT ME"
-slug = "about"
-+++
+---
+date: 2011-08-26T00:00:31+09:00
+draft: false
+slug: about
+title: "ABOUT ME"
+---
 
 はじめまして。<ruby>落石浩一郎<rt>おちいしこういちろう</rt></ruby>といいます。苗字を重箱読みした rakuishi がハンドルネームです。1989 年生まれ福岡県出身です。
 

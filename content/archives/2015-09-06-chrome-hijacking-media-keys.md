@@ -1,11 +1,11 @@
-+++
-categories = ["Web Service"]
-date = "2015-09-06T10:02:52+09:00"
-draft = false
-slug = "chrome-hijacking-media-keys"
-title = "Google Play ミュージックを導入後、メディアキーで iTunes を操作できなくなった時の対処法"
-
-+++
+---
+categories:
+  - Web Service
+date: 2015-09-06T10:02:52+09:00
+draft: false
+slug: chrome-hijacking-media-keys
+title: "Google Play ミュージックを導入後、メディアキーで iTunes を操作できなくなった時の対処法"
+---
 
 Google Play ミュージックで、月額制のサブスクリプションサービスが始まったので、一ヶ月間視聴している最中なのですが、その拡張機能を入れたあたりから Mac のキーボード上のメディアキーで iTunes を操作することができなくなり、代わりに Google Play ミュージックが操作できるようになりました。
 

@@ -1,10 +1,11 @@
-+++
-date = "2013-10-12T14:16:18+09:00"
-draft = false
-title = "Quicka2：iPhone アプリ"
-slug = "quicka2"
-categories = ["iOS"]
-+++
+---
+categories:
+  - iOS
+date: 2013-10-12T14:16:18+09:00
+draft: false
+slug: quicka2
+title: "Quicka2：iPhone アプリ"
+---
 
 検索を快適にするアプリ [Quicka2](https://itunes.apple.com/jp/app/quicka2-jian-suowo-kuai-shini/id725195676?mt=8&uo=4&at=11l3RT) のサポートページです。
 
