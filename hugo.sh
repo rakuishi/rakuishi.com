@@ -13,9 +13,6 @@ hugo_new() {
   SLUG=${1}
   FILENAME=$(date '+%F')-${SLUG}.md
   hugo new archives/${FILENAME}
-  sed "s/slug = \"\"/slug = \"${SLUG}\"/" \
-    content/archives/${FILENAME} > content/archives/${FILENAME}.new
-  mv content/archives/${FILENAME}.new content/archives/${FILENAME}
   open content/archives/${FILENAME}
 }
 
@@ -27,8 +24,7 @@ hugo_server() {
 publish() {
   build_sass
   hugo
-  find ${DIR}/public/ -name '.DS_Store' | xargs rm
-  aws s3 sync --delete ${DIR}/public s3://rakuishi.com
+  aws s3 sync --delete --exclude=.DS_Store ${DIR}/public s3://rakuishi.com
 }
 
 case $1 in
