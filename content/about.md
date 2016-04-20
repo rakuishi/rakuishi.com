@@ -56,3 +56,8 @@ title: "ABOUT ME"
 <small>Published on 2013/08/25, 投稿画面から iOS / Mac アプリの紹介リンクを挿入する</small>
 * [LinkShare To PHG](http://rakuishi.com/archives/5886/)  
 <small>Published on 2013/08/24, LinkShare を PHG のアフィリエイトリンクに置き換える</small>
+
+### Ruby on Rails Project
+
+* [aniradi.me](http://aniradi.me/)  
+<small>Published on 2016/04/18, Gather anime radio waves</small>
