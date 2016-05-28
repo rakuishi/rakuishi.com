@@ -1,13 +1,9 @@
 {{ partial "header.html" . }}
 
-  <main role="main">
-    <ul class="list-entry">
+<ul class="list-entry">
 {{ range .Data.Pages }}
-{{ .Render "summary"}}
+  {{ .Render "summary"}}
 {{ end }}
-    </ul>
-
-    <div class="asterisk"></div>
-  </main>
+</ul>
 
 {{ partial "footer.html" . }}

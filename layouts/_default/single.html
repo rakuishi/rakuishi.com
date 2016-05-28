@@ -1,45 +1,33 @@
 {{ partial "header.html" . }}
 
-  <main role="main">
-    <article itemscope itemtype="http://schema.org/BlogPosting">
-      <h1 class="entry-title" itemprop="headline">{{ .Title }}{{ if .Draft }} #Draft{{ end }}</h1>
-      <div class="entry-meta"><span itemprop="datePublished" datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 02, 2006" }}</span>{{ if .Params.categories }}{{ range .Params.categories }}<span>{{ . }}</span>{{ end }}{{ end }}</div>
-      <section itemprop="text">
-        {{ .Content }}
-      </section>
-      <div class="share">
-        <a href="http://twitter.com/share?url={{ .Permalink }}&text={{ .Title }}" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,height=300,width=600');return false;" class="twitter"></a>
-        <a href="http://www.facebook.com/sharer.php?u={{ .Permalink }}" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,height=300,width=600');return false;" class="facebook"></a>
-        <a href="http://getpocket.com/edit?url={{ .Permalink }}&title={{ .Title }}" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,scrollbars=yes,height=300,width=600');return false;" class="pocket"></a>
-      </div>
-    </article>
-    <div class="google-adsense">
-      <div class="label">SPONSORED LINKS</div>
-      <style>
-      .google-adsense-responsive { width: 300px; height: 250px; }
-      </style>
-      <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-      <ins class="adsbygoogle google-adsense-responsive"
-        style="display: inline-block; margin: 0 auto;"
-        data-ad-client="ca-pub-9983442877454265"
-        data-ad-slot="3378617720"></ins>
-      <script>
-      (adsbygoogle = window.adsbygoogle || []).push({});
-      </script>
-    </div>
-    <div id="disqus_thread"></div>
-    <script type="text/javascript" async="async">
-    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-    var disqus_shortname = 'rakuishi'; // required: replace example with your forum shortname
-    /* * * DON'T EDIT BELOW THIS LINE * * */
-    (function() {
-      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    })();
-    </script>
-    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-    <div class="asterisk"></div>
-  </main>
+{{ partial "article.html" . }}
+
+<div class="google-adsense">
+  <div class="label">SPONSORED LINKS</div>
+  <style>
+  .google-adsense-responsive { width: 300px; height: 250px; }
+  </style>
+  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <ins class="adsbygoogle google-adsense-responsive"
+    style="display: inline-block; margin: 0 auto;"
+    data-ad-client="ca-pub-9983442877454265"
+    data-ad-slot="3378617720"></ins>
+  <script>
+  (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+</div>
+
+<div id="disqus_thread"></div>
+<script type="text/javascript" async="async">
+/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+var disqus_shortname = 'rakuishi'; // required: replace example with your forum shortname
+/* * * DON'T EDIT BELOW THIS LINE * * */
+(function() {
+  var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+  dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 
 {{ partial "footer.html" . }}

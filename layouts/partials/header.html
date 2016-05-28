@@ -6,8 +6,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <meta name="copyright" content="Copyright &copy; 2011 rakuishi All rights reserved" />
 <meta name="google-site-verification" content="hLAob0ZIhg0c3AeIGNo4AMQPkxMjM1UM3mBPYNvwceE" />
-<link rel="stylesheet" href="/assets/css/style.css" />
-<link rel="shortcut icon" href="/favicon.ico?cb=150118" type="image/x-icon" />
+<link rel="stylesheet" href="/assets/css/style.css?v=160528" />
+<link rel="shortcut icon" href="/favicon.ico?v=160528" type="image/x-icon" />
 <link rel="alternate" href="/index.xml" type="application/rss+xml" title="{{ .Site.Title }}" />
 <title>{{ $isHomePage := eq .Title .Site.Title }}{{ .Title }}{{ if eq $isHomePage false }} - {{ .Site.Title }}{{ end }}</title>
 </head>
@@ -16,11 +16,13 @@
 <div class="container">
 
   <header role="banner">
-    <div class="row">
-      {{ if eq $isHomePage true }}<h1>{{ end }}<a href="/" class="site-title">{{ .Site.Title }}</a>{{ if eq $isHomePage true }}</h1>{{ end }}
-      <div class="site-content">
-        <a href="/about/">About</a>
-        <a href="/archives/">Post</a>
-      </div>
-    </div>
+    <a href="/" class="header-logo"><img src="/assets/images/logo.png" width="72" height="72"></a>
+    <div class="header-title">{{ if eq $isHomePage true }}<h1>{{ end }}<a href="/">{{ .Site.Title }}</a>{{ if eq $isHomePage true }}</h1>{{ end }}</div>
+    <nav class="header-nav">
+      <ul>
+        <li><a href="/about/">About</a></li>
+        <li><a href="/archives/">Post</a></li>
+        <li><form action="//google.com/search" method="get" accept-charset="UTF-8" class="search"><input type="text" name="q" placeholder="Search"><input type="hidden" name="sitesearch" value="http://rakuishi.com"></form></li>
+      </ul>
+    </nav>
   </header>

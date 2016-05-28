@@ -1,8 +1,6 @@
-      <li itemscope itemtype="http://schema.org/Blog">
-        <a href="{{ .RelPermalink }}">
-          <div class="entry-text">
-            <h2 class="entry-title" itemprop="headline">{{ .Title }}{{ if .Draft }} #Draft{{ end }}</h2>
-            <p class="entry-meta"><span itemprop="datePublished" datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 02, 2006" }}</span>{{substr .Summary 0 75}} ...</p>
-          </div>
-        </a>
-      </li>
+<li itemscope itemtype="http://schema.org/Blog">
+  <a href="{{ .RelPermalink }}">
+    <h2 class="entry-title" itemprop="headline">{{ .Title }}{{ if .Draft }} #Draft{{ end }}</h2>
+    <p class="entry-meta"><span itemprop="datePublished" datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 02, 2006" }}</span>{{substr .Summary 0 75}} ...</p>
+  </a>
+</li>

@@ -1,15 +1,16 @@
 {{ partial "header.html" . }}
 
-  <main role="main">
-    <ul class="list-entry">
-{{ range first 24 .Data.Pages }}
-{{ .Render "summary"}}
+{{ range (.Paginator 4).Pages }}
+  {{ partial "article.html" . }}
 {{ end }}
-    </ul>
 
-    <div class="view-more-posts">
-      <div class="more"><a href="/archives/">View more {{ len .Data.Pages}} posts</a></div>
-    </div>
-  </main>
+<nav class="paginator">
+{{ if .Paginator.HasPrev }}
+  <a class="prev" rel="prev" href="{{.Paginator.Prev.URL}}">« NEWER</a>
+{{ end }}
+{{ if .Paginator.HasNext }}
+  <a class="next" rel="next" href="{{.Paginator.Next.URL}}">OLDER »</a>
+{{ end }}
+</nav>
 
 {{ partial "footer.html" . }}

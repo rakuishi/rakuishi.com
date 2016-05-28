@@ -1,0 +1,12 @@
+<article itemscope itemtype="http://schema.org/BlogPosting">
+  <h1 itemprop="headline" class="entry-title"><a href="{{ .RelPermalink }}">{{ .Title }}{{ if .Draft }} #Draft{{ end }}</a></h1>
+  <div class="entry-meta"><span itemprop="datePublished" datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 02, 2006" }}</span>{{ if .Params.categories }}{{ range .Params.categories }}<span>{{ . }}</span>{{ end }}{{ end }}</div>
+  <section itemprop="text">
+    {{ .Content }}
+  </section>
+  <div class="share">
+    <a href="http://twitter.com/share?url={{ .Permalink }}&text={{ .Title }}" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,height=300,width=600');return false;" class="twitter"></a>
+    <a href="http://www.facebook.com/sharer.php?u={{ .Permalink }}" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,height=300,width=600');return false;" class="facebook"></a>
+    <a href="http://getpocket.com/edit?url={{ .Permalink }}&title={{ .Title }}" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,scrollbars=yes,height=300,width=600');return false;" class="pocket"></a>
+  </div>
+</article>
