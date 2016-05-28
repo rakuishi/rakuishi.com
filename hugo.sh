@@ -3,12 +3,6 @@
 DIR=$(cd $(dirname ${0}) && pwd)
 cd ${DIR}
 
-build_sass() {
-  sass static/assets/sass/style.scss static/assets/css/style.css \
-    --style compressed \
-    --sourcemap=none
-}
-
 hugo_new() {
   SLUG=${1}
   FILENAME=$(date '+%F')-${SLUG}.md
@@ -22,15 +16,14 @@ hugo_server() {
 }
 
 publish() {
-  build_sass
+  sass static/assets/sass/style.scss:static/assets/css/style.css \
+    --style compressed \
+    --sourcemap=none
   hugo
   aws s3 sync --delete --exclude=.DS_Store ${DIR}/public s3://rakuishi.com
 }
 
 case $1 in
-  'sass')
-    build_sass
-    ;;
   'new')
     hugo_new $2
     ;;
