@@ -20,7 +20,7 @@ $root-line-height: 1.5 !default;
 body {
   font-family: Menlo, Monaco, Consolas, monospace, 'Noto Sans Japanese', Hiragino Sans, 'ヒラギノ角ゴシック', Hiragino Kaku Gothic ProN, 'ヒラギノ角ゴ ProN W3', Meiryo, sans-serif;
   font-weight: 400;
-  font-size: 1.4em;
+  font-size: 1.6em;
   word-break: break-all;
   text-align: justify;
   letter-spacing: -0.025em;
@@ -78,7 +78,7 @@ header {
     text-align: center;
     a {
       display: inline-block;
-      font-size: 2.5rem;
+      font-size: 2.4rem;
       font-weight: 700;
       text-transform: uppercase;
       color: $dark-gray;
@@ -92,7 +92,7 @@ header {
       margin-bottom: 0.8rem;
       a { @extend %button; text-transform: uppercase; }
       .search input {
-        width: 14rem;
+        width: 20rem;
         margin: 0.4rem;
         padding: 0.8rem;
         border: 1px solid $border-gray;
@@ -103,6 +103,7 @@ header {
         appearance: none;
         color: $gray;
         background-color: white;
+        &:focus { border-color: $blue; }
       }
     }
   }
@@ -120,10 +121,10 @@ header {
       padding: $grid-gutter/2;
       color: $dark-gray;
       &:hover { background-color: $background; color: $blue; }
-      .entry-title { font-size: 1.7rem; }
+      .entry-title { font-size: 1.8rem; }
       .entry-meta {
         margin: 0;
-        font-size: 1.5rem;
+        font-size: 1.4rem;
         color: $light-gray;
         span:after { margin: 0 0.4rem; content: '\2219'; }
       }
@@ -138,7 +139,7 @@ article {
 
   .entry-title {
     margin-bottom: 0.8rem;
-    font-size: 2.1rem;
+    font-size: 2.2rem;
     text-align: center;
     a {
       color: $dark-gray;
@@ -152,9 +153,9 @@ article {
     span:first-child:before { content: none; }
   }
 
-  h2 { margin: 4.8rem 0 2.4rem; font-size: 2.1rem; color: $gray; }
-  h3 { margin: 2.4rem 0; font-size: 1.7rem; color: $gray; }
-  p  { margin: 2.4rem 0; font-size: 1.5rem; line-height: 1.75; }
+  h2 { margin: 4.8rem 0 2.4rem; font-size: 2.2rem; color: $gray; }
+  h3 { margin: 2.4rem 0; font-size: 1.8rem; color: $gray; }
+  p  { margin: 2.4rem 0; font-size: 1.6rem; line-height: 1.75; }
   a:hover { text-decoration: underline; }
 
   small { font-size: 80%; }
@@ -166,7 +167,7 @@ article {
   ul, ol { margin: 2.4rem 0; padding-left: 2.4rem; }
   ul { list-style: desc; }
   ol { list-style: decimal; }
-  li { font-size: 1.5rem; line-height: 1.75; }
+  li { font-size: 1.6rem; line-height: 1.75; }
 
   hr { height: 2px; margin: 2.4rem 0; border: 0; background-color: $border-gray; }
   img { width: auto; max-width: 100%; max-height: 546px; }
