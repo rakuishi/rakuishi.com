@@ -7,7 +7,7 @@ $light-gray: #a7a7a7 !default;
 $border-gray: #efefef !default;
 $background: #fafafa !default;
 $grid-gutter: 20px !default;
-$max-width: 728px !default;
+$max-width: 728px + $grid-gutter * 4 + 1px * 2 !default;
 
 $root-font-size: 62.5% !default;
 $root-color: $dark-gray !default;
@@ -18,12 +18,11 @@ $root-line-height: 1.5 !default;
 @import 'noto_sans_cjk_jp';
 
 body {
-  font-family: Menlo, Monaco, Consolas, monospace, 'Noto Sans Japanese', Hiragino Sans, 'ヒラギノ角ゴシック', Hiragino Kaku Gothic ProN, 'ヒラギノ角ゴ ProN W3', Meiryo, sans-serif;
+  font-family: PT Sans Caption, 'Noto Sans Japanese', Hiragino Sans, 'ヒラギノ角ゴシック', Hiragino Kaku Gothic ProN, 'ヒラギノ角ゴ ProN W3', Meiryo, sans-serif;
   font-weight: 400;
   font-size: 1.5em;
   word-break: break-all;
   text-align: justify;
-  -webkit-font-smoothing: antialiased;
 }
 
 h1, h2, h3 { font-weight: 400; }
@@ -117,7 +116,7 @@ header {
     &:last-child { border-bottom: 0; }
     a {
       display: block;
-      padding: $grid-gutter/2;
+      padding: $grid-gutter;
       color: $dark-gray;
       &:hover { background-color: $background; color: $blue; }
       .entry-title { font-size: 1.7rem; }
@@ -139,6 +138,7 @@ article {
   .entry-title {
     margin-bottom: 0.8rem;
     font-size: 2.1rem;
+    font-weight: 700;
     text-align: center;
     a {
       color: $dark-gray;
@@ -177,7 +177,7 @@ article {
     margin: 2.4rem 0;
     font-size: 90%;
     th, td { border: 1px solid $border-gray; padding: 1rem; }
-    th { background-color: $background; }
+    th { font-weight: 400; background-color: $background; color: $dark-gray; }
   }
 
   .iframe-wrapper { position: relative; max-width: 480px; height: 0; margin: 2.4rem 0; overflow: hidden; padding-top: 56.25%; }
