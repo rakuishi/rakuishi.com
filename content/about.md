@@ -5,20 +5,33 @@ slug: about
 title: "ABOUT ME"
 ---
 
-はじめまして。<ruby>落石浩一郎<rt>おちいしこういちろう</rt></ruby>といいます。苗字を重箱読みした rakuishi がハンドルネームです。1989 年生まれ福岡県出身です。
-
-大学在籍中（微生物学を専攻）の 2012 年 1 月に趣味で初めた iOS アプリ開発が高じて、2012 年 8 月から新宿にある [AppBank 株式会社](http://www.appbank.net)でプログラマとして働いています。2015 年 3 月からは子会社である apprime 株式会社に転籍。会社では、2016 年 1 月現在、Android アプリ開発とフロントエンド・デベロッパをしています。
+はじめまして。<ruby>落石浩一郎<rt>おちいしこういちろう</rt></ruby>といいます。苗字を重箱読みした rakuishi がハンドルネームです。1989 年生まれ福岡県出身です。大学在籍中（微生物学を専攻）の 2012 年 1 月に趣味で初めた iOS アプリ開発が高じて、アプリ開発とフロントエンド・デベロッパを仕事にしています。
 
 このサイト rakuishi.com は、僕個人によるブログです。会社とは関係ありません。2011 年 8 月から記事を書いています。当初、WordPress で運営していたブログでしたが、2015 年 1 月からは、静的サイトジェネレータ [Hugo](http://gohugo.io/) で運営しています。[ソースコード](https://github.com/rakuishi/rakuishi.com)を [GitHub](https://github.com/rakuishi) で公開しています。記事の更新を追いかけるには、[Feedly](http://cloud.feedly.com/#subscription%2Ffeed%2Fhttp%3A%2F%2Frakuishi.com%2Ffeed%2F) もしくは、[RSS](http://rakuishi.com/index.xml) から。
 
-[Twitter](https://twitter.com/rakuishi07) に呟いています。Facebook は、面識のある人だけと友達になっています。[Tumblr](http://zbrush.rakuishi.com/) に、趣味で始めた ZBrush の作品を載せることにしました（更新が途絶えました）。連絡は、[Twitter](https://twitter.com/rakuishi07) もしくは、[rakuishi@gmail.com](mailto:rakuishi@gmail.com) に頂けるとできるだけ返信します。
+[Twitter](https://twitter.com/rakuishi07) に呟いています。Facebook は、面識のある人だけと友達になっています。[Tumblr](http://zbrush.rakuishi.com/) に、趣味で始めた ZBrush の作品を載せることにしました（更新が途絶えました）。連絡は、[Twitter](https://twitter.com/rakuishi07) もしくは、[rakuishi@gmail.com](mailto:rakuishi@gmail.com) に頂けるとできるだけ返信します。[LinkedIn](https://jp.linkedin.com/in/ochiishikoichiro) と [Wantedly](https://www.wantedly.com/users/456907) もあります。
 
-2015 年は、[GitHub](https://github.com/rakuishi) で積極的に活動していくのが目標でした（密かに目標にしていた累計 100 スター達成）。2016 年は、サーバー構築・Ruby on Rails・Interactive design への苦手感を克服するのが目標です。将来の夢は、山小屋を建てることです。
+2015 年は、[GitHub](https://github.com/rakuishi) で積極的に活動していくのが目標でした（密かに目標にしていた累計 100 スター達成）。2016 年は、サーバー構築・Ruby on Rails・Interactive design・英語への苦手感を克服するのが目標です。将来の夢は、山小屋を建てることです。
 
 ## Education
 
-* National Institute of Technology, Kitakyushu College, 2010.
-* Toyohashi University of Technology, 2012.
+* 2010.04 - 2012.04, Toyohashi University of Technology
+* 2005.04 - 2010.03, National Institute of Technology, Kitakyushu College
+
+## Work Experience
+
+### 2015.03 - Now, apprime Inc.
+
+AppBank 株式会社の子会社である apprime 株式会社に転籍
+
+* スマホゲームに特化した SNS アプリ（リアルタイムチャット、掲示版、ブログ、プロフィール機能を含む）の企画、開発（Android）を担当
+* モバイルアプリ API サーバーの Ruby on Rails による開発
+
+### 2012.08 - 2015.02, AppBank Inc.
+
+* ツール系（天気、占い、自社メディアアプリ、スマホゲーム攻略メディアアプリ）の iOS アプリ（Objective-C）、Android アプリ（Java）の開発
+* スマホゲーム公式攻略サイト、及び社内の作業効率化ツールの開発（HTML5/CSS/PHP）
+* WordPress で運営されている自社メディアのフルリニューアルを担当（HTML5/CSS/jQuery/PHP）
 
 ## Personal Projects
 
@@ -57,7 +70,7 @@ title: "ABOUT ME"
 * [LinkShare To PHG](http://rakuishi.com/archives/5886/)  
 <small>Published on 2013/08/24, LinkShare を PHG のアフィリエイトリンクに置き換える</small>
 
-### Ruby on Rails Project
+### Ruby on Rails
 
 * [aniradi.me](http://aniradi.me/)  
 <small>Published on 2016/04/18, Gather anime radio waves</small>
