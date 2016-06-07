@@ -18,7 +18,7 @@ $root-line-height: 1.5 !default;
 @import 'noto_sans_cjk_jp';
 
 body {
-  font-family: PT Sans Caption, 'Noto Sans Japanese', Hiragino Sans, 'ヒラギノ角ゴシック', Hiragino Kaku Gothic ProN, 'ヒラギノ角ゴ ProN W3', Meiryo, sans-serif;
+  font-family: 'Noto Sans Japanese', Hiragino Sans, 'ヒラギノ角ゴシック', Hiragino Kaku Gothic ProN, 'ヒラギノ角ゴ ProN W3', Meiryo, sans-serif;
   font-weight: 400;
   font-size: 1.5em;
   word-break: break-all;
@@ -52,11 +52,13 @@ a, a:hover { color: $blue; }
 }
 
 %button {
+  display: inline-block;
+  height: 36px;
   margin: 0.4rem;
-  padding: 0.8rem;
+  padding: 0 0.8rem;
   border-radius: 4px;
   font-size: 1.4rem;
-  line-height: 1;
+  line-height: 36px;
   color: $gray;
   &:hover { background-color: $blue; color: white; }
 }
@@ -78,7 +80,6 @@ header {
       display: inline-block;
       font-size: 2.5rem;
       font-weight: 700;
-      text-transform: uppercase;
       color: $dark-gray;
       &:hover { color: $blue; }
     }
@@ -91,12 +92,13 @@ header {
       a { @extend %button; text-transform: uppercase; }
       .search input {
         width: 20rem;
+        height: 36px;
         margin: 0.4rem;
-        padding: 0.8rem;
+        padding: 0 0.8rem;
         border: 1px solid $border-gray;
         border-radius: 4px;
         font-size: 1.4rem;
-        line-height: 1;
+        line-height: 34px;
         outline: none;
         appearance: none;
         color: $gray;
