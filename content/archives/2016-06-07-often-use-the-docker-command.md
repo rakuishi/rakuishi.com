@@ -29,7 +29,9 @@ $ mkdir app
 $ echo 'Hello, World!' > app/index.html
 ```
 
-## Dokcer マシンを立ち上げる
+## Dokcer コマンド一覧
+
+### Dokcer マシンを立ち上げる
 
 Docker Toolbox インストール時に作成される Docker Quickstart Terminal.app を起動し、`default` という名前で用意された Linux 環境を立ち上げます。実際には内部に含まれている start.sh シェルスクリプトが実行されており、以下のコマンドによって Docker マシンを立ち上げています。
 
@@ -37,7 +39,7 @@ Docker Toolbox インストール時に作成される Docker Quickstart Termina
 $ docker-machine create -d virtualbox --virtualbox-memory 2048 --virtualbox-disk-size 204800 default
 ```
 
-## Docker マシン一覧を確認する
+### Docker マシン一覧を確認する
 
 ```
 $ docker-machine ls
@@ -45,20 +47,20 @@ NAME     ACTIVE  DRIVER      STATE    URL                        SWARM  DOCKER  
 default  *       virtualbox  Running  tcp://192.168.99.100:2376         v1.9.1   
 ```
 
-## Docker マシンの IP Address を確認する
+### Docker マシンの IP Address を確認する
 
 ```
 $ docker-machine ip default
 192.168.99.100
 ```
 
-## Dockerfile をビルドし、Docker イメージを作成する
+### Dockerfile をビルドし、Docker イメージを作成する
 
 ```
 $ docker build -t [IMAGE NAME] .
 ```
 
-## Docker コンテナを起動する
+### Docker コンテナを起動する
 
 `-v` オプションを使用することでファイル共有が可能になります。
 
@@ -72,13 +74,13 @@ $ docker run -d -p 80:80 -v $(pwd)/app:/app --name=[CONTAINER NAME] [IMAGE NAME]
 $ open "http://$(docker-machine ip default)"
 ```
 
-## Docker コンテナ内に入る
+### Docker コンテナ内に入る
 
 ```
 $ docker exec -it [CONTAINER NAME] bash
 ```
 
-## Dokcer イメージ一覧を確認する
+### Dokcer イメージ一覧を確認する
 
 ```
 $ docker images
@@ -86,23 +88,22 @@ REPOSITORY  TAG     IMAGE ID      CREATED       VIRTUAL SIZE
 tutum/lamp  latest  f02090877f42  5 months ago  426.5 MB
 ```
 
-## Docker イメージを削除する
+### Docker イメージを削除する
 
 ```
 $ docker rmi -f [IMAGE NAME]
 ```
 
-## Docker コンテナ一覧を確認する
+### Docker コンテナ一覧を確認する
 
 ```
 $ docker ps -a
 ```
 
-## Docker コンテナを削除する
+### Docker コンテナを削除する
 
 [CONTAINER NAME] は、[CONTAINER ID] でも良くて、その場合、先頭数文字などを入力するだけで削除できます。
 
 ```
 $ docker rm -f [CONTAINER NAME]
 ```
-
