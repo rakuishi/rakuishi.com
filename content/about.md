@@ -52,7 +52,7 @@ AppBank 株式会社の子会社である apprime 株式会社に転籍
 * [StampTime](https://itunes.apple.com/jp/app/id452580423?mt=8&uo=4&at=11l3RT)  
 <small>Ending Development on 2013/10/08</small>
 
-### [Android App](https://play.google.com/store/apps/developer?id=rakuishi&hl=ja)
+### [Android App](https://play.google.com/store/apps/dev?id=5894821878234337547)
 
 * [Todo-Android](https://play.google.com/store/apps/details?id=com.rakuishi.todo)  
 <small>Last Updated on 2015/04/29, Practice for Material Design and Realm, [GitHub](https://github.com/rakuishi/Todo-Android)</small>
