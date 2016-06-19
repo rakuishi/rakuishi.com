@@ -1,8 +1,10 @@
 {{ partial "header.html" . }}
 
-{{ range (.Paginator 4).Pages }}
-  {{ partial "article.html" . }}
+<ul class="list-entry">
+{{ range (.Paginator 16).Pages }}
+  {{ .Render "summary"}}
 {{ end }}
+</ul>
 
 <nav class="paginator">
 {{ if .Paginator.HasPrev }}
