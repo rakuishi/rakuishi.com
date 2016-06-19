@@ -7,6 +7,7 @@ hugo_new() {
   SLUG=${1}
   FILENAME=$(date '+%F')-${SLUG}.md
   hugo new archives/${FILENAME}
+  sed -i '' "s/slug: null/slug: ${SLUG}/g" content/archives/${FILENAME}
   open content/archives/${FILENAME}
 }
 
