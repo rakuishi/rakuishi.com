@@ -8,10 +8,10 @@
 
 <nav class="paginator">
 {{ if .Paginator.HasPrev }}
-  <a class="prev" rel="prev" href="{{.Paginator.Prev.URL}}">« NEWER</a>
+  <a class="prev" rel="prev" href="{{.Paginator.Prev.URL}}" ontouchstart="">← Newer Posts</a>
 {{ end }}
 {{ if .Paginator.HasNext }}
-  <a class="next" rel="next" href="{{.Paginator.Next.URL}}">OLDER »</a>
+  <a class="next" rel="next" href="{{.Paginator.Next.URL}}" ontouchstart="">Older Posts →</a>
 {{ end }}
 </nav>
 

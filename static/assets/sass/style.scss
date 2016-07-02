@@ -1,10 +1,10 @@
 @charset "utf-8";
 
 $blue: #0087d0 !default;
-$dark-gray: #242424 !default;
-$gray: #5f5f5f !default;
-$light-gray: #a7a7a7 !default;
-$border-gray: #efefef !default;
+$dark-gray: rgba(0,0,0,.8) !default;
+$gray: rgba(0,0,0,.6) !default;
+$light-gray: rgba(0,0,0,.44) !default;
+$border-gray: rgba(0,0,0,.09) !default;
 $background: #fafafa !default;
 $grid-gutter: 20px !default;
 $max-width: 728px + $grid-gutter * 4 + 1px * 2 !default;
