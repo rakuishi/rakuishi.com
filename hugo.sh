@@ -1,5 +1,7 @@
 #!/bin/sh
 
+set -e
+
 DIR=$(cd $(dirname ${0}) && pwd)
 cd ${DIR}
 
@@ -35,7 +37,7 @@ case $1 in
     publish
     ;;
   *)
-    echo "Usage: $0 <sass|new|server|publish>"
+    echo "Usage: $0 <new|server|publish>"
     exit 2
     ;;
 esac
