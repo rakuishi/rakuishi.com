@@ -16,13 +16,12 @@
 <div class="container">
 
   <header role="banner">
-    <a href="/" class="header-logo"><img src="/assets/images/logo.png" width="72" height="72" ontouchstart=""></a>
+    <a href="/" class="header-logo"><img src="/assets/images/logo.jpg" width="80" height="80" ontouchstart=""></a>
     <div class="header-title">{{ if eq $isHomePage true }}<h1>{{ end }}<a href="/" ontouchstart="">{{ .Site.Title }}</a>{{ if eq $isHomePage true }}</h1>{{ end }}</div>
+    <p class="header-description">
+      Hi, I’m <a href="/about/">rakuishi</a>, a Mobile App and Front-end Developer.
+    </p>
     <nav class="header-nav">
-      <ul>
-        <li><a href="/about/" ontouchstart="">About</a></li>
-        <li><a href="/archives/" ontouchstart="">Post</a></li>
-        <li><form action="//google.com/search" method="get" accept-charset="UTF-8" class="search"><input type="text" name="q" placeholder="Search this site..."><input type="hidden" name="sitesearch" value="http://rakuishi.com"></form></li>
-      </ul>
+      <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search"><input type="text" name="q" placeholder="Search this site..." autocomplete="off"><input type="hidden" name="sitesearch" value="http://rakuishi.com"></form>
     </nav>
   </header>
