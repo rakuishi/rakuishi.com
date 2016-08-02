@@ -20,7 +20,7 @@ title: "ABOUT ME"
 
 ## Work Experience
 
-### 2015.03 - Now, apprime Inc.
+### 2015.03 - 2016.07, apprime Inc.
 
 AppBank 株式会社の子会社である apprime 株式会社に転籍
 
