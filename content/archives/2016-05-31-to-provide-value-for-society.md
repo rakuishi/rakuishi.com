@@ -3,7 +3,7 @@ categories:
 - Blog
 date: 2016-05-31T22:28:45+09:00
 draft: false
-slug: provide-value-for-society
+slug: to-provide-value-for-society
 title: 社会に価値を提供すること
 ---
 
