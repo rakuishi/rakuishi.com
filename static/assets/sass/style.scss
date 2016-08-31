@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 $blue: #2173d9 !default;
-$dark-gray: #404851 !default;
+$dark-gray: #3f4148 !default;
 $gray: rgba(0,0,0,.6) !default;
 $light-gray: rgba(0,0,0,.44) !default;
 $border-gray: rgba(0,0,0,.09) !default;
@@ -23,17 +23,16 @@ $selection-color: $dark-gray !default;
 }
 
 @import 'sanitize';
-@import 'noto_sans_cjk_jp';
 
 body {
-  font-family: 'Lucida Grande', 'Lucida Sans Unicode', -apple-system, 'BlinkMacSystemFont', '.SFNSDisplay-Regular', 'Noto Sans Japanese', Hiragino Sans, 'ヒラギノ角ゴシック', Hiragino Kaku Gothic ProN, 'ヒラギノ角ゴ ProN W3', Meiryo, sans-serif;
-  font-weight: 400;
-  font-size: 15px;
+  font-family: Avenir Next, Arial, 'ヒラギノ角ゴ ProN W3', Hiragino Kaku Gothic ProN, 'メイリオ', Meiryo, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
   word-break: break-all;
   text-align: justify;
 }
 
-h1, h2, h3 { font-weight: 400; line-height: 1.25; letter-spacing: -0.025em; }
+h1, h2, h3 { font-weight: 500; line-height: 1.25; letter-spacing: -0.025em; }
 a, a:hover { color: $blue; }
 
 .container {
@@ -133,7 +132,7 @@ article {
   .entry-title {
     margin-bottom: 4px;
     font-size: 21px;
-    font-weight: 400;
+    font-weight: 500;
   }
   .entry-meta {
     color: $light-gray;
@@ -141,9 +140,9 @@ article {
     span:first-child:before { content: none; }
   }
 
-  h2 { margin: 48px 0 24px; font-size: 21px; font-weight: 400; color: $gray; }
-  h3 { margin: 24px 0; font-size: 17px; font-weight: 400; color: $gray; }
-  p  { margin: 24px 0; font-size: 15px; line-height: 1.75; }
+  h2 { margin: 48px 0 24px; font-size: 22px; font-weight: 500; color: $gray; }
+  h3 { margin: 24px 0; font-size: 18px; font-weight: 500; color: $gray; }
+  p  { margin: 24px 0; font-size: 16px; line-height: 1.75; }
   a:hover { text-decoration: underline; }
 
   small { font-size: 80%; }
@@ -155,7 +154,7 @@ article {
   ul, ol { margin: 24px 0; padding-left: 24px; }
   ul { list-style: desc; }
   ol { list-style: decimal; }
-  li { font-size: 15px; line-height: 1.75; }
+  li { font-size: 16px; line-height: 1.75; }
 
   hr { height: 2px; margin: 24px 0; border: 0; background-color: $border-gray; }
   img { width: auto; max-width: 100%; max-height: 546px; }
@@ -166,7 +165,7 @@ article {
     margin: 24px 0;
     font-size: 90%;
     th, td { border: 1px solid $border-gray; padding: 8px; }
-    th { font-weight: 400; background-color: $background; color: $dark-gray; }
+    th { font-weight: 500; background-color: $background; color: $dark-gray; }
   }
 
   .iframe-wrapper { position: relative; max-width: 480px; height: 0; margin: 24px 0; overflow: hidden; padding-top: 56.25%; }
