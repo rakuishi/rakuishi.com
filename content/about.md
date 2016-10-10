@@ -9,20 +9,21 @@ title: "ABOUT ME"
 
 このサイト rakuishi.com は、僕個人によるブログです。会社とは関係ありません。2011 年 8 月から記事を書いています。当初、WordPress で運営していたブログでしたが、2015 年 1 月からは、静的サイトジェネレータ [Hugo](http://gohugo.io/) で運営しています。[ソースコード](https://github.com/rakuishi/rakuishi.com)を [GitHub](https://github.com/rakuishi) で公開しています。記事の更新を追いかけるには、[Feedly](http://cloud.feedly.com/#subscription%2Ffeed%2Fhttp%3A%2F%2Frakuishi.com%2Ffeed%2F) もしくは、[RSS](http://rakuishi.com/index.xml) から。
 
-[Twitter](https://twitter.com/rakuishi07) に呟いています。Facebook は、面識のある人だけと友達になっています。[Tumblr](http://zbrush.rakuishi.com/) に、趣味で始めた ZBrush の作品を載せることにしました（更新が途絶えました）。連絡は、[Twitter](https://twitter.com/rakuishi07) もしくは、[rakuishi@gmail.com](mailto:rakuishi@gmail.com) に頂けるとできるだけ返信します。[LinkedIn](https://jp.linkedin.com/in/ochiishikoichiro) と [Wantedly](https://www.wantedly.com/users/456907) もあります。
+[Twitter](https://twitter.com/rakuishi07) に呟いています。Facebook は、面識のある人だけと友達になっています。[Tumblr](http://zbrush.rakuishi.com/) に、趣味で始めた ZBrush の作品を載せていましたが途絶えました。連絡は、[Twitter](https://twitter.com/rakuishi07) もしくは、[rakuishi@gmail.com](mailto:rakuishi@gmail.com) に頂けるとできるだけ返信します。[Wantedly](https://www.wantedly.com/users/456907) もあります。
 
-2015 年は、[GitHub](https://github.com/rakuishi) で積極的に活動していくのが目標でした（密かに目標にしていた累計 100 スター達成）。2016 年は、サーバー構築・Ruby on Rails・Interactive design・英語への苦手感を克服するのが目標です。将来の夢は、山小屋を建てることです。
+2015 年は、[GitHub](https://github.com/rakuishi) で積極的に活動していくのが目標でした。2016 年は、サーバー構築・Ruby on Rails・Interactive design・英語への苦手感を克服するのが目標です。将来の夢は、山小屋を建てることです。
 
 ## Education
 
-* 2010.04 - 2012.04, Toyohashi University of Technology
-* 2005.04 - 2010.03, National Institute of Technology, Kitakyushu College
+* 2016.08 - 2016.12, [Carthel Native English 1 on 1](http://www.cne1jp.com/)
+* 2010.04 - 2012.04, [Toyohashi University of Technology](http://www.tut.ac.jp/)
+* 2005.04 - 2010.03, [National Institute of Technology, Kitakyushu College](https://www.kct.ac.jp/)
 
 ## Work Experience
 
 ### 2015.03 - 2016.07, apprime Inc.
 
-AppBank 株式会社の子会社である apprime 株式会社に転籍
+AppBank Inc. 子会社である apprime Inc. に転籍
 
 * スマホゲームに特化した SNS アプリ（リアルタイムチャット、掲示版、ブログ、プロフィール機能を含む）の企画、開発（Android）を担当
 * モバイルアプリ API サーバーの Ruby on Rails による開発
