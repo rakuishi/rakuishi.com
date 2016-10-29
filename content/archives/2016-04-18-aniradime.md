@@ -13,8 +13,8 @@ title: "ネット配信されているアニラジの更新情報をまとめた
 
 ![](/images/2016/04/aniradime.png)
 
-* [aniradi.me](http://aniradi.me/)
-* [rakuishi/aniradi.me: Gather anime radio waves.](https://github.com/rakuishi/aniradi.me)
+* [aniradime](http://radio.rakuishi.com/)
+* [rakuishi/aniradime: Gather anime radio waves.](https://github.com/rakuishi/aniradime)
 
 ## Library
 

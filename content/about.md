@@ -73,5 +73,5 @@ AppBank Inc. 子会社である apprime Inc. に転籍
 
 ### Ruby on Rails
 
-* [aniradi.me](http://aniradi.me/)  
+* [aniradime](http://radio.rakuishi.com/)  
 <small>Published on 2016/04/18, Gather anime radio waves</small>
