@@ -9,7 +9,7 @@ title: "ABOUT ME"
 
 このサイト rakuishi.com は、僕個人によるブログです。会社とは関係ありません。2011 年 8 月から記事を書いています。当初、WordPress で運営していたブログでしたが、2015 年 1 月からは、静的サイトジェネレータ [Hugo](http://gohugo.io/) で運営しています。[ソースコード](https://github.com/rakuishi/rakuishi.com)を [GitHub](https://github.com/rakuishi) で公開しています。記事の更新を追いかけるには、[Feedly](http://cloud.feedly.com/#subscription%2Ffeed%2Fhttp%3A%2F%2Frakuishi.com%2Ffeed%2F) もしくは、[RSS](http://rakuishi.com/index.xml) から。
 
-[Twitter](https://twitter.com/rakuishi07) に呟いています。Facebook は、面識のある人だけと友達になっています。[Tumblr](http://zbrush.rakuishi.com/) に、趣味で始めた ZBrush の作品を載せていましたが途絶えました。連絡は、[Twitter](https://twitter.com/rakuishi07) もしくは、[rakuishi@gmail.com](mailto:rakuishi@gmail.com) に頂けるとできるだけ返信します。[Wantedly](https://www.wantedly.com/users/456907) もあります。
+[Twitter](https://twitter.com/rakuishi07) に呟いています。Facebook は、面識のある人だけと友達になっています。連絡は、[Twitter](https://twitter.com/rakuishi07) もしくは、[rakuishi@gmail.com](mailto:rakuishi@gmail.com) に頂けるとできるだけ返信します。[Wantedly](https://www.wantedly.com/users/456907) もあります。
 
 2015 年は、[GitHub](https://github.com/rakuishi) で積極的に活動していくのが目標でした。2016 年は、サーバー構築・Ruby on Rails・Interactive design・英語への苦手感を克服するのが目標です。将来の夢は、山小屋を建てることです。
 
