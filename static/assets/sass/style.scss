@@ -25,14 +25,14 @@ $selection-color: $dark-gray !default;
 @import 'sanitize';
 
 body {
-  font-family: Avenir Next, Arial, 'ヒラギノ角ゴ ProN W3', Hiragino Kaku Gothic ProN, 'メイリオ', Meiryo, sans-serif;
-  font-weight: 500;
+  font-family: 'Roboto', 'ヒラギノ角ゴ ProN W3', Hiragino Kaku Gothic ProN, 'メイリオ', Meiryo, sans-serif;
+  font-weight: 400;
   font-size: 16px;
   word-break: break-all;
   text-align: justify;
 }
 
-h1, h2, h3 { font-weight: 500; line-height: 1.25; letter-spacing: -0.025em; }
+h1, h2, h3 { font-weight: 400; line-height: 1.25; }
 a, a:hover { color: $blue; }
 
 .container {
@@ -63,11 +63,11 @@ header {
     &:hover { transform: rotate(-15deg); }
   }
   .header-title {
+    line-height: 1;
     margin-bottom: 8px;
     a {
       display: inline-block;
       font-size: 22px;
-      font-weight: 500;
       line-height: 1.25;
       text-transform: uppercase;
       letter-spacing: -0.025em;
@@ -132,7 +132,6 @@ article {
   .entry-title {
     margin-bottom: 4px;
     font-size: 21px;
-    font-weight: 500;
   }
   .entry-meta {
     color: $light-gray;
@@ -140,8 +139,8 @@ article {
     span:first-child:before { content: none; }
   }
 
-  h2 { margin: 48px 0 24px; font-size: 22px; font-weight: 500; color: $gray; }
-  h3 { margin: 24px 0; font-size: 18px; font-weight: 500; color: $gray; }
+  h2 { margin: 48px 0 24px; font-size: 22px; color: $gray; }
+  h3 { margin: 24px 0; font-size: 18px; color: $gray; }
   p  { margin: 24px 0; font-size: 16px; line-height: 1.75; }
   a:hover { text-decoration: underline; }
 
@@ -165,7 +164,7 @@ article {
     margin: 24px 0;
     font-size: 90%;
     th, td { border: 1px solid $border-gray; padding: 8px; }
-    th { font-weight: 500; background-color: $background; color: $dark-gray; }
+    th { background-color: $background; color: $dark-gray; }
   }
 
   .iframe-wrapper { position: relative; max-width: 480px; height: 0; margin: 24px 0; overflow: hidden; padding-top: 56.25%; }
