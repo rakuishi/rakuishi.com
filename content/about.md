@@ -13,8 +13,6 @@ title: "ABOUT ME"
 
 2015 年は、[GitHub](https://github.com/rakuishi) で積極的に活動していくのが目標でした。2016 年は、サーバー構築・Ruby on Rails・Interactive design・英語への苦手感を克服するのが目標です。将来の夢は、山小屋を建てることです。
 
-<script type="text/javascript" src="https://minmoji.ucda.jp/sealjs/http%3A__rakuishi.com_" charset="UTF-8"></script>
-
 ## Education
 
 * 2016.08 - 2016.12, [Carthel Native English 1 on 1](http://www.cne1jp.com/)
