@@ -2,7 +2,7 @@
 
 $blue: #2173d9 !default;
 $dark-gray: #3f4148 !default;
-$gray: rgba(0,0,0,.6) !default;
+$gray: rgba(0,0,0,.7) !default;
 $light-gray: rgba(0,0,0,.44) !default;
 $border-gray: rgba(0,0,0,.09) !default;
 $background: #fafafa !default;
@@ -13,6 +13,14 @@ $root-color: $dark-gray !default;
 $root-cursor: inherit !default;
 $root-line-height: 1.5 !default;
 $selection-color: $dark-gray !default;
+
+@font-face {
+  font-family: minmoji;
+  src: url('https://minmoji.ucda.jp/fontseot/http%3A__rakuishi.com_');
+  src: local('minmoji'),
+    url('https://minmoji.ucda.jp/fontswoff/http%3A__rakuishi.com_') format('woff'),
+    url('https://minmoji.ucda.jp/fonts/http%3A__rakuishi.com_') format('opentype');
+}
 
 @mixin placeholder {
   &:placeholder-shown { @content; }
@@ -25,7 +33,7 @@ $selection-color: $dark-gray !default;
 @import 'sanitize';
 
 body {
-  font-family: 'Roboto', 'ヒラギノ角ゴ ProN W3', Hiragino Kaku Gothic ProN, 'メイリオ', Meiryo, sans-serif;
+  font-family: minmoji, 'ヒラギノ角ゴ ProN W3', Hiragino Kaku Gothic ProN, 'メイリオ', Meiryo, sans-serif;
   font-weight: 400;
   font-size: 16px;
   word-break: break-all;
@@ -137,6 +145,7 @@ article {
     color: $light-gray;
     span:before { margin: 0 4px; content: '\2219'; }
     span:first-child:before { content: none; }
+    a { color: $light-gray; }
   }
 
   h2 { margin: 48px 0 24px; font-size: 22px; color: $gray; }
