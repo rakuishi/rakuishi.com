@@ -30,7 +30,7 @@ $selection-color: $dark-gray !default;
   &::-webkit-input-placeholder { @content; }
 }
 
-@import 'sanitize';
+@import 'sanitize', 'highlight_js_github';
 
 body {
   font-family: minmoji, 'ヒラギノ角ゴ ProN W3', Hiragino Kaku Gothic ProN, 'メイリオ', Meiryo, sans-serif;
