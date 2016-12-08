@@ -157,8 +157,8 @@ article {
     a { color: $light-gray; }
   }
 
-  h2 { margin: 60px 0 24px; font-size: 22px; color: $dark-gray; }
-  h3 { margin: 24px 0; font-size: 18px; color: $dark-gray; }
+  h2 { margin: 60px 0 24px; padding-bottom: 0.5em; font-size: 22px; color: $dark-gray; border-bottom: 2px solid $border-gray; }
+  h3 { margin: 24px 0; font-size: 20px; color: $dark-gray; }
   p  { margin: 24px 0; font-size: 16px; line-height: 1.75; }
   a:hover { text-decoration: underline; }
 
