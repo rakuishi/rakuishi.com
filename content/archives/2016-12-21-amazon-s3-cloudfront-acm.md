@@ -50,6 +50,6 @@ S3 のために作成していたレコードの Alias Target を S3 → CloudFr
 
 ## Others
 
-HTTP からのリソース読み込みがあると Google Chrome の場合では、緑色の鍵マークにならないため、画像のリンク先を HTTPS に変える必要があります。
+HTTP からのリソース読み込みがあると Google Chrome の場合では、緑色の鍵マークにならないため、画像のリンク先を HTTPS に変える必要があります。→ [SSLページにAmazonからの画像を表示する。 - 前人未踏の領域へ](http://d.hatena.ne.jp/takeR/20141026/1414356669)
 
-- [SSLページにAmazonからの画像を表示する。 - 前人未踏の領域へ](http://d.hatena.ne.jp/takeR/20141026/1414356669)
+また、コメントシステム Disqus のマイグレーションのために、CSV ファイルを用意しました。詳しい方法は次の記事が詳しいです。→ [How to Migrate Disqus Comments to HTTPS - woorkup](https://woorkup.com/migrate-disqus-comments-https/)
