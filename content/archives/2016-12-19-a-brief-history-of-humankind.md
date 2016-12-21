@@ -17,6 +17,6 @@ title: 現実という仮想空間に生きる
 
 だが、人間の場合、ゲノムにそのルールが刻まれていないものの、そういったルールや認知を叩き込む余地が脳に十分にあり、逆にまたその認知を疑う余地もある。だから、なんか虚しいとか、生きるのに萎えてしまったりする（僕だけか？）。生物はもっと気ままなはずなのに、人間は認知という虚構に自ら閉じこもり、自らをホモ・サピエンス（賢い人間の意味）と呼んでいる。賢いのだか、臆病なのか。なんと皮肉な物語を重ねていくのだろう。
 
-{{<amazon id="430922671X" title="サピエンス全史(上)文明の構造と人類の幸福" src="http://ecx.images-amazon.com/images/I/51MSnnvzg7L._SL160_.jpg">}}
+{{<amazon id="430922671X" title="サピエンス全史(上)文明の構造と人類の幸福" src="https://images-na.ssl-images-amazon.com/images/I/51MSnnvzg7L._SL160_.jpg">}}
 
-{{<amazon id="4309226728" title="サピエンス全史(下)文明の構造と人類の幸福" src="http://ecx.images-amazon.com/images/I/51Oiig3u-6L._SL160_.jpg">}}
+{{<amazon id="4309226728" title="サピエンス全史(下)文明の構造と人類の幸福" src="https://images-na.ssl-images-amazon.com/images/I/51Oiig3u-6L._SL160_.jpg">}}
