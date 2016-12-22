@@ -23,7 +23,7 @@ publish() {
     --style compressed \
     --sourcemap=none
   hugo
-  aws s3 sync --delete --exclude=.DS_Store ${DIR}/public s3://rakuishi.com
+  aws s3 sync ${DIR}/public s3://rakuishi.com --delete --exclude=.DS_Store --cache-control "max-age=300"
 }
 
 case $1 in
