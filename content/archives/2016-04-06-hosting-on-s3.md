@@ -1,6 +1,6 @@
 ---
 categories:
-- Web Service
+- AWS
 date: 2016-04-06T22:16:34+09:00
 draft: false
 slug: hosting-on-s3

@@ -1,6 +1,6 @@
 ---
 categories:
-- Blog
+- AWS
 date: 2016-12-21T16:56:51+09:00
 draft: false
 slug: amazon-s3-cloudfront-acm
