@@ -3,3 +3,4 @@ languageCode: ja
 title: rakuishi.com
 author: rakuishi
 metadataformat: yaml
+preservetaxonomynames: true

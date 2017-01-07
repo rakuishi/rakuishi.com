@@ -1,5 +1,6 @@
 {{ partial "header.html" . }}
 
+<h1 class="list-title">{{ .Title }}</h1>
 <ul class="list-entry">
 {{ range .Data.Pages }}
   {{ .Render "summary"}}
