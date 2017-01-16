@@ -1,10 +1,12 @@
 {{ partial "header.html" . }}
 
-<h1 class="list-title">{{ .Title }}</h1>
-<ul class="list-entry">
-{{ range .Data.Pages }}
-  {{ .Render "summary"}}
-{{ end }}
-</ul>
+<main class="entry-list-container">
+  <h1 class="name">{{ .Title }}</h1>
+  <ul class="entry-list">
+    {{ range .Data.Pages }}
+      {{ .Render "summary" }}
+    {{ end }}
+  </ul>
+</main>
 
 {{ partial "footer.html" . }}
