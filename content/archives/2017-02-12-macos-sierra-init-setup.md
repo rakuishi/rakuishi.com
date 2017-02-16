@@ -15,22 +15,22 @@ title: "[Macbook Pro / Touch Bar] macOS Sierra 初期設定"
 
 ### Dock
 
-- 画面上の位置を「右」に選択する
+- 画面上の位置を「右」に設定する
 - 「Dock を自動的に隠す」を入にする
 
 ### キーボード
 
 - キーボード → 「キーのリピート」を最速に、「リピート入力認識までの時間」を最短にする
-- キーボード → 「ショートカット」タブ → キーボード → 「次のウインドウを操作対象にする」を Option + Tab に変更（アプリケーション単位の切り替えは、Command + Tab なので、アプリケーションのウィンドウ単位のウインドウ切り替えを Option + Tab にしておくと操作感を統一できる）
+- キーボード → 「ショートカット」タブ → キーボード → 「次のウインドウを操作対象にする」を Option + Tab に変更する（アプリケーション単位の切り替えは、Command + Tab なので、アプリケーションのウィンドウ単位のウインドウ切り替えを Option + Tab にしておくと操作感を統一できる）
 - キーボード → 「ショートカット」タブ → 入力ソース → 「前の入力ソースを選択」を「⌘スペース」に変更する（Spotlight と競合するからチェックを外す。US キーボードを使う時は、入力ソースの変換は頻繁に利用するため、Command + Space に割り当てた。後述する Alfred は Option + Space）
-- フルキーボードアクセス（Tab キーを押してウインドウやダイアログ内の操作対象を移動できる）を「すべてのコントロール」に設定
-- キーボード → 「修飾キー...」を選択 → 「Caps Lock」を 「^ Control」に変更（Caps Lock を使う機会がないため）
-- 日本語の入力ソースは「カタカナ」と「ローマ字」のチェックを解除
-- キーボード → Touch Bar に表示する項目 → コントロールスリップ（展開した状態）に変更する（自宅で使っている旧 MacBook Pro Retina との操作感統一）
+- フルキーボードアクセス（Tab キーを押してウインドウやダイアログ内の操作対象を移動できる）を「すべてのコントロール」に設定する
+- キーボード → 「修飾キー...」を選択 → 「Caps Lock」を 「^ Control」に変更する（Caps Lock を使う機会がないため）
+- 日本語の入力ソースは「カタカナ」と「ローマ字」のチェックを解除する
+- キーボード → Touch Bar に表示する項目 → コントロールスリップ（展開した状態）に変更する（自宅で使っている旧 MacBook Pro Retina との操作感を統一する）
 
 ### トラックパッド
 
-- トラックパッド → ポイントとクリック → 「タップでクリック」を有効
+- トラックパッド → ポイントとクリック → 「タップでクリック」を有効にする
 
 ### ホットコーナー
 
@@ -42,39 +42,40 @@ title: "[Macbook Pro / Touch Bar] macOS Sierra 初期設定"
 
 ### ファイアウォール
 
-セキュリティとプライバシー → 「ファイアウォール」タブ → 「ファイアウォールを入にする」を選択する。
+- セキュリティとプライバシー → 「ファイアウォール」タブ → 「ファイアウォールを入にする」を選択する
 
 ### Touch ID
 
-「Mac のロックを解除」を有効にする。
+- 「Mac のロックを解除」を有効にする
 
 ### アクセシビリティ
 
-- アクセシビリティ → マウスとトラックパッド → トラックパッドオプション... →「ドラッグを有効にする」を有効にし、「3 本指のドラッグ」を選択
-- アクセシビリティ → ディスプレイ → 「透明度を下げる」を選択
+- アクセシビリティ → マウスとトラックパッド → トラックパッドオプション... →「ドラッグを有効にする」を有効にし、「3 本指のドラッグ」を選択する
+- アクセシビリティ → ディスプレイ → 「透明度を下げる」を選択する
 
 ## ダウンロードしたアプリケーション
 
 ### 1Password
 
-Preferences → Touch ID → 「Allow Touch ID to unlock 1Password」を設定する。
+- Preferences → Touch ID → 「Allow Touch ID to unlock 1Password」を設定する
 
 ### Alfred
 
-起動は「⌥ + Space」、履歴機能は「⌥ + /」に割り当てる。後は頻繁に起動するアプリケーションを「⌥ + Control + 頭文字」で開けるように指定する。ウィンドウサイズをキーボードから調整・現在のフォルダー場所をターミナルで開けるように、以下のワークフローを導入する。
-
-- [rakuishi/alfred-workflow-window-resizer](https://github.com/rakuishi/alfred-workflow-window-resizer)
-- [rakuishi/alfred-workflow-terminal](https://github.com/rakuishi/alfred-workflow-terminal)
+- 起動を「⌥ + Space」、履歴機能を「⌥ + /」に指定する
+- 頻繁に起動するアプリケーションを「⌥ + Control + 頭文字」で開けるように指定する
+- ウィンドウサイズをキーボードから調整・現在のフォルダー場所をターミナルで開けるように、以下のワークフローを導入する
+  - [rakuishi/alfred-workflow-window-resizer](https://github.com/rakuishi/alfred-workflow-window-resizer)
+  - [rakuishi/alfred-workflow-terminal](https://github.com/rakuishi/alfred-workflow-terminal)
 
 ### Android Studio
 
 - Preferences → Appearance & Behavior → Appearance → Theme → Darcula
-- Preferences → Keymap → 「Move Caret to Line End with Selection」に「Shift + Ctrl + E」を「Move Caret to Line Start with Selection」に「Shift + Ctrl + A」を追加
-- Preferences → Editor → Colors & Fonts → 「Scheme」に「Darcula 2」を追加し、「Monaco 14」を設定
+- Preferences → Keymap → 「Move Caret to Line End with Selection」に「Shift + Ctrl + E」を「Move Caret to Line Start with Selection」に「Shift + Ctrl + A」を追加する
+- Preferences → Editor → Colors & Fonts → 「Scheme」に「Darcula 2」を追加し、「Monaco 14」を設定する
 
 ### Dropbox
 
-Preferences → Import → Photos → 「Enable camera uploads for」を無効にする。
+- Preferences → Import → Photos → 「Enable camera uploads for」を無効にする
 
 ### Flux
 
@@ -82,7 +83,7 @@ Preferences → Import → Photos → 「Enable camera uploads for」を無効�
 
 ### Google Chrome
 
-Safari は、アドレス表示バーにフルアドレスが表示されないのが残念だが、iPhone Simulator で表示している Safari のソース情報を見る時に使用している。
+Safari は、アドレス表示バーにフルアドレスが表示されないのが残念だから、Google Chrome を常用している。Safari は、iPhone Simulator に表示しているウェブページのソース情報を見る時に使用している。
 
 ### Google 日本語入力
 
