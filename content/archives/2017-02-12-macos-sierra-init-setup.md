@@ -63,7 +63,7 @@ title: "[Macbook Pro / Touch Bar] macOS Sierra 初期設定"
 
 - 起動を「⌥ + Space」、履歴機能を「⌥ + /」に指定する
 - 頻繁に起動するアプリケーションを「⌥ + Control + 頭文字」で開けるように指定する
-- ウィンドウサイズをキーボードから調整・現在のフォルダー場所をターミナルで開けるように、以下のワークフローを導入する
+- ウィンドウサイズをキーボードから調整・現在のフォルダー場所をターミナルで開けるように、以下のワークフローを導入する（ウィンドウサイズの方はマルチディスプレイだと動かなかったから [Moom](https://itunes.apple.com/jp/app/id419330170?at=11l3RT) を使っている。Apple Script でディスプレイを識別しなければ…）
   - [rakuishi/alfred-workflow-window-resizer](https://github.com/rakuishi/alfred-workflow-window-resizer)
   - [rakuishi/alfred-workflow-terminal](https://github.com/rakuishi/alfred-workflow-terminal)
 
@@ -79,7 +79,7 @@ title: "[Macbook Pro / Touch Bar] macOS Sierra 初期設定"
 
 ### Flux
 
-画面を暖色にし、ブルーライトを軽減するソフト。眼の疲れが軽減される（気がする）。このソフトを使用していない時の画面に違和感を感じるほど依存している。iOS 10 では標準でこの Night Shift が実装されており、Android では Twilight というアプリを使っている。Mac には Sierra 10.12.4 に標準搭載予定という噂を聴いた（見た）。
+画面を暖色にし、ブルーライトを軽減するソフト。眼の疲れが軽減される（気がする）。このソフトを使用していない時の画面に違和感を感じるほど依存している。iOS 10 では標準でこの Night Shift が実装されており、Android では Twilight というアプリを使っている（Android 7.0 では通知センターに格納出来るから便利）。Mac には Sierra 10.12.4 に標準搭載予定という噂を見た。
 
 ### Google Chrome
 
@@ -114,8 +114,10 @@ settings.json:
     "editor.tabSize": 2,
     "editor.fontFamily": "Monaco",
     "editor.wrappingColumn": 0,
-    "editor.renderWhitespace": "boundary"
-}
+    "editor.renderWhitespace": "boundary",
+    "workbench.colorTheme": "Monokai",
+    "window.openFilesInNewWindow": "off"
+  }
 ```
 
 keybindings.json:
