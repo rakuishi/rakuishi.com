@@ -13,7 +13,7 @@
 
       <h2>関連記事</h2>
       <ul>
-        {{ range first 6 $category.Pages }}
+        {{ range first 3 $category.Pages }}
           {{ if and (ne .Permalink $permalink) (not .Draft) }}
             <li><a href="{{ .Permalink }}">{{ .LinkTitle }}</a></li>
           {{ end }}

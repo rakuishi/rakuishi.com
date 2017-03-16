@@ -63,8 +63,8 @@ a, a:hover { color: $blue; }
   > img {
     display: inline-block;
     border-radius: 100%;
+    border: 1px solid $border-gray;
     &:hover { transform: rotate(-15deg); }
-    box-shadow: 2px -2px #ffc914, 2px 2px #3e363f, -2px 2px #e4572e, -2px -2px #17bebb;
   }
 }
 
@@ -245,7 +245,7 @@ a, a:hover { color: $blue; }
   > .prev { left:  0; }
   > .next { right: 0; }
 
-  >.more {
+  > .more {
     display: inline-block;
     padding: 8px;
     border-radius: 4px;
