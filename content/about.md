@@ -11,7 +11,7 @@ title: "ABOUT ME"
 
 [Twitter](https://twitter.com/rakuishi07) に呟いています。Facebook は、面識のある人だけと友達になっています。連絡は、[Twitter](https://twitter.com/rakuishi07) もしくは、[rakuishi@gmail.com](mailto:rakuishi@gmail.com) に頂けるとできるだけ返信します。[Wantedly](https://www.wantedly.com/users/456907) もあります。
 
-2015 年は、[GitHub](https://github.com/rakuishi) で積極的に活動していくのが目標でした。2016 年は、サーバー構築・Ruby on Rails・Interactive design・英語への苦手感を克服するのが目標です。将来の夢は、山小屋を建てることです。
+2015 年は、[GitHub](https://github.com/rakuishi) で積極的に活動していくのが目標でした。2016 年は、サーバー構築・Ruby on Rails・英語への苦手感を克服するのが目標でした。2017 年は、健康的に体重を増やすのが目標です。将来の夢は、温室を運営することです。
 
 ## Education
 
@@ -20,6 +20,10 @@ title: "ABOUT ME"
 * 2005.04 - 2010.03, [National Institute of Technology, Kitakyushu College](https://www.kct.ac.jp/)
 
 ## Work Experience
+
+### 2017.02 - Now, YAMAP Inc.
+
+- Android Developer
 
 ### 2015.03 - 2016.07, apprime Inc.
 
