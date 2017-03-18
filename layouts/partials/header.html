@@ -13,11 +13,20 @@
 </head>
 <body>
 
-<div class="site-container">
+<header class="site-header" role="banner">
+  <a href="/" class="header-logo"><img src="/assets/images/logo.jpg" width="80" height="80" ontouchstart=""></a>
+  <div class="header-name">{{ if eq $isHomePage true }}<h1>{{ end }}<a href="/" ontouchstart="">{{ .Site.Title }}</a>{{ if eq $isHomePage true }}</h1>{{ end }}</div>
+  <p class="header-meta">Hi, I’m <a href="/about/">rakuishi</a>, a Mobile App and Front-end Developer.</p>
+  <form action="//google.com/search" method="get" accept-charset="UTF-8" class="header-search"><input type="text" name="q" placeholder="Search this site..." autocomplete="off" class="searchbar"><input type="hidden" name="sitesearch" value="http://rakuishi.com"></form>
+</header>
 
-  <header class="site-header" role="banner">
-    <a href="/" class="header-logo"><img src="/assets/images/logo.jpg" width="80" height="80" ontouchstart=""></a>
-    <div class="header-name">{{ if eq $isHomePage true }}<h1>{{ end }}<a href="/" ontouchstart="">{{ .Site.Title }}</a>{{ if eq $isHomePage true }}</h1>{{ end }}</div>
-    <p class="header-meta">Hi, I’m <a href="/about/">rakuishi</a>, a Mobile App and Front-end Developer.</p>
-    <form action="//google.com/search" method="get" accept-charset="UTF-8" class="header-search"><input type="text" name="q" placeholder="Search this site..." autocomplete="off" class="searchbar"><input type="hidden" name="sitesearch" value="http://rakuishi.com"></form>
-  </header>
+<div class="header-google-adsense">
+  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <!-- rakuishi_responsive_170516 -->
+  <ins class="adsbygoogle"
+      data-ad-client="ca-pub-9983442877454265"
+      data-ad-slot="8393992529"></ins>
+  <script>
+  (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+</div>

@@ -50,12 +50,13 @@ a, a:hover { color: $blue; }
 }
 
 .site-header {
-  margin-bottom: 48px;
-  padding-top: 32px;
+  @extend .site-container;
+  margin-bottom: 24px;
+  padding: 24px $grid-gutter 0;
   text-align: center;
   > .header-logo { margin-bottom: 16px; }
   > .header-name { margin-bottom:  8px; }
-  > .header-meta { margin-bottom: 32px; }
+  > .header-meta { margin-bottom: 16px; }
 }
 
 .header-logo {
@@ -109,7 +110,23 @@ a, a:hover { color: $blue; }
   &:focus { border-color: $blue; transition-duration: .15s; text-align: left; }
 }
 
+.header-google-adsense {
+  margin-bottom: 24px;
+  text-align: center;
+  overflow: hidden;
+  height: 100px;
+  @media(min-width: 468px) { height: 60px; }
+  @media(min-width: 728px) { height: 90px; }
+  > .adsbygoogle {
+    display: inline-block;
+    width: 320px; height: 100px;
+    @media(min-width: 468px) { width: 468px; height: 60px; }
+    @media(min-width: 728px) { width: 728px; height: 90px; }
+  }
+}
+
 .site-footer {
+  @extend .site-container;
   padding-bottom: 24px;
   text-align: center;
   > .copyright {
@@ -120,7 +137,8 @@ a, a:hover { color: $blue; }
 }
 
 .entry-list-container {
-  > .name { margin-bottom: 32px; font-size: 22px; font-weight: bold; text-align: center; }
+  @extend .site-container;
+  > .name { margin-bottom: 24px; font-size: 22px; font-weight: bold; text-align: center; }
   > .entry-list { margin-bottom: 32px; list-style: none; }
 }
 
@@ -145,6 +163,7 @@ a, a:hover { color: $blue; }
 }
 
 .entry-content {
+  @extend .site-container;
   > .name { margin-bottom: 4px; font-size: 22px; font-weight: bold; }
   > .meta {
     color: $light-gray;
@@ -155,9 +174,9 @@ a, a:hover { color: $blue; }
   }
   > .entry-text,
   > .entry-share,
-  > .google-adsense,
+  > .entry-google-adsense,
   > .disqus-thread {
-    margin-bottom: 32px;
+    margin-bottom: 24px;
   }
 }
 
@@ -195,10 +214,15 @@ a, a:hover { color: $blue; }
   .iframe-wrapper iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
 }
 
-.google-adsense {
+.entry-google-adsense {
   font-size: 80%;
   color: $light-gray;
   > span { display: block; margin-bottom: 4px; }
+  > .adsbygoogle {
+    display: inline-block;
+    width: 300px;
+    height: 250px;
+  }
 }
 
 .entry-share {
@@ -224,7 +248,8 @@ a, a:hover { color: $blue; }
 }
 
 .entry-paginator {
-  margin: 32px 0;
+  @extend .site-container;
+  margin-bottom: 24px;
   height: 36px;
   position: relative;
   text-align: center;
@@ -242,8 +267,8 @@ a, a:hover { color: $blue; }
     &:hover { background-color: $blue; color: white; border-color: $blue; transition-duration: .15s; }
   }
 
-  > .prev { left:  0; }
-  > .next { right: 0; }
+  > .prev { left:  $grid-gutter; }
+  > .next { right: $grid-gutter; }
 
   > .more {
     display: inline-block;
