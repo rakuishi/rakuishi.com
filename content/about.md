@@ -43,7 +43,7 @@ AppBank Inc. 子会社である apprime Inc. に転籍
 ### [iPhone App](https://itunes.apple.com/jp/developer/koichiro-ochiishi/id452568751)
 
 * [Quicka2 - 検索を快適に](https://itunes.apple.com/jp/app/id725195676?mt=8&uo=4&at=11l3RT)  
-<small>Last Updated on 2014/10/08, iPhone での検索が快適になるアプリ</small>
+<small>Last Updated on 2017/03/18, iPhone での検索が快適になるアプリ</small>
 * [オフライン郵便番号検索の決定版！ -  郵便番号検索くん](https://itunes.apple.com/jp/app/id578073498?mt=8&uo=4&at=11l3RT)  
 <small>Last Updated on 2014/10/08, オフライン郵便番号検索アプリの決定版！</small>
 * [HTML Viewer](https://itunes.apple.com/jp/app/id656968855?mt=8&uo=4&at=11l3RT)  
