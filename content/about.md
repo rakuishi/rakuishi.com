@@ -61,8 +61,8 @@ AppBank Inc. 子会社である apprime Inc. に転籍
 
 * [Todo-Android](https://play.google.com/store/apps/details?id=com.rakuishi.todo)  
 <small>Last Updated on 2017/03/19, Practice for Material Design and Realm, [GitHub](https://github.com/rakuishi/Todo-Android)</small>
-* [郵便番号検索くん for Android](https://play.google.com/store/apps/details?id=com.rakuishi.postalcode)  
-<small>Last Updated on 2014/01/15, オフライン郵便番号検索アプリの決定版！</small>
+* [オフライン郵便番号検索の決定版！ -  郵便番号検索くん](https://play.google.com/store/apps/details?id=com.rakuishi.postalcode2)  
+<small>Last Updated on 2017/04/03, オフライン郵便番号検索アプリの決定版！</small>
 
 ### [WordPress Plugin](https://profiles.wordpress.org/rakuishi/)
 
