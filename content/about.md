@@ -63,6 +63,8 @@ AppBank Inc. 子会社である apprime Inc. に転籍
 <small>Last Updated on 2017/03/19, Practice for Material Design and Realm, [GitHub](https://github.com/rakuishi/Todo-Android)</small>
 * [オフライン郵便番号検索の決定版！ -  郵便番号検索くん](https://play.google.com/store/apps/details?id=com.rakuishi.postalcode2)  
 <small>Last Updated on 2017/04/03, オフライン郵便番号検索アプリの決定版！</small>
+* [体重を簡単に記録しよう - Weight Tron](https://play.google.com/store/apps/details?id=com.rakuishi.weight)  
+<small>Last Updated on 2017/05/04</small>
 
 ### [WordPress Plugin](https://profiles.wordpress.org/rakuishi/)
 
