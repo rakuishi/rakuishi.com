@@ -5,9 +5,9 @@ slug: about
 title: "ABOUT ME"
 ---
 
-はじめまして。<ruby>落石浩一郎<rt>おちいしこういちろう</rt></ruby>といいます。苗字を重箱読みした rakuishi がハンドルネームです。1989 年生まれ福岡県出身です。大学在籍中（微生物学を専攻）の 2012 年 1 月に趣味で初めた iOS アプリ開発が高じて、アプリ開発とフロントエンド・デベロッパを仕事にしています。
+はじめまして。rakuishi（苗字を重箱読み）といいます。1989 年生まれ福岡県出身です。大学在籍中（微生物学を専攻）の 2012 年 1 月に趣味で初めた iOS アプリ開発が高じて、アプリ開発とフロントエンド・デベロッパを仕事にしています。
 
-このサイト rakuishi.com は、僕個人によるブログです。会社とは関係ありません。2011 年 8 月から記事を書いています。当初、WordPress で運営していたブログでしたが、2015 年 1 月からは、静的サイトジェネレータ [Hugo](http://gohugo.io/) で運営しています。[ソースコード](https://github.com/rakuishi/rakuishi.com)を [GitHub](https://github.com/rakuishi) で公開しています。記事の更新を追いかけるには、[Feedly](http://cloud.feedly.com/#subscription%2Ffeed%2Fhttp%3A%2F%2Frakuishi.com%2Ffeed%2F) もしくは、[RSS](http://rakuishi.com/index.xml) から。
+このサイト rakuishi.com は、僕個人によるブログです。会社とは関係ありません。2011 年 8 月から記事を書いています。当初、WordPress で運営していたブログでしたが、2015 年 1 月からは、静的サイトジェネレータ [Hugo](http://gohugo.io/) で運営しています。[ソースコード](https://github.com/rakuishi/rakuishi.com)を [GitHub](https://github.com/rakuishi) で公開しています。記事の更新を追いかけるには、[Feedly](http://cloud.feedly.com/#subscription%2Ffeed%2Fhttp%3A%2F%2Frakuishi.com%2Ffeed%2F) もしくは、[RSS](/index.xml) から。
 
 [Twitter](https://twitter.com/rakuishi07) に呟いています。Facebook は、面識のある人だけと友達になっています。連絡は、[Twitter](https://twitter.com/rakuishi07) もしくは、[rakuishi@gmail.com](mailto:rakuishi@gmail.com) に頂けるとできるだけ返信します。[Wantedly](https://www.wantedly.com/users/456907) もあります。
 
@@ -42,42 +42,28 @@ AppBank Inc. 子会社である apprime Inc. に転籍
 
 ### [iPhone App](https://itunes.apple.com/jp/developer/koichiro-ochiishi/id452568751)
 
-* [Quicka2 - 検索を快適に](https://itunes.apple.com/jp/app/id725195676?mt=8&uo=4&at=11l3RT)  
-<small>Last Updated on 2017/03/18, iPhone での検索が快適になるアプリ</small>
-* [オフライン郵便番号検索の決定版！ -  郵便番号検索くん](https://itunes.apple.com/jp/app/id578073498?mt=8&uo=4&at=11l3RT)  
-<small>Last Updated on 2014/10/08, オフライン郵便番号検索アプリの決定版！</small>
-* [HTML Viewer](https://itunes.apple.com/jp/app/id656968855?mt=8&uo=4&at=11l3RT)  
-<small>Ending Development on 2013/10/08</small>
-* [ImageKit](https://itunes.apple.com/jp/app/id588135117?mt=8&uo=4&at=11l3RT)  
-<small>Ending Development on 2013/10/08</small>
-* [オフ会リスト](https://itunes.apple.com/jp/app/id533017985?mt=8&uo=4&at=11l3RT)  
-<small>Ending Development on 2013/10/08</small>
-* [Quicka - 検索を快適に](https://itunes.apple.com/jp/app/id511606108?mt=8&uo=4&at=11l3RT)  
-<small>Ending Development on 2013/10/26</small>
-* [StampTime](https://itunes.apple.com/jp/app/id452580423?mt=8&uo=4&at=11l3RT)  
-<small>Ending Development on 2013/10/08</small>
+* [Quicka2 - 検索を快適に](https://itunes.apple.com/jp/app/id725195676?mt=8&uo=4&at=11l3RT)<small>（Last Updated on 2017/03/18）</small>
+* [オフライン郵便番号検索の決定版！ -  郵便番号検索くん](https://itunes.apple.com/jp/app/id578073498?mt=8&uo=4&at=11l3RT)<small>（Last Updated on 2014/10/08）</small>
+* [HTML Viewer](https://itunes.apple.com/jp/app/id656968855?mt=8&uo=4&at=11l3RT)<small>（Finished on 2013/10/08）</small>
+* [ImageKit](https://itunes.apple.com/jp/app/id588135117?mt=8&uo=4&at=11l3RT)<small>（Finished on 2013/10/08）</small>
+* [オフ会リスト](https://itunes.apple.com/jp/app/id533017985?mt=8&uo=4&at=11l3RT)<small>（Finished on 2013/10/08）</small>
+* [Quicka - 検索を快適に](https://itunes.apple.com/jp/app/id511606108?mt=8&uo=4&at=11l3RT)<small>（Finished on 2013/10/26）</small>
+* [StampTime](https://itunes.apple.com/jp/app/id452580423?mt=8&uo=4&at=11l3RT)<small>（Finished on 2013/10/08）</small>
 
 ### [Android App](https://play.google.com/store/apps/dev?id=5894821878234337547)
 
-* [Todo-Android](https://play.google.com/store/apps/details?id=com.rakuishi.todo)  
-<small>Last Updated on 2017/03/19, Practice for Material Design and Realm, [GitHub](https://github.com/rakuishi/Todo-Android)</small>
-* [オフライン郵便番号検索の決定版！ -  郵便番号検索くん](https://play.google.com/store/apps/details?id=com.rakuishi.postalcode2)  
-<small>Last Updated on 2017/04/03, オフライン郵便番号検索アプリの決定版！</small>
-* [体重を簡単に記録しよう - Weight Tron](https://play.google.com/store/apps/details?id=com.rakuishi.weight)  
-<small>Last Updated on 2017/05/04</small>
+* [Todo-Android](https://play.google.com/store/apps/details?id=com.rakuishi.todo)<small>（Last Updated on 2017/03/19, [GitHub](https://github.com/rakuishi/Todo-Android)）</small>
+* [オフライン郵便番号検索の決定版！ -  郵便番号検索くん](https://play.google.com/store/apps/details?id=com.rakuishi.postalcode2)<small>（Last Updated on 2017/04/03）</small>
+* [体重を簡単に記録しよう - Weight Tron](https://play.google.com/store/apps/details?id=com.rakuishi.weight)<small>（Last Updated on 2017/05/04, [GitHub](https://github.com/rakuishi/weight-android/)）</small>
+* [仮想通貨ウィジェット Coinchecker](https://play.google.com/store/apps/details?id=com.rakuishi.coinchecker)<small>（Last Updated on 2017/06/30, [GitHub](https://github.com/rakuishi/coinchecker-android-widget)）</small>
 
 ### [WordPress Plugin](https://profiles.wordpress.org/rakuishi/)
 
-* [WordPress OB Cache](http://rakuishi.com/archives/6858/)  
-<small>Published on 2014/12/14, WordPress の出力バッファをキャッシュする</small>
-* [One Step Before Publishing](http://rakuishi.com/archives/6736)  
-<small>Published on 2014/08/12, 記事公開前に確認アラートを表示する, [Plugin Directory](https://wordpress.org/plugins/one-step-before-publishing/)</small>
-* [App Store Insert](http://rakuishi.com/archives/6018/)  
-<small>Published on 2013/08/25, 投稿画面から iOS / Mac アプリの紹介リンクを挿入する</small>
-* [LinkShare To PHG](http://rakuishi.com/archives/5886/)  
-<small>Published on 2013/08/24, LinkShare を PHG のアフィリエイトリンクに置き換える</small>
+* [WordPress OB Cache](/archives/6858/)<small>（Published on 2014/12/14, WordPress の出力バッファをキャッシュする）</small>
+* [One Step Before Publishing](/archives/6736)<small>（Published on 2014/08/12, 記事公開前に確認アラートを表示する, [Plugin Directory](https://wordpress.org/plugins/one-step-before-publishing/)）</small>
+* [App Store Insert](/archives/6018/)<small>（Published on 2013/08/25, 投稿画面から iOS / Mac アプリの紹介リンクを挿入する）</small>
+* [LinkShare To PHG](/archives/5886/)<small>（Published on 2013/08/24, LinkShare を PHG のアフィリエイトリンクに置き換える）</small>
 
 ### Ruby on Rails
 
-* [aniradime](http://radio.rakuishi.com/)  
-<small>Published on 2016/04/18, Gather anime radio waves</small>
+* [aniradime](http://radio.rakuishi.com/)<small>（Finished on 2017/06/30, Gather anime radio waves）</small>
