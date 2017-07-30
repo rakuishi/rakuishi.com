@@ -21,14 +21,14 @@ $selection-color: $dark-gray !default;
 // Import
 //////////////////////////////////////////////////
 
-@import  'route159', 'sanitize', 'highlight_js_github';
+@import 'sanitize', 'highlight_js_github';
 
 //////////////////////////////////////////////////
 // Base
 //////////////////////////////////////////////////
 
 body {
-  font-family: Route159, Helvetica Neue, Helvetica, Hiragino Kaku Gothic Pro, 'ヒラギノ角ゴ Pro W3', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', sans-serif;
+  font-family: Muli, Helvetica Neue, Helvetica, Hiragino Kaku Gothic Pro, 'ヒラギノ角ゴ Pro W3', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', sans-serif;
   font-weight: normal;
   font-size: 16px;
   word-break: break-all;
@@ -75,6 +75,7 @@ a, a:hover { color: $blue; }
   > h1 > a {
     display: inline-block;
     font-size: 22px;
+    font-weight: 700;
     line-height: 1.25;
     text-transform: uppercase;
     letter-spacing: -0.025em;
@@ -144,7 +145,6 @@ a, a:hover { color: $blue; }
 
 .entry-list-item {
   border-bottom: 1px solid $border-gray;
-  &:first-child { border-top: 1px solid $border-gray; }
   > a {
     display: block;
     padding: $grid-gutter 0;
