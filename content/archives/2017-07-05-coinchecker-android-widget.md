@@ -22,3 +22,7 @@ title: 仮想通貨の価格をウィジェットに表示する Android アプ�
 このアプリは Coincheck が取り扱う仮想通貨（Bitcoin, Ethereum, Ethereum Classic, LISK, Factom, Monero, Augur, Ripple, Zcash, NEM, Litecoin, DASH）の現在値をウィジェットに表示できます。現在値は、Android の仕様で 30 分に一度更新されます。ウィジェットをタップすると、Coincheck アプリがあれば開いて、現在値が更新されるだけのシンプルなものになっています。
 
 それでは、ストレスにならない程度に値段を確認し、仮想通貨の社会に対する目的、技術的な背景、将来性を勉強しながら、楽しい投資をしましょう。
+
+▼ Coincheck のアフィリエイトリンクです。ここから登録し、本人確認や日本円を入金されると自分に報酬が入ります。よろしければ是非。▼
+
+<a href="https://coincheck.com/?c=h_3cAbRPgrw" target="_blank"><img src="https://coincheck.com/images/affiliates/03_cc_banner_320x100.png" alt="ビットコイン取引高日本一の仮想通貨取引所 coincheck bitcoin"></a>

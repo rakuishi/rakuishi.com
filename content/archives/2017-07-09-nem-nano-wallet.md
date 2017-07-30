@@ -87,4 +87,4 @@ zip を展開し、ファイルを見てみると、start.html があると思�
 
 ▼ Coincheck のアフィリエイトリンクです。ここから登録し、本人確認や日本円を入金されると自分に報酬が入ります。よろしければ是非。▼
 
-<a href="https://coincheck.com/?c=h_3cAbRPgrw" target="_blank"><img src="https://coincheck.com/images/affiliates/01_cc_banner_201702_320x100.png" alt="日本で一番簡単にビットコインが買える取引所 coincheck bitcoin"></a>
+<a href="https://coincheck.com/?c=h_3cAbRPgrw" target="_blank"><img src="https://coincheck.com/images/affiliates/03_cc_banner_320x100.png" alt="ビットコイン取引高日本一の仮想通貨取引所 coincheck bitcoin"></a>
