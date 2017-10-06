@@ -28,14 +28,14 @@ $selection-color: $dark-gray !default;
 //////////////////////////////////////////////////
 
 body {
-  font-family: Muli, Helvetica Neue, Helvetica, Hiragino Kaku Gothic Pro, 'ヒラギノ角ゴ Pro W3', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', sans-serif;
+  font-family: YakuHanJP, 'Droid Sans', Helvetica Neue, Helvetica, Hiragino Kaku Gothic Pro, 'ヒラギノ角ゴ Pro W3', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', sans-serif;
   font-weight: normal;
   font-size: 16px;
   word-break: break-all;
   text-align: justify;
 }
 
-h1, h2, h3 { font-weight: normal; font-feature-settings: 'palt'; line-height: 1.25; }
+h1, h2, h3 { font-weight: normal; line-height: 1.25; }
 a, a:hover { color: $blue; }
 
 //////////////////////////////////////////////////
@@ -188,7 +188,7 @@ a, a:hover { color: $blue; }
 
   small { font-size: 80%; }
   ruby > rt { font-size: 50%; }
-  code { padding: 2px 4px; border: 1px solid $border-gray; border-radius: 4px; font-size: 90%; font-family: Menlo, Monaco, Consolas, monospace; white-space: pre-wrap; word-wrap: break-word; background: $background !important; }
+  code { padding: 2px 4px; border: 1px solid $border-gray; border-radius: 4px; font-size: 80%; font-family: Monaco, Menlo, monospace; word-wrap: break-word; background: $background !important; }
   pre  { margin: 24px 0; }
   pre > code { display: block; padding: 24px !important; line-height: 1.5; }
 
@@ -205,7 +205,7 @@ a, a:hover { color: $blue; }
 
   table {
     margin: 24px 0;
-    font-size: 90%;
+    font-size: 14px;
     th, td { border: 1px solid $border-gray; padding: 8px; }
     th { background-color: $background; color: $dark-gray; }
   }
