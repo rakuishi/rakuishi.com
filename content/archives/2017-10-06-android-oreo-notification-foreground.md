@@ -120,7 +120,7 @@ public class ForegroundService extends Service {
 }
 ```
 
-後は、Activity 内で次のように使用すれば OK です。サンプルは行儀が悪くてサービスを終了する方法を提供していないので強制終了します。
+後は、Activity 内で次のように使用すれば OK です。
 
 ```
 ForegroundService.start(this);
