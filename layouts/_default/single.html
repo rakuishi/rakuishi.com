@@ -6,17 +6,12 @@
   <section class="entry-text" itemprop="text">
     {{ .Content }}
 
-    {{ if .Params.categories }}
-      {{ $categoryName := index .Params.categories 0 }}
-      {{ $category := (index .Site.Taxonomies.categories $categoryName) }}
-      {{ $permalink := .Permalink }}
-
+    {{ $related := .Site.RegularPages.Related . | first 5 }}
+    {{ with $related }}
       <h2>関連記事</h2>
       <ul>
-        {{ range first 3 $category.Pages }}
-          {{ if and (ne .Permalink $permalink) (not .Draft) }}
-            <li><a href="{{ .Permalink }}">{{ .LinkTitle }}</a></li>
-          {{ end }}
+        {{ range . }}
+          <li><a href="{{ .Permalink }}">{{ .LinkTitle }}</a></li>
         {{ end }}
       </ul>
     {{ end }}

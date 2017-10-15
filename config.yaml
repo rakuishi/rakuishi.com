@@ -4,3 +4,6 @@ title: rakuishi.com
 author: rakuishi
 metadataformat: yaml
 preservetaxonomynames: true
+
+related: 
+  indices: [{name: categories, weight: 100}]
