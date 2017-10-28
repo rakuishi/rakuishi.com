@@ -3,7 +3,7 @@ categories:
 - Development
 date: 2017-05-07T09:09:24+09:00
 draft: false
-slug: weight-tron-android
+slug: weight-log-android
 title: Google Fit と連携できる体重管理アプリを作りました
 ---
 
@@ -24,6 +24,6 @@ Google Fit は API が開放されているから、サードパーティ製の�
 
 [![](/images/2017/04/en_generic_rgb_wo_60.png)](https://play.google.com/store/apps/details?id=com.rakuishi.weight)
 
-- https://github.com/rakuishi/weight-tron-android
+- https://github.com/rakuishi/weight-log-android
 
-![](/images/2017/05/weight-tron-ss.png)
+![](/images/2017/05/weight-log-ss.png)
