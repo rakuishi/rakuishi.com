@@ -44,17 +44,17 @@ AppBank Inc. 子会社である apprime Inc. に転籍
 
 * [Quicka2 - 検索を快適に](https://itunes.apple.com/jp/app/id725195676?mt=8&uo=4&at=11l3RT)<small>（Last Updated on 2017/03/18）</small>
 * [オフライン郵便番号検索の決定版！ -  郵便番号検索くん](https://itunes.apple.com/jp/app/id578073498?mt=8&uo=4&at=11l3RT)<small>（Last Updated on 2014/10/08）</small>
-* [HTML Viewer](https://itunes.apple.com/jp/app/id656968855?mt=8&uo=4&at=11l3RT)<small>（Finished on 2013/10/08）</small>
-* [ImageKit](https://itunes.apple.com/jp/app/id588135117?mt=8&uo=4&at=11l3RT)<small>（Finished on 2013/10/08）</small>
-* [オフ会リスト](https://itunes.apple.com/jp/app/id533017985?mt=8&uo=4&at=11l3RT)<small>（Finished on 2013/10/08）</small>
-* [Quicka - 検索を快適に](https://itunes.apple.com/jp/app/id511606108?mt=8&uo=4&at=11l3RT)<small>（Finished on 2013/10/26）</small>
-* [StampTime](https://itunes.apple.com/jp/app/id452580423?mt=8&uo=4&at=11l3RT)<small>（Finished on 2013/10/08）</small>
+* [HTML Viewer](https://itunes.apple.com/jp/app/id656968855?mt=8&uo=4&at=11l3RT)<small>（EOL on 2013/10/08）</small>
+* [ImageKit](https://itunes.apple.com/jp/app/id588135117?mt=8&uo=4&at=11l3RT)<small>（EOLon 2013/10/08）</small>
+* [オフ会リスト](https://itunes.apple.com/jp/app/id533017985?mt=8&uo=4&at=11l3RT)<small>（EOL on 2013/10/08）</small>
+* [Quicka - 検索を快適に](https://itunes.apple.com/jp/app/id511606108?mt=8&uo=4&at=11l3RT)<small>（EOL on 2013/10/26）</small>
+* [StampTime](https://itunes.apple.com/jp/app/id452580423?mt=8&uo=4&at=11l3RT)<small>（EOL on 2013/10/08）</small>
 
 ### [Android App](https://play.google.com/store/apps/dev?id=5894821878234337547)
 
 * [Todo-Android](https://play.google.com/store/apps/details?id=com.rakuishi.todo)<small>（Last Updated on 2017/03/19, [GitHub](https://github.com/rakuishi/Todo-Android)）</small>
-* [オフライン郵便番号検索の決定版！ -  郵便番号検索くん](https://play.google.com/store/apps/details?id=com.rakuishi.postalcode2)<small>（Last Updated on 2017/04/03）</small>
-* [体重を簡単に記録しよう - Weight Tron](https://play.google.com/store/apps/details?id=com.rakuishi.weight)<small>（Last Updated on 2017/05/04, [GitHub](https://github.com/rakuishi/weight-android/)）</small>
+* [オフライン郵便番号検索の決定版！ -  郵便番号検索くん](https://play.google.com/store/apps/details?id=com.rakuishi.postalcode2)<small>（Last Updated on 2017/04/03, [GitHub](https://github.com/rakuishi/postalcode-android)）</small>
+* [体重を簡単に記録しよう - Weight Log](https://play.google.com/store/apps/details?id=com.rakuishi.weight)<small>（Last Updated on 2017/05/04, [GitHub](https://github.com/rakuishi/weight-android/)）</small>
 * [仮想通貨ウィジェット Coinchecker](https://play.google.com/store/apps/details?id=com.rakuishi.coinchecker)<small>（Last Updated on 2017/06/30, [GitHub](https://github.com/rakuishi/coinchecker-android-widget)）</small>
 
 ### [WordPress Plugin](https://profiles.wordpress.org/rakuishi/)
@@ -64,6 +64,7 @@ AppBank Inc. 子会社である apprime Inc. に転籍
 * [App Store Insert](/archives/6018/)<small>（Published on 2013/08/25, 投稿画面から iOS / Mac アプリの紹介リンクを挿入する）</small>
 * [LinkShare To PHG](/archives/5886/)<small>（Published on 2013/08/24, LinkShare を PHG のアフィリエイトリンクに置き換える）</small>
 
-### Ruby on Rails
+### Website
 
-* [aniradime](http://radio.rakuishi.com/)<small>（Finished on 2017/06/30, Gather anime radio waves）</small>
+* [仮想通貨をはじめよう](http://kasoutsuka.blue/)
+* [aniradime](http://radio.rakuishi.com/)<small>（EOL on 2017/06/30, Gather anime radio waves, [Github](https://github.com/rakuishi/aniradime)）</small>
