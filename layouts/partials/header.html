@@ -6,18 +6,24 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <meta name="copyright" content="Copyright &copy; 2011 rakuishi All rights reserved" />
 <meta name="google-site-verification" content="hLAob0ZIhg0c3AeIGNo4AMQPkxMjM1UM3mBPYNvwceE" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@rakuishi07" />
+<meta property="og:url" content="{{ .Permalink }}" />
+<meta property="og:title" content="{{ .Title }}{{ if eq .IsHome false }} | {{ .Site.Title }}{{ end }}" />
 <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet" />
 <link rel="stylesheet" href="/assets/css/style.css?v=170116" />
 <link rel="shortcut icon" href="/favicon.ico?v=160528" type="image/x-icon" />
 <link rel="alternate" href="/index.xml" type="application/rss+xml" title="{{ .Site.Title }}" />
-<title>{{ $isHomePage := eq .Title .Site.Title }}{{ .Title }}{{ if eq $isHomePage false }} - {{ .Site.Title }}{{ end }}</title>
+<title>{{ .Title }}{{ if eq .IsHome false }} - {{ .Site.Title }}{{ end }}</title>
 </head>
 <body>
 
 <header class="site-header" role="banner">
   <a href="/" class="header-logo"><img src="/assets/images/logo.jpg" width="80" height="80" ontouchstart=""></a>
-  <div class="header-name">{{ if eq $isHomePage true }}<h1>{{ end }}<a href="/" ontouchstart="">{{ .Site.Title }}</a>{{ if eq $isHomePage true }}</h1>{{ end }}</div>
-  <p class="header-meta">Hi, I’m <a href="/about/">rakuishi</a>, a Mobile App and Front-end Developer.</p>
+  <div class="header-name">{{ if .IsHome }}<h1>{{ end }}<a href="/" ontouchstart="">{{ .Site.Title }}</a>{{ if .IsHome }}</h1>{{ end }}</div>
+  <p class="header-meta">
+    Hi, I’m <a href="/about/">rakuishi</a>, a Mobile App and Front-end Developer.<br/>
+  </p>
   <form action="//google.com/search" method="get" accept-charset="UTF-8" class="header-search"><input type="text" name="q" placeholder="Search this site..." autocomplete="off" class="searchbar"><input type="hidden" name="sitesearch" value="http://rakuishi.com"></form>
 </header>
 

@@ -89,7 +89,7 @@ a, a:hover { color: $blue; }
 .header-meta {
   color: $gray;
   word-break: normal;
-  > a:hover { text-decoration: underline; }
+  a:hover { text-decoration: underline; }
 }
 
 .header-search > .searchbar {
@@ -132,9 +132,13 @@ a, a:hover { color: $blue; }
   @extend .site-container;
   padding-bottom: 24px;
   text-align: center;
+  color: $light-gray;
+  font-size: 14px;
+  > .recommend {
+    margin-bottom: 16px;
+    a img:hover { opacity: .75; }
+  }
   > .copyright {
-    color: $light-gray;
-    font-size: 14px;
     > a:hover { text-decoration: underline; }
   }
 }
