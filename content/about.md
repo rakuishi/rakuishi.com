@@ -66,5 +66,5 @@ AppBank Inc. 子会社である apprime Inc. に転籍
 
 ### Website
 
-* [仮想通貨をはじめよう](http://kasoutsuka.blue/)
+* [kasotsuka.blue](http://kasoutsuka.blue/)<small>（Published on 2017/11/03, 仮想通貨をはじめよう, [Github](https://github.com/rakuishi/kasoutsuka.blue)）</small>
 * [aniradime](http://radio.rakuishi.com/)<small>（EOL on 2017/06/30, Gather anime radio waves, [Github](https://github.com/rakuishi/aniradime)）</small>
