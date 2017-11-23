@@ -10,8 +10,7 @@
 <meta name="twitter:site" content="@rakuishi07" />
 <meta property="og:url" content="{{ .Permalink }}" />
 <meta property="og:title" content="{{ .Title }}{{ if eq .IsHome false }} | {{ .Site.Title }}{{ end }}" />
-<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet" />
-<link rel="stylesheet" href="/assets/css/style.css?v=170116" />
+<style>{{ partial "style.css" . | safeCSS }}</style>
 <link rel="shortcut icon" href="/favicon.ico?v=160528" type="image/x-icon" />
 <link rel="alternate" href="/index.xml" type="application/rss+xml" title="{{ .Site.Title }}" />
 <title>{{ .Title }}{{ if eq .IsHome false }} | {{ .Site.Title }}{{ end }}</title>

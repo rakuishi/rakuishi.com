@@ -1,5 +1,5 @@
 .DS_Store
 /public
-/static/assets/css/style.css
-/static/assets/css/style.css.map
+/layouts/partials/style.css
+/layouts/partials/style.css.map
 /.sass-cache

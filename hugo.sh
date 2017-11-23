@@ -19,7 +19,7 @@ hugo_server() {
 }
 
 publish() {
-  sass static/assets/sass/style.scss:static/assets/css/style.css \
+  sass static/assets/sass/style.scss:layouts/partials/style.css \
     --style compressed \
     --sourcemap=none
   hugo
