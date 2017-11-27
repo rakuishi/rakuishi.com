@@ -1,8 +1,8 @@
 ---
 categories:
   - Blog
-date:
+date: {{ .Date }}
 draft: true
-slug:
-title:
+slug: 
+title: 
 ---
