@@ -18,12 +18,12 @@
 <body>
 
 <header class="site-header" role="banner">
-  <a href="/" class="header-logo"><img src="/assets/images/logo.jpg" width="80" height="80" ontouchstart=""></a>
-  <div class="header-name">{{ if .IsHome }}<h1>{{ end }}<a href="/" ontouchstart="">{{ .Site.Title }}</a>{{ if .IsHome }}</h1>{{ end }}</div>
-  <p class="header-meta">
-    Hi, I’m <a href="/about/">rakuishi</a>, a Mobile App and Front-end Developer.<br/>
-  </p>
-  <form action="//google.com/search" method="get" accept-charset="UTF-8" class="header-search"><input type="text" name="q" placeholder="Search this site..." autocomplete="off" class="searchbar"><input type="hidden" name="sitesearch" value="http://rakuishi.com"></form>
+  <div class="inner">
+    {{ if .IsHome }}<h1>{{ end }}<a href="/" class="header-logo"><img src="/assets/images/logo.png" width="218" height="32" alt="rakuishi.com" ontouchstart=""></a>{{ if .IsHome }}</h1>{{ end }}
+    <p class="header-meta">
+      Hi, I’m <a href="/about/">rakuishi</a>, a Mobile App and Front-end Developer.<br/>
+    </p>
+  </div>
 </header>
 
 <div class="header-google-adsense">
