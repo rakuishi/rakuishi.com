@@ -85,6 +85,4 @@ zip を展開し、ファイルを見てみると、start.html があると思�
 
 お疲れ様でした。次の記事では、10,000XEM 以上あれば始められるハーベストに挑戦したいと思います（まだ、自分が受け取れてないので記事は書けません）。
 
-▼ Coincheck のアフィリエイトリンクです。ここから登録し、本人確認や日本円を入金されると自分に報酬が入ります。よろしければ是非。▼
-
-<a href="https://coincheck.com/?c=h_3cAbRPgrw" target="_blank"><img src="https://coincheck.com/images/affiliates/03_cc_banner_320x100.png" alt="ビットコイン取引高日本一の仮想通貨取引所 coincheck bitcoin"></a>
+{{<cryptocurrency>}}
