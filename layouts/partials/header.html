@@ -18,14 +18,8 @@
 <body>
 
 <header class="site-header" role="banner">
-  <div class="inner">
-    {{ if .IsHome }}<h1>{{ end }}<a href="/" class="header-logo"><img src="/assets/images/logo.png" width="218" height="32" alt="rakuishi.com" ontouchstart=""></a>{{ if .IsHome }}</h1>{{ end }}
-    <p class="header-meta">
-      Hi, I’m rakuishi, a Mobile App and Front-end Developer.<br/>
-    </p>
-    <div class="header-nav">
-      <a href="/" {{ if .IsHome }}class="nav-item-selected"{{ end }}>HOME</a><a href="/about/" {{ if in .RelPermalink "/about/" }}class="nav-item-selected"{{ end }}>ABOUT</a><a href="/archives/beginners-guide/" {{ if in .RelPermalink "/archives/beginners-guide/" }}class="nav-item-selected"{{ end }}>仮想通貨</a>
-    </div>
+  <div class="header-nav">
+    <a href="/" class="header-logo {{ if .IsHome }}nav-item-selected{{ end }}">rakuishi.com</a><a href="/about/" {{ if in .RelPermalink "/about/" }}class="nav-item-selected"{{ end }}>ABOUT</a><a href="/archives/" {{ if in .RelPermalink "/archives/" }}class="nav-item-selected"{{ end }}>ARCHIVES</a>
   </div>
 </header>
 
