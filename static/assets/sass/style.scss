@@ -69,13 +69,10 @@ a, a:hover { color: $blue; }
     vertical-align: middle;
     font-size: 16px;
     color: $gray;
-    line-height: 62px;
+    line-height: 64px;
     font-weight: bold;
-    border-bottom: 2px solid transparent;
-    &:hover { background-color: #F0F0F0; }    
-    &.nav-item-selected {
-      color: $blue;
-      border-bottom-color: $blue;
+    &:hover, &.selected {
+      background-color: #F0F0F0;
     }
   }
 }
@@ -140,8 +137,10 @@ a, a:hover { color: $blue; }
   text-align: center;
   color: $light-gray;
   font-size: 15px;
-  > .site-search { margin-bottom: 16px; }
-  > .copyright > a:hover { text-decoration: underline; }
+  a { color: $light-gray; }
+  a:hover { text-decoration: underline; }
+  > .site-search { margin-bottom: 8px; }
+  > .categories { margin-bottom: 16px; }
 }
 
 .entry-list-container {
@@ -177,7 +176,7 @@ a, a:hover { color: $blue; }
       overflow: hidden;
       -webkit-box-orient: vertical;
       -webkit-line-clamp: 2;
-      > span:after { margin: 0 4px; content: '\2219'; }
+      > span:after { margin: 0 8px; content: '/'; }
     }
   }
 }
@@ -187,7 +186,7 @@ a, a:hover { color: $blue; }
   > .name { margin-bottom: 4px; font-size: 22px; }
   > .meta {
     color: $light-gray;
-    span:before { margin: 0 4px; content: '\2219'; }
+    span:before { margin: 0 8px; content: '/'; }
     span:first-child:before { content: none; }
     > span > a { color: $light-gray; }
     > span > a:hover { text-decoration: underline; }
@@ -299,16 +298,4 @@ a, a:hover { color: $blue; }
 
   > .prev { left:  $grid-gutter; }
   > .next { right: $grid-gutter; }
-
-  > .more {
-    display: inline-block;
-    padding: 8px;
-    border-radius: 4px;
-    font-size: 14px;
-    line-height: 16px;
-    color: $light-gray;
-    border: 2px solid transparent;
-    text-decoration: none;
-    &:hover { text-decoration: underline; }
-  }
 }
