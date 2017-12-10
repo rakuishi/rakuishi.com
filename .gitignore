@@ -1,5 +1,6 @@
 .DS_Store
 /public
+/public.min
 /layouts/partials/style.css
 /layouts/partials/style.css.map
 /.sass-cache

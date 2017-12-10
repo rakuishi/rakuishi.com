@@ -22,8 +22,13 @@ publish() {
   sass static/assets/sass/style.scss:layouts/partials/style.css \
     --style compressed \
     --sourcemap=none
+  rm -rf public/
   hugo
-  aws s3 sync ${DIR}/public s3://rakuishi.com --delete --exclude=.DS_Store --cache-control "max-age=300"
+  # brew install htmlcompressor
+  rm -rf public.min/
+  cp -r public/ public.min/
+  htmlcompressor --recursive --output public.min/ public/
+  aws s3 sync ${DIR}/public.min s3://rakuishi.com --delete --exclude=.DS_Store --cache-control "max-age=300"
 }
 
 case $1 in
