@@ -24,11 +24,11 @@ subtitle: '銀行口座は手数料もありますし、送金に時間がかか
 
 [Coincheck](https://coincheck.com/?c=h_3cAbRPgrw) の「クレジットカードで買う」に来ました。ビットコイン 30 万円分をクレジットカード決済で買う時、記事執筆時では、30 万円 = 0.36974825 BTC となっています。
 
-<img src="/images/2017/11/buy-bitcoin-with-creditcard-1.png" width="1024" height="768">
+<img src="/images/2017/11/buy-bitcoin-with-creditcard-1.png">
 
 一方、日本円で「コインを買う」場合は、0.36974825BTC = 277,490 円となっています。
 
-<img src="/images/2017/11/buy-bitcoin-with-creditcard-2.png" width="1024" height="768">
+<img src="/images/2017/11/buy-bitcoin-with-creditcard-2.png">
 
 その差額 22,510 円です。**30 万のうち、2 万円が手数料**というのは結構でかいですね。比率にすると、「クレジットカードで買う」は「コインを買う」に比べて、1.08112004 倍高いです。
 

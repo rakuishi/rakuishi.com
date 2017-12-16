@@ -8,7 +8,7 @@ title: '仮想通貨（ビットコイン）はいくらから買えるの？実
 subtitle: '「1BTC 買うのに、給料何ヶ月分なんだ？ビットコインが流行ってるけど、自分には無理だな―」→ ワンコインから買えます。'
 ---
 
-<img src="/images/2017/11/bitcoin.svg" width="728" height="200" alt="bitcoin">
+<img src="/images/2017/11/bitcoin.svg" alt="bitcoin">
 
 11 月 12 日現在の 1 ビットコイン（BTC）あたり日本円で 71 万円。「1BTC 買うのに、給料何ヶ月分なんだ？ビットコインが流行ってるけど、自分には無理だな―」と思っていませんか？
 
@@ -24,11 +24,11 @@ subtitle: '「1BTC 買うのに、給料何ヶ月分なんだ？ビットコイ�
 
 [Coincheck](https://coincheck.com/?c=h_3cAbRPgrw) のビットコイン販売所に来ました。最小単位 1Satoshi を入れて、購入してみましょう。
 
-<img src="/images/2017/11/buy-bitcoin-with-one-coin-1.png" width="1024" height="768" alt="Coincheck ビットコイン販売所で 1Satoshi を購入する">
+<img src="/images/2017/11/buy-bitcoin-with-one-coin-1.png" alt="Coincheck ビットコイン販売所で 1Satoshi を購入する">
 
 「購入する」の後に、確認アラートが表示され、OK を押します。
 
-<img src="/images/2017/11/buy-bitcoin-with-one-coin-2.png" width="1024" height="768" alt="注文最低金額は 500.0 JPY">
+<img src="/images/2017/11/buy-bitcoin-with-one-coin-2.png" alt="注文最低金額は 500.0 JPY">
 
 「注文最低金額は 500.0 JPY です。」と言われてしまいました。つまり、**Coincheck では、500 円からビットコインを買うことができる**、ということですね。
 

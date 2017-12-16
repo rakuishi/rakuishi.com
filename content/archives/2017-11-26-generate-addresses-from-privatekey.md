@@ -10,7 +10,7 @@ subtitle: '秘密鍵からアドレスを作りだす一方向の仕組みと、
 
 [bitFlyer](https://bitflyer.jp/?bf=hus1mkdt) でビットコインの受け取り用のアドレス確認画面の注意書きに「お客様用ビットコインアドレスは変わることがあります。」と書かれています。
 
-<img src="/images/2017/11/generate-addresses-from-privatekey-1.png" width="1024" height="768" alt="お客様用ビットコインアドレスは変わることがあります。">
+<img src="/images/2017/11/generate-addresses-from-privatekey-1.png" alt="お客様用ビットコインアドレスは変わることがあります。">
 
 最初は「え？口座番号が変わるってどういうこと？受け取るのに支障がないの？」と思ったのですが、ビットコインの仕組みを調べていくうちに、便利な仕組みだなと唸りました。便利であると同時に匿名性をもたらすため、悪用される恐れもあるのですが。
 
@@ -22,11 +22,11 @@ subtitle: '秘密鍵からアドレスを作りだす一方向の仕組みと、
 
 この秘密鍵はランダムに生成されます。bitaddress.org では、ユーザーのマウスのランダムな動きから秘密鍵を生成しています。このランダムな数値を作る難しさは、参考記事が詳しいです。→ [乱数生成器とゲームと諜報活動の話｜Rui Ueyama｜note](https://note.mu/ruiu/n/nb5c3fe7e4e7d)
 
-<img src="/images/2017/11/generate-addresses-from-privatekey-2.png" width="1024" height="768">
+<img src="/images/2017/11/generate-addresses-from-privatekey-2.png">
 
 100% にすると、秘密鍵（プライベートキー）とアドレスが生成されます。本当はこの秘密鍵は誰にも漏らしてはいけません。それぞれ長い文字列が生成されているのが分かります。
 
-<img src="/images/2017/11/generate-addresses-from-privatekey-3.png" width="1024" height="768">
+<img src="/images/2017/11/generate-addresses-from-privatekey-3.png">
 
 ## 秘密鍵からアドレスを作る仕組み
 

@@ -8,7 +8,7 @@ title: '仮想通貨（ビットコイン、オルトコイン）の種類と時
 subtitle: 'ビットコイン以外にも仮想通貨は 1,000 種以上あり、オルトコインと呼ばれています。それらを時価総額ランキングから見ていきましょう。'
 ---
 
-<img src="/images/2017/11/bitcoin.svg" width="728" height="200" alt="bitcoin">
+<img src="/images/2017/11/bitcoin.svg" alt="bitcoin">
 
 自分が仮想通貨を始めたとき、仮想通貨はビットコインだけだと思っていました。
 
@@ -28,7 +28,7 @@ Alternative coin は、訳すのが難しいのですが、ビットコイン以
 
 以下のサイトでは、現在発行されている 1,000 種以上の仮想通貨を時価総額順に並べられています。
 
-<img src="/images/2017/11/cryptocurrency-market-capitalizations.png" width="1024" height="768" alt="coinmarketcap">
+<img src="/images/2017/11/cryptocurrency-market-capitalizations.png" alt="coinmarketcap">
 
 - [Cryptocurrency Market Capitalizations | CoinMarketCap](https://coinmarketcap.com/)
 

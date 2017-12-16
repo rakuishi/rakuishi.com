@@ -8,7 +8,7 @@ title: 'オープン型・クローズド型のブロックチェーンの特徴
 subtitle: '多くの仮想通貨はオープン型のブロックチェーンを採用していますが、リップルはクローズド型のブロックチェーンを採用しています。承認の仕組みや送金スピードに影響してきます。'
 ---
 
-<img src="/images/2017/11/blockchain.jpg" width="728" height="200" alt="blockchain">
+<img src="/images/2017/11/blockchain.jpg" alt="blockchain">
 
 前回の記事では、[ブロックチェーンの特徴](/archives/features-of-blockchain/)について見てきました。ブロックチェーンと聞くと、ブロックチェーン ＝ ビットコインという固定概念からか、誰でも参加できる、すなわちオープン型をイメージしがちです。
 
@@ -28,7 +28,7 @@ subtitle: '多くの仮想通貨はオープン型のブロックチェーンを
 
 ## クローズド型のブロックチェーンの特徴
 
-<img src="/images/2017/11/ripple.svg" width="728" height="200" alt="ripple">
+<img src="/images/2017/11/ripple.svg" alt="ripple">
 
 クローズド型（もしくはプライベート型とも言います）のブロックチェーンは、[リップル（Ripple）](https://ripple.com/)がいい実例になります。クローズド型のブロックチェーンは、オープン型に比べて中央集権型と言えますが、どのような理由から来るのでしょうか？
 
@@ -42,7 +42,7 @@ subtitle: '多くの仮想通貨はオープン型のブロックチェーンを
 
 実際、リップルでは、[Ledger Consensus Process（レジャー・コンセンサス・プロセス）](https://ripple.com/build/xrp-ledger-consensus-process/)を採用しており、一秒間に 1,500 件の取引をさばくことができます。これは、PoW のように計算負荷も高くなく、メールサーバー程度のスペックで良いと言われています。
 
-<img src="/images/2017/11/reasons-of-bitcoin-fork.png" width="1304" height="650" alt="XRP Transation Per Soconds">
+<img src="/images/2017/11/reasons-of-bitcoin-fork.png" alt="XRP Transation Per Soconds">
 
 > 出典：[XRP | Ripple](https://ripple.com/xrp/)
 

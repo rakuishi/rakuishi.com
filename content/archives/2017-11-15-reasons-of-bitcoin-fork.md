@@ -8,7 +8,7 @@ title: '何故、ビットコインは分裂するのか？まだまだ成長途
 subtitle: 'ビットコインが分裂する理由を見ていきます。国に管理されない世界初の通貨がどのような運命を辿るのか、僕たちはその歴史の証人になるでしょう。'
 ---
 
-<img src="/images/2017/11/bitcoin.svg" width="728" height="200" alt="bitcoin">
+<img src="/images/2017/11/bitcoin.svg" alt="bitcoin">
 
 仮想通貨（ビットコイン）の世界に出会うまで通貨が分裂する、という表現は聞いたことがありませんでした。そして、その世界に慣れ親しんだ今でも通貨が分裂するのは、不思議な表現だなと思います（法律的には仮想通貨は、通貨ではなくモノですが）。
 
@@ -27,7 +27,7 @@ subtitle: 'ビットコインが分裂する理由を見ていきます。国に
 
 一方、仮想通貨の XRP は、一秒あたり 1,500 件。仮想通貨ではありませんが、いい比較例として、VISA カードは一秒あたり 3,000 件とも言われています。それらと比べると、**ビットコインの一秒あたり 3 件は、雀の涙**というのがわかります。
 
-<img src="/images/2017/11/reasons-of-bitcoin-fork.png" width="1304" height="650" alt="XRP Transation Per Soconds">
+<img src="/images/2017/11/reasons-of-bitcoin-fork.png" alt="XRP Transation Per Soconds">
 
 > 出典：[XRP | Ripple](https://ripple.com/xrp/)
 
