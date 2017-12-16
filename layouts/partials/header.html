@@ -10,6 +10,7 @@
 <meta name="twitter:site" content="@rakuishi07" />
 <meta property="og:url" content="{{ .Permalink }}" />
 <meta property="og:title" content="{{ .Title }}{{ if eq .IsHome false }} | {{ .Site.Title }}{{ end }}" />
+{{ if eq .IsHome false }}<meta property="og:description" content="{{ if .Params.Subtitle }}{{ .Params.Subtitle }}{{ else }}{{ substr .Summary 0 125}}{{ end }}" />{{ end }}
 <style>{{ partial "style.css" . | safeCSS }}</style>
 <link rel="shortcut icon" href="/favicon.ico?v=160528" type="image/x-icon" />
 <link rel="alternate" href="/index.xml" type="application/rss+xml" title="{{ .Site.Title }}" />

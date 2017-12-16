@@ -94,12 +94,13 @@ a, a:hover { color: $blue; }
 
 .site-search > .searchbar {
   display: inline-block;
-  width: 280px;
+  width: 100%;
   height: 44px;
   padding: 12px 8px 12px 40px;
   border: 2px solid $border-gray;
   border-radius: 4px;
   font-size: 16px;
+  background-color: white;
   line-height: normal;
   outline: none;
   appearance: none;
@@ -109,7 +110,7 @@ a, a:hover { color: $blue; }
   &:-moz-placeholder { opacity: 1; color: $light-gray; }
   &::-moz-placeholder { opacity: 1; color: $light-gray; }
   &::-webkit-input-placeholder { color: $light-gray; }
-  &:focus { border-color: $blue; transition-duration: .15s; }
+  &:focus { border-color: $blue; transition-duration: .2s; }
   background-image: url('/assets/images/ic_search.svg');
   background-size: 24px;
   background-position-x: 8px;
@@ -132,15 +133,18 @@ a, a:hover { color: $blue; }
 }
 
 .site-footer {
-  @extend .site-container;
-  padding-bottom: 24px;
+  background: $background;
+  padding: 24px 0;
   text-align: center;
   color: $light-gray;
   font-size: 15px;
-  a { color: $light-gray; }
-  a:hover { text-decoration: underline; }
-  > .site-search { margin-bottom: 8px; }
-  > .categories { margin-bottom: 16px; }
+  a { color: $light-gray; text-decoration: underline; }
+  a:hover { text-decoration: none; }
+  > .inner {
+    @extend .site-container;
+    > .site-search { margin-bottom: 8px; }
+    > .categories { margin-bottom: 16px; }
+  }
 }
 
 .entry-list-container {
@@ -162,7 +166,7 @@ a, a:hover { color: $blue; }
     display: block;
     padding: $grid-gutter 0;
     color: $dark-gray;
-    &:hover { background-color: $background; }
+    &:hover { background-color: $background; transition-duration: .2s; }
     > .name {
       font-size: 18px;
       margin-bottom: 4px;
@@ -188,8 +192,8 @@ a, a:hover { color: $blue; }
     color: $light-gray;
     span:before { margin: 0 8px; content: '/'; }
     span:first-child:before { content: none; }
-    > span > a { color: $light-gray; }
-    > span > a:hover { text-decoration: underline; }
+    > span > a { color: $light-gray; text-decoration: underline; }
+    > span > a:hover { text-decoration: none; }
   }
   > .entry-text,
   > .entry-share,
@@ -244,10 +248,7 @@ a, a:hover { color: $blue; }
 }
 
 .entry-google-adsense {
-  font-size: 80%;
-  color: $light-gray;
-  > span { display: block; margin-bottom: 4px; }
-  > .adsbygoogle {
+  .adsbygoogle {
     display: inline-block;
     width: 300px;
     height: 250px;
@@ -279,7 +280,7 @@ a, a:hover { color: $blue; }
 .entry-paginator {
   @extend .site-container;
   margin-bottom: 32px;
-  height: 36px;
+  height: 44px;
   position: relative;
   text-align: center;
 
@@ -287,13 +288,14 @@ a, a:hover { color: $blue; }
   > .next {
     position: absolute;
     display: inline-block;
-    padding: 8px;
+    height: 44px;
+    padding: 0 12px;
     border-radius: 4px;
-    font-size: 14px;
-    line-height: 16px;
+    font-size: 16px;
+    line-height: 40px;
     color: $light-gray;
     border: 2px solid $border-gray;
-    &:hover { background-color: $blue; color: white; border-color: $blue; transition-duration: .15s; }
+    &:hover { border-color: $blue; transition-duration: .2s; }
   }
 
   > .prev { left:  $grid-gutter; }
