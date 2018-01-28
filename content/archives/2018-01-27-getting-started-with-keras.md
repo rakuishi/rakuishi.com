@@ -117,4 +117,4 @@ model.fit(
 
 学習用データでは、正答率 `acc: 0.9617`, テスト用データでは、正答率 `val_acc: 0.9578` となりました。どちらも 96% の確率で与えられたデータから正しい数値を答えられることを示しています。
 
-{{<amazon id="4873117585" title="ゼロから作るDeep Learning ―Pythonで学ぶディープラーニングの理論と実装" src="https://images-na.ssl-images-amazon.com/images/I/512ru2i5gyL._SL160_.jpg">}
+{{<amazon id="4873117585" title="ゼロから作るDeep Learning ―Pythonで学ぶディープラーニングの理論と実装" src="https://images-na.ssl-images-amazon.com/images/I/512ru2i5gyL._SL160_.jpg">}}
