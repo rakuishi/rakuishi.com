@@ -1,6 +1,6 @@
 ---
 categories:
-- Blog
+- Python
 date: 2016-12-27T09:11:26+09:00
 draft: false
 slug: deep-learning-from-scratch

@@ -1,6 +1,6 @@
 ---
 categories:
-- Blog
+- Python
 date: 2016-06-04T22:50:42+09:00
 draft: false
 slug: jupyter-font-family
