@@ -5,7 +5,7 @@
 //////////////////////////////////////////////////
 
 $blue: #1D78BD !default;
-$dark-gray: rgb(38, 50, 56) !default;
+$dark-gray: #24292e !default;
 $gray: #777 !default;
 $light-gray: #9F9F9F !default;
 $border-gray: #DBDFE4 !default;
@@ -35,7 +35,7 @@ body {
   font-size: 17px;
   word-break: break-all;
   text-align: justify;
-  -webkit-font-smoothing: antialiased;  
+  -webkit-font-smoothing: antialiased;
 }
 
 a, a:hover { color: $blue; }
@@ -176,7 +176,7 @@ a, a:hover { color: $blue; }
       color: $light-gray;
       text-align: left;
       display: -webkit-box;
-      height: 17px * 1.5 * 2;
+      height: 16px * 1.5 * 2;
       overflow: hidden;
       -webkit-box-orient: vertical;
       -webkit-line-clamp: 2;
@@ -216,19 +216,19 @@ a, a:hover { color: $blue; }
 .entry-text {
   h2 { margin: 60px 0 24px; padding-bottom: 0.5em; font-size: 20px; font-weight: bold; color: $dark-gray; border-bottom: 2px solid $border-gray; }
   h3 { margin: 24px 0; font-size: 20px; font-weight: bold; color: $dark-gray; }
-  p  { margin: 24px 0; line-height: 1.6; }
+  p  { margin: 24px 0; line-height: 1.75; }
   a:hover { text-decoration: underline; }
 
   small { font-size: 80%; }
   ruby > rt { font-size: 50%; }
-  code { padding: 2px 4px; border: 1px solid $border-gray; border-radius: 4px; font-size: 80%; font-family: Monaco, Menlo, monospace; word-wrap: break-word; background: $background !important; }
+  code { padding: 2px 4px; border: 1px solid $border-gray; border-radius: 4px; font-size: 90%; font-family: Monaco, Menlo, Consolas, 'Courier New', monospace; word-wrap: break-word; background: $background !important; }
   pre  { margin: 24px 0; }
-  pre > code { display: block; padding: 24px !important; line-height: 1.5; }
+  pre > code { display: block; padding: 24px !important; line-height: 1.75; }
 
   ul, ol { margin: 24px 0; padding-left: 24px; }
   ul { list-style: desc; }
   ol { list-style: decimal; }
-  li { font-size: 17px; line-height: 1.6; text-align: left; }
+  li { font-size: 17px; line-height: 1.75; text-align: left; list-style-type: square; }
   li > ul { margin: 0; }
 
   hr { height: 2px; margin: 24px 0; border: 0; background-color: $border-gray; }

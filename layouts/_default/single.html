@@ -7,9 +7,13 @@
   <h1 class="name" itemprop="name">{{ .Title }}{{ if .Draft }} #Draft{{ end }}</h1>
   <div class="meta"><span itemprop="datePublished" datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 02, 2006" }}</span>{{ if .Params.categories }}{{ range .Params.categories }}<span><a href="/categories/{{ . | urlize }}">{{ . }}</a></span>{{ end }}{{ end }}</div>
   <section class="entry-text" itemprop="text">
-    {{ $adsense := "<div class=\"entry-google-adsense\"><script async src=\"//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js\"></script><!-- rakuishi_responsive_171216 --><ins class=\"adsbygoogle\" style=\"display:block\" data-ad-client=\"ca-pub-9983442877454265\" data-ad-slot=\"3707083059\"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script></div>" }}
-    {{ $output := printf "$1 %s $2$3" $adsense }}
-    {{ .Content | replaceRE "(?s)^(.*?)(<h2.*?>.*?</h2>)(.*?)$" $output | safeHTML }}
+    {{ if .Draft }}
+      {{ .Content }}
+    {{ else }}
+      {{ $adsense := "<div class=\"entry-google-adsense\"><script async src=\"//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js\"></script><!-- rakuishi_responsive_171216 --><ins class=\"adsbygoogle\" style=\"display:block\" data-ad-client=\"ca-pub-9983442877454265\" data-ad-slot=\"3707083059\"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script></div>" }}
+      {{ $output := printf "$1 %s $2$3" $adsense }}
+      {{ .Content | replaceRE "(?s)^(.*?)(<h2.*?>.*?</h2>)(.*?)$" $output | safeHTML }}
+    {{ end }}
   </section>
 
   <div class="entry-share">
