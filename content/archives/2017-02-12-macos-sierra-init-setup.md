@@ -9,8 +9,7 @@ title: "[Macbook Pro / Touch Bar] macOS Sierra 初期設定"
 
 仕事で新しい MacBook Pro / Touch Bar を使うことになったから、macOS Sierra の初期設定を自分用のメモを兼ねてまとめておきます。基本的に、[4 年前に書いた記事](/archives/5571/)から変わっていません。ガリガリ魔改造しているわけでなく、標準のシステム環境設定と、最低限のアプリを使用しています。
 
-キーボードの打鍵感は慣れたのですが、左右の矢印キーの上下の余白が失われ、結構な確率でミスをしてしまいます。あの余白が、矢印のホームポジションを掴むために大事だったのに
-ね。
+キーボードの打鍵感は慣れたのですが、左右の矢印キーの上下の余白が失われ、結構な確率でミスをしてしまいます。あの余白が、矢印のホームポジションを掴むために大事だったのにね。
 
 ## システム環境設定
 
@@ -72,7 +71,7 @@ title: "[Macbook Pro / Touch Bar] macOS Sierra 初期設定"
 
 ### [Alfred 2](https://www.alfredapp.com/help/v2/)
 
-- 起動を `Option + Space`、履歴機能を `Option + /` に指定する
+- 起動を `Option + Space`、履歴機能を `Control + Space` に指定する
 - 頻繁に起動するアプリケーションを `Option + Control + 頭文字` で開けるように指定する
   - https://github.com/rakuishi/static/tree/master/alfredworkflows
 
