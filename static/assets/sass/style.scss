@@ -4,13 +4,13 @@
 // Variable
 //////////////////////////////////////////////////
 
-$blue: #1D78BD !default;
+$blue: #0366d6 !default;
 $dark-gray: #24292e !default;
-$gray: #777 !default;
-$light-gray: #9F9F9F !default;
-$border-gray: #DBDFE4 !default;
-$background: #FAFAFA !default;
-$grid-gutter: 16px !default;
+$gray: #586069 !default;
+$light-gray: #6a737d !default;
+$border-gray: #DDE0E5 !default;
+$background: #F5F7F9 !default;
+$grid-gutter: 24px !default;
 $max-width: 728px + $grid-gutter * 2 !default;
 $root-color: $dark-gray !default;
 $root-cursor: inherit !default;
@@ -18,6 +18,7 @@ $root-line-height: 1.5 !default;
 $selection-color: $dark-gray !default;
 $sans: 'YakuHanJPs', 'Roboto', -apple-system, BlinkMacSystemFont, 'Noto Sans', 'Noto Sans CJK JP', 'Helvetica Neue', 'Segoe UI', 'Noto Sans Japanese', 'ヒラギノ角ゴ ProN W3', Meiryo, sans-serif;
 $breakpoint: 568px;
+$default-font-size: 16px;
 
 //////////////////////////////////////////////////
 // Import
@@ -32,10 +33,10 @@ $breakpoint: 568px;
 body {
   font-family: $sans;
   font-weight: normal;
-  font-size: 17px;
+  font-size: $default-font-size;
   word-break: break-all;
   text-align: justify;
-  -webkit-font-smoothing: antialiased;
+  line-height: 1.7;
 }
 
 a, a:hover { color: $blue; }
@@ -72,7 +73,7 @@ a, a:hover { color: $blue; }
     line-height: 64px;
     font-weight: bold;
     &:hover, &.selected {
-      background-color: #F0F0F0;
+      background-color: darken($background, 2%);
     }
   }
 }
@@ -149,9 +150,9 @@ a, a:hover { color: $blue; }
 
 .entry-list-container {
   @extend .site-container;
-  > .name { margin-bottom: 24px; font-size: 22px; color: $dark-gray;
-    padding-left: 16px;
-    @media (min-width: $breakpoint) { padding: 0; }    
+  > .name {
+    margin-bottom: 24px; font-size: 22px; color: $dark-gray;
+    padding-left: 0;
   }
   > .entry-list { margin-bottom: 32px; list-style: none; }
 }
@@ -176,7 +177,8 @@ a, a:hover { color: $blue; }
       color: $light-gray;
       text-align: left;
       display: -webkit-box;
-      height: 16px * 1.5 * 2;
+      height: $default-font-size * 1.5 * 2;
+      line-height: 1.5;
       overflow: hidden;
       -webkit-box-orient: vertical;
       -webkit-line-clamp: 2;
@@ -203,37 +205,28 @@ a, a:hover { color: $blue; }
   }
 }
 
-.entry-breadcrumb {
-  font-size: 12px;
-  margin-bottom: 8px;
-  color: $light-gray;
-  text-align: left;
-  > div { display: inline-block; margin-right: 4px; }
-  > div a { color: $gray; }
-  > div a:hover span { text-decoration: underline; }
-}
-
 .entry-text {
   h2 { margin: 60px 0 24px; padding-bottom: 0.5em; font-size: 20px; font-weight: bold; color: $dark-gray; border-bottom: 2px solid $border-gray; }
   h3 { margin: 24px 0; font-size: 20px; font-weight: bold; color: $dark-gray; }
-  p  { margin: 24px 0; line-height: 1.75; }
+  p  { margin: 24px 0; }
+  a { text-decoration: none; }
   a:hover { text-decoration: underline; }
 
   small { font-size: 80%; }
   ruby > rt { font-size: 50%; }
   code { padding: 2px 4px; border: 1px solid $border-gray; border-radius: 4px; font-size: 90%; font-family: Monaco, Menlo, Consolas, 'Courier New', monospace; word-wrap: break-word; background: $background !important; }
   pre  { margin: 24px 0; }
-  pre > code { display: block; padding: 24px !important; line-height: 1.75; }
+  pre > code { display: block; padding: 24px !important; }
 
   ul, ol { margin: 24px 0; padding-left: 24px; }
   ul { list-style: desc; }
   ol { list-style: decimal; }
-  li { font-size: 17px; line-height: 1.75; text-align: left; list-style-type: square; }
+  li { font-size: $default-font-size; text-align: left; list-style-type: square; }
   li > ul { margin: 0; }
 
   hr { height: 2px; margin: 24px 0; border: 0; background-color: $border-gray; }
   img { width: auto; max-width: 100%; max-height: 546px; }
-  blockquote { margin: 24px 0; padding: 0 12px; border-left: 4px solid $border-gray; color: $light-gray; }
+  blockquote { margin: 24px 0; padding: 0 12px; border-left: 4px solid $border-gray; color: $gray; }
   table {
     margin: 24px 0;
     display: block;
@@ -291,7 +284,7 @@ a, a:hover { color: $blue; }
     height: 44px;
     padding: 0 12px;
     border-radius: 4px;
-    font-size: 16px;
+    font-size: $default-font-size;
     line-height: 40px;
     color: $light-gray;
     border: 2px solid $border-gray;

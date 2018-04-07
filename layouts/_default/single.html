@@ -1,9 +1,6 @@
 {{ partial "header.html" . }}
 
 <article class="entry-content" itemscope itemtype="http://schema.org/BlogPosting">
-  <div id="breadcrumb" class="entry-breadcrumb">
-    <div itemscope itemtype="http://data-vocabulary.org/Breadcrumb"><a href="{{ .Site.BaseURL }}" itemprop="url"><span itemprop="title">HOME</span></a> / </div>{{ if .Params.categories }}{{ range .Params.categories }}<div itemscope itemtype="http://data-vocabulary.org/Breadcrumb"><a href="/categories/{{ . | urlize }}" itemprop="url"><span itemprop="title">{{ . }}</span></a> / </div>{{ end }}{{ end }}<div itemscope itemtype="http://data-vocabulary.org/Breadcrumb"><a href="{{ .Permalink }}" itemprop="url"><span itemprop="title">{{ .Title }}</span></a></div>
-  </div>
   <h1 class="name" itemprop="name">{{ .Title }}{{ if .Draft }} #Draft{{ end }}</h1>
   <div class="meta"><span itemprop="datePublished" datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 02, 2006" }}</span>{{ if .Params.categories }}{{ range .Params.categories }}<span><a href="/categories/{{ . | urlize }}">{{ . }}</a></span>{{ end }}{{ end }}</div>
   <section class="entry-text" itemprop="text">
