@@ -9,14 +9,13 @@ title: Vue.js / Nuxt.js を採用した Web 開発で得た知見
 
 ![merlion](/images/2018/05/merlion.jpg)
 
-2018 年に入ってからは [Vue.js](https://jp.vuejs.org/) / [Nuxt.js](https://ja.nuxtjs.org/) を採用した Web サイト開発に携わっています。ログイン機能がある Web サイトで、データは API サーバーを叩いて取得するという構成。
+2018 年に入ってからは [Vue.js](https://jp.vuejs.org/) / [Nuxt.js](https://ja.nuxtjs.org/) を採用した Web サイト開発に携わっています。ログイン機能がある Web サイトで、データは API サーバーを叩いて取得するという構成。最近のフロントエンド開発は、感覚としてはアプリ開発ですね。
 
-Vue.js に加えて Nuxt.js を採用したのは SSR（Server Side Rendering）をしたいという理由に尽きます（副産物として、ログインユーザー情報が描画されて返るため、クライアント側で描画されるまでの空白状態がユーザーに見えないのがある）。
-
-SSR することによる明確なメリットは、以下となります：
+Vue.js に加えて Nuxt.js を採用したのは SSR（Server Side Rendering）をしたいという理由に尽きます。SSR することによるメリットは、以下となります：
 
 1. Facebook や Twitter が OGP タグを正しく評価してくれる
 1. 検索エンジンがサイトを正しく評価してくれる
+1. 副産物として、ログインユーザー情報が描画されて返るため、クライアント側で描画されるまでの空白状態がユーザーに見えない
 
 この記事ではそんな Vue.js / Nuxt.js を採用した Web 開発で得た知見を紹介していきます。
 
@@ -31,7 +30,7 @@ SSR することによる明確なメリットは、以下となります：
   <div>
     <child
       v-bind:message="message"
-      v-on:onMessageChanged="onMessageChanged" />
+      v-on:onSubmitted="onSubmitted" />
   </div>
 </template>
 
@@ -43,7 +42,7 @@ export default {
     children
   },
   methods: {
-    onMessageChanged(message) {
+    onSubmitted(message) {
       console.log('message from child: ' + message);
     },
   },
@@ -58,8 +57,11 @@ export default {
 
 ```
 <template>
-  <!-- 親から受け取った message がそのまま入る -->
-  <input v-model="message" />
+  <div>
+    <!-- 親から受け取った message がそのまま入る -->
+    <input v-model="message" />
+    <button v-on:click="onSubmitted">Submit</button>
+  </div>
 </template>
 
 <script>
@@ -67,10 +69,10 @@ export default {
   props: {
     message: String
   },
-  watch: {
-    message() {
-      // message に変更があるたびに、parent.vue の onMessageChanged が発火する
-      this.$emit('onMessageChanged', this.message);
+  methods: {
+    onSubmitted() {
+      // message に変更があるたびに、parent.vue の onSubmitted が発火する
+      this.$emit('onSubmitted', this.message);
     },
   },
 }
@@ -80,7 +82,7 @@ export default {
 </style>
 ```
 
-これ以外の親と子の関係を超えて値を渡したい時は、[Vuex ストア](https://ja.nuxtjs.org/guide/vuex-store) を使うことになると思います。
+これ以外の親と子の関係を超えて値を渡したい時は、[Vuex ストア](https://ja.nuxtjs.org/guide/vuex-store)を使うことになると思います。
 
 Vuex ストアの実装例で検索すると、API 通信結果を受け取り、それを Vuex ストアに格納して、`getters` から読み込む記事が多く紹介されていますが、この方法は以下の理由からプロジェクトが大きくなるにつれて限界を迎えました。
 
@@ -95,11 +97,11 @@ Vuex ストアの実装例で検索すると、API 通信結果を受け取り�
 
 [Vuex ストア](https://ja.nuxtjs.org/guide/vuex-store) を有効にするには、いくつか書き方があり、プロジェクト初期には [vuejs/vuex](https://github.com/vuejs/vuex/blob/dev/examples/shopping-cart/store/index.js) に掲載されている書き方を参考にしていました。
 
-ですが、このサンプルコードと Nuxt.js を組み合わせた時に、不可解な挙動が発生しました。クライアント側（ユーザーのブラウザ）では、問題は起きないのですが、Nuxt サーバー側では、状態が初期化されず、他ユーザーからデータが見えてしまう汚染が発生しました。
+しかし、このサンプルコードと Nuxt.js を組み合わせた時に、不可解な挙動が発生しました。クライアント側（ユーザーのブラウザ）では、問題は起きないのですが、Nuxt サーバー側では、状態が初期化されず、他ユーザーからデータが見える汚染が発生しました。
 
 サンプルコードでは `state` はオブジェクトですが、これを関数で書き換えることにより、`req` 毎に Vue インスタンスが生成され、さらに `state` が初期化されていることを確認しました。
 
-結果的に Nuxt.js のサイトにあるクラシックモード、モジュールモードの書き方では、`state` は関数になっていて、vuejs/vuex の書き方を先に参考にしたのが、すべての間違いでした。同じ間違いをする人のために文章として残しておきます。
+結果的に Nuxt.js のサイトにあるクラシックモード、モジュールモードの書き方では、`state` は関数になっていて、vuejs/vuex の書き方のオブジェクトを先に参考にしたのが、すべての間違いでした。同じ間違いをする人のために文章として残しておきます。
 
 - https://ja.nuxtjs.org/guide/vuex-store/
 - https://github.com/nuxt/nuxt.js/issues/2508
@@ -111,7 +113,7 @@ Vuejs の SPA（Single Page Application）では表現できないものを Nuxt
 - `process.server`, `process.client` による条件分岐により、必要なコードだけをそれぞれの環境（Nuxt サーバー上、ブラウザ上）で実行できるようにする
 - ブラウザ上の JavaScript に慣れていると `window` オブジェクトはあることが当たり前だけれど、Nuxt サーバー上にはもちろん存在しない
 - Nuxt サーバーによる SSR（Server Side Rendering）では、`created` 時までのライフサイクルのコードが実行されるため、`created` までに書いている API 通信結果は DOM に格納されるが、CSR（Client Side Rendering）時にも実行されるため、通信が無駄になることがある。その場合 `beforeMount` に書くのが良い
-- SSR 時と CSR 時の情報の差がある場合、エラーを吐く。そのため、全画面リロードして動作の確認をする必要がある。条件分岐をコントロールする変数が、`asyncData` や `created` で更新される場合は要注意。
+- SSR 時と CSR 時の情報の差がある場合、エラーを吐く。そのため、ホットリロードではなく全画面リロードして動作の確認をする必要がある。条件分岐をコントロールする変数が、`asyncData` や `created` で更新される場合は要注意
 
 ## ユーザーのログイン情報の取り扱い方法
 
