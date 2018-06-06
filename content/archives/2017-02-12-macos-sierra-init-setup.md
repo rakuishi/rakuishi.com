@@ -127,14 +127,15 @@ settings.json:
 ```
 // Place your settings in this file to overwrite the default settings
 {
-    "editor.fontSize": 14,
-    "editor.tabSize": 2,
-    "editor.fontFamily": "Monaco",
-    "editor.wrappingColumn": 0,
-    "editor.renderWhitespace": "boundary",
-    "workbench.colorTheme": "Monokai",
-    "window.openFilesInNewWindow": "off"
-  }
+  "editor.fontSize": 14,
+  "editor.tabSize": 2,
+  "editor.fontFamily": "Monaco",
+  "editor.wrappingColumn": 0,
+  "editor.renderWhitespace": "boundary",
+  "workbench.colorTheme": "Monokai",
+  "window.openFilesInNewWindow": "off",
+  "workbench.editor.enablePreview": false
+}
 ```
 
 keybindings.json:
