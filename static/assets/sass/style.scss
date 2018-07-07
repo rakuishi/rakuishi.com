@@ -5,7 +5,6 @@
 //////////////////////////////////////////////////
 
 $blue: #0366d6 !default;
-$background-blue: #eff5fe !default;
 $dark-gray: #202124 !default;
 $gray: #5f6368 !default;
 $light-gray: #5f6368 !default;
@@ -212,14 +211,14 @@ h1, h2, h3 { line-height: 1.5; }
 
 .entry-text {
   h2 { margin: 48px 0 24px; padding-top: 48px; font-size: 22px; font-weight: bold; color: $dark-gray; border-top: 1px solid $border-gray; }
-  h3 { margin: 24px 0; font-size: 22px; font-weight: normal; color: $dark-gray; }
+  h3 { margin: 24px 0; font-size: 20px; font-weight: normal; color: $dark-gray; }
   p  { margin: 24px 0; }
   a { text-decoration: underline; }
   a:hover { text-decoration: none; }
 
   small { font-size: 80%; }
   ruby > rt { font-size: 50%; }
-  code { padding: 2px 4px; border-radius: 4px; font-size: 95%; font-family: $mono; word-wrap: break-word; background: $background-blue !important; }
+  code { padding: 2px 4px; border-radius: 4px; font-size: 85%; font-family: $mono; word-wrap: break-word; background: $background !important; }
   pre > code { display: block; padding: 24px !important; }
 
   ul, ol { margin: 24px 0; padding-left: 24px; }
@@ -237,7 +236,7 @@ h1, h2, h3 { line-height: 1.5; }
     overflow-x: auto;
     white-space: nowrap;
     th, td { border: 1px solid $border-gray; padding: 8px; }
-    th { background-color: $background-blue; color: $dark-gray; }
+    th { background-color: $background; color: $dark-gray; }
   }
 
   .iframe-wrapper { position: relative; max-width: 480px; height: 0; margin: 24px 0; overflow: hidden; padding-top: 56.25%; }
@@ -286,7 +285,7 @@ h1, h2, h3 { line-height: 1.5; }
     position: absolute;
     display: inline-block;
     height: 44px;
-    padding: 0 24px;
+    padding: 0 12px;
     border-radius: 4px;
     font-size: $default-font-size;
     line-height: 40px;
