@@ -5,18 +5,20 @@
 //////////////////////////////////////////////////
 
 $blue: #0366d6 !default;
-$dark-gray: #24292e !default;
-$gray: #586069 !default;
-$light-gray: #6a737d !default;
-$border-gray: #DDE0E5 !default;
-$background: #F5F7F9 !default;
+$background-blue: #eff5fe !default;
+$dark-gray: #202124 !default;
+$gray: #5f6368 !default;
+$light-gray: #5f6368 !default;
+$border-gray: #e0e0e0 !default;
+$background: #f5f7f9 !default;
 $grid-gutter: 24px !default;
-$max-width: 728px + $grid-gutter * 2 !default;
+$max-width: 760px + $grid-gutter * 2 !default;
 $root-color: $dark-gray !default;
 $root-cursor: inherit !default;
 $root-line-height: 1.5 !default;
 $selection-color: $dark-gray !default;
 $sans: 'YakuHanJPs', 'Roboto', -apple-system, BlinkMacSystemFont, 'Noto Sans', 'Noto Sans CJK JP', 'Helvetica Neue', 'Segoe UI', 'Noto Sans Japanese', 'ヒラギノ角ゴ ProN W3', Meiryo, sans-serif;
+$mono: Monaco, Menlo, Consolas, 'Courier New', monospace;
 $breakpoint: 568px;
 $default-font-size: 16px;
 
@@ -24,7 +26,7 @@ $default-font-size: 16px;
 // Import
 //////////////////////////////////////////////////
 
-@import 'sanitize', 'highlight_js_github', 'roboto', 'yakuhanjp_s';
+@import 'sanitize', 'roboto', 'yakuhanjp_s';
 
 //////////////////////////////////////////////////
 // Base
@@ -37,9 +39,12 @@ body {
   word-break: break-all;
   text-align: justify;
   line-height: 1.7;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
 }
 
 a, a:hover { color: $blue; }
+h1, h2, h3 { line-height: 1.5; }
 
 //////////////////////////////////////////////////
 // Layout
@@ -136,15 +141,16 @@ a, a:hover { color: $blue; }
 .site-footer {
   background: $background;
   padding: 24px 0;
-  text-align: center;
+  text-align: left;
+  font-size: 14px;
   color: $light-gray;
-  font-size: 15px;
-  a { color: $light-gray; text-decoration: underline; }
-  a:hover { text-decoration: none; }
   > .inner {
     @extend .site-container;
-    > .site-search { margin-bottom: 8px; }
-    > .categories { margin-bottom: 16px; }
+    > .site-search { margin-bottom: 24px; }
+    > .categories {
+      margin-bottom: 20px;
+      > .category-chips { margin-bottom: 4px; }
+    }
   }
 }
 
@@ -168,11 +174,16 @@ a, a:hover { color: $blue; }
     padding: $grid-gutter 0;
     color: $dark-gray;
     &:hover { background-color: $background; transition-duration: .2s; }
+    > .date {
+      font-family: $mono;
+      color: $light-gray;
+      margin-bottom: 8px;
+    }
     > .name {
       font-size: 18px;
-      margin-bottom: 4px;
+      margin-bottom: 8px;
     }
-    > .meta {
+    > .summary {
       margin: 0;
       color: $light-gray;
       text-align: left;
@@ -189,14 +200,8 @@ a, a:hover { color: $blue; }
 
 .entry-content {
   @extend .site-container;
-  > .name { margin-bottom: 4px; font-size: 22px; }
-  > .meta {
-    color: $light-gray;
-    span:before { margin: 0 8px; content: '/'; }
-    span:first-child:before { content: none; }
-    > span > a { color: $light-gray; text-decoration: underline; }
-    > span > a:hover { text-decoration: none; }
-  }
+  > .date { font-family: $mono; color: $light-gray; margin-bottom: 8px; }
+  > .name { margin-bottom: 16px; font-size: 22px; }
   > .entry-text,
   > .entry-share,
   > .entry-google-adsense,
@@ -206,22 +211,21 @@ a, a:hover { color: $blue; }
 }
 
 .entry-text {
-  h2 { margin: 60px 0 24px; padding-bottom: 0.5em; font-size: 20px; font-weight: bold; color: $dark-gray; border-bottom: 2px solid $border-gray; }
-  h3 { margin: 24px 0; font-size: 20px; font-weight: bold; color: $dark-gray; }
+  h2 { margin: 48px 0 24px; padding-top: 48px; font-size: 22px; font-weight: bold; color: $dark-gray; border-top: 1px solid $border-gray; }
+  h3 { margin: 24px 0; font-size: 22px; font-weight: normal; color: $dark-gray; }
   p  { margin: 24px 0; }
-  a { text-decoration: none; }
-  a:hover { text-decoration: underline; }
+  a { text-decoration: underline; }
+  a:hover { text-decoration: none; }
 
   small { font-size: 80%; }
   ruby > rt { font-size: 50%; }
-  code { padding: 2px 4px; border: 1px solid $border-gray; border-radius: 4px; font-size: 90%; font-family: Monaco, Menlo, Consolas, 'Courier New', monospace; word-wrap: break-word; background: $background !important; }
-  pre  { margin: 24px 0; }
+  code { padding: 2px 4px; border-radius: 4px; font-size: 95%; font-family: $mono; word-wrap: break-word; background: $background-blue !important; }
   pre > code { display: block; padding: 24px !important; }
 
   ul, ol { margin: 24px 0; padding-left: 24px; }
-  ul { list-style: desc; }
+  ul { list-style: disc; }
   ol { list-style: decimal; }
-  li { font-size: $default-font-size; text-align: left; list-style-type: square; }
+  li { font-size: $default-font-size; text-align: left; list-style-type: disc; }
   li > ul { margin: 0; }
 
   hr { height: 2px; margin: 24px 0; border: 0; background-color: $border-gray; }
@@ -233,7 +237,7 @@ a, a:hover { color: $blue; }
     overflow-x: auto;
     white-space: nowrap;
     th, td { border: 1px solid $border-gray; padding: 8px; }
-    th { background-color: $background; color: $dark-gray; }
+    th { background-color: $background-blue; color: $dark-gray; }
   }
 
   .iframe-wrapper { position: relative; max-width: 480px; height: 0; margin: 24px 0; overflow: hidden; padding-top: 56.25%; }
@@ -282,15 +286,32 @@ a, a:hover { color: $blue; }
     position: absolute;
     display: inline-block;
     height: 44px;
-    padding: 0 12px;
+    padding: 0 24px;
     border-radius: 4px;
     font-size: $default-font-size;
     line-height: 40px;
-    color: $light-gray;
-    border: 2px solid $border-gray;
-    &:hover { border-color: $blue; transition-duration: .2s; }
+    color: white;
+    background: $blue;
+    &:hover { text-decoration: underline; }
   }
 
   > .prev { left:  $grid-gutter; }
   > .next { right: $grid-gutter; }
+}
+
+.category-chips {
+  display: inline-block;
+  height: 30px;
+  padding: 0px 12px;
+  border: 1px solid $border-gray;
+  border-radius: 30px;
+  font-size: 14px;
+  line-height: 28px;
+  color: $light-gray;
+  background: white;
+  text-decoration: none;
+  &:hover {
+    color: $light-gray;
+    text-decoration: underline;
+  }
 }
