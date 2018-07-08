@@ -25,7 +25,7 @@ $default-font-size: 16px;
 // Import
 //////////////////////////////////////////////////
 
-@import 'sanitize', 'roboto', 'yakuhanjp_s';
+@import 'sanitize', 'highlight_js_github', 'roboto', 'yakuhanjp_s';
 
 //////////////////////////////////////////////////
 // Base
@@ -219,7 +219,7 @@ h1, h2, h3 { line-height: 1.5; }
   small { font-size: 80%; }
   ruby > rt { font-size: 50%; }
   code { padding: 2px 4px; border-radius: 4px; font-size: 85%; font-family: $mono; word-wrap: break-word; background: $background !important; }
-  pre > code { display: block; padding: 24px !important; }
+  pre > code { display: block; padding: 12px !important; }
 
   ul, ol { margin: 24px 0; padding-left: 24px; }
   ul { list-style: disc; }
