@@ -20,8 +20,7 @@ hugo_server() {
 
 publish() {
   sass static/assets/sass/style.scss:layouts/partials/style.css \
-    --style compressed \
-    --sourcemap=none
+    --style compressed
   rm -rf public/
   hugo
   # brew install htmlcompressor
