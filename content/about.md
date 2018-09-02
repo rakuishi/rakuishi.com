@@ -23,7 +23,8 @@ title: "ABOUT ME"
 
 ### 2017.02 - Now, YAMAP Inc.
 
-- Android Developer
+- 遭難防止に役立つ登山・アウトドア用 GPS アプリの企画、開発(Android)を担当
+- 大規模 Web サイトの Vue.js / Nuxt.js による開発
 
 ### 2015.03 - 2016.07, apprime Inc.
 
