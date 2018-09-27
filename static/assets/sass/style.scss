@@ -4,7 +4,7 @@
 // Variable
 //////////////////////////////////////////////////
 
-$blue: #0366d6 !default;
+$blue: #4184F3 !default;
 $dark-gray: #202124 !default;
 $gray: #5f6368 !default;
 $light-gray: #5f6368 !default;
@@ -41,7 +41,7 @@ body {
 }
 
 a, a:hover { color: $blue; }
-h1, h2, h3 { line-height: 1.5; }
+h1, h2, h3 { line-height: 1.4; }
 
 //////////////////////////////////////////////////
 // Layout
@@ -73,7 +73,7 @@ h1, h2, h3 { line-height: 1.5; }
     font-size: 16px;
     color: $gray;
     line-height: 64px;
-    font-weight: bold;
+    font-weight: 500;
     &:hover, &.selected {
       background-color: darken($background, 2%);
     }
@@ -101,7 +101,7 @@ h1, h2, h3 { line-height: 1.5; }
   height: 44px;
   padding: 12px 8px 12px 40px;
   border: 2px solid $border-gray;
-  border-radius: 4px;
+  border-radius: 8px;
   font-size: 16px;
   background-color: white;
   line-height: normal;
@@ -172,9 +172,10 @@ h1, h2, h3 { line-height: 1.5; }
     color: $dark-gray;
     &:hover { background-color: $background; transition-duration: .2s; }
     > .date {
+      font-size: 14px;
       font-family: $mono;
       color: $light-gray;
-      margin-bottom: 8px;
+      margin-bottom: 6px;
     }
     > .name {
       font-size: 18px;
@@ -190,14 +191,13 @@ h1, h2, h3 { line-height: 1.5; }
       overflow: hidden;
       -webkit-box-orient: vertical;
       -webkit-line-clamp: 2;
-      > span:after { margin: 0 8px; content: '/'; }
     }
   }
 }
 
 .entry-content {
   @extend .site-container;
-  > .date { font-family: $mono; color: $light-gray; margin-bottom: 8px; }
+  > .date { font-size: 14px; font-family: $mono; color: $light-gray; margin-bottom: 8px; }
   > .name { margin-bottom: 16px; font-size: 22px; }
   > .entry-text,
   > .entry-share,
@@ -208,15 +208,15 @@ h1, h2, h3 { line-height: 1.5; }
 }
 
 .entry-text {
-  h2 { margin: 48px 0 24px; padding-top: 48px; font-size: 22px; font-weight: bold; color: $dark-gray; border-top: 1px solid $border-gray; }
-  h3 { margin: 24px 0; font-size: 20px; font-weight: normal; color: $dark-gray; }
+  h2 { margin: 48px 0 24px; padding-top: 48px; font-size: 20px; color: $dark-gray; border-top: 1px solid $border-gray; }
+  h3 { margin: 24px 0; font-size: 18px; font-weight: normal; color: $dark-gray; }
   p  { margin: 24px 0; }
-  a { text-decoration: underline; }
-  a:hover { text-decoration: none; }
+  a:hover { text-decoration: underline; }
 
   small { font-size: 80%; }
   ruby > rt { font-size: 50%; }
-  code { padding: 2px 4px; border-radius: 4px; font-size: 85%; font-family: $mono; word-wrap: break-word; background: $background !important; }
+  code { padding: 2px 4px; border-radius: 8px; font-size: 85%; font-family: $mono; word-wrap: break-word; background: $background !important; }
+  pre { margin: 24px 0; }
   pre > code { display: block; padding: 12px !important; }
 
   ul, ol { margin: 24px 0; padding-left: 24px; }
@@ -227,6 +227,7 @@ h1, h2, h3 { line-height: 1.5; }
 
   hr { height: 2px; margin: 24px 0; border: 0; background-color: $border-gray; }
   img { width: auto; max-width: 100%; max-height: 546px; }
+  p > img { border-radius: 8px; }
   blockquote { margin: 24px 0; padding: 0 12px; border-left: 4px solid $border-gray; color: $gray; }
   table {
     margin: 24px 0;
@@ -284,12 +285,12 @@ h1, h2, h3 { line-height: 1.5; }
     display: inline-block;
     height: 44px;
     padding: 0 12px;
-    border-radius: 4px;
+    border: 2px solid $border-gray;
+    border-radius: 8px;
     font-size: $default-font-size;
     line-height: 40px;
-    color: white;
-    background: $blue;
-    &:hover { text-decoration: underline; }
+    color: $light-gray;
+    &:hover { background: $background; }
   }
 
   > .prev { left:  $grid-gutter; }
@@ -299,9 +300,9 @@ h1, h2, h3 { line-height: 1.5; }
 .category-chips {
   display: inline-block;
   height: 30px;
-  padding: 0px 12px;
+  padding: 0px 8px;
   border: 1px solid $border-gray;
-  border-radius: 30px;
+  border-radius: 8px;
   font-size: 14px;
   line-height: 28px;
   color: $light-gray;
@@ -309,6 +310,6 @@ h1, h2, h3 { line-height: 1.5; }
   text-decoration: none;
   &:hover {
     color: $light-gray;
-    text-decoration: underline;
+    background: $background;
   }
 }
