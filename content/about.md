@@ -48,7 +48,7 @@ AppBank Inc. 子会社である apprime Inc. に転籍
 * [HTML Viewer](https://itunes.apple.com/jp/app/id656968855?mt=8&uo=4&at=11l3RT)<small>（EOL on 2013/10/08）</small>
 * [ImageKit](https://itunes.apple.com/jp/app/id588135117?mt=8&uo=4&at=11l3RT)<small>（EOLon 2013/10/08）</small>
 * [オフ会リスト](https://itunes.apple.com/jp/app/id533017985?mt=8&uo=4&at=11l3RT)<small>（EOL on 2013/10/08）</small>
-* [Quicka - 検索を快適に](https://itunes.apple.com/jp/app/id511606108?mt=8&uo=4&at=11l3RT)<small>（EOL on 2013/10/26）</small>
+* [Quicka - 検索を快適に](https://itunes.apple.com/jp/app/id511606108?mt=8&uo=4&at=11l3RT)<small>（EOL on 2013/10/26）→ [有料アプリランキング 5 位](/images/2014/08/quicka_paid_app_ranking.png)</small>
 * [StampTime](https://itunes.apple.com/jp/app/id452580423?mt=8&uo=4&at=11l3RT)<small>（EOL on 2013/10/08）</small>
 
 ### [Android App](https://play.google.com/store/apps/dev?id=5894821878234337547)
