@@ -4,7 +4,7 @@
 // Variable
 //////////////////////////////////////////////////
 
-$blue: #4184F3 !default;
+$blue: #1d78bd !default;
 $dark-gray: #202124 !default;
 $gray: #5f6368 !default;
 $light-gray: #5f6368 !default;
@@ -16,7 +16,7 @@ $root-color: $dark-gray !default;
 $root-cursor: inherit !default;
 $root-line-height: 1.5 !default;
 $selection-color: $dark-gray !default;
-$sans: 'YakuHanJPs', 'Roboto', -apple-system, BlinkMacSystemFont, 'Noto Sans', 'Noto Sans CJK JP', 'Helvetica Neue', 'Segoe UI', 'Noto Sans Japanese', 'ヒラギノ角ゴ ProN W3', Meiryo, sans-serif;
+$sans: 'M PLUS 1p', -apple-system, BlinkMacSystemFont, 'Noto Sans', 'Noto Sans CJK JP', 'Helvetica Neue', 'Segoe UI', 'Noto Sans Japanese', 'ヒラギノ角ゴ ProN W3', Meiryo, sans-serif;
 $mono: Monaco, Menlo, Consolas, 'Courier New', monospace;
 $breakpoint: 568px;
 $default-font-size: 16px;
@@ -25,7 +25,7 @@ $default-font-size: 16px;
 // Import
 //////////////////////////////////////////////////
 
-@import 'sanitize', 'highlight_js_github', 'roboto', 'yakuhanjp_s';
+@import 'sanitize', 'highlight_js_github', 'm_plus_1p';
 
 //////////////////////////////////////////////////
 // Base
@@ -41,7 +41,7 @@ body {
 }
 
 a, a:hover { color: $blue; }
-h1, h2, h3 { line-height: 1.4; }
+h1, h2, h3 { line-height: 1.4; font-weight: 500; }
 
 //////////////////////////////////////////////////
 // Layout
@@ -209,7 +209,7 @@ h1, h2, h3 { line-height: 1.4; }
 
 .entry-text {
   h2 { margin: 48px 0 24px; padding-top: 48px; font-size: 20px; color: $dark-gray; border-top: 1px solid $border-gray; }
-  h3 { margin: 24px 0; font-size: 18px; font-weight: normal; color: $dark-gray; }
+  h3 { margin: 24px 0; font-size: 18px; color: $dark-gray; }
   p  { margin: 24px 0; }
   a:hover { text-decoration: underline; }
 
