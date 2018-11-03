@@ -11,14 +11,14 @@ $light-gray: #5f6368 !default;
 $border-gray: #e0e0e0 !default;
 $background: #f5f7f9 !default;
 $grid-gutter: 24px !default;
-$max-width: 728px + $grid-gutter * 2 !default;
+$max-width: 980px + $grid-gutter * 2 !default;
 $root-color: $dark-gray !default;
 $root-cursor: inherit !default;
 $root-line-height: 1.5 !default;
 $selection-color: $dark-gray !default;
 $sans: 'M PLUS 1p', -apple-system, BlinkMacSystemFont, 'Noto Sans', 'Noto Sans CJK JP', 'Helvetica Neue', 'Segoe UI', 'Noto Sans Japanese', 'ヒラギノ角ゴ ProN W3', Meiryo, sans-serif;
 $mono: Monaco, Menlo, Consolas, 'Courier New', monospace;
-$breakpoint: 568px;
+$breakpoint: 900px;
 $default-font-size: 16px;
 
 //////////////////////////////////////////////////
@@ -42,16 +42,34 @@ body {
 
 a, a:hover { color: $blue; }
 h1, h2, h3 { line-height: 1.4; font-weight: 500; }
+b, strong { font-weight: 500; }
 
 //////////////////////////////////////////////////
 // Layout
 //////////////////////////////////////////////////
 
-.site-container {
+.site-base {
   max-width: $max-width;
   margin: 0 auto;
   overflow: hidden;
   padding: 0 $grid-gutter;
+}
+
+.site-container {
+  @extend .site-base;
+  display: block;
+  @media (min-width: $breakpoint) {
+    display: flex;
+  }
+}
+
+.site-main {
+  width: 100%;
+  padding-bottom: $grid-gutter;
+  @media (min-width: $breakpoint) {
+    width: calc(100% - 280px);
+    padding: 0 $grid-gutter * 2 $grid-gutter 0;
+  }
 }
 
 .site-header {
@@ -63,7 +81,7 @@ h1, h2, h3 { line-height: 1.4; font-weight: 500; }
 }
 
 .header-nav {
-  @extend .site-container;
+  @extend .site-base;
   > a {
     display: inline-block;
     vertical-align: top;
@@ -127,22 +145,36 @@ h1, h2, h3 { line-height: 1.4; font-weight: 500; }
   height: 100px;
   @media(min-width: 468px) { height: 60px; }
   @media(min-width: 728px) { height: 90px; }
+  @media(min-width: 980px) { height: 120px; }
   > .adsbygoogle {
     display: inline-block;
     width: 320px; height: 100px;
     @media(min-width: 468px) { width: 468px; height: 60px; }
     @media(min-width: 728px) { width: 728px; height: 90px; }
+    @media(min-width: 980px) { width: 980px; height: 120px; }
   }
 }
 
-.site-footer {
-  background: $background;
-  padding: 24px 0;
+.site-sidebar {
+  width: 100%;
+  @media (min-width: $breakpoint) {
+    width: 280px;
+  }
   text-align: left;
   font-size: 14px;
   color: $light-gray;
+
   > .inner {
-    @extend .site-container;
+    background: $background;
+    padding: $grid-gutter;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    @media (min-width: $breakpoint) {
+      padding: 16px;
+      border-bottom-left-radius: 8px;
+      border-bottom-right-radius: 8px;
+    }
+  
     > .site-search { margin-bottom: 24px; }
     > .categories {
       margin-bottom: 20px;
@@ -152,16 +184,15 @@ h1, h2, h3 { line-height: 1.4; font-weight: 500; }
 }
 
 .entry-list-container {
-  @extend .site-container;
   > .name {
     margin-bottom: 24px; font-size: 22px; color: $dark-gray;
     padding-left: 0;
   }
-  > .entry-list { margin-bottom: 32px; list-style: none; }
+  > .entry-list { margin-bottom: $grid-gutter; list-style: none; }
 }
 
 .entry-list { list-style: none; }
-.related-entry-list { margin-bottom: 32px; }
+.related-entry-list { margin-bottom: $grid-gutter; }
 
 .entry-list-item {
   border-bottom: 1px solid $border-gray;
@@ -196,7 +227,6 @@ h1, h2, h3 { line-height: 1.4; font-weight: 500; }
 }
 
 .entry-content {
-  @extend .site-container;
   > .date { font-size: 14px; font-family: $mono; color: $light-gray; margin-bottom: 8px; }
   > .name { margin-bottom: 16px; font-size: 22px; }
   > .entry-text,
@@ -235,7 +265,7 @@ h1, h2, h3 { line-height: 1.4; font-weight: 500; }
     overflow-x: auto;
     white-space: nowrap;
     th, td { border: 1px solid $border-gray; padding: 8px; }
-    th { background-color: $background; color: $dark-gray; }
+    th { font-weight: 500; background-color: $background; color: $dark-gray; }
   }
 
   .iframe-wrapper { position: relative; max-width: 480px; height: 0; margin: 24px 0; overflow: hidden; padding-top: 56.25%; }
@@ -273,8 +303,6 @@ h1, h2, h3 { line-height: 1.4; font-weight: 500; }
 }
 
 .entry-paginator {
-  @extend .site-container;
-  margin-bottom: 32px;
   height: 44px;
   position: relative;
   text-align: center;
@@ -293,8 +321,8 @@ h1, h2, h3 { line-height: 1.4; font-weight: 500; }
     &:hover { background: $background; }
   }
 
-  > .prev { left:  $grid-gutter; }
-  > .next { right: $grid-gutter; }
+  > .prev { left:  0; }
+  > .next { right: 0; }
 }
 
 .category-chips {

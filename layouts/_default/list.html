@@ -1,12 +1,16 @@
 {{ partial "header.html" . }}
 
-<main class="entry-list-container">
-  <h1 class="name">{{ .Title }}</h1>
-  <ul class="entry-list">
-    {{ range .Data.Pages }}
-      {{ .Render "summary" }}
-    {{ end }}
-  </ul>
+<main class="site-main">
+
+  <div class="entry-list-container">
+    <h1 class="name">{{ .Title }}</h1>
+    <ul class="entry-list">
+      {{ range .Data.Pages }}
+        {{ .Render "summary" }}
+      {{ end }}
+    </ul>
+  </div>
+
 </main>
 
 {{ partial "footer.html" . }}

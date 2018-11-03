@@ -1,20 +1,24 @@
 {{ partial "header.html" . }}
 
-<main class="entry-list-container">
-  <ul class="entry-list">
-    {{ range (.Paginator 16).Pages }}
-      {{ .Render "summary"}}
-    {{ end }}
-  </ul>
-</main>
+<main class="site-main">
 
-<nav class="entry-paginator">
-  {{ if .Paginator.HasPrev }}
-    <a class="prev" rel="prev" href="{{.Paginator.Prev.URL}}" ontouchstart="">← Newer</a>
-  {{ end }}
-  {{ if .Paginator.HasNext }}
-    <a class="next" rel="next" href="{{.Paginator.Next.URL}}" ontouchstart="">Older →</a>
-  {{ end }}
-</nav>
+  <div class="entry-list-container">
+    <ul class="entry-list">
+      {{ range (.Paginator 16).Pages }}
+        {{ .Render "summary"}}
+      {{ end }}
+    </ul>
+  </div>
+
+  <nav class="entry-paginator">
+    {{ if .Paginator.HasPrev }}
+      <a class="prev" rel="prev" href="{{.Paginator.Prev.URL}}" ontouchstart="">← Newer</a>
+    {{ end }}
+    {{ if .Paginator.HasNext }}
+      <a class="next" rel="next" href="{{.Paginator.Next.URL}}" ontouchstart="">Older →</a>
+    {{ end }}
+  </nav>
+
+</main>
 
 {{ partial "footer.html" . }}
