@@ -1,6 +1,6 @@
 ---
 categories:
-- Development
+- 開発
 date: 2017-05-07T09:09:24+09:00
 draft: false
 slug: weight-log-android

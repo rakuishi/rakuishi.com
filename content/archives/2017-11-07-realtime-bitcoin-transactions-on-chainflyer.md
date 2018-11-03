@@ -1,6 +1,6 @@
 ---
 categories:
-- Cryptocurrency
+- 仮想通貨
 date: 2017-11-07T20:24:37+09:00
 draft: false
 slug: realtime-bitcoin-transactions-on-chainflyer

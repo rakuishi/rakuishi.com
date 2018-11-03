@@ -1,6 +1,6 @@
 ---
 categories:
-- Cryptocurrency
+- 仮想通貨
 date: 2017-11-21T21:57:55+09:00
 draft: false
 slug: risk-and-potential-of-bitcoin-2

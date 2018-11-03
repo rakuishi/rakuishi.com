@@ -1,6 +1,6 @@
 ---
 categories:
-- Cryptocurrency
+- 仮想通貨
 date: 2017-11-19T08:13:15+09:00
 draft: false
 slug: cryptocurrency-to-fiatcurrency

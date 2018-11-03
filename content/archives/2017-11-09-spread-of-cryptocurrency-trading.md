@@ -1,6 +1,6 @@
 ---
 categories:
-- Cryptocurrency
+- 仮想通貨
 date: 2017-11-09T21:58:43+09:00
 draft: false
 slug: spread-of-cryptocurrency-trading

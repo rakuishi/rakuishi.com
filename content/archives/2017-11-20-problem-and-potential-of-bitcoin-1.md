@@ -1,6 +1,6 @@
 ---
 categories:
-- Cryptocurrency
+- 仮想通貨
 date: 2017-11-20T19:21:34+09:00
 draft: false
 slug: problem-and-potential-of-bitcoin-1

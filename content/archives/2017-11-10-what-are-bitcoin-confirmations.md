@@ -1,6 +1,6 @@
 ---
 categories:
-- Cryptocurrency
+- 仮想通貨
 date: 2017-11-10T22:33:07+09:00
 draft: false
 slug: what-are-bitcoin-confirmations

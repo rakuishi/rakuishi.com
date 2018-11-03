@@ -1,6 +1,6 @@
 ---
 categories:
-- Development
+- 開発
 date: 2017-07-05T22:48:12+09:00
 draft: false
 slug: coinchecker-android-widget

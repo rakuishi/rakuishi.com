@@ -1,6 +1,6 @@
 ---
 categories:
-  - Finance
+  - 投資
 date: 2017-12-08T06:05:50+09:00
 draft: false
 slug: robo-advisors-wealthnavi-theo

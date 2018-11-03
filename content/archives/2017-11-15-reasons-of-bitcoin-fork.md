@@ -1,6 +1,6 @@
 ---
 categories:
-- Cryptocurrency
+- 仮想通貨
 date: 2017-11-15T21:15:16+09:00
 draft: false
 slug: reasons-of-bitcoin-fork

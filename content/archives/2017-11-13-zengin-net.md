@@ -1,6 +1,6 @@
 ---
 categories:
-- Cryptocurrency
+- 仮想通貨
 date: 2017-11-13T20:35:04+09:00
 draft: false
 slug: zengin-net

@@ -1,6 +1,6 @@
 ---
 categories:
-- Cryptocurrency
+- 仮想通貨
 date: 2017-07-09T09:43:04+09:00
 draft: false
 slug: nem-nano-wallet

@@ -1,6 +1,6 @@
 ---
 categories:
-- Cryptocurrency
+- 仮想通貨
 date: 2017-11-23T22:12:35+09:00
 draft: false
 slug: open-vs-closed-blockchains

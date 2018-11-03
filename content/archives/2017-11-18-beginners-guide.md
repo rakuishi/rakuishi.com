@@ -1,6 +1,6 @@
 ---
 categories:
-- Cryptocurrency
+- 仮想通貨
 date: 2017-11-18T08:48:52+09:00
 draft: false
 slug: beginners-guide

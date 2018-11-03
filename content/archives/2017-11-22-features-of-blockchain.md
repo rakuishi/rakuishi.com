@@ -1,6 +1,6 @@
 ---
 categories:
-- Cryptocurrency
+- 仮想通貨
 date: 2017-11-22T22:44:21+09:00
 draft: false
 slug: features-of-blockchain

@@ -1,6 +1,6 @@
 ---
 categories:
-- Cryptocurrency
+- 仮想通貨
 date: 2017-11-05T09:41:47+09:00
 draft: false
 slug: coins-and-market-cap

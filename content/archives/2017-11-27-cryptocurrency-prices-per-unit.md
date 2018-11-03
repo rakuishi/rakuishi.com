@@ -1,6 +1,6 @@
 ---
 categories:
-- Cryptocurrency
+- 仮想通貨
 date: 2017-11-27T22:32:52+09:00
 draft: false
 slug: cryptocurrency-prices-per-unit

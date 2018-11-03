@@ -1,6 +1,6 @@
 ---
 categories:
-- Cryptocurrency
+- 仮想通貨
 date: 2017-11-06T07:58:06+09:00
 draft: false
 slug: incentive-of-maintaining-bitcoin-blockchain

@@ -1,6 +1,6 @@
 ---
 categories:
-- Cryptocurrency
+- 仮想通貨
 date: 2017-11-11T16:19:33+09:00
 draft: false
 slug: bitcoin-as-digital-gold

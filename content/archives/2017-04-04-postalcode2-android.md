@@ -1,6 +1,6 @@
 ---
 categories:
-- Development
+- 開発
 date: 2017-04-04T21:07:50+09:00
 draft: false
 slug: postalcode2-android

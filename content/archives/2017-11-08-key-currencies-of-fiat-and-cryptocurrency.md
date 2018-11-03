@@ -1,6 +1,6 @@
 ---
 categories:
-- Cryptocurrency
+- 仮想通貨
 date: 2017-11-08T18:33:28+09:00
 draft: false
 slug: key-currencies-of-fiat-and-cryptocurrency

@@ -1,6 +1,6 @@
 ---
 categories:
-- Cryptocurrency
+- 仮想通貨
 date: 2017-11-16T23:01:10+09:00
 draft: false
 slug: pow-pos-poi

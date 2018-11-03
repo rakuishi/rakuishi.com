@@ -1,6 +1,6 @@
 ---
 categories:
-- Cryptocurrency
+- 仮想通貨
 date: 2017-11-26T09:11:22+09:00
 draft: false
 slug: generate-addresses-from-privatekey

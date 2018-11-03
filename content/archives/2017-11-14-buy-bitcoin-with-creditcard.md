@@ -1,6 +1,6 @@
 ---
 categories:
-- Cryptocurrency
+- 仮想通貨
 date: 2017-11-14T20:02:20+09:00
 draft: false
 slug: buy-bitcoin-with-creditcard
