@@ -4,7 +4,7 @@
         <form action="//google.com/search" method="get" accept-charset="UTF-8" class="site-search"><input type="text" name="q" placeholder="サイト内検索" autocomplete="off" class="searchbar"><input type="hidden" name="sitesearch" value="http://rakuishi.com"></form>
         <p class="categories">
           {{ range $name, $taxonomy := .Site.Taxonomies.categories }}
-            <a href="{{ "/categories/" | relLangURL }}{{ $name | urlize }}" class="category-chips">{{ $name }} {{ $taxonomy.Count }}</a>
+            <a href="{{ "/categories/" | relLangURL }}{{ $name | urlize }}" class="category-chips -linkable">{{ $name }} {{ $taxonomy.Count }}</a>
           {{ end }}
         </p>
         <p class="copyright">(C) 2011 rakuishi</p>
