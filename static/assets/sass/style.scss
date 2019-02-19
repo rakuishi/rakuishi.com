@@ -11,12 +11,12 @@ $light-gray: #505F79 !default;
 $border-gray: #DFE1E6 !default;
 $background: rgb(248, 249, 250) !default;
 $grid-gutter: 24px !default;
-$max-width: 980px + $grid-gutter * 2 !default;
+$max-width: 728px + $grid-gutter * 2 !default;
 $root-color: $dark-gray !default;
 $root-cursor: inherit !default;
 $root-line-height: 1.5 !default;
 $selection-color: $dark-gray !default;
-$sans: 'Noto Sans JP', -apple-system, BlinkMacSystemFont, 'Noto Sans', 'Noto Sans CJK JP', 'Helvetica Neue', 'Segoe UI', 'Noto Sans Japanese', 'ヒラギノ角ゴ ProN W3', Meiryo, sans-serif;
+$sans: 'Noto Sans', 'Noto Sans CJK JP', 'NotoSans', sans-serif;
 $mono: Monaco, Menlo, Consolas, 'Courier New', monospace;
 $breakpoint: 900px;
 $default-font-size: 16px;
@@ -31,6 +31,7 @@ $default-font-size: 16px;
 // Base
 //////////////////////////////////////////////////
 
+
 body {
   font-family: $sans;
   font-weight: normal;
@@ -38,7 +39,6 @@ body {
   word-break: break-all;
   text-align: justify;
   line-height: 1.8;
-  -webkit-font-smoothing: antialiased;
 }
 
 a, a:hover { color: $blue; }
@@ -59,18 +59,11 @@ b, strong { font-weight: 700; }
 .site-container {
   @extend .site-base;
   display: block;
-  @media (min-width: $breakpoint) {
-    display: flex;
-  }
 }
 
 .site-main {
   width: 100%;
   padding-bottom: $grid-gutter;
-  @media (min-width: $breakpoint) {
-    width: calc(100% - 320px);
-    padding: 0 $grid-gutter * 2 $grid-gutter 0;
-  }
 }
 
 .site-header {
@@ -146,36 +139,25 @@ b, strong { font-weight: 700; }
   height: 100px;
   @media(min-width: 468px) { height: 60px; }
   @media(min-width: 728px) { height: 90px; }
-  @media(min-width: 980px) { height: 120px; }
   > .adsbygoogle {
     display: inline-block;
     width: 320px; height: 100px;
     background-color: $background;
     @media(min-width: 468px) { width: 468px; height: 60px; }
     @media(min-width: 728px) { width: 728px; height: 90px; }
-    @media(min-width: 980px) { width: 980px; height: 120px; }
   }
 }
 
-.site-sidebar {
+.site-footer {
   width: 100%;
-  @media (min-width: $breakpoint) {
-    width: 320px;
-  }
   text-align: left;
   font-size: 14px;
   color: $light-gray;
+  background: $background;
 
   > .inner {
-    background: $background;
+    @extend .site-base;
     padding: $grid-gutter;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-    @media (min-width: $breakpoint) {
-      padding: 16px;
-      border-bottom-left-radius: 8px;
-      border-bottom-right-radius: 8px;
-    }
   
     > .site-search { margin-bottom: 24px; }
     > .categories {
@@ -210,7 +192,7 @@ b, strong { font-weight: 700; }
       justify-content: space-between;
       margin-bottom: 8px;
       > .date {
-        font-size: 14px;
+        font-size: 15px;
         color: $light-gray;
       }
     }
@@ -238,7 +220,7 @@ b, strong { font-weight: 700; }
     align-items: center;
     justify-content: space-between;
     margin-bottom: 8px;
-    > .date { font-size: 14px; color: $light-gray; }
+    > .date { font-size: 15px; color: $light-gray; }
   }
   > .name { margin-bottom: 16px; font-size: 24px; }
   > .entry-text,
@@ -258,7 +240,7 @@ b, strong { font-weight: 700; }
 
   small { font-size: 80%; }
   ruby > rt { font-size: 50%; }
-  code { padding: 2px 4px; border-radius: 8px; font-size: 85%; font-family: $mono; word-wrap: break-word; background: $background !important; }
+  code { padding: 2px 4px; border-radius: 8px; font-size: 90%; font-family: $mono; word-wrap: break-word; background: $background !important; }
   pre { margin: 24px 0; }
   pre > code { display: block; padding: 12px !important; }
 
