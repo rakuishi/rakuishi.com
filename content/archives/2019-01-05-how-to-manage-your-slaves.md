@@ -21,4 +21,4 @@ title: 「奴隷のしつけ方」を読んだ
 
 今年は「奴隷」から趣味の読書が始まった。奴隷は今の世界を理解する上での重要なファクターだ。学校教育では奴隷から目を背けていたけれど、この視点を持ってもう一度勉強し直すと、新しい面が見えてくる予感がしている。
 
-{{<amazon id="4778314751" title="奴隷のしつけ方" src="https://images-fe.ssl-images-amazon.com/images/I/51mULi1PCmL._SL160_.jpg">}}
+{{<amazon id="4778314751" title="奴隷のしつけ方" src="/images/2019/01/how-to-manage-your-slaves.jpg">}}
