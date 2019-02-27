@@ -25,9 +25,11 @@ Android のライブラリを作る時は、まずはサンプル用のプロジ
 
 まずは普通に、新しく Project を作成します。Application name は、ライブラリ名で良いですが、Package name は、com.rakuishi.aileron.sample のように、最後に sample を付けておくと後で変える手間が減ります。
 
-Project を作成し終えたら、ルートディレクトリの app フォルダを 副クリック → Refactor → Rename から、sample に名前を変えます。特に必要な作業ではありませんが、ライブラリの多くは、sample というフォルダ名を採用しているため、その習慣に倣いました。
+Project を作成し終えたら、ルートディレクトリの app フォルダを 副クリック → Refactor → Rename → Rename module から、sample に名前を変えます。特に必要な作業ではありませんが、ライブラリの多くは、sample というフォルダ名を採用しているため、その習慣に倣いました。
 
 Menu → File → New → New Module からモジュールを追加します。ライブラリの種類は、Android Library を選択しました。パッケージ名を com.rakuishi.aileron のようにし、Minimum SDK を設定します。
+
+※ ここで module の名前が重複する場合は、Project を作成するときの設置フォルダ名を変えると良いです。
 
 後は、sample の build.gradle に、dependencies を追加すれば、ライブラリを sample で使えるようになります。
 
