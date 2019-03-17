@@ -36,7 +36,7 @@ Menu → File → New → New Module からモジュールを追加します。�
 ```
 dependencies {
     // 省略
-    compile project(':aileron')
+    compile implementation(':aileron')
 }
 ```
 
