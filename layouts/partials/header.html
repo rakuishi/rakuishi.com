@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8" />
 {{ .Hugo.Generator }}
+{{ if eq .IsHome true }}<meta name="description" content="rakuishi.com" />{{ else }}<meta name="description" content="{{ if .Params.Subtitle }}{{ .Params.Subtitle }}{{ else }}{{ substr .Summary 0 125}}{{ end }}" />{{ end }}
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <meta name="copyright" content="Copyright &copy; 2011 rakuishi All rights reserved" />
 <meta name="google-site-verification" content="hLAob0ZIhg0c3AeIGNo4AMQPkxMjM1UM3mBPYNvwceE" />
@@ -11,10 +12,16 @@
 <meta property="og:url" content="{{ .Permalink }}" />
 <meta property="og:title" content="{{ .Title }}{{ if eq .IsHome false }} | {{ .Site.Title }}{{ end }}" />
 {{ if eq .IsHome false }}<meta property="og:description" content="{{ if .Params.Subtitle }}{{ .Params.Subtitle }}{{ else }}{{ substr .Summary 0 125}}{{ end }}" />{{ end }}
+<link rel="preload" href="/assets/fonts/NotoSans-Regular.woff2" as="font" type="font/woff2" crossorigin />
+<link rel="preload" href="/assets/fonts/NotoSans-Bold.woff2" as="font" type="font/woff2" crossorigin />
+<link rel="preconnect" href="https://pagead2.googlesyndication.com" crossorigin />
+<link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
 <style>{{ partial "style.css" . | safeCSS }}</style>
 <link rel="shortcut icon" href="/favicon.ico?v=160528" type="image/x-icon" />
 <link rel="alternate" href="/index.xml" type="application/rss+xml" title="{{ .Site.Title }}" />
 <title>{{ .Title }}{{ if eq .IsHome false }} | {{ .Site.Title }}{{ end }}</title>
+<script async src="/assets/javascripts/ga.js"></script>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 </head>
 <body>
 
@@ -25,7 +32,6 @@
 </header>
 
 <div class="header-google-adsense">
-  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
   <!-- rakuishi_responsive_170516 -->
   <ins class="adsbygoogle"
       data-ad-client="ca-pub-9983442877454265"

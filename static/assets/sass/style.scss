@@ -38,7 +38,9 @@ body {
   font-size: $default-font-size;
   word-break: break-all;
   text-align: justify;
-  line-height: 1.8;
+  line-height: 1.7;
+  font-feature-settings: "palt";
+  -webkit-font-smoothing: antialiased;
 }
 
 a, a:hover { color: $blue; }
@@ -222,7 +224,7 @@ b, strong { font-weight: 700; }
     margin-bottom: 8px;
     > .date { font-size: 15px; color: $light-gray; }
   }
-  > .name { margin-bottom: 16px; font-size: 24px; }
+  > .name { margin-bottom: 16px; font-size: 26px; }
   > .entry-text,
   > .entry-share,
   > .entry-google-adsense,
@@ -232,7 +234,7 @@ b, strong { font-weight: 700; }
 }
 
 .entry-text {
-  h2 { margin: 48px 0 32px; padding-top: 48px; font-size: 22px; color: $dark-gray; border-top: 1px solid $border-gray; }
+  h2 { margin: 48px 0 32px; padding-bottom: 12px; font-size: 22px; color: $dark-gray; border-bottom: 2px solid $dark-gray; width: fit-content; }
   h3 { margin: 24px 0; font-size: 20px; color: $dark-gray; }
   p  { margin: 24px 0; }
   a:hover { text-decoration: underline; }
