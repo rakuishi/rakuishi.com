@@ -28,7 +28,7 @@ React では、以下のように変換が必要になる書きかたを積極�
 
 `npm init` により package.json を作成し、必要となるライブラリをインストールしていきます。package.json が更新され、node_modules フォルダが作成されます。
 
-```
+```bash
 $ mkdir react
 $ cd react
 $ npm init
@@ -47,13 +47,13 @@ $ npm install --save-dev watchify babelify babel-preset-react babel-preset-es201
 
 babelify で使用するプリセットを .babelrc ファイルに宣言します。
 
-```
+```bash
 $ echo '{ "presets": ["react", "es2015"] }' > .babelrc
 ```
 
 package.js の scripst に、ビルドするためのコマンドを書いていきます。ここに書いたコマンドは `$ npm run hoge` のように入力すれば、実行されます。ちなみに、ライブラリを `npm install --global watchify` とグローバルインストールすると、`$ watchify -t babelify ./main.js -o ./bundle.js` と直接コマンドが叩けます。
 
-```
+```json
 "scripts": {
   "watch": "watchify -t babelify ./main.js -o ./bundle.js"
 }
@@ -61,7 +61,7 @@ package.js の scripst に、ビルドするためのコマンドを書いてい
 
 必要になるファイルを用意して、試しに走らせてみます。
 
-```
+```bash
 $ touch index.html
 $ touch main.js
 $ npm run watch
@@ -75,7 +75,7 @@ main.js のファイルに変更があると bundle.js が出力されるはず�
 
 ### index.html
 
-```
+```html
 <!DOCTYPE html>
 <html>
   <head>
@@ -92,7 +92,7 @@ main.js のファイルに変更があると bundle.js が出力されるはず�
 
 `import` は、ES6 で定義されている記述方法です。また、`<h1>Hello, World!</h1>` のように JavaScript 中に HTML タグを記述しているのが、JSX です。Sublime Text をお使いの方は、Babel プラグインをインストール後に、JavaScript(Babel) の Syntax を有効にすれば、適切にハイライトされるようになります。
 
-```
+```javascript
 import React from "react";
 import ReactDOM from "react-dom";
 

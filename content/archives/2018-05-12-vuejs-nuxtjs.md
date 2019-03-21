@@ -25,7 +25,7 @@ Vue.js に加えて Nuxt.js を採用したのは SSR（Server Side Rendering）
 
 ### parent.vue
 
-```
+```javascript
 <template>
   <div>
     <child
@@ -55,7 +55,7 @@ export default {
 
 ### child.vue
 
-```
+```javascript
 <template>
   <div>
     <!-- 親から受け取った message がそのまま入る -->
@@ -126,7 +126,7 @@ Vuejs の SPA（Single Page Application）では表現できないものを Nuxt
 
 ログイン機能を持つ Web サイトでは、ユーザーの認証状態は token として Cookie に保持していると思いますが、それで上記を考慮して Vuejs / Nuxtjs を採用した場合の、たぶんベストプラクティスなユーザーのログイン情報の取り扱い方法は、以下のようになりました：
 
-```
+```javascript
 async nuxtServerInit({ commit, state }, { req }) {
   const hasToken = !!req.cookies.token;
   const promise = hasToken
@@ -146,7 +146,7 @@ async nuxtServerInit({ commit, state }, { req }) {
 },
 ```
 
-```
+```javascript
 const getters = {
   isLogin: state => {
     // SSR 時は nuxtServerInit から値を設定できる renderPageAsLoginUserOnSSR によって

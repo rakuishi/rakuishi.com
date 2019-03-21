@@ -36,7 +36,7 @@ aab ファイルは apk ファイルの元になるため、そのままでは�
 
 [Releases · google/bundletool](https://github.com/google/bundletool/releases) から jar を落とし、aab から apks ファイルを作って、接続している端末に apk をインストールします：
 
-```
+```bash
 $ java -jar bundletool-all-0.7.1.jar build-apks \
     --bundle=app.aab --output=app.apks \
     --ks=keystore.jks --ks-pass=pass:PASSWORD --ks-key-alias=ALIAS \
@@ -52,7 +52,7 @@ $ java -jar bundletool-all-0.7.1.jar install-apks --apks=app.apks
 
 ちなみに、手元の環境では $ANDROID_HOME の環境変数するように言われたため、.bash_profile に以下を追加しました：
 
-```
+```bash
 export ANDROID_HOME="/Users/name/Library/Android/sdk"
 ```
 

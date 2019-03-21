@@ -9,7 +9,7 @@ title: "Kotlin: 関数オブジェクトと Invoke でクリックイベント�
 
 Kotlin では関数をオブジェクトとして扱うことができます。そして、その関数オブジェクトを `invoke()` すれば、その関数を発火することができます：
 
-```
+```kotlin
 fun main(args: Array<String>) {
   val onClick: ((String) -> Unit) = { text -> println(text) }
   onClick.invoke("Hello, world!")
@@ -20,7 +20,7 @@ Hello, world!
 
 Android での実用例として、RecyclerView にセットした Adapter の各 ViewHolder からイベントを受け取るような処理は、`View.OnClickListener` を参考に Interface を記述するのが普通ですが、以下のように書くこともできます：
 
-```
+```kotlin
 class CustomAdapter() : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
   var onItemClick: ((String) -> Unit)? = null
   // 省略

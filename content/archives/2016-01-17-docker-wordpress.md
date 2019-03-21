@@ -50,7 +50,7 @@ GitHub 上に置いたレポジトリ [rakuishi/wordpress: Wordpress Docker imag
 
 この [Dockerfile](https://github.com/rakuishi/wordpress/blob/master/Dockerfile) には、LAMP 環境（Linux, Apache, MySQL, PHP）を元に WordPress に必要な作業の手順が書かれています。
 
-```
+```bash
 $ git clone https://github.com/rakuishi/wordpress.git docker-wordpress
 $ cd docker-wordpress
 $ docker build -t docker-wordpress .
@@ -58,7 +58,7 @@ $ docker build -t docker-wordpress .
 
 イメージの一覧は、以下のコマンドで確認できます。
 
-```
+```bash
 $ docker images
 REPOSITORY        TAG     IMAGE ID      CREATED         VIRTUAL SIZE
 docker-wordpress  latest  38ebdeeaeb7e  10 seconds ago  475.4 MB
@@ -69,7 +69,7 @@ tutum/lamp        latest  f02090877f42  4 weeks ago     426.5 MB
 
 イメージからコンテナを立ち上げます。`-v $(pwd):/data-share` のオプションは必須ではありませんが、次の作業でコンテナ内とローカルのファイルを共有するために書いています。ブラウザに初回設定画面が表示されるので、アカウントの作成まで済ませておきます。
 
-```
+```bash
 $ docker run -d -p 80:80 -v $(pwd):/data-share --name=docker-wordpress docker-wordpress
 $ docker-machine ip default
 192.168.99.100
@@ -78,7 +78,7 @@ $ open http://192.168.99.100/
 
 また、コンテナの一覧は、以下のコマンドで確認できます。
 
-```
+```bash
 $ docker ps
 CONTAINER ID  IMAGE             COMMAND    CREATED         STATUS         PORTS                         NAMES
 c5f1ba815676  docker-wordpress  "/run.sh"  28 seconds ago  Up 27 seconds  0.0.0.0:80->80/tcp, 3306/tcp  docker-wordpress
@@ -88,7 +88,7 @@ c5f1ba815676  docker-wordpress  "/run.sh"  28 seconds ago  Up 27 seconds  0.0.0.
 
 WordPress サイトを管理できるように、データベースの内容をまるごとと、テーマ・プラグインを含む wp-content/ をコンテナから dump します。これらのファイルを含めてバージョン管理することで、他の人と同じ環境を共有できます。
 
-```
+```bash
 $ docker exec docker-wordpress sh -c "mysqldump -u root wordpress > /data-share/dump.sql"
 $ mkdir public_html
 $ docker exec docker-wordpress sh -c "cp -r /app/wp-content/ /data-share/public_html/"
@@ -110,7 +110,7 @@ mysql-setup.sh に記述している以下のコメントアウトを外しま�
 
 一度、立ち上がっているコンテナを削除し、再度、Dockerfile からイメージを作成し、コンテナを立ち上げます。wp-content/ をコンテナ内と共有しているので、ローカルでテーマ・プラグインを編集すると反映されます。
 
-```
+```bash
 $ docker rm -f docker-wordpress
 $ docker build -t docker-wordpress .
 $ docker run -d -p 80:80 -v $(pwd)/public_html/wp-content:/app/wp-content/ -v $(pwd)/dump.sql:/dump.sql --name=docker-wordpress docker-wordpress

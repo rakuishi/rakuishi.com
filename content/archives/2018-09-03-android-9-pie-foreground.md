@@ -22,7 +22,7 @@ Android 9 Pie（API レベル 28）が正式にリリースされ、会社でも
 
 Android 8 の対応が終わっていれば、Android 9 では Manifest ファイルに `FOREGROUND_SERVICE` パーミッションを追加するだけです。
 
-```
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="your.package.name">

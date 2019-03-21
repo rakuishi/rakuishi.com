@@ -4,6 +4,8 @@ title: rakuishi.com
 author: rakuishi
 metadataformat: yaml
 preservetaxonomynames: true
+pygmentsCodefences: true
+pygmentsUseClasses: true
 
 related: 
   indices: [{name: categories, weight: 100}]

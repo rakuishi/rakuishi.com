@@ -23,7 +23,7 @@ https://aws.amazon.com/jp/s3/
 
 初期設定では、ホスティングしたファイルへのアクセスが制限されています。見れるように、[プロパティ] → [アクセス許可] → [バケットポリシーの編集] から以下のルールを追加します。この `Version` は、作成日などではなくて `2012-10-17` を指定する必要があります。
 
-```
+```json
 {
   "Version": "2012-10-17",
   "Statement": [{
@@ -40,7 +40,7 @@ https://aws.amazon.com/jp/s3/
 
 [プロパティ] → [静的ウェブサイトホスティング] → [ウェブサイトのホスティングを有効にする] から、インデックスドキュメント index.html を設定します。また、リダイレクトルールを以下のように設定しました。
 
-```
+```xml
 <RoutingRules>
   <RoutingRule>
     <Condition>
@@ -76,7 +76,7 @@ https://aws.amazon.com/jp/s3/
 
 Python パッケージ管理ツール pip をインストールし、pip から AWS CLI をインストールします。 OS X El Capitan 以降では、3行目のインストール方法を試すと、エラーが出ることなく AWS CLI をインストールできました。
 
-```
+```bash
 $ sudo easy_install pip
 $ sudo pip install awscli
 $ sudo -H pip install awscli --upgrade --ignore-installed six
@@ -84,7 +84,7 @@ $ sudo -H pip install awscli --upgrade --ignore-installed six
 
 次に認証情報を登録していきます。対話的に入力していきます。登録内容は ~/.aws/ に格納されます。
 
-```
+```bash
 $ aws configure
 AWS Access Key ID [None]: XXXXXXXXXXXXXXXXXXXX
 AWS Secret Access Key [None]: XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
@@ -94,7 +94,7 @@ Default output format [None]: text
 
 今回、デプロイのための転送コマンドは以下のように書きました。これで一括で流し込めて、割り当てられたドメインにファイルが設置されていることを確認できました。
 
-```
+```bash
 aws s3 sync --delete ./public s3://rakuishi.com
 ```
 
@@ -127,7 +127,7 @@ aws s3 sync --delete ./public s3://rakuishi.com
 
 確認は、`nslookup` コマンドを使用しました。浸透すれば、`server` を設定する必要なく `nslookup rakuishi.com` だけで返ってきます。
 
-```
+```bash
 rakuishi:rakuishi.com rakuishi$ nslookup
 > server ns-1571.awsdns-04.co.uk
 Default server: ns-1571.awsdns-04.co.uk

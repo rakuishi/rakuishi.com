@@ -24,7 +24,7 @@ title: "ネット配信されているアニラジの更新情報をまとめた
 
 RSS が提供されていないサイトの情報を感謝の気持ちを持って抜き出すために（ちゃんと配信元を書いている）、スクレイピングでよく使われる Nokogiri を採用した。以下のように、スクレイピングのコードが簡単に書ける。
 
-```Ruby
+```rb
 doc = Nokogiri::HTML(open(url))
 doc.xpath('//ul[@class="radioList"]//li[@class="radio"]').each do |node|
   puts node.xpath('div[@class="name"]').inner_text
@@ -41,7 +41,7 @@ Ruby on Rails に標準で導入されている ERB で満足していたので�
 
 ### [Support for theme-color in Chrome 39 for Android](https://developers.google.com/web/updates/2014/11/Support-for-theme-color-in-Chrome-39-for-Android)
 
-```
+```html
 <meta content="#00cdac" name="theme-color" />
 ```
 

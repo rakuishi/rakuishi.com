@@ -34,7 +34,7 @@ res/
 
 `ic_launcher.xml` では `<adaptive-icon>` の中に、背景と前景の drawable を指定します。
 
-```
+```xml
 <adaptive-icon xmlns:android="http://schemas.android.com/apk/res/android">
     <background android:drawable="@color/ic_background" />
     <foreground android:drawable="@mipmap/ic_foreground" />

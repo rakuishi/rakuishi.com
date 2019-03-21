@@ -11,6 +11,6 @@ title: Jupyter (IPython) Notebook の Output を等幅フォントに変える
 
 ですが、Notebook の Output が等幅フォントでなく見にくかったため、それを等幅フォントに変える方法をメモしておきます。
 
-```
+```bash
 $ echo '.CodeMirror pre, .output pre { font-family: Monaco, monospace; }' >  ~/.jupyter/custom/custom.css
 ```

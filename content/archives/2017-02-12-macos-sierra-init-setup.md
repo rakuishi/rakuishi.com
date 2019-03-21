@@ -105,13 +105,13 @@ Safari は、アドレス表示バーにフルアドレスが表示されない�
 
 Pro を複製し Pro 2 を作り、Monaco 14 を設定した。後は、Homebrew をインストールする：
 
-```
+```bash
 $ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
 
 Git を Developer ツールからダウンロードする。
 
-```
+```bash
 $ git // Developer ツールが起動する
 $ git config --global user.name "rakuishi"
 $ git config --global user.email "rakuishi@gmail.com"
@@ -125,7 +125,7 @@ Sublime Text 3 から試しに乗り換えている。Sublime Text は拡張機�
 
 settings.json:
 
-```
+```json
 // Place your settings in this file to overwrite the default settings
 {
   "editor.fontSize": 14,
@@ -141,7 +141,7 @@ settings.json:
 
 keybindings.json:
 
-```
+```json
 // Place your key bindings in this file to overwrite the defaults
 [
   {

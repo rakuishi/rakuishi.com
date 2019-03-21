@@ -21,7 +21,7 @@ Oreo 以降では、通知ごとにチャンネルを紐付ける必要があり
 
 [googlesamples/android-NotificationChannels](https://github.com/googlesamples/android-NotificationChannels) を参考に最低限の実装にまとめました。従来の通知から変わったのは、あらかじめ NotificationChannel を設定しておく、個々の Notification にチャンネルを設定することです。今回の実装では、ひとつの通知チャンネルしか作成していませんが、通知の種類ごとに発行するのが通知チャンネルの思想です。
 
-```
+```java
 public class NotificationHelper extends ContextWrapper {
 
   private static final String CHANNEL_GENERAL_ID = "general";
@@ -65,7 +65,7 @@ public class NotificationHelper extends ContextWrapper {
 
 後は、Activity 内で次のように使用すれば OK です。今回は NotificationHelper のインスタンス作成時に、チャンネルの登録を行っていますが、出来れば `Application.onCreate()` 内で行ったほうが良いと思います。アプリを起動すれば、ユーザーがそのアプリの全通知チャンネルを確認できるからです。
 
-```
+```java
 NotificationHelper notificationHelper = new NotificationHelper(context);
 Notification.Builder builder = notificationHelper.getNotification();
 notificationHelper.notify(1, builder);
@@ -91,7 +91,7 @@ Android Oreo よりも前のバージョンでは、バックグラウンドサ�
 
 5 秒以内に呼ばないとクラッシュするため、Service の `onCreate()` の一番最初に `Service.startForeground()` を呼ぶのが好ましいと言えます。ちなみに、`Service.startForeground()` する前に、`Service.stopSelf()` などでサービスの終了を行った場合もクラッシュします。
 
-```
+```java
 public class ForegroundService extends Service {
 
   public static void start(@NonNull Context context) {
@@ -122,7 +122,7 @@ public class ForegroundService extends Service {
 
 後は、Activity 内で次のように使用すれば OK です。
 
-```
+```java
 ForegroundService.start(this);
 ```
 
