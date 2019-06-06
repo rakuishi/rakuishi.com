@@ -3,6 +3,7 @@
 <main class="site-main">
 
   <div class="entry-list-container">
+    <h1 class="name">Recent posts</h1>
     <ul class="entry-list">
       {{ range (.Paginator 16).Pages }}
         {{ .Render "summary"}}

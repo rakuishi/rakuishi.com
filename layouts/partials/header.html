@@ -22,6 +22,7 @@
 <title>{{ .Title }}{{ if eq .IsHome false }} | {{ .Site.Title }}{{ end }}</title>
 <script async src="/assets/javascripts/ga.js"></script>
 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script async src="//rakuishi.disqus.com/embed.js"></script>
 </head>
 <body>
 
@@ -30,15 +31,5 @@
     <a href="/" class="header-logo {{ if .IsHome }}selected{{ end }}">rakuishi.com</a><a href="/about/" {{ if in .RelPermalink "/about/" }}class="selected"{{ end }}>ABOUT</a><a href="/archives/" {{ if in .RelPermalink "/archives/" }}class="selected"{{ end }}>ARCHIVES</a>
   </div>
 </header>
-
-<div class="header-google-adsense">
-  <!-- rakuishi_responsive_170516 -->
-  <ins class="adsbygoogle"
-      data-ad-client="ca-pub-9983442877454265"
-      data-ad-slot="8393992529"></ins>
-  <script>
-  (adsbygoogle = window.adsbygoogle || []).push({});
-  </script>
-</div>
 
 <div class="site-container">
