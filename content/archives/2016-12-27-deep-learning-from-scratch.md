@@ -4,7 +4,7 @@ categories:
 date: 2016-12-27T09:11:26+09:00
 draft: false
 slug: deep-learning-from-scratch
-title: 「ゼロから作る Deep Learning」を読んだ
+title: ｢ゼロから作る Deep Learning｣を読んだ
 ---
 
 Deep Learning（深層学習）を勉強するために、[ゼロから作る Deep Learning](http://www.amazon.co.jp/exec/obidos/ASIN/4873117585/rakuishi-22/ref=nosim/) を手を動かしながら読んだ。手書き数字の画像データ MNIST を正しく判別するのが本書のテーマだ。

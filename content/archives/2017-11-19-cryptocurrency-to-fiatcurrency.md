@@ -4,7 +4,7 @@ categories:
 date: 2017-11-19T08:13:15+09:00
 draft: false
 slug: cryptocurrency-to-fiatcurrency
-title: '「仮想通貨をフィアット（Fiat）に戻す」とは？'
+title: '｢仮想通貨をフィアット（Fiat）に戻す｣とは？'
 subtitle: '仮想通貨の情報を集めているとよくフィアット（Fiat）という単語を目にします。フィアット（Fiat） とは、法定通貨のこと。ですので、仮想通貨を法定通貨に戻す、という意味になります。'
 ---
 
