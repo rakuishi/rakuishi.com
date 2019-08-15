@@ -5,6 +5,7 @@ date: 2019-08-15T16:51:29+09:00
 draft: false
 slug: kokura-strip-theater
 title: 小倉のストリップ劇場に行った
+image: /images/2019/08/kokura-strip-theater.jpg
 ---
 
 ![ストリップ劇場](/images/2019/08/kokura-strip-theater.jpg)
