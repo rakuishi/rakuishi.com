@@ -12,6 +12,7 @@
 <meta property="og:url" content="{{ .Permalink }}" />
 <meta property="og:title" content="{{ .Title }}{{ if eq .IsHome false }} | {{ .Site.Title }}{{ end }}" />
 {{ if eq .IsHome false }}<meta property="og:description" content="{{ if .Params.Subtitle }}{{ .Params.Subtitle }}{{ else }}{{ substr .Summary 0 125}}{{ end }}" />{{ end }}
+{{ if .Params.Image }}<meta property="og:image" content="https://rakuishi.com{{ .Params.Image }}">{{ end }}
 <link rel="preload" href="/assets/fonts/NotoSans-Regular.woff2" as="font" type="font/woff2" crossorigin />
 <link rel="preload" href="/assets/fonts/NotoSans-Bold.woff2" as="font" type="font/woff2" crossorigin />
 <link rel="preconnect" href="https://pagead2.googlesyndication.com" crossorigin />
