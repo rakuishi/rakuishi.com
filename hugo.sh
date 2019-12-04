@@ -23,14 +23,7 @@ publish() {
     --style compressed
   rm -rf public/
   hugo
-  # brew install htmlcompressor
-  rm -rf public.min/
-  cp -r public/ public.min/
-  htmlcompressor --recursive --output public.min/ public/
-  aws s3 sync ${DIR}/public.min s3://rakuishi.com --delete --exclude=.DS_Store --exclude=*.woff2 --exclude=*.jpg --exclude=*.png  --exclude=*.svg --exclude=*.js --exclude=*.zip --cache-control "max-age=360"
-  aws s3 sync ${DIR}/public.min/assets s3://rakuishi.com/assets --delete --exclude=* --include=*.woff2 --include=*.jpg --include=*.png  --include=*.svg --include=*.js --include=*.zip --cache-control "max-age=31536000"
-  # aws s3 sync ${DIR}/public.min/images/ s3://rakuishi.com/images/ --delete --exclude=* --include=*.jpg --include=*.png --cache-control "max-age=31536000"
-  aws s3 sync ${DIR}/public.min/images/2019 s3://rakuishi.com/images/2019 --delete --exclude=* --include=*.jpg --include=*.png --cache-control "max-age=31536000"
+  firebase deploy
 }
 
 case $1 in
