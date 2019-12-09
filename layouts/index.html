@@ -13,10 +13,10 @@
 
   <nav class="entry-paginator">
     {{ if .Paginator.HasPrev }}
-      <a class="prev" rel="prev" href="{{.Paginator.Prev.URL}}" ontouchstart="">← Newer</a>
+      <a class="prev" rel="prev" href="{{.Paginator.Prev.URL}}">← Newer</a>
     {{ end }}
     {{ if .Paginator.HasNext }}
-      <a class="next" rel="next" href="{{.Paginator.Next.URL}}" ontouchstart="">Older →</a>
+      <a class="next" rel="next" href="{{.Paginator.Next.URL}}">Older →</a>
     {{ end }}
   </nav>
 

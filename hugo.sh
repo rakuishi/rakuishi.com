@@ -23,6 +23,12 @@ publish() {
     --style compressed
   rm -rf public/
   hugo
+  # brew install htmlcompressor
+  rm -rf temp/
+  cp -r public/ temp/
+  htmlcompressor --recursive --output temp/ public/
+  cp -r temp/ public/
+  rm -rf temp/
   firebase deploy
 }
 

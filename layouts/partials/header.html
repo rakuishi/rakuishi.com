@@ -23,7 +23,7 @@
 <title>{{ .Title }}{{ if eq .IsHome false }} | {{ .Site.Title }}{{ end }}</title>
 <script async src="/assets/javascripts/ga.js"></script>
 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<script async src="//rakuishi.disqus.com/embed.js"></script>
+{{ if .IsPage }}<script async src="//rakuishi.disqus.com/embed.js"></script>{{ end }}
 {{ if eq .IsHome false }}
 <script type="application/ld+json">
 [{
