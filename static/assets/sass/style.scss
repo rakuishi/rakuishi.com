@@ -21,22 +21,23 @@ $breakpoint: 900px;
 :root {
   --sans-font-family: 'Noto Sans', 'Noto Sans CJK JP', 'NotoSans', sans-serif;
   --mono-font-family: 'Monaco', 'Menlo', 'Consolas', 'Courier New', monospace;
-  --font-size: 16px;
+  --font-size: 15px;
+  --font-size-pc: 16px;
 
   --primary-background-color: #ffffff;
   --secondary-background-color: #f4f5f7;
   --primary-text-color: #2d2e2f;
   --secondary-text-color: #565c65;
   --border-color: #dcdee0;
-  --link-color: #007aff;
+  --link-color: #4c8bf5;
 
   @media (prefers-color-scheme: dark) {
-    --primary-background-color: #1c1c1e;
-    --secondary-background-color: #373737;
+    --primary-background-color: #323232;
+    --secondary-background-color: #3F3F3F;
     --primary-text-color: #f2f2f7;
     --secondary-text-color: rgba(235, 235, 245, .6);
     --border-color: rgba(84, 84, 88, .6);
-    --link-color: #0a84ff;
+    --link-color: #4c8bf5;
   }
 
   font-family: var(--sans-font-family);
@@ -47,6 +48,10 @@ $breakpoint: 900px;
   word-break: break-all;
   text-align: justify;
   line-height: 1.7;
+
+  @media (min-width: $breakpoint) {
+    font-size: var(--font-size-pc);
+  }
 }
 
 a, a:hover { color: var(--link-color) }
@@ -116,7 +121,7 @@ h1, h2, h3 { line-height: 1.4; font-weight: 700 }
   width: 100%;
   height: 44px;
   padding: 12px 8px 12px 40px;
-  font-size: var(--font-size);
+  font-size: 16px;
   line-height: normal;
   outline: none;
   appearance: none;
@@ -244,7 +249,7 @@ h1, h2, h3 { line-height: 1.4; font-weight: 700 }
   ul, ol { margin: 24px 0; padding-left: 24px }
   ul { list-style: disc }
   ol { list-style: decimal }
-  li { padding-left: 8px; font-size: var(--font-size); text-align: left }
+  li { padding-left: 8px; text-align: left }
   li > ul { margin: 0 }
 
   hr  { height: 2px; margin: 24px 0; background-color: var(--border-color); border: 0 }
