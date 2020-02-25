@@ -5,8 +5,8 @@
 //////////////////////////////////////////////////
 
 $grid-gutter: 24px !default;
-$max-width: 640px + $grid-gutter * 2 !default;
-$breakpoint: 900px;
+$max-width: 620px + $grid-gutter * 2 !default;
+$breakpoint: 728px;
 
 //////////////////////////////////////////////////
 // Import
@@ -22,14 +22,14 @@ $breakpoint: 900px;
   --sans-font-family: 'Noto Sans', 'Noto Sans CJK JP', 'NotoSans', sans-serif;
   --mono-font-family: 'Monaco', 'Menlo', 'Consolas', 'Courier New', monospace;
   --font-size: 15px;
-  --font-size-pc: 16px;
+  --font-size-pc: 16.5px;
 
   --primary-background-color: #ffffff;
   --secondary-background-color: #f4f5f7;
   --primary-text-color: #2d2e2f;
   --secondary-text-color: #565c65;
   --border-color: #dcdee0;
-  --link-color: #4c8bf5;
+  --link-color: #007aff;
 
   @media (prefers-color-scheme: dark) {
     --primary-background-color: #323232;
@@ -37,7 +37,7 @@ $breakpoint: 900px;
     --primary-text-color: #f2f2f7;
     --secondary-text-color: rgba(235, 235, 245, .6);
     --border-color: rgba(84, 84, 88, .6);
-    --link-color: #4c8bf5;
+    --link-color: #8AB4F8;
   }
 
   font-family: var(--sans-font-family);
@@ -47,7 +47,7 @@ $breakpoint: 900px;
   background-color: var(--primary-background-color);
   word-break: break-all;
   text-align: justify;
-  line-height: 1.7;
+  line-height: 1.8;
 
   @media (min-width: $breakpoint) {
     font-size: var(--font-size-pc);
@@ -196,6 +196,7 @@ h1, h2, h3 { line-height: 1.4; font-weight: 700 }
       > .date {
         font-size: 15px;
         color: var(--secondary-text-color);
+        font-family: var(--mono-font-family);
       }
     }
     > .name {
@@ -227,6 +228,7 @@ h1, h2, h3 { line-height: 1.4; font-weight: 700 }
     > .date {
       font-size: 15px;
       color: var(--secondary-text-color);
+      font-family: var(--mono-font-family);
     }
   }
   > .name { font-size: 34px }
@@ -234,7 +236,7 @@ h1, h2, h3 { line-height: 1.4; font-weight: 700 }
 }
 
 .entry-text {
-  h2 { width: fit-content; margin: 48px 0 32px; padding-bottom: 12px; font-size: 22px; color: var(--primary-text-color); border-bottom: 4px solid var(--border-color) }
+  h2 { width: fit-content; margin: 72px 0 32px; padding-bottom: 12px; font-size: 22px; color: var(--primary-text-color); border-bottom: 4px solid var(--border-color) }
   h3 { margin: 24px 0; font-size: 20px; color: var(--primary-text-color) }
   p  { margin: 24px 0 }
   a  { text-decoration: underline }
@@ -334,6 +336,7 @@ h1, h2, h3 { line-height: 1.4; font-weight: 700 }
   font-size: 14px;
   line-height: 24px;
   text-decoration: none;
+  font-family: var(--mono-font-family);
   color: var(--secondary-text-color);
   border: 1px solid var(--border-color);
   border-radius: 8px;
