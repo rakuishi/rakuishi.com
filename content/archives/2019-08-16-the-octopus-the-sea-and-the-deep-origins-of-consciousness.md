@@ -8,7 +8,7 @@ title: ｢タコの心身問題｣を読んだ
 image: /images/2019/08/the-octopus-the-sea-and-the-deep-origins-of-consciousness.jpg
 ---
 
-![タコの心身問題](/images/2019/08/the-octopus-the-sea-and-the-deep-origins-of-consciousness.jpg)
+{{<img alt="タコの心身問題" src="/images/2019/08/the-octopus-the-sea-and-the-deep-origins-of-consciousness.jpg" width="1280" height="720">}}
 
 人間と頭足類（タコやイカ）は、ウジ虫のような単純な神経系を持った生物を共通の出発点としているが、進化の過程でそれぞれ違う経路で心（複雑な神経ネットワーク）を獲得した。
 

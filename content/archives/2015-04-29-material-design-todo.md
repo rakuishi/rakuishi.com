@@ -7,7 +7,7 @@ slug: material-design-todo
 title: "Material Design と Realm の勉強がてら作った Todo アプリを公開しました"
 ---
 
-[![](https://raw.githubusercontent.com/rakuishi/Todo-Android/master/todo.png)](https://play.google.com/store/apps/details?id=com.rakuishi.todo)
+[{{<img alt="" src="https://raw.githubusercontent.com/rakuishi/Todo-Android/master/todo.png">}}](https://play.google.com/store/apps/details?id=com.rakuishi.todo)
 
 [Material Design](http://www.google.com/design/spec/material-design/introduction.html) と、流行っている <ruby>[Realm](http://realm.io/)<rt>れるむ</rt></ruby> を勉強するために、Todo アプリを作りました。一応、お金を払って Google Play Developer に参加しているのでストアに公開もしました。
 

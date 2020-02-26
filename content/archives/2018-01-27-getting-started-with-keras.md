@@ -7,7 +7,7 @@ slug: getting-started-with-keras
 title: Python の深層学習ライブラリ Keras で手書き文字の認識を始めよう
 ---
 
-![](/images/2018/01/keras.png)
+{{<img alt="" src="/images/2018/01/keras.png" width="1200" height="348">}}
 
 去年の始めに読んだ[ゼロから作る Deep Learning](/archives/deep-learning-from-scratch/) では、外部ライブラリを極力使用せずにディープラーニング（深層学習）の基礎を学べる良書だった。この記事では、ニューラルネットの構造を簡単に記述できる [Keras](https://github.com/keras-team/keras) ライブラリを使用し、手書き文字の認識まで一通り行う。
 

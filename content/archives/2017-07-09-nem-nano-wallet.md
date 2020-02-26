@@ -33,17 +33,17 @@ NEM を自前で管理するメリットのひとつとして、ソフト上で�
 
 まずはクライアントをダウンロードします。記事執筆時、ダウンロードできるのは NanoWallet-1.4.0 です。 → [NEM - Distributed Ledger Technology (Blockchain)](https://www.nem.io/install.html)
 
-[![](/images/2017/07/nano-wallet-1.png)](/images/2017/07/nano-wallet-1.png)
+[{{<img alt="" src="/images/2017/07/nano-wallet-1.png" width="1028" height="771">}}](/images/2017/07/nano-wallet-1.png)
 
 zip を展開し、ファイルを見てみると、start.html があると思います。これをブラウザで開きます。エディタが開いてしまうときは、ブラウザにドラッグアンドドロップするか、右クリックからブラウザで開きましょう。ちなみに、このクライアントはなくしてしまっても再度インストールすればよいですが、これから登場する秘密鍵（とウォレット）はなくしたらお金が戻ってくる保証はありません。
 
 有志のかたが翻訳してくださっています。「Language」より、「Japanese」を選択し、日本語にしておきます。
 
-[![](/images/2017/07/nano-wallet-2.png)](/images/2017/07/nano-wallet-2.png)
+[{{<img alt="" src="/images/2017/07/nano-wallet-2.png" width="1028" height="771">}}](/images/2017/07/nano-wallet-2.png)
 
 そして「アカウントの作成」を選択し、NEM を始めるための情報を埋めて「シンプルウォレットを作成」を選択します。
 
-[![](/images/2017/07/nano-wallet-3.png)](/images/2017/07/nano-wallet-3.png)
+[{{<img alt="" src="/images/2017/07/nano-wallet-3.png" width="1028" height="771">}}](/images/2017/07/nano-wallet-3.png)
 
 - ウォレットの種類: シンプルウォレット
 - ウォレット名: 任意（ここでは `test-nano-wallet` と入力）
@@ -54,13 +54,13 @@ zip を展開し、ファイルを見てみると、start.html があると思�
 
 ※ ちなみにウォレットファイルはなくしても秘密鍵から作ることが出来ます。「アカウントの作成」→「プライベートキーウォレット」から、秘密鍵を元に作り直せます。
 
-[![](/images/2017/07/nano-wallet-4.png)](/images/2017/07/nano-wallet-4.png)
+[{{<img alt="" src="/images/2017/07/nano-wallet-4.png" width="1028" height="815">}}](/images/2017/07/nano-wallet-4.png)
 
 「ログイン」より、先程作成したウォレット（ここでは `test-nano-wallet`）とパスワードを入力して、Nano Wallet にログインします。
 
-[![](/images/2017/07/nano-wallet-5.png)](/images/2017/07/nano-wallet-5.png)
+[{{<img alt="" src="/images/2017/07/nano-wallet-5.png" width="1028" height="771">}}](/images/2017/07/nano-wallet-5.png)
 
-[![](/images/2017/07/nano-wallet-6.png)](/images/2017/07/nano-wallet-6.png)
+[{{<img alt="" src="/images/2017/07/nano-wallet-6.png" width="1028" height="771">}}](/images/2017/07/nano-wallet-6.png)
 
 ちなみに、手元のバージョンでは、ログイン後の画面でリロードをするとログアウトされてしまうので注意が必要です。ここで一度リロードを試してみて、仕様を確認しておきましょう。
 
@@ -68,11 +68,11 @@ zip を展開し、ファイルを見てみると、start.html があると思�
 
 ログイン後画面の「アカウント」より、送金されるためのアドレスが確認できます。ブラウザの横幅によっては、見切れてしまうので横幅を伸ばしましょう（直したいですね）。例として `NDECLG-IFQI5G-TI6ZGO-HV4TWL-PCLQJA-MIAYNZ-H24Q` のようなアドレスが取得できます（これは僕のウォレットに紐付いているので送ってもよいですよ）。これを使って、仮想通貨取引所から送金できます。
 
-[![](/images/2017/07/nano-wallet-7.png)](/images/2017/07/nano-wallet-7.png)
+[{{<img alt="" src="/images/2017/07/nano-wallet-7.png" width="1028" height="771">}}](/images/2017/07/nano-wallet-7.png)
 
 [Coincheck](https://coincheck.com/?c=h_3cAbRPgrw) の場合は、ログイン後「ウォレット」→「コインを送る」→「NEMを送る」→「送金先リストの編集」から情報を埋めて、「保存」します。
 
-[![](/images/2017/07/nano-wallet-8.png)](/images/2017/07/nano-wallet-8.png)
+[{{<img alt="" src="/images/2017/07/nano-wallet-8.png" width="1028" height="771">}}](/images/2017/07/nano-wallet-8.png)
 
 - 新規ラベル: 任意（ここでは `Test Nano Wallet`）
 - 新規宛先: あなたのウォレットのアドレス（ここでは `NDECLG-IFQI5G-TI6ZGO-HV4TWL-PCLQJA-MIAYNZ-H24Q`）
@@ -81,7 +81,7 @@ zip を展開し、ファイルを見てみると、start.html があると思�
 
 ちゃりんという効果音とともに、手元の Nano Wallet の「ダッシュボード」に「未承認(1)」というのが表示され、しばらくすると「承認済み」となり、無事に受け取れます。
 
-[![](/images/2017/07/nano-wallet-6.png)](/images/2017/07/nano-wallet-6.png)
+[{{<img alt="" src="/images/2017/07/nano-wallet-6.png" width="1028" height="771">}}](/images/2017/07/nano-wallet-6.png)
 
 お疲れ様でした。次の記事では、10,000XEM 以上あれば始められるハーベストに挑戦したいと思います（まだ、自分が受け取れてないので記事は書けません）。
 

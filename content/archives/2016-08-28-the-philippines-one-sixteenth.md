@@ -7,7 +7,7 @@ slug: the-philippines-one-sixteenth
 title: フィリピン留学 1/16 週目
 ---
 
-![](/images/2016/08/the-philippines-one-sixteenth.jpg)
+{{<img alt="" src="/images/2016/08/the-philippines-one-sixteenth.jpg" width="1456" height="1092">}}
 
 フィリピンに着いてから授業漬けの一週間を乗り越えて、久しぶりに MacBook を開いている。ディスプレイに実家の猫の毛が付着していて、実家が懐かしくなり、小生、ホームシックになる（[小生物語](http://www.amazon.co.jp/exec/obidos/ASIN/4344409353/rakuishi-22/ref=nosim/)を参考のこと）。こちらにも校内を徘徊している野良猫がいるが、まだこちらでの免疫系が十分ではないと感じていて、触るのを控えている。日本由来とフィリピン由来の混合細菌叢を育成中である。
 

@@ -18,4 +18,4 @@ image: '/images/2019/02/summer-pockets.png'
 
 そんなあの頃の夏休みを繰り返す Summer Pockets をプレイしながら、今年の夏は充実したものになればいいなと思った。とても面白かったです。
 
-[![](/images/2019/02/summer-pockets.png)](http://www.amazon.co.jp/exec/obidos/ASIN/B078YGGMZY/rakuishi-22/ref=nosim/)
+[{{<img alt="" src="/images/2019/02/summer-pockets.png" width="1500" height="500">}}](http://www.amazon.co.jp/exec/obidos/ASIN/B078YGGMZY/rakuishi-22/ref=nosim/)

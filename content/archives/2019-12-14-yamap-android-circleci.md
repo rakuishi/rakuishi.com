@@ -179,4 +179,4 @@ jobs:
 
 ビルドが終了したら以下のように知らせてくれます：
 
-![slack-orb](/images/2019/12/slack-orb.png)
+{{<img alt="slack-orb" src="/images/2019/12/slack-orb.png" width="320" height="164">}}

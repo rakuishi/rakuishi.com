@@ -11,7 +11,7 @@ title: "ネット配信されているアニラジの更新情報をまとめた
 
 大学生の頃に「とある科学の超電磁砲」のネットラジオを聴いて以来、普通のひとがテレビを見るように、だいたいネットラジオを聴いている。また、面白い番組が増えていて、チェックするのが大変だった。そのような経緯があり、久しぶりに自分が欲しいものを作った次第である。勉強すると、自分の思うようになる瞬間が増えるのが喜ばしい。
 
-![](/images/2016/04/aniradime.png)
+{{<img alt="" src="/images/2016/04/aniradime.png" width="728" height="546">}}
 
 * [aniradime](http://radio.rakuishi.com/)
 * [rakuishi/aniradime: Gather anime radio waves.](https://github.com/rakuishi/aniradime)

@@ -13,7 +13,7 @@ Android はマテリアルデザイン登場以前は野暮ったい感じだっ
 
 先日発売された Nintendo 2DS も古いようでどこか新しい感じがする。何がと言われると、言葉にはっきりできないけれど。人間は、言葉なしに新しさを第六感で触ることができるのではないか。[利己的な遺伝子](http://www.amazon.co.jp/exec/obidos/ASIN/4314010037/rakuishi-22/ref=nosim/)によれば、人間はジーンだけでなくて、ミームのためにも生きている。遺伝子は新しさを取り入れようとし、遺伝子の乗り物であるところの僕は新しさを次の世代に伝える。
 
-![](/images/2016/11/nintendo2ds.png)
+{{<img alt="" src="/images/2016/11/nintendo2ds.png" width="960" height="401">}}
 
 - [ニンテンドー2DS ポケットモンスター サン・ムーン【ライトブルー】 | ニンテンドー3DS | 任天堂](https://www.nintendo.co.jp/3ds/hardware/pack/pokemon/index.html)
 

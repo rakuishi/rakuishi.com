@@ -19,7 +19,7 @@ title: "現在 Finder で表示しているフォルダ位置を Terminal で開
 
 以下のスクリーンキャストを見ると動作がわかりやすいと思う。
 
-![](https://raw.githubusercontent.com/rakuishi/static/master/images/alfred-terminal-workflow.gif)
+{{<img alt="" src="https://raw.githubusercontent.com/rakuishi/static/master/images/alfred-terminal-workflow.gif">}}
 
 Finder を開いていて、Alfred 上に `terminal` と入力することで Terminal を起動するようにしている。ダウンロードは[ここから](https://github.com/rakuishi/alfred-terminal-workflow/blob/master/Terminal.alfredworkflow?raw=true)、もしくは[リポジトリ](https://github.com/rakuishi/alfred-terminal-workflow)をクローンする。
 

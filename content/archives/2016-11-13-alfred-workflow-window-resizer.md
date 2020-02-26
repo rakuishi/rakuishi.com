@@ -17,12 +17,12 @@ title: Alfred 2 Workflow Window Resizer
 
 - ⌥ Option + 1
 
-![](/images/2016/11/alfred-workflow-window-resizer-1.jpg)
+{{<img alt="" src="/images/2016/11/alfred-workflow-window-resizer-1.jpg" width="960" height="600">}}
 
 - ⌥ Option + 2
 
-![](/images/2016/11/alfred-workflow-window-resizer-2.jpg)
+{{<img alt="" src="/images/2016/11/alfred-workflow-window-resizer-2.jpg" width="960" height="600">}}
 
 - ⌥ Option + 3
 
-![](/images/2016/11/alfred-workflow-window-resizer-3.jpg)
+{{<img alt="" src="/images/2016/11/alfred-workflow-window-resizer-3.jpg" width="960" height="600">}}

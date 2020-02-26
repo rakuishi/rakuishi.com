@@ -57,7 +57,7 @@ title: "[Macbook Pro / Touch Bar] macOS Sierra 初期設定"
 
 常に Night Shift（画面を暖色にし、ブルーライトを軽減する設定）が有効になるように、次のように設定した。
 
-![](/images/2017/02/night-shift.png)
+{{<img alt="" src="/images/2017/02/night-shift.png" width="1336" height="1000">}}
 
 ### 共有
 

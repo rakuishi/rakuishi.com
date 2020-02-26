@@ -16,4 +16,4 @@ Google Play ミュージックで、月額制のサブスクリプションサ�
 1. ページ下部にある「キーボード ショートカット」を選択する
 1. 「Google Play ミュージック」の各オプションを「グローバル」から「Chrome 専用」にする
 
-![chrome-hijacking-media-keys](/images/2015/09/extensions.png)
+{{<img alt="chrome-hijacking-media-keys" src="/images/2015/09/extensions.png" width="728" height="546">}}

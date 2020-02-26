@@ -8,7 +8,7 @@ title: "三大欲求に並ぶ快楽はサウナだ。湯らっくすのアウフ
 image: /images/2019/12/sauna-yulax.jpg
 ---
 
-![](/images/2019/12/sauna-yulax.jpg)
+{{<img alt="" src="/images/2019/12/sauna-yulax.jpg" width="1200" height="900">}}
 
 [湯らっくす](https://www.yulax.info/)のサウナ、ひな壇の右奥。それは一言で言うと地獄（褒め言葉）である。アウフグースで水を掛けるサウナストーンから見て、一番近く、一番高い位置にあり、その上、熱波が加わるとあれば。
 

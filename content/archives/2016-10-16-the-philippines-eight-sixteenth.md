@@ -7,7 +7,7 @@ slug: the-philippines-eight-sixteenth
 title: フィリピン留学 8/16 週目
 ---
 
-![](/images/2016/10/the-philippines-eight-sixteenth.jpg)
+{{<img alt="" src="/images/2016/10/the-philippines-eight-sixteenth.jpg" width="1456" height="1092">}}
 
 夜寝ている間に、台風が通過した。昨夜は、窓を打ち付ける激しい雨を子守唄代わりに、よく眠れた気がする。日頃から頻繁に停電するフィリピンの田舎事情だが、眠気眼に枕元に置いていた iPhone のあの充電開始音が何度も聞こえたことから察するに、昨夜はより頻繁だったようだ。ここでは、据え置き型ゲーム機・PC はデータが飛ぶのが怖くて使えないなと思う。
 

@@ -100,7 +100,7 @@ $ ./gradlew clean build bintrayUpload -PbintrayUser=[bintrayUser] -PbintrayKey=[
 
 Bintray の maven にライブラリが登録されたら、次に jcenter に登録します。以下のスクリーンショットは登録後なのですが、右下に jcenter に追加するボタンがあるはずなので、そこから申請を行います（フォームには特に何も埋めませんでした）。
 
-![](/images/2015/10/bintray.png)
+{{<img alt="" src="/images/2015/10/bintray.png" width="2048" height="1536">}}
 
 自分の場合は、2 時間ぐらいで承認されました。jcenter に追加された後は、以下のように、一行追加するだけでライブラリが使用できるようになります。お疲れ様でした！
 

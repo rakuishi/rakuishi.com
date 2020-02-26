@@ -7,7 +7,7 @@ slug: vuejs-nuxtjs
 title: Vue.js / Nuxt.js を採用した Web 開発で得た知見
 ---
 
-![merlion](/images/2018/05/merlion.jpg)
+{{<img alt="merlion" src="/images/2018/05/merlion.jpg" width="1564" height="880">}}
 
 2018 年に入ってからは [Vue.js](https://jp.vuejs.org/) / [Nuxt.js](https://ja.nuxtjs.org/) を採用した Web サイト開発に携わっています。ログイン機能がある Web サイトで、データは API サーバーを叩いて取得するという構成。最近のフロントエンド開発は、感覚としてはアプリ開発ですね。
 

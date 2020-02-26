@@ -30,15 +30,15 @@ NISA 枠から溢れた運用資金をどのように運用しようかなと思
 > ノーベル賞受賞理論をベースとし、数百万とおりの組み合わせの中から、最小のリスクで最大のリターンを得られる最も厳選された5つのポートフォリオを選定。その5つのポートフォリオを、お客さまの個別のリスク許容度に合うものを採用し運用します。  
 > [ロボアドバイザー（自動運用サービス）の魅力](https://site1.sbisec.co.jp/ETGate/?_ControlID=WPLETmgR001Control&OutSide=on&getFlg=on&burl=search_foreign&cat1=foreign&cat2=robot&dir=robot&file=foreign_robot.html&int_pr1=170313_cmn_gnabi%3A7_gtmenu_12)
 
-![WealthNavi](/images/2017/12/robo-advisor-wealthnavi.png)
+{{<img alt="WealthNavi" src="/images/2017/12/robo-advisor-wealthnavi.png" width="1024" height="768">}}
 
 長期間、運用していきたいのでリスク許容度を大きくとりました。簡単な質問に答えていくだけで結果がでます。「**リスク許容度：5/5**」になりました。
 
-![WealthNavi 資産運用方針](/images/2017/12/robo-advisor-wealthnavi-portfolio.png)
+{{<img alt="WealthNavi 資産運用方針" src="/images/2017/12/robo-advisor-wealthnavi-portfolio.png" width="1024" height="768">}}
 
 2017/11/02 に 30 万円を振り込んで積立 2 万円を設定しました。**2017/12/08 現在 -0.95%** です。
 
-![WealthNavi 資産評価額](/images/2017/12/robo-advisor-wealthnavi-asset.png)
+{{<img alt="WealthNavi 資産評価額" src="/images/2017/12/robo-advisor-wealthnavi-asset.png" width="1024" height="768">}}
 
 ## [THEO（テオ）](https://theo.blue/)
 
@@ -47,15 +47,15 @@ NISA 枠から溢れた運用資金をどのように運用しようかなと思
 > お客さまの資産運用の「目的」を分析し、それを実現するための「機能」に着目した3つのポートフォリオ（「グロース」「インカム」「インフレヘッジ」）を最適な配分で組み合わせて運用します。  
 > [ロボアドバイザー（自動運用サービス）の魅力](https://site1.sbisec.co.jp/ETGate/?_ControlID=WPLETmgR001Control&OutSide=on&getFlg=on&burl=search_foreign&cat1=foreign&cat2=robot&dir=robot&file=foreign_robot.html&int_pr1=170313_cmn_gnabi%3A7_gtmenu_12)
 
-![THEO](/images/2017/12/robo-advisor-theo.png)
+{{<img alt="THEO" src="/images/2017/12/robo-advisor-theo.png" width="1024" height="768">}}
 
 こちらの資産運用方針は「**値上がり益重視**」となりました。
 
-![THEO 資産運用方針](/images/2017/12/robo-advisor-theo-portfolio.png)
+{{<img alt="THEO 資産運用方針" src="/images/2017/12/robo-advisor-theo-portfolio.png" width="1024" height="768">}}
 
 2017/08/18 に 28 万円を振り込んで途中から積立 2 万円を設定しました。**2017/12/08 現在 7.90%** です。
 
-![THEO 資産評価額](/images/2017/12/robo-advisor-theo-asset.png)
+{{<img alt="THEO 資産評価額" src="/images/2017/12/robo-advisor-theo-asset.png" width="1024" height="768">}}
 
 ## WealthNavi, THEO が破綻した場合の資産の扱い
 

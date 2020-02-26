@@ -8,7 +8,7 @@ title: 小倉のストリップ劇場に行った
 image: /images/2019/08/kokura-strip-theater.jpg
 ---
 
-![ストリップ劇場](/images/2019/08/kokura-strip-theater.jpg)
+{{<img alt="ストリップ劇場" src="/images/2019/08/kokura-strip-theater.jpg" width="1280" height="670">}}
 
 新幹線の駅がある小倉の街には、九州唯一のストリップ劇場がある。改正風俗営業法により新しいストリップ劇場を建てることが難しいため、基本的には衰退していく文化のようだ。
 

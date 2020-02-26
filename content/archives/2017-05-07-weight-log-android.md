@@ -7,7 +7,7 @@ slug: weight-log-android
 title: Google Fit と連携できる体重管理アプリを作りました
 ---
 
-![](/images/2017/05/promotion.png)
+{{<img alt="" src="/images/2017/05/promotion.png" width="1024" height="500">}}
 
 GW を利用して体重管理アプリを作った。今年の目標は「自分を好きになる」で自分のコンプレクスのいくつかはお金で解決できそうだということでまあ色々としている。その中のひとつが「平均体重まで太る」というのがあり、ジムに行って筋肉をつけている。今のところ 1 ヶ月に 1kg のペースで増えている。
 
@@ -22,8 +22,8 @@ Google Fit は API が開放されているから、サードパーティ製の�
 
 将来的には、目標体重の登録や、身長を入力しての BMI の計算、任意の期間を見る機能の追加などがあると思う。自分が使って不便だったり、要望が多ければ足していきます。
 
-[![](/images/2017/04/en_generic_rgb_wo_60.png)](https://play.google.com/store/apps/details?id=com.rakuishi.weight)
+[{{<img alt="" src="/images/2017/04/en_generic_rgb_wo_60.png" width="172" height="60">}}](https://play.google.com/store/apps/details?id=com.rakuishi.weight)
 
 - https://github.com/rakuishi/weight-log-android
 
-![](/images/2017/05/weight-log-ss.png)
+{{<img alt="" src="/images/2017/05/weight-log-ss.png" width="2180" height="1920">}}

@@ -7,7 +7,7 @@ slug: amazon-s3-cloudfront-acm
 title: Amazon S3 で運用しているブログを HTTPS 化した
 ---
 
-![](/images/2016/12/amazon-s3-cloudfront-acm.png)
+{{<img alt="" src="/images/2016/12/amazon-s3-cloudfront-acm.png" width="728" height="148">}}
 
 勉強のためにブログを HTTPS 化しました。このブログは静的サイトジェネレータ Hugo で生成したファイルを Amazon S3 にホスティングしており、ドメインも Amazon Route 53 で管理しています。
 

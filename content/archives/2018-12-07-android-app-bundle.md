@@ -16,7 +16,7 @@ Android Studio 3.2 + Android Gradle Plugin 3.2 の環境が揃えば、以下の
 
 ## Android App Bundle でアプリサイズを削減
 
-![android-app-bundle](/images/2018/12/app-bundle-logo.svg)
+{{<img alt="android-app-bundle" src="/images/2018/12/app-bundle-logo.svg">}}
 
 [Android App Bundle](https://developer.android.com/platform/technology/app-bundle/) を使うと配信しているアプリのサイズを落とすことが出来ます。
 

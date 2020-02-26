@@ -7,7 +7,7 @@ slug: the-philippines-three-sixteenth
 title: フィリピン留学 3/16 週目
 ---
 
-![](/images/2016/09/the-philippines-three-sixteenth.jpg)
+{{<img alt="" src="/images/2016/09/the-philippines-three-sixteenth.jpg" width="1456" height="1092">}}
 
 一週間前にフィリピン政府から次の月曜日は祝日です、と発表された。日本では珍しいが、こちらでは普通に起こることみたいだ（現政府では初）。今日は、発音の話をしようと思う。
 

@@ -7,7 +7,7 @@ slug: android-9-pie-foreground
 title: Android 9 Pie 時代のフォアグラウンドサービス
 ---
 
-![android-9-pie](/images/2018/09/android-9-pie.png)
+{{<img alt="android-9-pie" src="/images/2018/09/android-9-pie.png" width="728" height="428">}}
 
 Android 9 Pie（API レベル 28）が正式にリリースされ、会社でも Android 9 対応のアプリをリリースしました。
 

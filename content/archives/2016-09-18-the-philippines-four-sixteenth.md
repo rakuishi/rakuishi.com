@@ -7,7 +7,7 @@ slug: the-philippines-four-sixteenth
 title: フィリピン留学 4/16 週目
 ---
 
-![](/images/2016/09/the-philippines-four-sixteenth.jpg)
+{{<img alt="" src="/images/2016/09/the-philippines-four-sixteenth.jpg" width="1456" height="1092">}}
 
 フィリピンに来てから一ヶ月が経過した。定期テストが行われ、High Beginner Level（38/100）から Intermediate Level（52/100）に上がった。リスニングがあまり伸びていなかったから、次の一ヶ月はリスニングを鍛えることに決めた。丁度、一ヶ月前から始めた[会話できる英文法大特訓](http://www.amazon.co.jp/exec/obidos/ASIN/4863921179/rakuishi-22/ref=nosim/)が大詰めを迎えていて、教材を変える良い時期でもあるし。授業の予習復習の合間に進めていたとは言え、この本はなかなかボリュームのある内容だった（僕の記憶力が悪いとも言える）。意訳が多いこと以外の内容はとても良く、暗記した内容はマンツーマン授業でも使えた。
 

@@ -45,7 +45,7 @@ on task set of type org.gradle.api.internal.tasks.DefaultTaskContainer.
 
 ここまでで「Refactor -> Migrate to AndroidX...」が押せるようになります。
 
-![](/images/2018/09/migration-to-androidx.png)
+{{<img alt="" src="/images/2018/09/migration-to-androidx.png" width="440" height="440">}}
 
 ボタンを押すと書き換え予定のファイル一覧が表示されるので「Do Refactor」を選択します。後は、Android Studio 側の作業が終わるのを待ちましょう。
 

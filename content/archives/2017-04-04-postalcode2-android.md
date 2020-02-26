@@ -7,11 +7,11 @@ slug: postalcode2-android
 title: ｢オフライン郵便番号検索の決定版！ - 郵便番号検索くん for Android｣を 3 年ぶりにアップデートしました
 ---
 
-![](/images/2017/04/promotion.png)
+{{<img alt="" src="/images/2017/04/promotion.png" width="1024" height="500">}}
 
 最近、放置していたアプリのアップデートを頑張っていて、iOS の「[Quicka2 - 検索を快適に](https://itunes.apple.com/jp/app/id725195676?mt=8&uo=4&at=11l3RT)」「[オフライン郵便番号検索の決定版！ - 郵便番号検索くん](https://itunes.apple.com/jp/app/id578073498?mt=8&uo=4&at=11l3RT)」に続いて、Android の郵便番号検索くんをアップデートしました。アップデートしたと書きましたが、実は別アプリとしてリリースしています。
 
-[![](/images/2017/04/en_generic_rgb_wo_60.png)](https://play.google.com/store/apps/details?id=com.rakuishi.postalcode2)
+[{{<img alt="" src="/images/2017/04/en_generic_rgb_wo_60.png" width="172" height="60">}}](https://play.google.com/store/apps/details?id=com.rakuishi.postalcode2)
 
 ## [オフライン郵便番号検索の決定版！ - 郵便番号検索くん](https://play.google.com/store/apps/details?id=com.rakuishi.postalcode2)
 
@@ -43,6 +43,6 @@ title: ｢オフライン郵便番号検索の決定版！ - 郵便番号検索�
 郵便番号の情報は、日本郵便株式会社様の提供するデータ（2017年02月28日）を利用しています。
 このアプリは、iPhone アプリを Android アプリに移植したものになります。
 
-![](/images/2017/04/postalcode2-ss-1.png)
+{{<img alt="" src="/images/2017/04/postalcode2-ss-1.png" width="2180" height="1920">}}
 
-![](/images/2017/04/postalcode2-ss-2.png)
+{{<img alt="" src="/images/2017/04/postalcode2-ss-2.png" width="2180" height="1920">}}

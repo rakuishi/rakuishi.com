@@ -7,7 +7,7 @@ slug: the-philippines-six-sixteenth
 title: フィリピン留学 6/16 週目
 ---
 
-![](/images/2016/10/the-philippines-six-sixteenth.jpg)
+{{<img alt="" src="/images/2016/10/the-philippines-six-sixteenth.jpg" width="1456" height="1092">}}
 
 大学生の夏休みシーズンを終え、学校の人口密度がかなり減った。今週から、[DUO 3.0](http://www.amazon.co.jp/exec/obidos/ASIN/4900790052/rakuishi-22/ref=nosim/) のセンテンスを暗記するフェーズに入った。リスニング力は語彙力だと感じたからだ。留学前に、[毎日の英単語 日常頻出語の90%をマスターする](http://www.amazon.co.jp/exec/obidos/ASIN/4023312118/rakuishi-22/ref=nosim/)は覚えたが、まだまだ表現力が不足しているし、聞き取れる単語の量も多くはない。DUO では、口慣らししながら Scan Over し終え、次は Read Over するフェーズである。他の瞬間英作文系と重なる部分もあるし、前の[会話できる英文法大特訓](http://www.amazon.co.jp/exec/obidos/ASIN/4863921179/rakuishi-22/ref=nosim/)では、720 sentences の暗唱だったから、DUO の 560 sentences は多少気楽に感じるものの、慣れない熟語や単語が多いため、結構時間が掛かる。
 

@@ -7,7 +7,7 @@ slug: arcore-overview
 title: '[Google Pixel 3] ARCore で拡張現実を体験してみた'
 ---
 
-![Playground](/images/2018/11/playground.jpg)
+{{<img alt="Playground" src="/images/2018/11/playground.jpg" width="1080" height="540">}}
 
 Google Pixel 3 を買いました。写真が肉眼の印象に近いのと、低めのバイブレーションが特に良いですね。
 
@@ -17,7 +17,7 @@ Google Pixel 3 を買いました。写真が肉眼の印象に近いのと、�
 
 ## ARCore
 
-![ARCore](/images/2018/11/arcore-discover-hero.jpg)
+{{<img alt="ARCore" src="/images/2018/11/arcore-discover-hero.jpg" width="1712" height="728">}}
 
 - [ARCore Overview | ARCore | Google Developers](https://developers.google.com/ar/discover/)
 
