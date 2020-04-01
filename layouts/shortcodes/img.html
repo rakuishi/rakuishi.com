@@ -1,1 +1,1 @@
-<p><img src="{{ .Get "src" }}" alt="{{ .Get "alt" }}" width="{{ .Get "width" }}" height="{{ .Get "height" }}" loading="lazy"></p>
+{{ $width := .Get "width" }}{{ $height := .Get "height" }}{{ if and $width $height }}<p class="lazy-container" style="padding-bottom: {{ mul (div (float $height) (float $width)) 100 }}%"><img src="{{ .Get "src" }}" alt="{{ .Get "alt" }}" width="{{ $width }}" height="{{ $height }}" loading="lazy"></p>{{ else }}<p><img src="{{ .Get "src" }}" alt="{{ .Get "alt" }}"></p>{{ end }}
