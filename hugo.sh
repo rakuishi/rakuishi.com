@@ -18,17 +18,12 @@ hugo_server() {
   hugo server --watch --buildDrafts
 }
 
-publish() {
+deploy() {
   sass static/assets/sass/style.scss:layouts/partials/style.css \
     --style compressed
   rm -rf public/
   hugo
-  # brew install htmlcompressor
-  rm -rf temp/
-  cp -r public/ temp/
-  htmlcompressor --recursive --output temp/ public/
-  cp -r temp/ public/
-  rm -rf temp/
+  html-minifier --input-dir public/ --output-dir public/ --file-ext html -c minifier.json
   firebase deploy
 }
 
@@ -39,11 +34,11 @@ case $1 in
   'server')
     hugo_server
     ;;
-  'publish')
-    publish
+  'deploy')
+    deploy
     ;;
   *)
-    echo "Usage: $0 <new|server|publish>"
+    echo "Usage: $0 <new|server|deploy>"
     exit 2
     ;;
 esac
