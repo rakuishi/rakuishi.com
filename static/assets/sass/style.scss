@@ -20,7 +20,7 @@ $breakpoint: 728px;
 
 :root {
   --sans-font-family: 'Noto Sans', 'Noto Sans CJK JP', 'NotoSans', sans-serif;
-  --mono-font-family: 'Monaco', 'Menlo', 'Consolas', 'Courier New', monospace;
+  --mono-font-family: 'Menlo', 'Monaco', 'Courier New', monospace;
   --font-size: 15px;
   --font-size-pc: 16.5px;
 
@@ -36,7 +36,7 @@ $breakpoint: 728px;
     --secondary-background-color: #333333;
     --primary-text-color: #e8eaed;
     --secondary-text-color: #9AA0A6;
-    --border-color: rgba(84, 84, 88, .6);
+    --border-color: rgba(84, 84, 88);
     --link-color: #8AB4F8;
   }
 
@@ -78,10 +78,9 @@ h1, h2, h3 { line-height: 1.4; font-weight: 700 }
 }
 
 .site-header {
-  height: 65px;
+  height: 64px;
   margin-bottom: 24px;
   background-color: var(--secondary-background-color);
-  border-bottom: 1px solid var(--border-color);
 }
 
 .header-nav {
@@ -236,17 +235,50 @@ h1, h2, h3 { line-height: 1.4; font-weight: 700 }
 }
 
 .entry-text {
-  h2 { width: fit-content; margin: 72px 0 32px; padding-bottom: 12px; font-size: 22px; color: var(--primary-text-color); border-bottom: 4px solid var(--border-color) }
-  h3 { margin: 24px 0; font-size: 20px; color: var(--primary-text-color) }
+  h2 {
+    position: relative;
+    width: fit-content;
+    margin: 72px 0 32px;
+    padding-bottom: 12px;
+    font-size: 22px;
+    color: var(--primary-text-color);
+
+    &:after {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      display: block;
+      width: 100%;
+      height: 4px;
+      border-radius: 8px;
+      background-color: var(--border-color);
+      content: '';
+    }
+  }
+  h3 {
+    margin: 24px 0;
+    font-size: 20px;
+    color: var(--primary-text-color);
+  }
   p  { margin: 24px 0 }
   a  { text-decoration: underline }
   a:hover { text-decoration: none }
-
   small      { font-size: 80% }
   ruby > rt  { font-size: 50% }
-  code       { padding: 2px 4px; font-size: 90%; font-family: var(--mono-font-family); background-color: var(--secondary-background-color); border-radius: 8px }
-  pre        { margin: 24px 0; border-radius: 8px }
-  pre > code { display: block; padding: 12px }
+
+  code       {
+    padding: 2px 4px;
+    font-size: 90%;
+    font-family: var(--mono-font-family);
+    background-color: var(--secondary-background-color);
+    border-radius: 8px;
+  }
+  pre {
+    margin: 24px 0;
+    border-radius: 8px;
+    > code { display: block; padding: 12px }
+  }
 
   ul, ol { margin: 24px 0; padding-left: 24px }
   ul { list-style: disc }
@@ -254,26 +286,76 @@ h1, h2, h3 { line-height: 1.4; font-weight: 700 }
   li { padding-left: 8px; text-align: left }
   li > ul { margin: 0 }
 
-  hr  { height: 2px; margin: 24px 0; background-color: var(--border-color); border: 0 }
-  img { width: auto; max-width: 100%; height: auto !important; max-height: 546px; border-radius: 8px }
-  
-  .lazy-container { display: block; position: relative; height: 0; }
-  .lazy-container img { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
-
+  hr  {
+    height: 2px;
+    margin: 24px 0;
+    background-color: var(--border-color);
+    border: 0;
+  }
+  img {
+    width: auto;
+    max-width: 100%;
+    height: auto !important;
+    max-height: 546px;
+    border-radius: 8px;
+  }
   @media (prefers-color-scheme: dark) { img { filter: grayscale(25%) } }
+  
+  .lazy-container {
+    display: block;
+    position: relative;
+    height: 0;
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }  
+  }
 
-  blockquote { margin: 24px 0; padding: 0 16px; border-left: 4px solid var(--border-color); }
+  blockquote { 
+    position: relative;
+    padding-left: 24px;
+  
+    &:before {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      display: block;
+      width: 4px;
+      border-radius: 8px;
+      background-color: var(--border-color);
+      content: '';
+    }
+  }
+
   table {
     display: block;
     overflow-x: auto;
     margin: 24px 0;
     white-space: nowrap;
+
     th, td { padding: 8px; border: 1px solid var(--border-color) }
     th { font-weight: 700; color: var(--primary-text-color); background-color: var(--secondary-background-color) }
   }
 
-  .iframe-wrapper { position: relative; overflow: hidden; height: 0; margin: 24px 0; padding-top: 56.25% }
-  .iframe-wrapper iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100% }
+  .iframe-wrapper {
+    position: relative;
+    overflow: hidden;
+    height: 0;
+    margin: 24px 0;
+    padding-top: 56.25%;
+
+    iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
 }
 
 .entry-google-adsense {
