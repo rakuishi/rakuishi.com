@@ -31,15 +31,6 @@ $breakpoint: 728px;
   --border-color: #dcdee0;
   --link-color: #007aff;
 
-  @media (prefers-color-scheme: dark) {
-    --primary-background-color: #1f1f1f;
-    --secondary-background-color: #333333;
-    --primary-text-color: #e8eaed;
-    --secondary-text-color: #9AA0A6;
-    --border-color: rgba(84, 84, 88);
-    --link-color: #8AB4F8;
-  }
-
   font-family: var(--sans-font-family);
   font-weight: normal;
   font-size: var(--font-size);
@@ -52,6 +43,15 @@ $breakpoint: 728px;
   @media (min-width: $breakpoint) {
     font-size: var(--font-size-pc);
   }
+}
+
+[data-prefers-color-scheme='dark'] {
+  --primary-background-color: #1f1f1f;
+  --secondary-background-color: #333333;
+  --primary-text-color: #e8eaed;
+  --secondary-text-color: #9AA0A6;
+  --border-color: rgba(84, 84, 88);
+  --link-color: #8AB4F8;
 }
 
 a, a:hover { color: var(--link-color) }
@@ -110,8 +110,10 @@ h1, h2, h3 { line-height: 1.4; font-weight: 700 }
     background-image: url('/assets/images/logo_wide.png');
     background-size: 210px 32px;
   }
-  @media (min-width: $breakpoint) and (prefers-color-scheme: dark) {
-    background-image: url('/assets/images/logo_wide_dark.png');
+  [data-prefers-color-scheme='dark'] & {
+    @media (min-width: $breakpoint) {
+      background-image: url('/assets/images/logo_wide_dark.png');
+    }
   }
 }
 
@@ -157,6 +159,9 @@ h1, h2, h3 { line-height: 1.4; font-weight: 700 }
       margin-bottom: 20px;
       text-align: left;
       > .category-chips { margin-bottom: 4px }
+    }
+    > .checkbox-scheme {
+      margin-bottom: 24px;
     }
   }
 }
@@ -299,8 +304,7 @@ h1, h2, h3 { line-height: 1.4; font-weight: 700 }
     max-height: 546px;
     border-radius: 8px;
   }
-  @media (prefers-color-scheme: dark) { img { filter: grayscale(25%) } }
-  
+
   .lazy-container {
     display: block;
     position: relative;
@@ -391,6 +395,13 @@ h1, h2, h3 { line-height: 1.4; font-weight: 700 }
   > .twitter:hover  { background-color: #55acee }
   > .facebook:hover { background-color: #3b5998 }
   > .pocket:hover   { background-color: #f04054 }
+}
+
+.checkbox-scheme {
+  display: inline-block;
+  font-size: 14px;
+  vertical-align: middle;
+  > input { margin-right: 8px }
 }
 
 .entry-paginator {
