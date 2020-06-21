@@ -6,6 +6,7 @@ metadataformat: yaml
 preservetaxonomynames: true
 pygmentsCodefences: true
 pygmentsUseClasses: true
+rssLimit: 20
 
 related: 
   indices: [{name: categories, weight: 100}]

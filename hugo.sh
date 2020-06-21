@@ -23,6 +23,8 @@ deploy() {
     --style compressed
   rm -rf public/
   hugo
+  mkdir public/feed
+  cp public/archives/index.xml public/feed/index.xml
   html-minifier --input-dir public/ --output-dir public/ --file-ext html -c minifier.json
   firebase deploy
 }
