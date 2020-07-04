@@ -74,6 +74,35 @@
 }]  
 </script>
 {{ end }}
+<script>
+(function () {
+  function initTheme() {
+    var theme = 'light';
+
+    if (localStorage.getItem('prefers-color-scheme')) {
+      theme = localStorage.getItem('prefers-color-scheme');
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+      theme = 'dark';
+    }
+
+    document.documentElement.setAttribute('data-prefers-color-scheme', theme);
+    return theme;
+  }
+
+  function switchTheme(e) {
+    var theme = e.target.checked ? 'dark' : 'light';
+    localStorage.setItem('prefers-color-scheme', theme);
+    document.documentElement.setAttribute('data-prefers-color-scheme', theme);
+  }
+
+  var theme = initTheme();
+  window.onload = function() {
+    const themeSwitch = document.querySelector('#checkbox-scheme');
+  themeSwitch.addEventListener('change', switchTheme, false);
+  themeSwitch.checked = theme == 'dark';
+  }
+}());
+</script>
 </head>
 <body>
 

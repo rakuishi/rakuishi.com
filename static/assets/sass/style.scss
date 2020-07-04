@@ -272,16 +272,16 @@ h1, h2, h3 { line-height: 1.4; font-weight: 700 }
   small      { font-size: 80% }
   ruby > rt  { font-size: 50% }
 
-  code       {
+  code {
     padding: 2px 4px;
     font-size: 90%;
     font-family: var(--mono-font-family);
     background-color: var(--secondary-background-color);
-    border-radius: 8px;
+    border-radius: 4px;
   }
   pre {
     margin: 24px 0;
-    border-radius: 8px;
+    border-radius: 4px;
     > code { display: block; padding: 12px }
   }
 
@@ -301,7 +301,7 @@ h1, h2, h3 { line-height: 1.4; font-weight: 700 }
     width: auto;
     max-width: 100%;
     height: auto !important;
-    max-height: 546px;
+    // max-height: 546px;
     border-radius: 8px;
   }
 
@@ -436,7 +436,7 @@ h1, h2, h3 { line-height: 1.4; font-weight: 700 }
   font-family: var(--mono-font-family);
   color: var(--secondary-text-color);
   border: 1px solid var(--border-color);
-  border-radius: 8px;
+  border-radius: 4px;
 
   &.-linkable {
     background-color: var(--primary-background-color);

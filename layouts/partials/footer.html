@@ -2,48 +2,20 @@
 
 <footer class="site-footer">
   <div class="inner">
-      <form action="//google.com/search" method="get" accept-charset="UTF-8" class="site-search"><input type="text" name="q" placeholder="サイト内検索" autocomplete="off" class="searchbar" aria-label="Search"><input type="hidden" name="sitesearch" value="http://rakuishi.com"></form>
-      <p class="categories">
-        {{ range $name, $taxonomy := .Site.Taxonomies.categories }}
-          <a href="{{ "/categories/" | relLangURL }}{{ $name | urlize }}" class="category-chips -linkable">{{ $name }} {{ $taxonomy.Count }}</a>
-        {{ end }}
-      </p>
-      <div class="checkbox-scheme">
-        <input type="checkbox" id="checkbox-scheme" name="checkbox-scheme">
-        <label for="checkbox-scheme">ダークモードを有効にする</label>
-      </div>
-      <p class="term">このウェブサイトでは訪問者の行動を把握するために <a href="https://www.google.com/analytics/terms/jp.html" target="_blank">Google アナリティクス</a>を設置しています。その際、お使いのブラウザに <a href="https://policies.google.com/technologies/cookies" target="_blank">Cookie</a> を設定したり、既存の Cookie を読み取ったりする場合があります。</p>
-      <p class="copyright">(C) 2011 rakuishi</p>
+    <form action="//google.com/search" method="get" accept-charset="UTF-8" class="site-search"><input type="text" name="q" placeholder="サイト内検索" autocomplete="off" class="searchbar" aria-label="Search"><input type="hidden" name="sitesearch" value="http://rakuishi.com"></form>
+    <p class="categories">
+      {{ range $name, $taxonomy := .Site.Taxonomies.categories }}
+        <a href="{{ "/categories/" | relLangURL }}{{ $name | urlize }}" class="category-chips -linkable">{{ $name }} {{ $taxonomy.Count }}</a>
+      {{ end }}
+    </p>
+    <div class="checkbox-scheme">
+      <input type="checkbox" id="checkbox-scheme" name="checkbox-scheme">
+      <label for="checkbox-scheme">ダークモードを有効にする</label>
+    </div>
+    <p class="term">このウェブサイトでは訪問者の行動を把握するために <a href="https://www.google.com/analytics/terms/jp.html" target="_blank">Google アナリティクス</a>を設置しています。その際、お使いのブラウザに <a href="https://policies.google.com/technologies/cookies" target="_blank">Cookie</a> を設定したり、既存の Cookie を読み取ったりする場合があります。</p>
+    <p class="copyright">(C) 2011 rakuishi</p>
   </div>
 </footer>
-
-<script>
-(function () {
-  function initTheme() {
-    var theme = 'light';
-
-    if (localStorage.getItem('prefers-color-scheme')) {
-      theme = localStorage.getItem('prefers-color-scheme');
-    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-      theme = 'dark';
-    }
-
-    document.documentElement.setAttribute('data-prefers-color-scheme', theme);
-    return theme;
-  }
-
-  function switchTheme(e) {
-    var theme = e.target.checked ? 'dark' : 'light';
-    localStorage.setItem('prefers-color-scheme', theme);
-    document.documentElement.setAttribute('data-prefers-color-scheme', theme);
-  }
-
-  var theme = initTheme();
-  const themeSwitch = document.querySelector('#checkbox-scheme');
-  themeSwitch.addEventListener('change', switchTheme, false);
-  themeSwitch.checked = theme == 'dark';
-}());
-</script>
 
 </body>
 </html>
