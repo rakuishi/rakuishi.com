@@ -39,6 +39,7 @@ $breakpoint: 728px;
   word-break: break-all;
   text-align: justify;
   line-height: 1.8;
+  transition-duration: .4s;
 
   @media (min-width: $breakpoint) {
     font-size: var(--font-size-pc);
