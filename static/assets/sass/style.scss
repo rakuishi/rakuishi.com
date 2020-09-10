@@ -20,9 +20,9 @@ $breakpoint: 728px;
 
 :root {
   --sans-font-family: 'Noto Sans', 'Noto Sans CJK JP', 'NotoSans', sans-serif;
-  --mono-font-family: 'Menlo', 'Monaco', 'Courier New', monospace;
+  --mono-font-family: 'Monaco', 'Menlo', 'Courier New', monospace;
   --font-size: 15px;
-  --font-size-pc: 16.5px;
+  --font-size-pc: 17px;
 
   --primary-background-color: #ffffff;
   --secondary-background-color: #f4f5f7;
@@ -299,24 +299,8 @@ h1, h2, h3 { line-height: 1.4; font-weight: 700 }
     border: 0;
   }
   img {
-    width: auto;
-    max-width: 100%;
-    height: auto !important;
-    // max-height: 546px;
-    border-radius: 8px;
-  }
-
-  .lazy-container {
-    display: block;
-    position: relative;
-    height: 0;
-    img {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-    }  
+    width: 100%;
+    height: auto;
   }
 
   blockquote { 
@@ -378,7 +362,6 @@ h1, h2, h3 { line-height: 1.4; font-weight: 700 }
 
 .entry-share {
   font-size: 0;
-  text-align: right;
 
   > .twitter, > .facebook, > .pocket {
     display: inline-block;
@@ -429,10 +412,8 @@ h1, h2, h3 { line-height: 1.4; font-weight: 700 }
 
 .category-chips {
   display: inline-block;
-  height: 26px;
   padding: 0px 8px;
   font-size: 14px;
-  line-height: 24px;
   text-decoration: none;
   font-family: var(--mono-font-family);
   color: var(--secondary-text-color);
