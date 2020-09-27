@@ -5,7 +5,7 @@
 //////////////////////////////////////////////////
 
 $grid-gutter: 24px !default;
-$max-width: 620px + $grid-gutter * 2 !default;
+$max-width: 668px + $grid-gutter * 2 !default;
 $breakpoint: 728px;
 
 //////////////////////////////////////////////////
@@ -25,8 +25,8 @@ $breakpoint: 728px;
   --font-size-pc: 17px;
 
   --primary-background-color: #ffffff;
-  --secondary-background-color: #f4f5f7;
-  --primary-text-color: #2d2e2f;
+  --secondary-background-color: #f1f4f7;
+  --primary-text-color: #333333;
   --secondary-text-color: #565c65;
   --border-color: #dcdee0;
   --link-color: #007aff;
@@ -47,12 +47,12 @@ $breakpoint: 728px;
 }
 
 [data-prefers-color-scheme='dark'] {
-  --primary-background-color: #1f1f1f;
-  --secondary-background-color: #333333;
+  --primary-background-color: #1e2128;
+  --secondary-background-color: #2c303d;
   --primary-text-color: #e8eaed;
-  --secondary-text-color: #9AA0A6;
-  --border-color: rgba(84, 84, 88);
-  --link-color: #8AB4F8;
+  --secondary-text-color: #9aa0a6;
+  --border-color: #35383b;
+  --link-color: #8ab4f8;
 }
 
 a, a:hover { color: var(--link-color) }
@@ -157,12 +157,12 @@ h1, h2, h3 { line-height: 1.4; font-weight: 700 }
       margin-bottom: 24px;
     }
     > .categories {
-      margin-bottom: 20px;
+      margin-bottom: 12px;
       text-align: left;
       > .category-chips { margin-bottom: 4px }
     }
-    > .checkbox-scheme {
-      margin-bottom: 24px;
+    > .checkbox-scheme, > .term {
+      margin-bottom: 12px;
     }
   }
 }
@@ -367,15 +367,14 @@ h1, h2, h3 { line-height: 1.4; font-weight: 700 }
     display: inline-block;
     width: 28px;
     height: 28px;
-    margin-left: 4px;
     background: var(--border-color) url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMAAAABACAMAAAB7sojtAAAAmVBMVEUAAAD////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////VHQRUAAAAMnRSTlMA+eBQ5G0k70j99TgZ58JEpgkF2c2DAcctHALemz8Tv7quq5XStaCQi3chDX1nV05gS0HgIaYAAANGSURBVGje7dfpbuIwFIbhLy0hJGlCdiDsW9kK0577v7iZKShRysE2kYyolOdnpVOdV7VNQaPRaDQaeo1T/8WxDccbJmv8Pn8SohJ+m2hJpBgwCFqkqBUM8CABqQYMLLqDdWfBeLmynHh+CnFxgBKTfpCkqgvAiMDrT4u/3encMxtDxcRSD/DoLh63f2/AX0OHSpu8v+tRAiU7Ug+gO+HaieI37vgY1dNHREYfSnpEJeM/rQEL4gom139b+xOYQO5gFxOjfnk+tQWsiGh1tdj2atT5bB/9DuT6xUiKkr6A7xs3dFEROtevsEX0AQXjYmTyuAAyzLxyg4mzyCBXzlp4SEBCZ4mLUkqMZQ4Vr3Tx8piA9+LKBeUrM2Jmd8BTBnSpNDuFRdWV7EkDsmHlrVmYbsQeIVt7gB1bdMWKbUkAujZVGUN/xX2Kaw7o7ZEdjR+rHDPse5IAbElFAhnzrLg/lnnRUQlwBvinUykwvicHjiggnL6GKSmY1T/PG5UZH/hZYFzKfVEAHLKHDsm91w8wVWYSlAXV/ZEIA3qk5qN+wJfKjO2WBdX9XVsY8EFq3PoBbaWZVrsoqOzfbokv8ZtBKqy8doAdCmf4An5/qv8IzVE7oCWc4Qv4/fmASOkWHOsH+IIZ50bBjf0tcMI1SRkDSNV5v2LiC/j9KQYrX9ryR1Tu7eyz2Obyg4NgZkp8Ab8/TXFDf+SRiN0HtPwrERBfwO9PAVin9XzlkMgamgJS4gv4/SkF62CRhKsrwCWmoNyf3aPGh9kCugIyjy/g9/cy8KIZibQmugL4737eF7IOdylHuCX0RTe4C30BXeI4/KEWLBKmt2/xFhoD4JMyHyKD5QuxepHWAJeUudLfxSVMD9AagDkpmkMs3zncJ0AIzQF7i5RYe4hEx5gYiwi6A9A1qFTvKTl8bTx2aJtDfwBMUmCCNd5s39eJQazhGHhEADYktcEN/dnNM7cL8aAAmIbk/JiiI7jgpoe7CfCwAHQt4f2VfJROTN+pbr/s5MAjA7CfC97PPaQi11wuZsmqNws+Xtso6Q4ouT6xfBc6yQPUda+/VnmjLmSeJwDI3DSYxt/n2YmnQermkHumgKfw6wMajUaj8fz+Agwgi+Ln263lAAAAAElFTkSuQmCC') no-repeat;
     background-size: 84px 28px;
     border-radius: 2px;
   }
 
   > .twitter        { background-position: 0 * -28px }
-  > .facebook       { background-position: 1 * -28px }
-  > .pocket         { background-position: 2 * -28px }
+  > .facebook       { background-position: 1 * -28px; margin-left: 4px }
+  > .pocket         { background-position: 2 * -28px; margin-left: 4px }
   > .twitter:hover  { background-color: #55acee }
   > .facebook:hover { background-color: #3b5998 }
   > .pocket:hover   { background-color: #f04054 }
