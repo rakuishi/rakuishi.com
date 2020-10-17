@@ -4,6 +4,8 @@ This is the repository for the [rakuishi.com](rakuishi.com). This is a [Hugo](ht
 
 ![](.github/Screenshot.png)
 
+![](.github/Lighthouse.png)
+
 ## Installation & Usage
 
 ```
