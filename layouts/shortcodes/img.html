@@ -1,1 +1,0 @@
-{{ $width := .Get "width" }}{{ $height := .Get "height" }}{{ if and $width $height }}<p><img src="{{ .Get "src" }}" alt="{{ .Get "alt" }}" width="{{ $width }}" height="{{ $height }}" loading="lazy"></p>{{ else }}<p><img src="{{ .Get "src" }}" alt="{{ .Get "alt" }}" loading="lazy"></p>{{ end }}
