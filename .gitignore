@@ -1,2 +1,14 @@
+# misc
 .DS_Store
-/.firebase
+/.firebase/
+
+# dependencies
+node_modules
+package-lock.json
+
+# next.js
+/.next/
+/out/
+
+# production
+/build

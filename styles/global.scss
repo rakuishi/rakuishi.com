@@ -1,0 +1,50 @@
+@charset "utf-8";
+@import "sanitize", "font";
+
+//////////////////////////////////////////////////
+// Base
+//////////////////////////////////////////////////
+
+:root {
+  --sans-font-family: "Noto Sans", "Noto Sans CJK JP", "NotoSans", sans-serif;
+  --mono-font-family: "Monaco", "Menlo", "Courier New", monospace;
+  --font-size: 16px;
+  --max-width: 640px;
+
+  --primary-background-color: #ffffff;
+  --secondary-background-color: #f1f4f7;
+  --primary-text-color: #333333;
+  --secondary-text-color: #565c65;
+  --border-color: #dcdee0;
+  --link-color: #007aff;
+
+  @media (prefers-color-scheme: dark) {
+    --primary-background-color: #1e2128;
+    --secondary-background-color: #2c303d;
+    --primary-text-color: #e8eaed;
+    --secondary-text-color: #9aa0a6;
+    --border-color: #35383b;
+    --link-color: #8ab4f8;
+  }
+
+  font-family: var(--sans-font-family);
+  font-weight: normal;
+  font-size: var(--font-size);
+  color: var(--primary-text-color);
+  background-color: var(--primary-background-color);
+  word-break: break-all;
+  text-align: justify;
+  line-height: 1.8;
+}
+
+a,
+a:hover {
+  color: var(--link-color);
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.4;
+  font-weight: 700;
+}
