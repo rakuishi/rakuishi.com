@@ -1,8 +1,7 @@
 ---
 categories:
 - Blog
-date: 2016-07-05T12:49:15+09:00
-draft: false
+date: "2016-07-05T12:49:15+09:00"
 slug: on-the-road
 title: On the Road
 ---

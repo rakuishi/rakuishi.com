@@ -1,7 +1,7 @@
 ---
 categories:
 - 開発
-date: 2016-04-18T21:21:09+09:00
+date: "2016-04-18T21:21:09+09:00"
 draft: falce
 slug: aniradime
 title: "ネット配信されているアニラジの更新情報をまとめたサイトを作った"

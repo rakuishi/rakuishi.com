@@ -1,8 +1,7 @@
 ---
 categories:
   - Android
-date: 2015-04-29T08:40:12+09:00
-draft: false
+date: "2015-04-29T08:40:12+09:00"
 slug: material-design-todo
 title: "Material Design と Realm の勉強がてら作った Todo アプリを公開しました"
 ---

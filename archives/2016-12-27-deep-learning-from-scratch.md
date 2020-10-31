@@ -1,8 +1,7 @@
 ---
 categories:
 - Python
-date: 2016-12-27T09:11:26+09:00
-draft: false
+date: "2016-12-27T09:11:26+09:00"
 slug: deep-learning-from-scratch
 title: ｢ゼロから作る Deep Learning｣を読んだ
 ---

@@ -1,8 +1,7 @@
 ---
 categories:
   - WordPress
-date: 2014-08-11T22:43:55+09:00
-draft: false
+date: "2014-08-11T22:43:55+09:00"
 slug: wordpress-plugins
 title: "WordPress Plugins"
 ---

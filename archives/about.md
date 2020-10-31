@@ -1,6 +1,5 @@
 ---
-date: 2011-08-26T00:00:31+09:00
-draft: false
+date: "2011-08-26T00:00:31+09:00"
 slug: about
 title: "ABOUT ME"
 ---

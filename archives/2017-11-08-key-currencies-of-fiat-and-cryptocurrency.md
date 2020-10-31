@@ -1,8 +1,7 @@
 ---
 categories:
 - 仮想通貨
-date: 2017-11-08T18:33:28+09:00
-draft: false
+date: "2017-11-08T18:33:28+09:00"
 slug: key-currencies-of-fiat-and-cryptocurrency
 title: '法定通貨と仮想通貨の基軸通貨'
 subtitle: '価値を交換するために発明された通貨には、他のモノと交換しやすい基軸通貨があります。法定通貨は米ドル、仮想通貨はビットコインがそれに当たります。'

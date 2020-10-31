@@ -1,8 +1,7 @@
 ---
 categories:
   - Web Service
-date: 2016-02-13T00:23:58+09:00
-draft: false
+date: "2016-02-13T00:23:58+09:00"
 slug: sakura-vps-rails
 title: "さくらの VPS：WEBrick と Unicorn + Nginx で Ruby on Rails の表示まで"
 ---

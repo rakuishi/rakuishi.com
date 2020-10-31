@@ -1,8 +1,7 @@
 ---
 categories:
   - Web Service
-date: 2016-01-31T21:04:03+09:00
-draft: false
+date: "2016-01-31T21:04:03+09:00"
 slug: sakura-vps
 title: "さくらの VPS：環境設定から Web ページの表示まで"
 ---

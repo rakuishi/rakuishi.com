@@ -1,8 +1,7 @@
 ---
 categories:
   - CSS
-date: 2015-09-13T13:26:04+09:00
-draft: false
+date: "2015-09-13T13:26:04+09:00"
 slug: getting-started-with-css
 title: "CSS 初学者だった頃に知りたかったこと"
 ---

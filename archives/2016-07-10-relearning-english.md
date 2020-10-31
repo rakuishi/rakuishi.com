@@ -1,8 +1,7 @@
 ---
 categories:
 - Blog
-date: 2016-07-10T19:57:25+09:00
-draft: false
+date: "2016-07-10T19:57:25+09:00"
 slug: relearning-english
 title: "Re: ゼロから始める英語再学習"
 ---

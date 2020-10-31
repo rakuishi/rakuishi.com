@@ -1,8 +1,7 @@
 ---
 categories:
   - Android
-date: 2018-09-03T20:16:28+09:00
-draft: false
+date: "2018-09-03T20:16:28+09:00"
 slug: android-9-pie-foreground
 title: Android 9 Pie 時代のフォアグラウンドサービス
 ---

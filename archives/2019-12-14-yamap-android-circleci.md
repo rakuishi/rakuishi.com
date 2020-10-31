@@ -1,8 +1,7 @@
 ---
 categories:
   - Android
-date: 2019-12-14T11:01:10+09:00
-draft: false
+date: "2019-12-14T11:01:10+09:00"
 slug: yamap-android-circleci
 title: "YAMAP Android の CircleCI 環境"
 ---

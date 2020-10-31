@@ -1,8 +1,7 @@
 ---
 categories:
   - JavaScript
-date: 2015-01-24T18:16:24+09:00
-draft: false
+date: "2015-01-24T18:16:24+09:00"
 slug: highlightjs
 title: "シンタックスハイライトに highlight.js を使うことにしました"
 ---

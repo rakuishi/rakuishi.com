@@ -1,8 +1,7 @@
 ---
 categories:
 - 仮想通貨
-date: 2017-11-07T20:24:37+09:00
-draft: false
+date: "2017-11-07T20:24:37+09:00"
 slug: realtime-bitcoin-transactions-on-chainflyer
 title: 'ビットコインの取引をリアルタイムで見てみよう'
 subtitle: 'ビットコインの取引をリアルタイムで見れるサイト chainFlyer。取引はオープンであることを肌で感じ、ブロックチェーン上に記録された取引の確認の仕方を学びましょう。'

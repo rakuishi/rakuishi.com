@@ -1,8 +1,7 @@
 ---
 categories:
 - 開発
-date: 2017-04-04T21:07:50+09:00
-draft: false
+date: "2017-04-04T21:07:50+09:00"
 slug: postalcode2-android
 title: ｢オフライン郵便番号検索の決定版！ - 郵便番号検索くん for Android｣を 3 年ぶりにアップデートしました
 ---

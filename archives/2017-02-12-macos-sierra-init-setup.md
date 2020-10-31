@@ -1,8 +1,7 @@
 ---
 categories:
 - Mac
-date: 2017-02-12T09:55:48+09:00
-draft: false
+date: "2017-02-12T09:55:48+09:00"
 slug: macos-sierra-init-setup
 title: "[Macbook Pro / Touch Bar] macOS Sierra 初期設定"
 ---

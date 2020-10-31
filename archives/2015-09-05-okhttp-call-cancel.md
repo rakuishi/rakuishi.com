@@ -1,8 +1,7 @@
 ---
 categories:
   - Android
-date: 2015-09-05T22:02:53+09:00
-draft: false
+date: "2015-09-05T22:02:53+09:00"
 slug: okhttp-call-cancel
 title: "OkHttp: Call.cancel が MainThread で実行されてクラッシュする"
 ---

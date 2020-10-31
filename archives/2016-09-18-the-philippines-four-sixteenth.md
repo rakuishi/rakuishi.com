@@ -1,8 +1,7 @@
 ---
 categories:
 - Blog
-date: 2016-09-18T18:13:33+08:00
-draft: false
+date: "2016-09-18T18:13:33+08:00"
 slug: the-philippines-four-sixteenth
 title: フィリピン留学 4/16 週目
 ---

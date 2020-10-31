@@ -1,8 +1,7 @@
 ---
 categories:
   - iOS
-date: 2013-10-12T14:16:18+09:00
-draft: false
+date: "2013-10-12T14:16:18+09:00"
 slug: quicka2
 title: "Quicka2：iPhone アプリ"
 ---

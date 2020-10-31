@@ -1,8 +1,7 @@
 ---
 categories:
 - iOS
-date: 2016-05-29T23:21:22+09:00
-draft: false
+date: "2016-05-29T23:21:22+09:00"
 slug: ios-android-image
 title: iOS と Android の画像周りチートシート
 ---

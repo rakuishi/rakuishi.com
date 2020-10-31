@@ -1,8 +1,7 @@
 ---
 categories:
   - Blog
-date: 2019-01-05T10:19:17+09:00
-draft: false
+date: "2019-01-05T10:19:17+09:00"
 slug: how-to-manage-your-slaves
 title: ｢奴隷のしつけ方｣を読んだ
 ---

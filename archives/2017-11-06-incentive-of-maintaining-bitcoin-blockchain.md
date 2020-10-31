@@ -1,8 +1,7 @@
 ---
 categories:
 - 仮想通貨
-date: 2017-11-06T07:58:06+09:00
-draft: false
+date: "2017-11-06T07:58:06+09:00"
 slug: incentive-of-maintaining-bitcoin-blockchain
 title: '仮想通貨（ビットコイン）は、それを維持する人（マイナー）への報酬をどのように用意しているのか？'
 subtitle: '誰でも参加できる分散型システムが健全に機能するためには報酬が必要。ビットコインでは、マイナーに対する報酬を 2 種類用意しています。'

@@ -1,8 +1,7 @@
 ---
 categories:
 - AWS
-date: 2016-04-06T22:16:34+09:00
-draft: false
+date: "2016-04-06T22:16:34+09:00"
 slug: hosting-on-s3
 title: "Amazon S3 にサイトのホスティング先を移行した"
 ---

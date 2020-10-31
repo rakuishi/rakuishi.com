@@ -1,8 +1,7 @@
 ---
 categories:
 - 仮想通貨
-date: 2017-07-09T09:43:04+09:00
-draft: false
+date: "2017-07-09T09:43:04+09:00"
 slug: nem-nano-wallet
 title: 仮想通貨取引所で購入した NEM ($XEM) を Nano Wallet に送金する
 ---
