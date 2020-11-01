@@ -12,7 +12,7 @@ export default function Home({ archives }) {
 }
 
 export async function getStaticProps() {
-  const archives = getArchives().slice(0, 5);
+  const archives = getArchives().slice(0, 10);
   return {
     props: {
       archives,

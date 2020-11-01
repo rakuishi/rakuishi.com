@@ -15,7 +15,7 @@ Android Studio 3.2 + Android Gradle Plugin 3.2 の環境が揃えば、以下の
 
 ## Android App Bundle でアプリサイズを削減
 
-{{<img alt="android-app-bundle" src="/images/2018/12/app-bundle-logo.svg">}}
+![android-app-bundle](/images/2018/12/app-bundle-logo.svg)
 
 [Android App Bundle](https://developer.android.com/platform/technology/app-bundle/) を使うと配信しているアプリのサイズを落とすことが出来ます。
 
@@ -49,7 +49,7 @@ $ java -jar bundletool-all-0.7.1.jar install-apks --apks=app.apks
 
 - [bundletool | Android Developers](https://developer.android.com/studio/command-line/bundletool)
 
-ちなみに、手元の環境では $ANDROID_HOME の環境変数するように言われたため、.bash_profile に以下を追加しました：
+ちなみに、手元の環境では \$ANDROID_HOME の環境変数するように言われたため、.bash_profile に以下を追加しました：
 
 ```bash
 export ANDROID_HOME="/Users/name/Library/Android/sdk"
@@ -61,6 +61,6 @@ export ANDROID_HOME="/Users/name/Library/Android/sdk"
 
 先程 bundletool で行っていた作業を Play Store でさせるために、鍵が必要になるためです。以下の記事などを参考に Google Play App Signing を導入しましょう。
 
-- [【連載】ヤフーのエンジニアが教える! アプリ開発で気をつけたいAndroidのセキュリティ [4] Google Play App Signingで安全な鍵運用を｜セキュリティ｜IT製品の事例・解説記事](https://news.mynavi.jp/itsearch/article/security/3073)
+- [【連載】ヤフーのエンジニアが教える! アプリ開発で気をつけたい Android のセキュリティ [4] Google Play App Signing で安全な鍵運用を｜セキュリティ｜ IT 製品の事例・解説記事](https://news.mynavi.jp/itsearch/article/security/3073)
 
 後は aab ファイルを Google Play Store にアップロードすれば、端末ごとに最適化された apk が配信されます。まだ、試した回数が少ないため確かなことは言えませんが、デバッグ版の反映は、apk の時と比べて少し時間がかかるような気がします。

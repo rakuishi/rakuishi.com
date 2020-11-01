@@ -5,10 +5,14 @@ export default function Footer() {
   return (
     <footer className="footer">
       <div className="footer_inner">
-        <h2 className="footer_title">About this site</h2>
+        <h2 className="footer_title">Hey, I'm rakuishi</h2>
         <p className="footer_about">
-          はじめまして。rakuishi といいます。大学在籍中（微生物学を専攻）の 2012
-          年 1 月に趣味で初めた iOS
+          はじめまして。
+          <Link href="/about">
+            <a>rakuishi</a>
+          </Link>{" "}
+          といいます。大学在籍中（微生物学を専攻）の 2012 年 1 月に趣味で初めた
+          iOS
           アプリ開発が高じて、アプリ開発とフロントエンド・デベロッパを仕事にしています。個人開発した
           Quicka が有料アプリ 5
           位でした（過去の栄光）。このサイトは私個人によるブログです。会社とは関係ありません。2011
@@ -52,6 +56,9 @@ export default function Footer() {
             padding: 48px 0;
             background: var(--secondary-background-color);
           }
+          .footer a:hover {
+            text-decoration: underline;
+          }
           .footer_inner {
             max-width: var(--max-width);
             margin: 0 auto;
@@ -69,9 +76,6 @@ export default function Footer() {
             margin-bottom: 12px;
             font-size: 14px;
             color: var(--secondary-text-color);
-          }
-          .footer_analytics a:hover {
-            text-decoration: underline;
           }
           .footer_copyright {
             margin-bottom: 12px;

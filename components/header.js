@@ -48,17 +48,17 @@ export default function Header() {
           }
           .header_title_name {
             color: var(--primary-text-color);
-            font-size: 20px;
+            font-size: 16px;
             font-weight: 700;
             line-height: 48px;
             text-transform: uppercase;
           }
           .header_menu {
             display: inline-block;
-            margin-left: 8px;
+            margin-left: 4px;
             padding: 0 8px;
             color: var(--secondary-text-color);
-            font-size: 16px;
+            font-size: 14px;
             font-weight: 700;
             line-height: 48px;
             text-transform: uppercase;
@@ -66,6 +66,15 @@ export default function Header() {
           }
           .header_menu:hover {
             background: var(--secondary-background-color);
+          }
+          @media (min-width: 480px) {
+            .header_title_name {
+              font-size: 20px;
+            }
+            .header_menu {
+              font-size: 16px;
+              margin-left: 8px;
+            }
           }
         `}
       </style>

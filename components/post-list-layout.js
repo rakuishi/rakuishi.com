@@ -42,9 +42,12 @@ export default function PostListLayout({ title, posts }) {
           .layout_list {
             list-style: none;
           }
+          .layout_list_item {
+            margin-bottom: 16px;
+          }
           .layout_list_item_inner {
             display: block;
-            padding: 16px 8px;
+            padding: 8px;
             border-radius: 4px;
           }
           .layout_list_item_inner:hover {
