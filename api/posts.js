@@ -3,6 +3,7 @@ import path from "path";
 import matter from "gray-matter";
 import remark from "remark";
 import html from "remark-html";
+import { applyShortcodes } from "utils/shortcodes";
 
 const dir = path.join(process.cwd(), "archives");
 
@@ -56,8 +57,11 @@ export function getPostSlugs(posts) {
 export async function getPost(slug) {
   const post = _getPosts().find((post) => post.slug === slug);
   const contentPath = path.join(dir, post.filename);
-  const content = matter(fs.readFileSync(contentPath, "utf8"));
-  const processedContent = await remark().use(html).process(content.content);
+  let content = matter(fs.readFileSync(contentPath, "utf8")).content;
+  content = applyShortcodes(content);
+  const processedContent = await remark()
+    .use(html)
+    .process(applyShortcodes(content));
   const contentHtml = processedContent.toString();
 
   return {
