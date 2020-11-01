@@ -1,8 +1,14 @@
 import { getArchives, getPostSlugs, getPost } from "api/posts.js";
-import Layout from "components/post-layout";
+import Head from "components/head";
+import PostLayout from "components/post-layout";
 
 export default function Post({ post }) {
-  return <Layout post={post} />;
+  return (
+    <>
+      <Head props={post} />
+      <PostLayout post={post} />
+    </>
+  );
 }
 
 export async function getStaticPaths() {

@@ -1,4 +1,3 @@
-import Head from "next/head";
 import Header from "components/header";
 import Footer from "components/footer";
 import Date from "components/date";
@@ -7,10 +6,6 @@ import styles from "styles/markdown.module.css";
 export default function PostLayout({ post }) {
   return (
     <>
-      <Head>
-        <title>{post.title} | rakuishi.com</title>
-      </Head>
-
       <Header />
       <main className="layout">
         <div className="layout_meta">

@@ -1,14 +1,11 @@
-import Head from "next/head";
+import Head from "components/head";
 import { getArchives } from "api/posts.js";
 import PostListLayout from "components/post-list-layout";
 
 export default function Home({ archives }) {
   return (
     <>
-      <Head>
-        <title>Archives | rakuishi.com</title>
-      </Head>
-
+      <Head props={{ title: "Archives" }} />
       <PostListLayout title="Archives" posts={archives} />
     </>
   );
