@@ -17,9 +17,12 @@ export function getPages() {
   return _getPosts().filter((post) => post.page === true);
 }
 
-export function _getPosts() {
-  const filenames = fs.readdirSync(dir);
-  const archives = filenames
+function _getPosts(slug = "") {
+  return fs
+    .readdirSync(dir)
+    .filter((filename) => {
+      return slug === "" || filename.endsWith(`${slug}.md`);
+    })
     .map((filename) => {
       const contentPath = path.join(dir, filename);
       const content = matter(fs.readFileSync(contentPath, "utf8"));
@@ -32,10 +35,9 @@ export function _getPosts() {
       };
     })
     .sort((a, b) => (a.date > b.date ? "-1" : "1"));
-  return archives;
 }
 
-export function _extractSummary(content) {
+function _extractSummary(content) {
   return content
     .split("\n")
     .find((p) => {
@@ -55,7 +57,7 @@ export function getPostSlugs(posts) {
 }
 
 export async function getPost(slug) {
-  const post = _getPosts().find((post) => post.slug === slug);
+  const post = _getPosts(slug).find((post) => post.slug === slug);
   const contentPath = path.join(dir, post.filename);
   let content = matter(fs.readFileSync(contentPath, "utf8")).content;
   content = applyShortcodes(content);
