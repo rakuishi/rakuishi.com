@@ -23,6 +23,7 @@ export default function Head({ props }) {
       <meta name="twitter:site" content="@rakuishi07" />
       <meta property="og:description" content={description} />
       <meta property="og:image" content={image} />
+      <link rel="alternate" type="application/rss+xml" href="/feed/index.xml" />
     </NextHead>
   );
 }

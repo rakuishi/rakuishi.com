@@ -12,3 +12,7 @@ package-lock.json
 
 # production
 /build
+
+# generated files
+/public/feed/index.xml
+/public/sitemap.xml
