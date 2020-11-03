@@ -1,5 +1,5 @@
 @charset "utf-8";
-@import "sanitize", "font";
+@import "sanitize";
 
 //////////////////////////////////////////////////
 // Base
@@ -46,6 +46,6 @@ a:hover {
 h1,
 h2,
 h3 {
-  line-height: 1.4;
+  line-height: 1.6;
   font-weight: 700;
 }

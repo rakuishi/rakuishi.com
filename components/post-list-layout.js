@@ -36,7 +36,7 @@ export default function PostListLayout({ title, posts }) {
           }
           .layout_title {
             color: var(--secondary-text-color);
-            font-size: 22px;
+            font-size: 20px;
             margin: 16px 0 24px 8px;
           }
           .layout_list {

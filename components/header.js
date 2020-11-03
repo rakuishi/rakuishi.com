@@ -11,6 +11,8 @@ export default function Header() {
               width="32"
               height="32"
               className="header_title_logo"
+              alt="rakuishi.com"
+              loading="lazy"
             />
             <span className="header_title_name">rakuishi.com</span>
           </a>
@@ -61,7 +63,6 @@ export default function Header() {
             font-size: 14px;
             font-weight: 700;
             line-height: 48px;
-            text-transform: uppercase;
             border-radius: 4px;
           }
           .header_menu:hover {

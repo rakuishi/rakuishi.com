@@ -14,14 +14,19 @@ export default class MyDocument extends Document {
             href="/assets/fonts/NotoSans-Regular.woff2"
             as="font"
             type="font/woff2"
-            crossorigin
+            crossOrigin="anonymous"
           />
           <link
             rel="preload"
             href="/assets/fonts/NotoSans-Bold.woff2"
             as="font"
             type="font/woff2"
-            crossorigin
+            crossOrigin="anonymous"
+          />
+          <link
+            rel="preconnect"
+            href="https://www.google-analytics.com"
+            crossOrigin="anonymous"
           />
           <script async src="/assets/javascripts/ga.js" />
         </Head>

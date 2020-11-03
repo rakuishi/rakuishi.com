@@ -4,6 +4,18 @@ export default function Footer() {
   return (
     <footer className="footer">
       <div className="footer_inner">
+        <form action="//google.com/search" method="get">
+          <input
+            type="text"
+            name="q"
+            placeholder="サイト内検索"
+            autocomplete="off"
+            className="footer_searchbar"
+            aria-label="Search"
+          />
+          <input type="hidden" name="sitesearch" value="http://rakuishi.com" />
+        </form>
+
         <h2 className="footer_title">Hey, I'm rakuishi</h2>
         <p className="footer_about">
           はじめまして。
@@ -54,12 +66,36 @@ export default function Footer() {
             margin: 0 auto;
             padding: 0 16px;
           }
+          .footer_searchbar {
+            display: inline-block;
+            width: 100%;
+            height: 44px;
+            margin-bottom: 48px;
+            padding: 12px;
+            font-size: 16px;
+            line-height: normal;
+            outline: none;
+            appearance: none;
+            color: var(--primary-text-color);
+            background-color: var(--primary-background-color);
+            border: 2px solid var(--border-color);
+            border-radius: 8px;
+          }
+          .footer_searchbar::placeholder {
+            color: var(--secondary-text-color);
+            opacity: 1;
+          }
+          .footer_searchbar:focus {
+            border-color: var(--link-color);
+            transition-duration: 0.2s;
+          }
           .footer_title {
             font-size: 18px;
             margin-bottom: 8px;
           }
           .footer_about {
             margin-bottom: 24px;
+            font-size: 14px;
             color: var(--secondary-text-color);
           }
           .footer_analytics {
