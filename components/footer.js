@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { switchDarkmode } from "utils/darkmode";
 
 export default function Footer() {
   return (
@@ -40,15 +39,6 @@ export default function Footer() {
         </p>
 
         <p className="footer_copyright">© 2011-2020 rakuishi</p>
-
-        <button
-          className="footer_darkmode"
-          onClick={React.useCallback(() => {
-            switchDarkmode();
-          })}
-        >
-          🌖
-        </button>
       </div>
       <style jsx>
         {`
@@ -78,14 +68,8 @@ export default function Footer() {
             color: var(--secondary-text-color);
           }
           .footer_copyright {
-            margin-bottom: 12px;
             font-size: 14px;
             color: var(--secondary-text-color);
-          }
-          .footer_darkmode {
-            font-size: 24px;
-            cursor: pointer;
-            outline: none;
           }
         `}
       </style>
