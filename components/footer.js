@@ -8,7 +8,7 @@ export default function Footer() {
         <h2 className="footer_title">Hey, I'm rakuishi</h2>
         <p className="footer_about">
           はじめまして。
-          <Link href="/about">
+          <Link href="/about/">
             <a>rakuishi</a>
           </Link>{" "}
           といいます。大学在籍中（微生物学を専攻）の 2012 年 1 月に趣味で初めた

@@ -79,7 +79,7 @@ function _createJsonLd(title, description, image, props) {
     "@type": "ListItem",
     "position": 2,
     "item": {
-      "@id": "https://rakuishi.com/archives/${escape(props.slug)}",
+      "@id": "https://rakuishi.com/archives/${escape(props.slug)}/",
       "name": "${escape(title)}"
     }
   }]

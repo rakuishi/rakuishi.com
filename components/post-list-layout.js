@@ -12,7 +12,7 @@ export default function PostListLayout({ title, posts }) {
         <ul className="layout_list">
           {posts.map(({ title, date, slug, summary }) => (
             <li key={slug} className="layout_list_item">
-              <Link href={`/archives/${slug}`}>
+              <Link href={`/archives/${slug}/`}>
                 <a className="layout_list_item_inner">
                   <div className="layout_list_item_meta">
                     <Date dateString={date} />
