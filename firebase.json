@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "public",
+    "public": "out",
     "headers": [
       {
         "source": "**/*.@(jpg|gif|png|svg|webp|woff2)",
