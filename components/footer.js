@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { categories } from "constants/categories";
 
 export default function Footer() {
   return (
@@ -15,6 +16,14 @@ export default function Footer() {
           />
           <input type="hidden" name="sitesearch" value="http://rakuishi.com" />
         </form>
+
+        <p className="footer_categories">
+          {categories.map(({ name, slug }) => (
+            <Link href={`/categories/${slug}/`}>
+              <a className="footer_category">{name}</a>
+            </Link>
+          ))}
+        </p>
 
         <h2 className="footer_title">Hey, I'm rakuishi</h2>
         <p className="footer_about">
@@ -58,9 +67,6 @@ export default function Footer() {
             padding: 48px 0;
             background: var(--secondary-background-color);
           }
-          .footer a:hover {
-            text-decoration: underline;
-          }
           .footer_inner {
             max-width: var(--max-width);
             margin: 0 auto;
@@ -70,7 +76,7 @@ export default function Footer() {
             display: inline-block;
             width: 100%;
             height: 44px;
-            margin-bottom: 48px;
+            margin-bottom: 12px;
             padding: 12px;
             font-size: 16px;
             line-height: normal;
@@ -87,7 +93,23 @@ export default function Footer() {
           }
           .footer_searchbar:focus {
             border-color: var(--link-color);
-            transition-duration: 0.2s;
+          }
+          .footer_categories {
+            margin-bottom: 48px;
+          }
+          .footer_category {
+            display: inline-block;
+            padding: 2px 10px;
+            margin: 0 4px 4px 0;
+            font-size: 14px;
+            font-family: var(--mono-font-family);
+            color: var(--secondary-text-color);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            background-color: var(--primary-background-color);
+          }
+          .footer_category:hover {
+            border-color: var(--link-color);
           }
           .footer_title {
             font-size: 18px;
@@ -98,10 +120,16 @@ export default function Footer() {
             font-size: 14px;
             color: var(--secondary-text-color);
           }
+          .footer_about a:hover {
+            text-decoration: underline;
+          }
           .footer_analytics {
             margin-bottom: 12px;
             font-size: 14px;
             color: var(--secondary-text-color);
+          }
+          .footer_analytics a:hover {
+            text-decoration: underline;
           }
           .footer_copyright {
             font-size: 14px;
