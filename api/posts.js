@@ -22,6 +22,10 @@ function _getPosts({ slug, categorySlug }) {
   return fs
     .readdirSync(dir)
     .filter((filename) => {
+      if (filename.startsWith(".")) {
+        return false;
+      }
+
       return !slug || filename.endsWith(`${slug}.md`);
     })
     .map((filename) => {
@@ -52,11 +56,15 @@ function _getPosts({ slug, categorySlug }) {
 }
 
 function _extractSummary(content) {
-  return content
-    .split("\n")
-    .find((p) => {
-      return p.length > 0 && !p.startsWith("<") && !p.startsWith("{");
-    })
+  const paragraph = content.split("\n").find((p) => {
+    return p.length > 0 && !p.startsWith("<") && !p.startsWith("{");
+  });
+
+  if (!paragraph) {
+    return "";
+  }
+
+  return paragraph
     .replace(/\[(.*?)\][\[\(].*?[\]\)]/g, "$1")
     .replace(/([\*_]{1,3})(\S.*?\S{0,1})\1/g, "$2")
     .replace(/([\*_]{1,3})(\S.*?\S{0,1})\1/g, "$2")
