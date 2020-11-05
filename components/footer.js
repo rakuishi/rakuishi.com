@@ -10,7 +10,7 @@ export default function Footer() {
             type="text"
             name="q"
             placeholder="サイト内検索"
-            autocomplete="off"
+            autoComplete="off"
             className="footer_searchbar"
             aria-label="Search"
           />
@@ -19,7 +19,7 @@ export default function Footer() {
 
         <p className="footer_categories">
           {categories.map(({ name, slug }) => (
-            <Link href={`/categories/${slug}/`}>
+            <Link href={`/categories/${slug}/`} key={slug}>
               <a className="footer_category">{name}</a>
             </Link>
           ))}
