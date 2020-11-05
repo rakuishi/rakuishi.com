@@ -6,6 +6,7 @@ export default class MyDocument extends Document {
       <Html lang="ja">
         <Head>
           <meta
+            key="google-site-verification"
             name="google-site-verification"
             content="hLAob0ZIhg0c3AeIGNo4AMQPkxMjM1UM3mBPYNvwceE"
           />

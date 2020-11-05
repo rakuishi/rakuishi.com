@@ -19,12 +19,20 @@ export default function Head({ props }) {
   return (
     <NextHead>
       <title>{title}</title>
-      <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <meta name="description" content={description} />
-      <meta name="twitter:card" content="summary" />
-      <meta name="twitter:site" content="@rakuishi07" />
-      <meta property="og:description" content={description} />
-      <meta property="og:image" content={image} />
+      <meta
+        key="viewport"
+        name="viewport"
+        content="width=device-width, initial-scale=1"
+      />
+      <meta key="description" name="description" content={description} />
+      <meta key="twitter:card" name="twitter:card" key content="summary" />
+      <meta key="twitter:site" name="twitter:site" content="@rakuishi07" />
+      <meta
+        key="og:description"
+        property="og:description"
+        content={description}
+      />
+      <meta key="og:image" property="og:image" content={image} />
       <link rel="alternate" type="application/rss+xml" href="/feed/index.xml" />
       {_createJsonLd(title, description, image, props)}
     </NextHead>
