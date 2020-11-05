@@ -1,6 +1,6 @@
 # rakuishi.com
 
-This is the repository for the [rakuishi.com](rakuishi.com). This is a [Hugo](https://github.com/spf13/hugo) project, which is a static site generator written in [Go](https://github.com/golang/go).
+This is the repository for the [rakuishi.com](https://rakuishi.com). This is a [Next.js](https://github.com/vercel/next.js) project, which is a static site generator.
 
 ![](.github/Screenshot.png)
 
@@ -9,18 +9,12 @@ This is the repository for the [rakuishi.com](rakuishi.com). This is a [Hugo](ht
 ## Installation & Usage
 
 ```
-$ brew install hugo
-$ brew install sass/sass/sass
-$ sass static/assets/sass/style.scss:layouts/partials/style.css --style compressed
-$ ./hugo server
+$ npm install
+$ npm run dev
 ```
 
 ## Deployment
 
 ```
-$ brew install nodejs
-$ npm install -g firebase-tools
-$ firebase login
-$ npm install -g html-minifier
-$ ./hugo deploy
+$ npm run deploy
 ```
