@@ -33,6 +33,7 @@
 .markdown pre {
   margin: 24px 0;
   border-radius: 4px;
+  background-color: var(--secondary-background-color);
 }
 .markdown pre > code {
   display: block;
