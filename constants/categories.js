@@ -44,7 +44,7 @@ export const categories = Object.freeze([
     slug: "mac",
   },
   {
-    name: "Objective-c",
+    name: "Objective-C",
     slug: "objective-c",
   },
   {
@@ -81,14 +81,14 @@ export const categories = Object.freeze([
   },
   {
     name: "仮想通貨",
-    slug: "仮想通貨",
+    slug: "cryptocurrency",
   },
   {
     name: "投資",
-    slug: "投資",
+    slug: "investment",
   },
   {
     name: "開発",
-    slug: "開発",
+    slug: "development",
   },
 ]);
