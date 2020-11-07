@@ -3,6 +3,7 @@ import path from "path";
 import matter from "gray-matter";
 import remark from "remark";
 import html from "remark-html";
+import highlight from "remark-highlight.js";
 import { applyShortcodes } from "utils/shortcodes";
 import { categories } from "constants/categories";
 
@@ -102,9 +103,9 @@ export async function getPost(slug) {
   content = applyShortcodes(content);
   const processedContent = await remark()
     .use(html)
+    .use(highlight)
     .process(applyShortcodes(content));
   const contentHtml = processedContent.toString();
-
   return {
     contentHtml,
     ...post,
