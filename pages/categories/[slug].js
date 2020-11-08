@@ -1,4 +1,5 @@
-import { getArchives, getCategorySlugs, getCategory } from "api/posts.js";
+import { getArchives } from "api/posts";
+import { getCategory, getCategorySlugs } from "constants/categories";
 import Head from "components/head";
 import PostListLayout from "components/post-list-layout";
 

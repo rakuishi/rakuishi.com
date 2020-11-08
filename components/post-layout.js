@@ -1,7 +1,9 @@
+import Link from "next/link";
 import Header from "components/header";
 import Footer from "components/footer";
 import Date from "components/date";
 import styles from "styles/markdown.module.css";
+import { getCategorySlug } from "constants/categories";
 
 export default function PostLayout({ post }) {
   return (
@@ -9,18 +11,28 @@ export default function PostLayout({ post }) {
       <Header />
       <article
         className="layout"
-        itemscope
-        itemtype="http://schema.org/BlogPosting"
+        itemScope
+        itemType="http://schema.org/BlogPosting"
       >
         <div className="layout_meta">
           <Date dateString={post.date} />
+          {post.categories && post.categories.length > 0 && (
+            <>
+              {"・"}
+              <Link
+                href={`/categories/${getCategorySlug(post.categories[0])}/`}
+              >
+                <a className="layout_meta_category">{post.categories[0]}</a>
+              </Link>
+            </>
+          )}
         </div>
-        <h1 className="layout_title" itemprop="name">
+        <h1 className="layout_title" itemProp="name">
           {post.title}
         </h1>
         <div
           className={styles.markdown}
-          itemprop="text"
+          itemProp="text"
           dangerouslySetInnerHTML={{ __html: post.contentHtml }}
         />
       </article>
@@ -37,6 +49,12 @@ export default function PostLayout({ post }) {
           color: var(--secondary-text-color);
           font-size: 15px;
           font-family: var(--mono-font-family);
+        }
+        .layout_meta_category {
+          color: var(--secondary-text-color);
+        }
+        .layout_meta_category:hover {
+          text-decoration: underline;
         }
         .layout_title {
           font-size: 28px;

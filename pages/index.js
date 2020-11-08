@@ -1,5 +1,5 @@
 import Head from "components/head";
-import { getArchives } from "api/posts.js";
+import { getArchives } from "api/posts";
 import PostListLayout from "components/post-list-layout";
 
 export default function Home({ archives }) {

@@ -1,4 +1,4 @@
-import { getArchives } from "api/posts.js";
+import { getArchives } from "api/posts";
 import Head from "components/head";
 import PostListLayout from "components/post-list-layout";
 import { generateFeed, generateSitemap } from "utils/generator";

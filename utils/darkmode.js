@@ -1,7 +1,7 @@
 /**
  * Call this methods with Effect Hook
  */
-export function switchDarkmode() {
+export function toggleDarkmode() {
   const isDarkmode = localStorage.getItem("prefers-color-scheme") === "dark";
   const scheme = isDarkmode ? "light" : "dark";
   localStorage.setItem("prefers-color-scheme", scheme);

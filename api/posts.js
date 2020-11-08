@@ -5,7 +5,7 @@ import remark from "remark";
 import html from "remark-html";
 import highlight from "remark-highlight.js";
 import { applyShortcodes } from "utils/shortcodes";
-import { categories } from "constants/categories";
+import { getCategory } from "constants/categories";
 
 const dir = path.join(process.cwd(), "archives");
 
@@ -80,20 +80,6 @@ export function getPostSlugs(posts) {
       },
     };
   });
-}
-
-export function getCategorySlugs() {
-  return categories.map((category) => {
-    return {
-      params: {
-        slug: category.slug,
-      },
-    };
-  });
-}
-
-export function getCategory(slug) {
-  return categories.find((category) => category.slug == slug);
 }
 
 export async function getPost(slug) {

@@ -1,4 +1,4 @@
-import { getArchives, getPostSlugs, getPost } from "api/posts.js";
+import { getArchives, getPostSlugs, getPost } from "api/posts";
 import Head from "components/head";
 import PostLayout from "components/post-layout";
 

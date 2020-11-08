@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { categories } from "constants/categories";
-import { switchDarkmode } from "utils/darkmode";
+import { toggleDarkmode } from "utils/darkmode";
 
 export default function Footer() {
   return (
@@ -77,7 +77,7 @@ export default function Footer() {
           <button
             className="footer_darkmode"
             onClick={React.useCallback(() => {
-              switchDarkmode();
+              toggleDarkmode();
             })}
           >
             <svg
@@ -85,6 +85,7 @@ export default function Footer() {
               height="24"
               viewBox="0 0 24 24"
               width="24"
+              aria-label="ダークモード"
               xmlns="http://www.w3.org/2000/svg"
             >
               <path d="m0 0h24v24h-24z" fill="none" />
@@ -151,7 +152,7 @@ export default function Footer() {
             margin-bottom: 8px;
           }
           .footer_about {
-            margin-bottom: 24px;
+            margin-bottom: 12px;
             font-size: 14px;
             color: var(--secondary-text-color);
           }

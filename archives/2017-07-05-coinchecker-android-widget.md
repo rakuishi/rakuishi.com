@@ -1,12 +1,12 @@
 ---
 categories:
-- 開発
+  - 開発
 date: "2017-07-05T22:48:12+09:00"
 slug: coinchecker-android-widget
 title: 仮想通貨の価格をウィジェットに表示する Android アプリを作りました
 ---
 
-{{<img alt="" src="https://raw.githubusercontent.com/rakuishi/coinchecker-android-widget/develop/.github/promotion.png">}}
+{{<img alt="" src="https://raw.githubusercontent.com/rakuishi/coinchecker-android-widget/develop/.github/promotion.png" width="1024" height="500">}}
 
 この 3 ヶ月ほど、仮想通貨を初めてて、[NEM](https://www.nem.io/)（単位は $XEM）や [Ripple](https://ripple.com/)（単位は $XRP）を含めた仮想通貨を買っています。ついでに、ブロックチェーン技術関連企業の株と、原子番号 78 のプラチナを買いました。貴金属を買うのは、鉱石を集めていた小学生の時の夢の延長でした。
 
@@ -14,7 +14,7 @@ title: 仮想通貨の価格をウィジェットに表示する Android アプ�
 
 {{<img alt="" src="/images/2017/07/coinchecker-ss.png" width="2200" height="1920">}}
 
-[{{<img alt="" src="https://raw.githubusercontent.com/rakuishi/static/master/images/en_generic_rgb_wo_60.png">}}](https://play.google.com/store/apps/details?id=com.rakuishi.coinchecker)
+[{{<img alt="" src="https://raw.githubusercontent.com/rakuishi/static/master/images/en_generic_rgb_wo_60.png" width="172" height="60">}}](https://play.google.com/store/apps/details?id=com.rakuishi.coinchecker)
 
 - https://github.com/rakuishi/coinchecker-android-widget
 

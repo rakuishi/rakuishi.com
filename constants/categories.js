@@ -92,3 +92,21 @@ export const categories = Object.freeze([
     slug: "development",
   },
 ]);
+
+export function getCategorySlugs() {
+  return categories.map((category) => {
+    return {
+      params: {
+        slug: category.slug,
+      },
+    };
+  });
+}
+
+export function getCategorySlug(name) {
+  return categories.find((category) => category.name == name).slug;
+}
+
+export function getCategory(slug) {
+  return categories.find((category) => category.slug == slug);
+}
