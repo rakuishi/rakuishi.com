@@ -11,7 +11,7 @@ title: "静的サイト生成を Hugo から Next.js に乗り換えた"
 
 特に、チュートリアルが Markdown 管理されているブログを作る内容となっており、「お前のブログを作り直せ」というメッセージをひしひしと感じ、今回 Hugo から Next.js に乗り換えました。
 
-この記事では Hugo から Next.js に乗り換えた際、実装で躓いた部分などを書いていきます。
+この記事では Hugo から Next.js に乗り換えた際、実装で躓いた部分などを書いていきます。また、ブログのソースコードは [rakuishi/rakuishi.com](https://github.com/rakuishi/rakuishi.com) に置いています。
 
 ## 静的 HTML 出力する
 
@@ -98,18 +98,20 @@ Reason: `object` ("[object Date]") cannot be serialized as JSON. Please only ret
 
 これは `*.md` の先頭部分の日付がダブルクオーテーションなしだと `gray-matter` は `Date` オブジェクトと見做すのが間接的な原因でした。
 
-```
+```yaml
 ---
 date: 2020-11-07T09:49:48+09:00
 ---
+
 ```
 
 特に `Date` オブジェクトに拘っていないため、ダブルクオーテーションで囲ってあげました。日付の処理は UI 表示時に `date-fns` の `parseISO` を利用して行っています。
 
-```
+```yaml
 ---
 date: "2020-11-07T09:49:48+09:00"
 ---
+
 ```
 
 ## カスタムフォントの定義場所
@@ -155,9 +157,41 @@ export default function App({ Component, pageProps }) {
 
 Hugo を利用していた時は、LocalStorage + 属性セレクタによるダークモードを実装していました。LocalStorage にダークモードの設定情報を保存し、それを `<head>` 内の `<script>` で処理することにより、最初の画面レンダリングから違和感なくダークモードが反映された状態になります。
 
-Next.js でも同じ実装方法を検討してみましたが、`pages/_app.js` 時にダークモード判定させるには、評価タイミングが遅く、一瞬白い画面が表示された後にダークモードが反映されます。恐らく Next.js の動作に必要な JavaScript ファイル群は静的 HTML が画面描画された後に、評価されるからだと思います。
+Next.js に則った実装をするならば、`pages/_app.js` 時にダークモード判定させることになるのでしょうが、評価タイミングが遅く、一瞬白い画面が表示された後にダークモードが反映されます。恐らく Next.js の動作に必要な JavaScript ファイル群は静的 HTML が画面描画された後に、評価されるからだと思います。
 
-結局、この違和感を解消することがかなわず、`prefers-color-scheme` のメディア特性を利用する方法に変更しました。これだと OS 側のテーマの設定に依存するため、ブログ上でテーマを切り替えることはできません。また、挑戦したいと思います。
+仕方なく従来の挙動に倣い `pages/_document.js` の `<Head>` 内に、以下のようにダークモードの設定情報を読み込む JavaScript を埋め込みました。
+
+```js
+<script
+  dangerouslySetInnerHTML={{
+    __html: `
+(function () {
+  let scheme = "light";
+
+  if (localStorage.getItem("prefers-color-scheme")) {
+    scheme = localStorage.getItem("prefers-color-scheme");
+  } else if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+    scheme = "dark";
+  }
+
+  document.documentElement.setAttribute("data-prefers-color-scheme", scheme);
+}());`,
+  }}
+/>
+```
+
+ダークモードを切り替えるコードは LocalStorage を利用するため `React.useCallback` 内に書きます：
+
+```js
+<button
+  onClick={React.useCallback(() => {
+    const isDarkmode = localStorage.getItem("prefers-color-scheme") === "dark";
+    const scheme = isDarkmode ? "light" : "dark";
+    localStorage.setItem("prefers-color-scheme", scheme);
+    document.documentElement.setAttribute("data-prefers-color-scheme", scheme);
+  })}
+/>
+```
 
 ## Markdown のスタイルの反映方法
 
