@@ -16,6 +16,22 @@ export default class MyDocument extends Document {
             crossOrigin="anonymous"
           />
           <script async src="/assets/javascripts/ga.js" />
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `
+(function () {
+  let scheme = "light";
+  
+  if (localStorage.getItem("prefers-color-scheme")) {
+    scheme = localStorage.getItem("prefers-color-scheme");
+  } else if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+    scheme = "dark";
+  }
+  
+  document.documentElement.setAttribute("data-prefers-color-scheme", scheme);
+}());`,
+            }}
+          />
         </Head>
         <body>
           <Main />

@@ -12,15 +12,6 @@
   --border-color: #e2e8f0;
   --link-color: #007aff;
 
-  @media (prefers-color-scheme: dark) {
-    --primary-background-color: #161820;
-    --secondary-background-color: #292932;
-    --primary-text-color: #ffffff;
-    --secondary-text-color: #96a5b7;
-    --border-color: #424b5c;
-    --link-color: #8ab4f8;
-  }
-
   font-family: var(--sans-font-family);
   font-weight: normal;
   font-size: var(--font-size);
@@ -30,6 +21,15 @@
   word-break: break-all;
   text-align: justify;
   line-height: 1.8;
+}
+
+[data-prefers-color-scheme="dark"] {
+  --primary-background-color: #161820;
+  --secondary-background-color: #292932;
+  --primary-text-color: #ffffff;
+  --secondary-text-color: #96a5b7;
+  --border-color: #424b5c;
+  --link-color: #8ab4f8;
 }
 
 a,

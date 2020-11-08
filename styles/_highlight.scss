@@ -64,7 +64,7 @@ Visual Studio-like style based on original C# coloring by Jason Diamond <jason@d
   font-weight: bold;
 }
 
-@media (prefers-color-scheme: dark) {
+[data-prefers-color-scheme="dark"] {
   /*
  * Visual Studio 2015 dark style
  * Author: Nicolas LLOBERA <nllobera@gmail.com>
