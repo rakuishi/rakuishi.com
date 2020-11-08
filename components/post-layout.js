@@ -7,16 +7,23 @@ export default function PostLayout({ post }) {
   return (
     <>
       <Header />
-      <main className="layout">
+      <article
+        className="layout"
+        itemscope
+        itemtype="http://schema.org/BlogPosting"
+      >
         <div className="layout_meta">
           <Date dateString={post.date} />
         </div>
-        <h1 className="layout_title">{post.title}</h1>
+        <h1 className="layout_title" itemprop="name">
+          {post.title}
+        </h1>
         <div
           className={styles.markdown}
+          itemprop="text"
           dangerouslySetInnerHTML={{ __html: post.contentHtml }}
         />
-      </main>
+      </article>
       <Footer />
 
       <style jsx>{`
