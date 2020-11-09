@@ -4,7 +4,7 @@ categories:
 date: "2020-11-07T09:49:48+09:00"
 page: false
 slug: static-site-generator-hugo-to-nextjs
-title: "静的サイト生成を Hugo から Next.js に乗り換えた"
+title: "静的サイトジェネレーターを Hugo から Next.js に乗り換えた"
 ---
 
 職場のプロジェクトに Next.js を導入する事例が増え、流石に勉強するかと Next.js のチュートリアルを触りました。以前、チュートリアルを遠目に眺めた感じでは Next.js は Server Side Rendering フレームワークという印象でしたが、v9.3.0 以降 Static Site Generation（以降、SSG）機能に注力しているように見えます。
@@ -57,7 +57,7 @@ module.exports = {
 
 ## サイトマップとフィード対応
 
-Next.js 公式のサンプル集には sitemap.xml は next-sitemap プラグインを利用したもの、`next.config.js` に記述し `isServer` 時にスクリプトを走らせて出力する方法があります。
+Next.js 公式のサンプル集には sitemap.xml は next-sitemap プラグインを利用した方法、`next.config.js` に記述し `isServer` 時にスクリプトを走らせる方法があります。
 
 - [next-sitemap example](https://github.com/vercel/next.js/tree/canary/examples/with-next-sitemap)
 - [With Sitemap example](https://github.com/vercel/next.js/tree/canary/examples/with-sitemap)
@@ -116,14 +116,14 @@ date: "2020-11-07T09:49:48+09:00"
 
 ## カスタムフォントの定義場所
 
-Next.js のチュートリアルにあるようにグローバルな CSS は、`/pages/_app.js` の `import "styles/global.css";` として読み込む方法があります。
+Next.js のチュートリアルにあるようにグローバルな CSS は、`/pages/_app.js` の `import "styles/global.css"` として読み込む方法があります。
 
 これを利用して `/styles/global.css` にカスタムフォントの `@font-face` を定義していたのですが、この実装方法だと静的 HTML 出力した際、初回表示時はカスタムフォントがあたるのに、画面遷移後にカスタムフォントがあたらない現象が発生しました。
 
 少し調べたものの原因が分からないため、最終的には `/pages/_app.js` 内にカスタムフォントの定義を埋め込みました。これだと綺麗に動作しました。
 
 ```js
-import "styles/global.scss";
+import "styles/global.css";
 
 export default function App({ Component, pageProps }) {
   return (
