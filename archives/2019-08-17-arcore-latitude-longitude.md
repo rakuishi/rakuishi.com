@@ -3,7 +3,7 @@ categories:
   - Android
 date: "2019-08-17T11:04:35+09:00"
 slug: arcore-latitude-longitude
-title: '[ARCore] AR 空間に緯度経度をもとにオブジェクトを配置する'
+title: "[ARCore] AR 空間に緯度経度をもとにオブジェクトを配置する"
 ---
 
 Android では ARCore という AR を表現できるライブラリ群が提供されている。これを利用して、ヘンゼルとグレーテルのように、自分が歩いた場所を緯度経度として保存しておいて、その緯度経度にクッキー（球）を置くアプリを作ろうと試みた。
@@ -23,7 +23,7 @@ Android では ARCore という AR を表現できるライブラリ群が提供
 
 ## 2 点の緯度経度から方角を求める
 
-```java
+```kotlin
 /**
  * @param lat1 latitude 1
  * @param lon1 longitude 1
@@ -45,9 +45,9 @@ fun bearing(lat1: Double, lon1: Double, lat2: Double, lon2: Double): Double {
 
 ## 2 点の緯度経度から距離を求める
 
-今回は、地球を球面と仮定する球面三角法を採用した。楕円状の2点間の距離を求める方法もあるが、計算式が複雑になるのと、東京駅から新宿駅までの距離の誤差が 5m 程度のため、今回は球面三角法を採用する。
+今回は、地球を球面と仮定する球面三角法を採用した。楕円状の 2 点間の距離を求める方法もあるが、計算式が複雑になるのと、東京駅から新宿駅までの距離の誤差が 5m 程度のため、今回は球面三角法を採用する。
 
-```java
+```kotlin
 /**
  * @param lat1 latitude 1
  * @param lon1 longitude 1
@@ -67,15 +67,15 @@ fun distance(lat1: Double, lon1: Double, lat2: Double, lon2: Double): Double {
 }
 ```
 
-- [地球上の2点間の距離の求め方 - Qiita](https://qiita.com/port-development/items/eea3a0a225be47db0fd4)
+- [地球上の 2 点間の距離の求め方 - Qiita](https://qiita.com/port-development/items/eea3a0a225be47db0fd4)
 
 ## 回転と距離から AR 空間上にオブジェクトを配置する
 
 ARCore の AR 空間は、右手系の空間を持っており、単位は 1m である。右が +x, 上が +y, 手前が +z 軸となる。例えば、自分から見て右上にある時計は {1, 1, -1} となる。
 
-回転は、時計の 12 時が 0°, 360°、3 時が 90°、6 時が 180°、9 時が 270°と定義されている。今回、高さ y は、現在のカメラの姿勢からそのまま利用したため、{x, y, z} はそれぞれ以下のように表現できる。
+回転は、時計の 12 時が 0°, 360°、3 時が 90°、6 時が 180°、9 時が 270° と定義されている。今回、高さ y は、現在のカメラの姿勢からそのまま利用したため、{x, y, z} はそれぞれ以下のように表現できる。
 
-```java
+```kotlin
 // distance は、2 点の緯度経度から求めた距離
 // radRotation は、現在の端末の方向(orientation)と方角から回転(rotation)を求めたもの
 val z = (-distance * cos(radRotation)).toFloat()

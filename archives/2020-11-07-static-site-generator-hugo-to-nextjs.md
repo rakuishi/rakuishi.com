@@ -122,7 +122,7 @@ Next.js のチュートリアルにあるようにグローバルな CSS は、`
 
 少し調べたものの原因が分からないため、最終的には `/pages/_app.js` 内にカスタムフォントの定義を埋め込みました。これだと綺麗に動作しました。
 
-```js
+```jsx
 import "styles/global.css";
 
 export default function App({ Component, pageProps }) {
@@ -161,7 +161,7 @@ Next.js に則った実装をするならば、`pages/_app.js` 時にダーク�
 
 仕方なく従来の挙動に倣い `pages/_document.js` の `<Head>` 内に、以下のようにダークモードの設定情報を読み込む JavaScript を埋め込みました。
 
-```js
+```jsx
 <script
   dangerouslySetInnerHTML={{
     __html: `
@@ -197,7 +197,7 @@ Next.js に則った実装をするならば、`pages/_app.js` 時にダーク�
 
 Markdown を `remark` を使って HTML に変換した後、それにスタイルを反映するには、CSS Modules という機能を利用します。まず、`dangerouslySetInnerHTML` プロパティを利用して HTML を出力し、`className={styles.markdown}` という命名規則でそれらにスタイルを反映します。
 
-```js
+```jsx
 import styles from "styles/markdown.module.css";
 
 export default function PostLayout({ post }) {

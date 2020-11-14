@@ -37,7 +37,9 @@
 }
 .markdown pre > code {
   display: block;
-  padding: 12px;
+  padding: 24px;
+  background-color: var(--hljs-background);
+  color: var(--hljs-text);
 }
 .markdown ul,
 .markdown ol {

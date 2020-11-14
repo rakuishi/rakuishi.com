@@ -21,6 +21,9 @@
   word-break: break-all;
   text-align: justify;
   line-height: 1.8;
+
+  --hljs-text: #ffffff;
+  --hljs-background: #292932;
 }
 
 [data-prefers-color-scheme="dark"] {
