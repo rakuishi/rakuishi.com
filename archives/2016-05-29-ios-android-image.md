@@ -16,10 +16,10 @@ iOS 7 以降に対応している iPhone 端末を挙げます。iPhone 3GS（�
 
 | 端末名 | ポイント | ピクセル | インチ | 比率 | ファイル名 |
 | --- | --- | --- | --- | --- | --- |
-| iPhone 4, 4S | 320 x 480 | 640 x 960 | 3.5inch | 2x | sample@2x.png |
-| iPhone 5, 5s, 5c | 320 x 568 | 640 x 1136 | 4.0inch | 2x | sample@2x.png |
-| iPhone 6, 6s | 375 x 667 | 750 x 1334 | 4.7inch | 2x | sample@2x.png |
-| iPhone 6 Plus, 6s Plus | 414 x 736 | 1242 x 2208 | 5.5inch | 3x | sample@3x.png |
+| iPhone 4, 4S | 320 x 480 | 640 x 960 | 3.5inch | 2x | sample\@2x.png |
+| iPhone 5, 5s, 5c | 320 x 568 | 640 x 1136 | 4.0inch | 2x | sample\@2x.png |
+| iPhone 6, 6s | 375 x 667 | 750 x 1334 | 4.7inch | 2x | sample\@2x.png |
+| iPhone 6 Plus, 6s Plus | 414 x 736 | 1242 x 2208 | 5.5inch | 3x | sample\@3x.png |
 
 iPhone 6 Plus が登場するまでは、Retina（レティナ） = 比率 2x の解釈で問題なかったのですが、登場以降、比率 1x 以外の高解像度画像も含むようになりました。ただ、サイト向けに Retina 対応をする時は、比率 2x の画像を用意するので現状は問題ありません。
 
@@ -57,8 +57,8 @@ android/
 
 | 画像名 | ピクセル | 比率 |
 | --- | --- | --- |
-| icon-60@2x.png | 120 x 120 | 2x |
-| icon-60@3x.png | 180 x 180 | 3x |
+| icon-60\@2x.png | 120 x 120 | 2x |
+| icon-60\@3x.png | 180 x 180 | 3x |
 
 * [iOSヒューマンインターフェイスガイドライン: アイコンや画像の大きさ](https://developer.apple.com/jp/documentation/UserExperience/Conceptual/MobileHIG/IconMatrix/IconMatrix.html)
 
@@ -94,7 +94,7 @@ android/
 
 | 名称 | ピクセル | 枚数 |
 | --- | --- | --- |
-| スクリーンショット | 320~3840 x 320~3840 | 2〜8 |
+| スクリーンショット | 320\~3840 x 320\~3840 | 2〜8 |
 | 高解像度アイコン | 512 x 512 | 1 |
 | 宣伝用画像 | 1024 x 500 | 1 |
 
