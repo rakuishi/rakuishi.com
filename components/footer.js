@@ -1,6 +1,5 @@
 import Link from "next/link";
 import { categories } from "constants/categories";
-import { toggleDarkmode } from "utils/darkmode";
 
 export default function Footer() {
   return (
@@ -70,28 +69,7 @@ export default function Footer() {
             を設定したり、既存の Cookie を読み取ったりする場合があります。
           </p>
 
-          <p className="footer_copyright">© 2011-2020 rakuishi</p>
-        </section>
-
-        <section className="footer_section">
-          <button
-            className="footer_darkmode"
-            onClick={React.useCallback(() => {
-              toggleDarkmode();
-            })}
-          >
-            <svg
-              enableBackground="new 0 0 24 24"
-              height="24"
-              viewBox="0 0 24 24"
-              width="24"
-              aria-label="ダークモード"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path d="m0 0h24v24h-24z" fill="none" />
-              <path d="m12.34 2.02c-5.75-.2-10.34 4.4-10.34 9.98 0 5.52 4.48 10 10 10 3.71 0 6.93-2.02 8.66-5.02-7.51-.25-12.09-8.43-8.32-14.96z" />
-            </svg>
-          </button>
+          <p className="footer_copyright">© 2011-2021 rakuishi</p>
         </section>
       </div>
       <style jsx>
@@ -170,14 +148,6 @@ export default function Footer() {
           .footer_copyright {
             font-size: 14px;
             color: var(--secondary-text-color);
-          }
-          .footer_darkmode {
-            cursor: pointer;
-            outline: none;
-            transition-duration: 0.4s;
-          }
-          .footer_darkmode:hover {
-            transform: rotate(-45deg);
           }
         `}
       </style>

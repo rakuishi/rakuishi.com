@@ -32,23 +32,19 @@ export default function PostListLayout({ title, posts }) {
           .layout {
             max-width: var(--max-width);
             margin: 0 auto 48px;
-            padding: 0 8px;
           }
           .layout_title {
             color: var(--secondary-text-color);
             font-size: 20px;
-            margin: 16px 0 24px 8px;
+            margin: 16px 0 16px 16px;
           }
           .layout_list {
             list-style: none;
           }
-          .layout_list_item {
-            margin-bottom: 16px;
-          }
           .layout_list_item_inner {
             display: block;
-            padding: 8px;
-            border-radius: 4px;
+            padding: 16px;
+            border-radius: 8px;
           }
           .layout_list_item_inner:hover {
             background: var(--secondary-background-color);
