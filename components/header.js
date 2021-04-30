@@ -118,6 +118,9 @@ export default function Header() {
           }
           .header_menu_button {
             cursor: pointer;
+            appearance: none;
+            background: none;
+            border: none;
             outline: none;
             transition-duration: 0.4s;
           }
