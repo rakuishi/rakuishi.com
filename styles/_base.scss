@@ -2,7 +2,7 @@
   --sans-font-family: Arial, Noto Sans JP, Hiragino Kaku Gothic ProN, Meiryo,
     sans-serif;
   --mono-font-family: "Monaco", "Menlo", "Courier New", monospace;
-  --font-size: 16px;
+  --font-size: 17px;
   --max-width: 640px;
 
   --primary-background-color: #ffffff;
@@ -15,7 +15,7 @@
   font-family: var(--sans-font-family);
   font-weight: normal;
   font-size: var(--font-size);
-  // -webkit-font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
   color: var(--primary-text-color);
   background-color: var(--primary-background-color);
   word-break: break-all;
