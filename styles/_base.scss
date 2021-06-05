@@ -7,8 +7,8 @@
 
   --primary-background-color: #ffffff;
   --secondary-background-color: #ebf0f5;
-  --primary-text-color: #000000;
-  --secondary-text-color: #565c65;
+  --primary-text-color: #24292e;
+  --secondary-text-color: #586069;
   --border-color: #e2e8f0;
   --link-color: #0052cc;
 
@@ -27,10 +27,10 @@
 }
 
 [data-prefers-color-scheme="dark"] {
-  --primary-background-color: #161820;
-  --secondary-background-color: #292932;
-  --primary-text-color: #ffffff;
-  --secondary-text-color: #96a5b7;
+  --primary-background-color: #22272e;
+  --secondary-background-color: #323941;
+  --primary-text-color: #cdd9e5;
+  --secondary-text-color: #909dab;
   --border-color: #424b5c;
   --link-color: #8ab4f8;
 }
