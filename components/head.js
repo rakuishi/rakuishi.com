@@ -25,7 +25,7 @@ export default function Head({ props }) {
         content="width=device-width, initial-scale=1"
       />
       <meta key="description" name="description" content={description} />
-      <meta key="twitter:card" name="twitter:card" key content="summary" />
+      <meta key="twitter:card" name="twitter:card" content="summary" />
       <meta key="twitter:site" name="twitter:site" content="@rakuishi07" />
       <meta
         key="og:description"
