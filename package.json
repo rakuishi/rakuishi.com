@@ -10,13 +10,13 @@
     "new": "node scripts/new.js"
   },
   "dependencies": {
-    "date-fns": "^2.16.1",
-    "gray-matter": "^4.0.2",
+    "date-fns": "^2.22.1",
+    "gray-matter": "^4.0.3",
     "next": "^11.0.0",
     "remark": "^13.0.0",
     "remark-gfm": "^1.0.0",
     "remark-highlight.js": "^6.0.0",
     "remark-html": "^13.0.1",
-    "sass": "^1.27.1"
+    "sass": "^1.35.1"
   }
 }
