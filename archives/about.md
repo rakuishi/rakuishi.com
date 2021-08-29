@@ -51,8 +51,8 @@ AppBank Inc. 子会社である apprime Inc. に転籍
 
 ### [Android App](https://play.google.com/store/apps/dev?id=5894821878234337547)
 
-- [Todo-Android](https://play.google.com/store/apps/details?id=com.rakuishi.todo)<small>（Last Updated on 2017/03/22, [GitHub](https://github.com/rakuishi/Todo-Android)）</small>
-- [オフライン郵便番号検索の決定版！ - 郵便番号検索くん](https://play.google.com/store/apps/details?id=com.rakuishi.postalcode2)<small>（Last Updated on 2018/10/15, [GitHub](https://github.com/rakuishi/postalcode-android)）</small>
+- ~~[Todo-Android](https://play.google.com/store/apps/details?id=com.rakuishi.todo)<small>（Last Updated on 2017/03/22, [GitHub](https://github.com/rakuishi/Todo-Android)）</small>~~
+- ~~[オフライン郵便番号検索の決定版！ - 郵便番号検索くん](https://play.google.com/store/apps/details?id=com.rakuishi.postalcode2)<small>（Last Updated on 2018/10/15, [GitHub](https://github.com/rakuishi/postalcode-android)）</small>~~
 - ~~[体重を簡単に記録しよう - Weight Log](https://play.google.com/store/apps/details?id=com.rakuishi.weight)<small>（Last Updated on 2017/05/04, [GitHub](https://github.com/rakuishi/weight-android/)）</small>~~
 - ~~[仮想通貨ウィジェット - Coinchecker](https://play.google.com/store/apps/details?id=com.rakuishi.coinchecker)<small>（Last Updated on 2017/06/30, [GitHub](https://github.com/rakuishi/coinchecker-android-widget)）</small>~~
 
