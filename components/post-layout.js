@@ -42,12 +42,12 @@ export default function PostLayout({ post }) {
         .layout {
           max-width: var(--max-width);
           margin: 0 auto 48px;
-          padding: 0 16px;
+          padding: 0 24px;
         }
         .layout_meta {
           margin-bottom: 4px;
           color: var(--secondary-text-color);
-          font-size: 15px;
+          font-size: 14px;
           font-family: var(--mono-font-family);
         }
         .layout_meta_category {

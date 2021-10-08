@@ -1,9 +1,9 @@
 :root {
-  --sans-font-family: Arial, Noto Sans JP, Hiragino Kaku Gothic ProN, Meiryo,
-    sans-serif;
+  --sans-font-family: -apple-system, system-ui, Noto Sans JP,
+    Hiragino Kaku Gothic ProN, Meiryo, sans-serif;
   --mono-font-family: "Monaco", "Menlo", "Courier New", monospace;
-  --font-size: 17px;
-  --max-width: 640px;
+  --font-size: 16px;
+  --max-width: 700px;
 
   --primary-background-color: #ffffff;
   --secondary-background-color: #ebf0f5;
@@ -15,7 +15,7 @@
   font-family: var(--sans-font-family);
   font-weight: normal;
   font-size: var(--font-size);
-  -webkit-font-smoothing: antialiased;
+  // -webkit-font-smoothing: antialiased;
   color: var(--primary-text-color);
   background-color: var(--primary-background-color);
   // word-break: break-all;
@@ -27,10 +27,10 @@
 }
 
 [data-prefers-color-scheme="dark"] {
-  --primary-background-color: #22272e;
-  --secondary-background-color: #323941;
-  --primary-text-color: #cdd9e5;
-  --secondary-text-color: #909dab;
+  --primary-background-color: #0c0f11;
+  --secondary-background-color: #23262d;
+  --primary-text-color: #f0f3f6;
+  --secondary-text-color: #8b949e;
   --border-color: #424b5c;
   --link-color: #8ab4f8;
 }

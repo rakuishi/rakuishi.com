@@ -22,5 +22,3 @@ image: /images/2019/08/the-octopus-the-sea-and-the-deep-origins-of-consciousness
 このようなエピソードを筆頭に、本書では、タコのユニークな生態を紹介し、心、進化、知性、意識、色の識別、老化、集団生活といった話を展開している。本書を読んだら、茹でダコを食べるとき「ほとんどタコの心を食べているようなものだな」と思うこと間違いなしである。
 
 {{<amazon id="462208757X" title="タコの心身問題――頭足類から考える意識の起源" src="https://images-fe.ssl-images-amazon.com/images/I/514hMAvUClL.jpg">}}
-
-Photo by Alex Knight on Unsplash

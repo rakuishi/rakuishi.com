@@ -46,7 +46,8 @@ export default function Footer() {
             </Link>{" "}
             が有料アプリ 5
             位でした（過去の栄光）。このサイトは私個人によるブログです。会社とは関係ありません。2011
-            年 8 月から記事を書いています。
+            年 8 月から記事を書いています。過去の記事は
+            <a href="/archives">こちら</a>から見れます。
           </p>
 
           <p className="footer_analytics">
@@ -81,7 +82,7 @@ export default function Footer() {
           .footer_inner {
             max-width: var(--max-width);
             margin: 0 auto;
-            padding: 0 16px;
+            padding: 0 24px;
           }
           .footer_section {
             margin-bottom: 24px;
@@ -102,7 +103,7 @@ export default function Footer() {
             color: var(--primary-text-color);
             background-color: var(--primary-background-color);
             border: 2px solid var(--border-color);
-            border-radius: 8px;
+            border-radius: 5px;
           }
           .footer_searchbar::placeholder {
             color: var(--secondary-text-color);
@@ -119,7 +120,7 @@ export default function Footer() {
             font-family: var(--mono-font-family);
             color: var(--secondary-text-color);
             border: 1px solid var(--border-color);
-            border-radius: 8px;
+            border-radius: 5px;
             background-color: var(--primary-background-color);
           }
           .footer_category:hover {

@@ -32,6 +32,7 @@ export default function PostListLayout({ title, posts }) {
           .layout {
             max-width: var(--max-width);
             margin: 0 auto 48px;
+            padding: 0 12px;
           }
           .layout_title {
             color: var(--secondary-text-color);
@@ -43,8 +44,8 @@ export default function PostListLayout({ title, posts }) {
           }
           .layout_list_item_inner {
             display: block;
-            padding: 16px;
-            border-radius: 8px;
+            padding: 12px;
+            border-radius: 5px;
           }
           .layout_list_item_inner:hover {
             background: var(--secondary-background-color);
@@ -52,7 +53,7 @@ export default function PostListLayout({ title, posts }) {
           .layout_list_item_meta {
             margin-bottom: 4px;
             color: var(--secondary-text-color);
-            font-size: 15px;
+            font-size: 14px;
             font-family: var(--mono-font-family);
           }
           .layout_list_item_title {
@@ -62,7 +63,7 @@ export default function PostListLayout({ title, posts }) {
           }
           .layout_list_item_summary {
             color: var(--secondary-text-color);
-            font-size: 15px;
+            font-size: 16px;
           }
         `}
       </style>
