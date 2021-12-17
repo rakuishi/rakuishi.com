@@ -3,7 +3,7 @@
     Hiragino Kaku Gothic ProN, Meiryo, sans-serif;
   --mono-font-family: "Monaco", "Menlo", "Courier New", monospace;
   --font-size: 16px;
-  --max-width: 700px;
+  --max-width: 688px; /* テキスト領域（16px * 40）+ 余白（48px） */
 
   --primary-background-color: #ffffff;
   --secondary-background-color: #ebf0f5;

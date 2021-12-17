@@ -89,7 +89,6 @@ export default function Header() {
             background: none;
             border: none;
             outline: none;
-            transition-duration: 0.4s;
           }
           .header_menu:hover {
             background: var(--secondary-background-color);
