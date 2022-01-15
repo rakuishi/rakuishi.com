@@ -7,7 +7,7 @@ title: "ABOUT ME"
 
 はじめまして。rakuishi（苗字を重箱読み）といいます。1989 年生まれ福岡県出身です。大学在籍中（微生物学を専攻）の 2012 年 1 月に趣味で初めた iOS アプリ開発が高じて、アプリ開発とフロントエンド・デベロッパを仕事にしています。
 
-このサイト rakuishi.com は、僕個人によるブログです。会社とは関係ありません。2011 年 8 月から記事を書いています。当初、WordPress で運営していたブログでしたが、2015 年 1 月からは、静的サイトジェネレータ [Hugo](http://gohugo.io/) で運営しています。[ソースコード](https://github.com/rakuishi/rakuishi.com)を [GitHub](https://github.com/rakuishi) で公開しています。記事の更新を追いかけるには、[Feedly](http://cloud.feedly.com/#subscription%2Ffeed%2Fhttp%3A%2F%2Frakuishi.com%2Ffeed%2F) もしくは、[RSS](/feed/index.xml) から。
+このサイト rakuishi.com は、僕個人によるブログです。会社とは関係ありません。2011 年 8 月から記事を書いています。当初、WordPress で運営していたブログでしたが、2015 年 1 月からは静的サイトジェネレータ [Hugo](http://gohugo.io/), 2020 年 11 月からは [Next.js](https://nextjs.org/) で運用しています。[ソースコード](https://github.com/rakuishi/rakuishi.com)を [GitHub](https://github.com/rakuishi) で公開しています。記事の更新を追いかけるには、[Feedly](http://cloud.feedly.com/#subscription%2Ffeed%2Fhttp%3A%2F%2Frakuishi.com%2Ffeed%2F) もしくは、[RSS](/feed/index.xml) から。
 
 [Twitter](https://twitter.com/rakuishi07) に呟いています。Facebook は、面識のある人だけと友達になっています。連絡は、[Twitter](https://twitter.com/rakuishi07) もしくは、[rakuishi@gmail.com](mailto:rakuishi@gmail.com) に頂けるとできるだけ返信します。[Wantedly](https://www.wantedly.com/users/456907) もあります。
 
