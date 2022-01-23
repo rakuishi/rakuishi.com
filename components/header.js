@@ -28,15 +28,14 @@ export default function Header() {
           })}
         >
           <svg
+            fill="none"
+            height="48"
+            viewBox="0 0 48 48"
+            width="48"
             xmlns="http://www.w3.org/2000/svg"
-            enableBackground="new 0 0 24 24"
-            height="24"
-            viewBox="0 0 24 24"
-            width="24"
             aria-label="ダークモード"
           >
-            <rect fill="none" height="24" width="24" />
-            <path d="M11.01,3.05C6.51,3.54,3,7.36,3,12c0,4.97,4.03,9,9,9c4.63,0,8.45-3.5,8.95-8c0.09-0.79-0.78-1.42-1.54-0.95 c-0.84,0.54-1.84,0.85-2.91,0.85c-2.98,0-5.4-2.42-5.4-5.4c0-1.06,0.31-2.06,0.84-2.89C12.39,3.94,11.9,2.98,11.01,3.05z" />
+            <path d="m23.01 15.05c-4.5.49-8.01 4.31-8.01 8.95 0 4.97 4.03 9 9 9 4.63 0 8.45-3.5 8.95-8 .09-.79-.78-1.42-1.54-.95-.84.54-1.84.85-2.91.85-2.98 0-5.4-2.42-5.4-5.4 0-1.06.31-2.06.84-2.89.45-.67-.04-1.63-.93-1.56z" />
           </svg>
         </button>
       </nav>
@@ -83,15 +82,16 @@ export default function Header() {
             line-height: 48px;
             border-radius: 5px;
           }
+          .header_menu:hover {
+            background: var(--secondary-background-color);
+          }
           .header_menu_button {
+            padding: 0;
             cursor: pointer;
             appearance: none;
             background: none;
-            border: none;
+            border-radius: 24px;
             outline: none;
-          }
-          .header_menu:hover {
-            background: var(--secondary-background-color);
           }
         `}
       </style>
