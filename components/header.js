@@ -55,7 +55,7 @@ export default function Header() {
             display: inline-block;
             height: 56px;
             padding: 0 12px;
-            border-radius: 5px;
+            border-radius: 10px;
           }
           .header_title_inner:hover {
             background: var(--secondary-background-color);

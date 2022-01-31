@@ -45,7 +45,7 @@ export default function PostListLayout({ title, posts }) {
           .layout_list_item_inner {
             display: block;
             padding: 12px;
-            border-radius: 5px;
+            border-radius: 10px;
           }
           .layout_list_item_inner:hover {
             background: var(--secondary-background-color);

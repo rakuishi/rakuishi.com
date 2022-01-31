@@ -1,20 +1,22 @@
 :root {
-  --sans-font-family: -apple-system, system-ui, Noto Sans JP,
-    Hiragino Kaku Gothic ProN, Meiryo, sans-serif;
+  --sans-font-family: -apple-system, blinkMacSystemFont,
+    "Hiragino Kaku Gothic ProN", YuGothic-M, YuGothic, Meiryo, sans-serif;
   --mono-font-family: "Monaco", "Menlo", "Courier New", monospace;
   --font-size: 16px;
   --max-width: 688px; /* テキスト領域（16px * 40）+ 余白（48px） */
 
   --primary-background-color: #ffffff;
-  --secondary-background-color: #ebf0f5;
-  --primary-text-color: #24292e;
-  --secondary-text-color: #586069;
-  --border-color: #e2e8f0;
+  --secondary-background-color: #f5f5f5;
+  --primary-text-color: #333333;
+  --secondary-text-color: #5c5c5c;
+  --border-color: #e0e0e0;
   --link-color: #0052cc;
 
   font-family: var(--sans-font-family);
   font-weight: normal;
   font-size: var(--font-size);
+  // font-family: -apple-system, blinkMacSystemFont, "Hiragino Kaku Gothic ProN", YuGothic-M, YuGothic, Meiryo, sans-serif !important;
+  font-feature-settings: "pkna";
   // -webkit-font-smoothing: antialiased;
   color: var(--primary-text-color);
   background-color: var(--primary-background-color);
@@ -23,15 +25,15 @@
   line-height: 1.8;
 
   --hljs-text: #ffffff;
-  --hljs-background: #292932;
+  --hljs-background: #3b3b3b;
 }
 
 [data-prefers-color-scheme="dark"] {
-  --primary-background-color: #0c0f11;
-  --secondary-background-color: #23262d;
-  --primary-text-color: #f0f3f6;
-  --secondary-text-color: #8b949e;
-  --border-color: #424b5c;
+  --primary-background-color: #333333;
+  --secondary-background-color: #3b3b3b;
+  --primary-text-color: #ffffff;
+  --secondary-text-color: #cccccc;
+  --border-color: #4b4b4b;
   --link-color: #8ab4f8;
 }
 
