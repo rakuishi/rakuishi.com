@@ -1,6 +1,7 @@
 :root {
-  --sans-font-family: -apple-system, blinkMacSystemFont,
-    "Hiragino Kaku Gothic ProN", YuGothic-M, YuGothic, Meiryo, sans-serif;
+  --sans-font-family: "Avenir", "segoe UI", "Noto Sans JP", "游ゴシック",
+    YuGothic, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Verdana,
+    "メイリオ", Meiryo, sans-serif;
   --mono-font-family: "Monaco", "Menlo", "Courier New", monospace;
   --font-size: 16px;
   --max-width: 688px; /* テキスト領域（16px * 40）+ 余白（48px） */
@@ -16,13 +17,13 @@
   font-weight: normal;
   font-size: var(--font-size);
   // font-family: -apple-system, blinkMacSystemFont, "Hiragino Kaku Gothic ProN", YuGothic-M, YuGothic, Meiryo, sans-serif !important;
-  font-feature-settings: "pkna";
+  // font-feature-settings: "pkna";
   // -webkit-font-smoothing: antialiased;
   color: var(--primary-text-color);
   background-color: var(--primary-background-color);
   // word-break: break-all;
-  // text-align: justify;
-  line-height: 1.8;
+  text-align: justify;
+  line-height: 1.7;
 
   --hljs-text: #ffffff;
   --hljs-background: #3b3b3b;

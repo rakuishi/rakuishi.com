@@ -1,7 +1,7 @@
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
-import remark from "remark";
+import { remark } from "remark";
 import html from "remark-html";
 import gfm from "remark-gfm";
 import highlight from "remark-highlight.js";
@@ -88,7 +88,7 @@ export async function getPost(slug) {
   const contentPath = path.join(dir, post.filename);
   let content = matter(fs.readFileSync(contentPath, "utf8")).content;
   const processedContent = await remark()
-    .use(html)
+    .use(html, { sanitize: false })
     .use(gfm)
     .use(highlight)
     .process(applyShortcodes(content));
