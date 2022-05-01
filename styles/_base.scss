@@ -1,7 +1,5 @@
 :root {
-  --sans-font-family: "Avenir", "segoe UI", "Noto Sans JP", "游ゴシック",
-    YuGothic, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Verdana,
-    "メイリオ", Meiryo, sans-serif;
+  --sans-font-family: -apple-system, system-ui, Hiragino Kaku Gothic ProN, Meiryo, sans-serif;
   --mono-font-family: "Monaco", "Menlo", "Courier New", monospace;
   --font-size: 16px;
   --max-width: 688px; /* テキスト領域（16px * 40）+ 余白（48px） */
@@ -30,11 +28,11 @@
 }
 
 [data-prefers-color-scheme="dark"] {
-  --primary-background-color: #333333;
-  --secondary-background-color: #3b3b3b;
+  --primary-background-color: #161F2B;
+  --secondary-background-color: #1E2732;
   --primary-text-color: #ffffff;
   --secondary-text-color: #cccccc;
-  --border-color: #4b4b4b;
+  --border-color: #38444D;
   --link-color: #8ab4f8;
 }
 

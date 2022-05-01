@@ -54,7 +54,7 @@ export default function PostListLayout({ title, posts }) {
             margin-bottom: 4px;
             color: var(--secondary-text-color);
             font-size: 14px;
-            font-family: var(--mono-font-family);
+            // font-family: var(--mono-font-family);
           }
           .layout_list_item_title {
             margin-bottom: 4px;
