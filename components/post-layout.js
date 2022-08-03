@@ -47,8 +47,6 @@ export default function PostLayout({ post }) {
         .layout_meta {
           margin-bottom: 4px;
           color: var(--secondary-text-color);
-          font-size: 14px;
-          // font-family: var(--mono-font-family);
         }
         .layout_meta_category {
           color: var(--secondary-text-color);

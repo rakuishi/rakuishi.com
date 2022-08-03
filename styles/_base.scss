@@ -1,5 +1,5 @@
 :root {
-  --sans-font-family: -apple-system, system-ui, Hiragino Kaku Gothic ProN, Meiryo, sans-serif;
+  --sans-font-family: -apple-system, system-ui, 'Noto Sans JP', Hiragino Kaku Gothic ProN, Meiryo, sans-serif;
   --mono-font-family: "Monaco", "Menlo", "Courier New", monospace;
   --font-size: 16px;
   --max-width: 688px; /* テキスト領域（16px * 40）+ 余白（48px） */
@@ -23,8 +23,9 @@
   text-align: justify;
   line-height: 1.7;
 
-  --hljs-text: #ffffff;
-  --hljs-background: #3b3b3b;
+  --hljs-text-color: #ffffff;
+  --hljs-background-color: #1E2732;
+  --hljs-border-color: #1E2732;
 }
 
 [data-prefers-color-scheme="dark"] {
@@ -34,6 +35,7 @@
   --secondary-text-color: #cccccc;
   --border-color: #38444D;
   --link-color: #8ab4f8;
+  --hljs-border-color: #38444D;
 }
 
 a,
@@ -44,6 +46,6 @@ a:hover {
 h1,
 h2,
 h3 {
-  line-height: 1.6;
+  line-height: 1.5;
   font-weight: 700;
 }

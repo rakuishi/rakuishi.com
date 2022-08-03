@@ -28,18 +28,19 @@
   font-size: 90%;
   font-family: var(--mono-font-family);
   background-color: var(--secondary-background-color);
-  border-radius: 5px;
+  border-radius: 10px;
 }
 .markdown pre {
   margin: 24px 0;
-  border-radius: 5px;
+  border-radius: 10px;
   background-color: var(--secondary-background-color);
 }
 .markdown pre > code {
   display: block;
   padding: 24px;
-  background-color: var(--hljs-background);
-  color: var(--hljs-text);
+  border: 1px solid var(--hljs-border-color);
+  background-color: var(--hljs-background-color);
+  color: var(--hljs-text-color);
 }
 .markdown ul,
 .markdown ol {
@@ -68,6 +69,7 @@
 .markdown img {
   width: 100%;
   height: auto;
+  border-radius: 10px;
 }
 .markdown blockquote {
   position: relative;

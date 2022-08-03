@@ -78,6 +78,7 @@ export default function Footer() {
           .footer {
             padding: 48px 0;
             background: var(--secondary-background-color);
+            border-top: 1px solid var(--border-color);
           }
           .footer_inner {
             max-width: var(--max-width);
@@ -117,7 +118,6 @@ export default function Footer() {
             padding: 2px 10px;
             margin: 0 4px 4px 0;
             font-size: 14px;
-            font-family: var(--mono-font-family);
             color: var(--secondary-text-color);
             border: 1px solid var(--border-color);
             border-radius: 5px;

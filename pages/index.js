@@ -6,13 +6,13 @@ export default function Home({ archives }) {
   return (
     <>
       <Head />
-      <PostListLayout title="Recent Posts" posts={archives} />
+      <PostListLayout title="" posts={archives} />
     </>
   );
 }
 
 export async function getStaticProps() {
-  const archives = getArchives().slice(0, 16);
+  const archives = getArchives().slice(0, 10);
   return {
     props: {
       archives,

@@ -8,7 +8,7 @@ export default function PostListLayout({ title, posts }) {
     <>
       <Header />
       <section className="layout">
-        <h1 className="layout_title">{title}</h1>
+        {title.length > 0 && <h1 className="layout_title">{title}</h1>}
         <ul className="layout_list">
           {posts.map(({ title, date, slug, summary }) => (
             <li key={slug} className="layout_list_item">
@@ -36,7 +36,7 @@ export default function PostListLayout({ title, posts }) {
           }
           .layout_title {
             color: var(--secondary-text-color);
-            font-size: 20px;
+            font-size: 18px;
             margin: 16px 0 16px 16px;
           }
           .layout_list {
@@ -53,8 +53,6 @@ export default function PostListLayout({ title, posts }) {
           .layout_list_item_meta {
             margin-bottom: 4px;
             color: var(--secondary-text-color);
-            font-size: 14px;
-            // font-family: var(--mono-font-family);
           }
           .layout_list_item_title {
             margin-bottom: 4px;
