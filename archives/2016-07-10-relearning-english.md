@@ -1,6 +1,6 @@
 ---
 categories:
-- Blog
+  - 雑記
 date: "2016-07-10T19:57:25+09:00"
 slug: relearning-english
 title: "Re: ゼロから始める英語再学習"

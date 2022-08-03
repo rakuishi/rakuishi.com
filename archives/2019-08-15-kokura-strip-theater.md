@@ -1,6 +1,6 @@
 ---
 categories:
-  - Blog
+  - 雑記
 date: "2019-08-15T16:51:29+09:00"
 slug: kokura-strip-theater
 title: 小倉のストリップ劇場に行った

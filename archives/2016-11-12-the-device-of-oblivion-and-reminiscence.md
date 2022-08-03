@@ -1,6 +1,6 @@
 ---
 categories:
-- Blog
+  - 雑記
 date: "2016-11-12T09:08:01+08:00"
 slug: the-device-of-oblivion-and-reminiscence
 title: The device of oblivion and reminiscence

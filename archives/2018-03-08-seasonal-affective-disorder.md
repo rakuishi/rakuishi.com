@@ -1,6 +1,6 @@
 ---
 categories:
-  - Blog
+  - 雑記
 date: "2018-03-08T20:26:01+09:00"
 slug: seasonal-affective-disorder
 title: 筋肉と日焼けで冬季うつ病を打倒できない

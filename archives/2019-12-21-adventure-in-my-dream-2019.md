@@ -1,6 +1,6 @@
 ---
 categories:
-  - Blog
+  - 雑記
 date: "2019-12-21T08:33:23+09:00"
 slug: adventure-in-my-dream-2019
 title: 夢の中の大冒険 2019

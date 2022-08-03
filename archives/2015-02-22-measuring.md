@@ -1,6 +1,6 @@
 ---
 categories:
-  - Blog
+  - 雑記
 date: "2015-02-22T15:51:24+09:00"
 slug: measuring
 title: "｢単位展 ― あれくらい それくらい どれくらい？｣に行ってきた"

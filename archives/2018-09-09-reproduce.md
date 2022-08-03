@@ -1,6 +1,6 @@
 ---
 categories:
-  - Blog
+  - 雑記
 date: "2018-09-09T22:29:42+09:00"
 slug: reproduce
 title: 'Re: Produce'

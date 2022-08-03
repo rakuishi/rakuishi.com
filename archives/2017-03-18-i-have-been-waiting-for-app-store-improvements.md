@@ -1,6 +1,6 @@
 ---
 categories:
-- Blog
+  - 雑記
 date: "2017-03-18T20:51:59+09:00"
 slug: i-have-been-waiting-for-app-store-improvements
 title: この 6 年間、個人アプリ開発者が App Store に対して感じたこと

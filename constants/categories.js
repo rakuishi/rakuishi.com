@@ -12,10 +12,6 @@ export const categories = Object.freeze([
     slug: "aws",
   },
   {
-    name: "Blog",
-    slug: "blog",
-  },
-  {
     name: "Cocos2d x",
     slug: "cocos2d-x",
   },
@@ -80,16 +76,20 @@ export const categories = Object.freeze([
     slug: "wordpress",
   },
   {
+    name: "開発",
+    slug: "development",
+  },
+  {
     name: "仮想通貨",
     slug: "cryptocurrency",
   },
   {
-    name: "投資",
-    slug: "investment",
+    name: "雑記",
+    slug: "blog",
   },
   {
-    name: "開発",
-    slug: "development",
+    name: "投資",
+    slug: "investment",
   },
 ]);
 

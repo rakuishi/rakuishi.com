@@ -1,6 +1,6 @@
 ---
 categories:
-- Blog
+  - 雑記
 date: "2016-11-20T12:21:59+08:00"
 slug: the-philippines-thirteen-sixteenth
 title: フィリピン留学 13/16 週目
