@@ -10,12 +10,19 @@ export default class MyDocument extends Document {
             name="google-site-verification"
             content="hLAob0ZIhg0c3AeIGNo4AMQPkxMjM1UM3mBPYNvwceE"
           />
-          <link
-            rel="preconnect"
-            href="https://www.google-analytics.com"
-            crossOrigin="anonymous"
+          <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=G-FHMSX4CXEF"
+          ></script>
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-FHMSX4CXEF');`,
+            }}
           />
-          <script async src="/assets/javascripts/ga.js" />
           <script
             dangerouslySetInnerHTML={{
               __html: `
