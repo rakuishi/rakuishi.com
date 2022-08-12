@@ -4,6 +4,10 @@ export function applyShortcodes(content) {
     /{{<img alt="(.*?)" src="(.+?)" width="(\d*?)" height="(\d*?)">}}/g,
     '<p><img alt="$1" src="$2" width="$3" height="$4" loading="lazy"></p>'
   );
+  content = content.replace(
+    /{{<img alt="(.*?)" src="(.+?)">}}/g,
+    '<p><img alt="$1" src="$2" loading="lazy"></p>'
+  );
 
   // amazon
   content = content.replace(
