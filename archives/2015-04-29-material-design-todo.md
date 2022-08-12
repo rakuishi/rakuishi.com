@@ -10,8 +10,8 @@ title: "Material Design と Realm の勉強がてら作った Todo アプリを�
 
 [Material Design](http://www.google.com/design/spec/material-design/introduction.html) と、流行っている <ruby>[Realm](http://realm.io/)<rt>れるむ</rt></ruby> を勉強するために、Todo アプリを作りました。一応、お金を払って Google Play Developer に参加しているのでストアに公開もしました。
 
-* Google Play: [Todo - Google Play の Android アプリ](https://play.google.com/store/apps/details?id=com.rakuishi.todo)
-* GitHub: [rakuishi/Todo-Android](https://github.com/rakuishi/Todo-Android)
+- Google Play: [Todo - Google Play の Android アプリ](https://play.google.com/store/apps/details?id=com.rakuishi.todo)
+- GitHub: [rakuishi/Todo-Android](https://github.com/rakuishi/Todo-Android)
 
 この記事では、この Todo アプリを実装した上での気付き点を紹介します。
 
@@ -80,11 +80,11 @@ Android 4.4 → 5.0 になり、印象的だったのが、Navigation Drawer が
 
 これと DrawerLayout を使えば、ある程度までは上手く実装できるのですが、これが結構面倒くさい。自分の場合は、何故かドロワーをエッジスワイプするアクションが途中で止まる（？）不具合が発生し、何日か不貞腐れていたのですが、以下のテンプレートを使えば一瞬だった。神。
 
-* [kanytu/Android-studio-material-template](https://github.com/kanytu/Android-studio-material-template)
+- [kanytu/Android-studio-material-template](https://github.com/kanytu/Android-studio-material-template)
 
 ## [Realm](http://realm.io/jp/docs/java/)
 
-> Realmは、SQLiteやCoreDataから置き換わるモバイルデータベースです。
+> Realm は、SQLite や CoreData から置き換わるモバイルデータベースです。
 
 という紹介の通り、iOS（Objective-C）や Android（Java）から、簡単に使える。前に、SQLite を iOS/Android から生で触ったことがあるのですが、データベースの置き場所を作ったり、`CREATE TABLE` から始めたりと面倒な印象があるし、CoreData に至っては難しくてよく分からん（一応使ってるけれど）。
 

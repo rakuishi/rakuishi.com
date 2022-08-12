@@ -1,10 +1,10 @@
 ---
 categories:
-- 仮想通貨
+  - 仮想通貨
 date: "2017-11-07T20:24:37+09:00"
 slug: realtime-bitcoin-transactions-on-chainflyer
-title: 'ビットコインの取引をリアルタイムで見てみよう'
-subtitle: 'ビットコインの取引をリアルタイムで見れるサイト chainFlyer。取引はオープンであることを肌で感じ、ブロックチェーン上に記録された取引の確認の仕方を学びましょう。'
+title: "ビットコインの取引をリアルタイムで見てみよう"
+subtitle: "ビットコインの取引をリアルタイムで見れるサイト chainFlyer。取引はオープンであることを肌で感じ、ブロックチェーン上に記録された取引の確認の仕方を学びましょう。"
 ---
 
 <img src="/images/2017/11/bitcoin.svg" alt="bitcoin">
@@ -41,7 +41,7 @@ chainFlyer のトップページの右側にある黒いブロックには、ビ
 
 > 2009/01/04 03:15:05 JST  
 > The Times 03/Jan/2009 Chancellor on brink of second bailout for banks  
-> タイム紙 2009年1月3日 英大蔵大臣は銀行への二度目の救済を決めようとしている
+> タイム紙 2009 年 1 月 3 日 英大蔵大臣は銀行への二度目の救済を決めようとしている
 
 - [Transaction 4a5e1e4baab89f3a32518a88c31bc87f618f76673e2cc77ab2127b7afdeda33b - chainFlyer](https://chainflyer.bitflyer.jp/Transaction/4a5e1e4baab89f3a32518a88c31bc87f618f76673e2cc77ab2127b7afdeda33b)
 

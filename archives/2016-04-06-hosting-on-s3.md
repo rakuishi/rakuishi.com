@@ -1,6 +1,6 @@
 ---
 categories:
-- AWS
+  - AWS
 date: "2016-04-06T22:16:34+09:00"
 slug: hosting-on-s3
 title: "Amazon S3 にサイトのホスティング先を移行した"
@@ -16,7 +16,7 @@ https://aws.amazon.com/jp/s3/
 
 クレジットカード番号の登録、電話番号認証を行って、アカウントを作成しました。[ストレージ & コンテンツ配信] → [S3] → [バケットの作成] からバケット名 `rakuishi.com` を作成しました。
 
-ちなみに、アカウント作成直後では「反映まで最大24時間かかることがあります」と言われ、設定できませんでしたが、寝て起きたら使えるようになっていました。
+ちなみに、アカウント作成直後では「反映まで最大 24 時間かかることがあります」と言われ、設定できませんでしたが、寝て起きたら使えるようになっていました。
 
 ### アクセス許可
 
@@ -25,13 +25,15 @@ https://aws.amazon.com/jp/s3/
 ```json
 {
   "Version": "2012-10-17",
-  "Statement": [{
-    "Sid": "PublicReadForGetBucketObjects",
-    "Effect": "Allow",
-    "Principal": "*",
-    "Action": ["s3:GetObject"],
-    "Resource": ["arn:aws:s3:::rakuishi.com/*"]
-  }]
+  "Statement": [
+    {
+      "Sid": "PublicReadForGetBucketObjects",
+      "Effect": "Allow",
+      "Principal": "*",
+      "Action": ["s3:GetObject"],
+      "Resource": ["arn:aws:s3:::rakuishi.com/*"]
+    }
+  ]
 }
 ```
 
@@ -73,7 +75,7 @@ https://aws.amazon.com/jp/s3/
 
 ### Install AWS CLI
 
-Python パッケージ管理ツール pip をインストールし、pip から AWS CLI をインストールします。 OS X El Capitan 以降では、3行目のインストール方法を試すと、エラーが出ることなく AWS CLI をインストールできました。
+Python パッケージ管理ツール pip をインストールし、pip から AWS CLI をインストールします。 OS X El Capitan 以降では、3 行目のインストール方法を試すと、エラーが出ることなく AWS CLI をインストールできました。
 
 ```bash
 $ sudo easy_install pip
@@ -99,30 +101,30 @@ aws s3 sync --delete ./public s3://rakuishi.com
 
 ## 独自ドメインの設定
 
-ネイキッドドメイン（www.rakuishi.com ではなく rakuishi.com）を使用するには、DNS サーバーを Route 53 に設定する必要があります。ドメインは、お名前.com のDNSサーバーを使用しているのでそこから移行する必要がありました。
+ネイキッドドメイン（www.rakuishi.com ではなく rakuishi.com）を使用するには、DNS サーバーを Route 53 に設定する必要があります。ドメインは、お名前.com の DNS サーバーを使用しているのでそこから移行する必要がありました。
 
 まずは、Route 53 での作業を行います。
 
 [Route53] → [DNS management] → [Create Hosted Zone] から、Hosted Zone を作成する。
 
-* Domain Name: rakuishi.com
-* Type: Public Hosted Zone
+- Domain Name: rakuishi.com
+- Type: Public Hosted Zone
 
 [Create Record Set] を選択し、rakuishi.com を作成した S3 のバケットに向ける。
 
-* Name: 空白
-* Type: A – IPv4 Address
-* Alias: Yes
-* Alias Target: S3 website endpoints から選択できる
-* Routing Policy: Simple
-* Evaluate Target Health: No
+- Name: 空白
+- Type: A – IPv4 Address
+- Alias: Yes
+- Alias Target: S3 website endpoints から選択できる
+- Routing Policy: Simple
+- Evaluate Target Health: No
 
 今回は、以下の NS レコードが生成されました。これをお名前.com に登録します。お名前.com 管理画面 → [ネームサーバーの変更] → [他のネームサーバーを利用] から、ネームサーバーの情報を登録します。
 
-* 1 プライマリネームサーバー(必須): ns-1571.awsdns-04.co.uk
-* 2 セカンダリネームサーバー(必須): ns-907.awsdns-49.net
-* 3: ns-391.awsdns-48.com
-* 4: ns-1368.awsdns-43.org
+- 1 プライマリネームサーバー(必須): ns-1571.awsdns-04.co.uk
+- 2 セカンダリネームサーバー(必須): ns-907.awsdns-49.net
+- 3: ns-391.awsdns-48.com
+- 4: ns-1368.awsdns-43.org
 
 確認は、`nslookup` コマンドを使用しました。浸透すれば、`server` を設定する必要なく `nslookup rakuishi.com` だけで返ってきます。
 
@@ -142,19 +144,19 @@ Address:  205.251.198.35#53
 
 よりリクエスト数を抑えるために、インライン画像、CSS Sprite などの小賢しいテクニックを使用し、月間推定 100,000 GET Request に抑えました。ですので、現状は以下のコストで運用できる予定です（S3 のストレージ容量、Route 53 のクエリ課金は無視）。
 
-* S3  
-100,000 (GET Request) / 10,000 x 0.0037 ($/10,0000 GET Request) = 0.037 ($)
-* Route 53  
-1 HostedZone = 0.5 ($)
-* 計  
-($0.037 + $0.5) x 110 (yen/$) = 59 (yen)
+- S3  
+  100,000 (GET Request) / 10,000 x 0.0037 ($/10,0000 GET Request) = 0.037 ($)
+- Route 53  
+  1 HostedZone = 0.5 ($)
+- 計  
+  ($0.037 + $0.5) x 110 (yen/$) = 59 (yen)
 
 Sakura Internet スタンダードプラン 515 円で運用していたから、それよりも安くなりそうです。浮いた分を最近はまっている甘酒代にしようと思います。
 
 ## 参考
 
-* [ブログをHugoとAmazon S3に移行しました - As a Futurist...](https://blog.riywo.com/2015/09/migrate-to-huge-and-s3/)
-* [[AWS]S3×Route53×お名前.comでルートドメインな静的Webサイトホスティングする | 遊び場](http://www30304u.sakura.ne.jp/blog/?p=3154)
-* [【初心者向け】MacユーザがAWS CLIを最速で試す方法 ｜ Developers.IO](http://dev.classmethod.jp/cloud/aws/mac-aws-cli/)
-* [s3 — AWS CLI 1.10.18 Command Reference](http://docs.aws.amazon.com/cli/latest/reference/s3/index.html)
-* [Fail to install aws-cli via sudo pip install awscli · Issue #1522 · aws/aws-cli](https://github.com/aws/aws-cli/issues/1522)
+- [ブログを Hugo と Amazon S3 に移行しました - As a Futurist...](https://blog.riywo.com/2015/09/migrate-to-huge-and-s3/)
+- [[AWS]S3×Route53× お名前.com でルートドメインな静的 Web サイトホスティングする | 遊び場](http://www30304u.sakura.ne.jp/blog/?p=3154)
+- [【初心者向け】Mac ユーザが AWS CLI を最速で試す方法 ｜ Developers.IO](http://dev.classmethod.jp/cloud/aws/mac-aws-cli/)
+- [s3 — AWS CLI 1.10.18 Command Reference](http://docs.aws.amazon.com/cli/latest/reference/s3/index.html)
+- [Fail to install aws-cli via sudo pip install awscli · Issue #1522 · aws/aws-cli](https://github.com/aws/aws-cli/issues/1522)

@@ -43,7 +43,7 @@ $ docker-machine create -d virtualbox --virtualbox-memory 2048 --virtualbox-disk
 ```bash
 $ docker-machine ls
 NAME     ACTIVE  DRIVER      STATE    URL                        SWARM  DOCKER  ERRORS
-default  *       virtualbox  Running  tcp://192.168.99.100:2376         v1.9.1   
+default  *       virtualbox  Running  tcp://192.168.99.100:2376         v1.9.1
 ```
 
 ### Docker マシンの IP Address を確認する

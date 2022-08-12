@@ -1,10 +1,10 @@
 ---
 categories:
-- 仮想通貨
+  - 仮想通貨
 date: "2017-11-22T22:44:21+09:00"
 slug: features-of-blockchain
-title: '仮想通貨以外にも利用されるブロックチェーンの特徴（改ざん耐性・低コスト・低障害）'
-subtitle: 'ブロックチェーンは、改ざん耐性・低コスト・低障害という特性から、現在では、仮想通貨以外の分野にも利用されます。'
+title: "仮想通貨以外にも利用されるブロックチェーンの特徴（改ざん耐性・低コスト・低障害）"
+subtitle: "ブロックチェーンは、改ざん耐性・低コスト・低障害という特性から、現在では、仮想通貨以外の分野にも利用されます。"
 ---
 
 <img src="/images/2017/11/blockchain.jpg" alt="blockchain">
@@ -47,4 +47,4 @@ subtitle: 'ブロックチェーンは、改ざん耐性・低コスト・低障
 
 ## 参考
 
-- [ダイヤモンド取引を“透明”にする分散型台帳「Everledger」：ブロックチェーンスタートアップ#3｜WIRED.jp](https://wired.jp/2017/02/22/blockchain-startup-03-everledger/)
+- [ダイヤモンド取引を“透明”にする分散型台帳「Everledger」：ブロックチェーンスタートアップ#3 ｜ WIRED.jp](https://wired.jp/2017/02/22/blockchain-startup-03-everledger/)

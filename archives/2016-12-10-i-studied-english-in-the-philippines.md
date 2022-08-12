@@ -24,7 +24,7 @@ title: 4 ヶ月間フィリピンに言語留学をしてきた
 
 授業中のスマートフォンの持ち込みは禁止されていないから、iPhone アプリ業界で有名な物書堂さんの辞書アプリを使った。iPhone があれば、授業中に分からない単語を調べたり、ネットで専門用語の英語訳を調べたり、YouTube を見たりするのに使えるから、正直電子辞書を使うメリットが見当たらなかった。電池持ちがいいぐらいか。
 
-- [動画英文法2700](https://itunes.apple.com/jp/app/dong-hua-ying-wen-fa2700/id660617252?mt=8&at=11l3RT) ★★★
+- [動画英文法 2700](https://itunes.apple.com/jp/app/dong-hua-ying-wen-fa2700/id660617252?mt=8&at=11l3RT) ★★★
 
 留学前に学習。特に最初の文型は必ず勉強したほうが良いと思った。今まで雰囲気で読んでいた英文が、文型や節として見えるようになり、これだけで何段階も成長した感じがする。2,700 の問題すべてに、動画の分かりやすい解説があるから、分からないまま覚えるということがないのが素晴らしかった。ただ、動画がアプリに含まれていないため、都度ストリーミングするからネット環境があまり良くないフィリピンでは厳しい。
 
@@ -40,7 +40,7 @@ title: 4 ヶ月間フィリピンに言語留学をしてきた
 
 ### 発音
 
-- [発音指導DVD&CD付英語の発音がよくなる本](http://www.amazon.co.jp/exec/obidos/ASIN/404602643X/rakuishi-22/ref=nosim/) ★★
+- [発音指導 DVD&CD 付英語の発音がよくなる本](http://www.amazon.co.jp/exec/obidos/ASIN/404602643X/rakuishi-22/ref=nosim/) ★★
 
 事前学習。英語には、発音がちょっと違うだけで変な意味になってしまう言葉が多い。例を挙げれば、election（選挙）と erection（勃起）、beach（浜辺）と bitch（ビッチ）とか。また、先生が聞き取れなかった時にどこを強調すればわかってもらえるのか推測できるようになる。
 
@@ -56,8 +56,8 @@ title: 4 ヶ月間フィリピンに言語留学をしてきた
 
 ### 単語
 
-- [毎日の英単語 日常頻出語の90%をマスターする](http://www.amazon.co.jp/exec/obidos/ASIN/4023312118/rakuishi-22/ref=nosim/) ★★
-- [DUO 3.0](http://www.amazon.co.jp/exec/obidos/ASIN/4900790052/rakuishi-22/ref=nosim/) / [CD復習用](http://www.amazon.co.jp/exec/obidos/ASIN/4900790079/rakuishi-22/ref=nosim/) ★★★
+- [毎日の英単語 日常頻出語の 90%をマスターする](http://www.amazon.co.jp/exec/obidos/ASIN/4023312118/rakuishi-22/ref=nosim/) ★★
+- [DUO 3.0](http://www.amazon.co.jp/exec/obidos/ASIN/4900790052/rakuishi-22/ref=nosim/) / [CD 復習用](http://www.amazon.co.jp/exec/obidos/ASIN/4900790079/rakuishi-22/ref=nosim/) ★★★
 
 毎日の英単語は留学前にすべて覚えた。改めて読み返してみると、ここにある単語は留学中にほとんど使った気がする。溺死する（drown）なんていつ使うんだと文句を言いながら覚えたが、10 回ぐらい使った。すみませんでした。
 

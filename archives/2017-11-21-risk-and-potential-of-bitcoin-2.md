@@ -1,10 +1,10 @@
 ---
 categories:
-- 仮想通貨
+  - 仮想通貨
 date: "2017-11-21T21:57:55+09:00"
 slug: risk-and-potential-of-bitcoin-2
-title: 'ビットコインの抱える問題点とこれからの可能性（可能性編）'
-subtitle: 'スケーラビリティ問題を解決するための技術（セグウィット、セグウィット 2x、ライトニング・ネットワーク）を紹介します。'
+title: "ビットコインの抱える問題点とこれからの可能性（可能性編）"
+subtitle: "スケーラビリティ問題を解決するための技術（セグウィット、セグウィット 2x、ライトニング・ネットワーク）を紹介します。"
 ---
 
 <img src="/images/2017/11/bitcoin.svg" alt="bitcoin">
@@ -45,4 +45,4 @@ subtitle: 'スケーラビリティ問題を解決するための技術（セグ
 
 ## 参考
 
-- [Lightning Network入門](https://www.slideshare.net/takashimitsuta/lightning-network-82041404)
+- [Lightning Network 入門](https://www.slideshare.net/takashimitsuta/lightning-network-82041404)

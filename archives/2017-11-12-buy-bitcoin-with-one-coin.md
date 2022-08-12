@@ -1,10 +1,10 @@
 ---
 categories:
-- 仮想通貨
+  - 仮想通貨
 date: "2017-11-12T09:43:42+09:00"
 slug: buy-bitcoin-with-one-coin
-title: '仮想通貨（ビットコイン）はいくらから買えるの？実はワンコインから始められます！'
-subtitle: '「1BTC 買うのに、給料何ヶ月分なんだ？ビットコインが流行ってるけど、自分には無理だな―」→ ワンコインから買えます。'
+title: "仮想通貨（ビットコイン）はいくらから買えるの？実はワンコインから始められます！"
+subtitle: "「1BTC 買うのに、給料何ヶ月分なんだ？ビットコインが流行ってるけど、自分には無理だな―」→ ワンコインから買えます。"
 ---
 
 <img src="/images/2017/11/bitcoin.svg" alt="bitcoin">
@@ -39,6 +39,6 @@ subtitle: '「1BTC 買うのに、給料何ヶ月分なんだ？ビットコイ�
 
 Coincheck（コインチェック）という仮想通貨取引所では、最短 10 分でビットコインを買えますよ（※ もちろん、ある程度のリスクはあります。最初は、[仮想通貨の時価総額](/archives/coins-and-market-cap/)上位 10 位以内から、余剰資金で始めるのがお勧めです）。
 
-- [ビットコイン(Bitcoin)を最短10分で購入 | Coincheck（コインチェック）](https://coincheck.com/?c=h_3cAbRPgrw)
+- [ビットコイン(Bitcoin)を最短 10 分で購入 | Coincheck（コインチェック）](https://coincheck.com/?c=h_3cAbRPgrw)
 
 {{<cryptocurrency>}}

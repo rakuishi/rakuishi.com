@@ -3,7 +3,7 @@ categories:
   - 雑記
 date: "2018-09-09T22:29:42+09:00"
 slug: reproduce
-title: 'Re: Produce'
+title: "Re: Produce"
 ---
 
 Reproduce という単語を見るたびに、夏の夕暮れの物悲しさを思い出す。Reproduce には「(子供)を生む」という意味もあるけれど、「繰り返す」という意味もあって、なにか正直に喜べないたぐいの感情が紛れこんでいる。

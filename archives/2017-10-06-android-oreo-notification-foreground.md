@@ -1,9 +1,9 @@
 ---
 categories:
-- Android
+  - Android
 date: "2017-10-06T21:59:23+09:00"
 slug: android-oreo-notification-foreground
-title: 'Android Oreo: 通知とサービスのフォアグラウンド実行'
+title: "Android Oreo: 通知とサービスのフォアグラウンド実行"
 ---
 
 Android Oreo (API Level 26) を compileSdkVersion, targetSdkVersion とするアプリは、通知と、サービスのフォアグラウンド実行に対して新しく制限が加えられました。従来の SdkVersion を指定してビルドしたアプリを Android Oreo 上で動かす場合は、影響はありません。
@@ -72,12 +72,12 @@ notificationHelper.notify(1, builder);
 
 通知チャンネルに登録した重要度は以下のように設定されており、これがデフォルト値です。設定 → アプリと通知 → アプリ情報 → アプリ名 → アプリの通知 → カテゴリからユーザーは自由に設定できます。`IMPORTANCE_LOW` は Low ではなく Medium なのが、ややこしいです。
 
-重要度 | 音／画面表示の有無
---- | ---
-`IMPORTANCE_HIGH`, `IMPORTANCE_MAX` | Urgent: Make sound and pop on screen
-`IMPORTANCE_DEFAULT` | High: Make sound
-`IMPORTANCE_LOW` | Medium: No sound
-`IMPORTANCE_MIN` | Low: No sound or visual interruption
+| 重要度                              | 音／画面表示の有無                   |
+| ----------------------------------- | ------------------------------------ |
+| `IMPORTANCE_HIGH`, `IMPORTANCE_MAX` | Urgent: Make sound and pop on screen |
+| `IMPORTANCE_DEFAULT`                | High: Make sound                     |
+| `IMPORTANCE_LOW`                    | Medium: No sound                     |
+| `IMPORTANCE_MIN`                    | Low: No sound or visual interruption |
 
 また、通知チャンネルは、ユーザーが目に触れる単語では、カテゴリ（Categories）です。
 

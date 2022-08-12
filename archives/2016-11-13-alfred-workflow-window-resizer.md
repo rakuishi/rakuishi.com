@@ -1,6 +1,6 @@
 ---
 categories:
-- Mac
+  - Mac
 date: "2016-11-13T13:46:17+08:00"
 slug: alfred-workflow-window-resizer
 title: Alfred 2 Workflow Window Resizer

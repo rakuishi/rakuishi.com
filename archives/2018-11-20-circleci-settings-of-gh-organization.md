@@ -3,7 +3,7 @@ categories:
   - Web Service
 date: "2018-11-20T22:25:23+09:00"
 slug: circleci-settings-of-gh-organization
-title: 'GitHub Organization に紐付く Project の CircleCI 設定方法'
+title: "GitHub Organization に紐付く Project の CircleCI 設定方法"
 ---
 
 1. [CircleCI Local CLI](https://circleci.com/docs/2.0/local-cli/) をインストールする

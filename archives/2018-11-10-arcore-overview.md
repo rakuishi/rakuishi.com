@@ -3,7 +3,7 @@ categories:
   - Android
 date: "2018-11-10T09:34:51+09:00"
 slug: arcore-overview
-title: '[Google Pixel 3] ARCore で拡張現実を体験してみた'
+title: "[Google Pixel 3] ARCore で拡張現実を体験してみた"
 ---
 
 {{<img alt="Playground" src="/images/2018/11/playground.jpg" width="1080" height="540">}}

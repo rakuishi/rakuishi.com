@@ -1,6 +1,6 @@
 ---
 categories:
-- Android
+  - Android
 date: "2017-04-16T09:26:44+09:00"
 slug: how-to-use-projects-gradle-version
 title: Error:Minimum supported Gradle version is 3.3. Current version is 2.14.1.
@@ -33,13 +33,13 @@ distributionUrl=https\://services.gradle.org/distributions/gradle-3.3-all.zip
 非常にややこしいのですが、Gradle と Gradle プラグインのバージョンは以下のように対応しており、上記のふたつの設定は現時点では正しい。以下、対応表です：
 
 | Plugin version | Required Gradle version |
-| --- | --- |
-| 1.0.0 - 1.1.3 | 2.2.1 - 2.3 |
-| 1.2.0 - 1.3.1 | 2.2.1 - 2.9 |
-| 1.5.0 | 2.2.1 - 2.13 |
-| 2.0.0 - 2.1.2 | 2.10 - 2.13 |
-| 2.1.3 - 2.2.3 | 2.14.1+ |
-| 2.3.0+ | 3.3+ |
+| -------------- | ----------------------- |
+| 1.0.0 - 1.1.3  | 2.2.1 - 2.3             |
+| 1.2.0 - 1.3.1  | 2.2.1 - 2.9             |
+| 1.5.0          | 2.2.1 - 2.13            |
+| 2.0.0 - 2.1.2  | 2.10 - 2.13             |
+| 2.1.3 - 2.2.3  | 2.14.1+                 |
+| 2.3.0+         | 3.3+                    |
 
 - [Android Plugin for Gradle Release Notes | Android Studio](https://developer.android.com/studio/releases/gradle-plugin.html)
 

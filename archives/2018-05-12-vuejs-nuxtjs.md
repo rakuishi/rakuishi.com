@@ -147,7 +147,7 @@ async nuxtServerInit({ commit, state }, { req }) {
 
 ```javascript
 const getters = {
-  isLogin: state => {
+  isLogin: (state) => {
     // SSR 時は nuxtServerInit から値を設定できる renderPageAsLoginUserOnSSR によって
     // ログイン後のページを SSR で描画するかどうかを決定する
     if (process.server) {
@@ -157,7 +157,7 @@ const getters = {
     // CSR 時はブラウザの Cookie に token が存在するかどうか
     return process.client && hasToken();
   },
-}
+};
 ```
 
 [NuxtServerInit](https://nuxtjs.org/guide/vuex-store/#the-nuxtserverinit-action) により Nuxt サーバー上で `nuxtServerInit` が解釈され DOM にユーザー情報が JSON として埋め込まれることになります。つまり、`isLogin` フラグも `SET_USER` によって更新されるユーザー情報の JSON も最初から描画できます。

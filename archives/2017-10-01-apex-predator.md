@@ -1,6 +1,6 @@
 ---
 categories:
-- Science
+  - Science
 date: "2017-10-01T18:14:01+09:00"
 slug: apex-predator
 title: 捕食者なき世界

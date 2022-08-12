@@ -44,7 +44,7 @@ Observable を自作する時に使える。例外が発生するような処理
         return Observable.just("RxJava")
                 .map(convertStringToInteger());
     }
-    
+
     public Func1<String, Integer> convertStringToInteger() {
         return new Func1<String, Integer>() {
             @Override
@@ -91,5 +91,5 @@ Observable を自作する時に使える。例外が発生するような処理
 
 ## 参考
 
-* [ReactiveX/RxJava](https://github.com/ReactiveX/RxJava)
-* [REACTIVE EXTENSIONS 学習ノート](http://wilfrem.github.io/learn_rx/operators.html)
+- [ReactiveX/RxJava](https://github.com/ReactiveX/RxJava)
+- [REACTIVE EXTENSIONS 学習ノート](http://wilfrem.github.io/learn_rx/operators.html)

@@ -111,5 +111,5 @@ dependencies {
 
 ## 参考
 
-* [Androidオープンソースライブラリの作り方 // Speaker Deck](https://speakerdeck.com/takahirom/androidopunsosuraiburarifalsezuo-rifang)
-* [BintrayにAndroidのライブラリをアップする - visible true](http://sys1yagi.hatenablog.com/entry/2015/02/06/002823)
+- [Android オープンソースライブラリの作り方 // Speaker Deck](https://speakerdeck.com/takahirom/androidopunsosuraiburarifalsezuo-rifang)
+- [Bintray に Android のライブラリをアップする - visible true](http://sys1yagi.hatenablog.com/entry/2015/02/06/002823)

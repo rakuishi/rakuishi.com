@@ -35,4 +35,3 @@ class CustomAdapter() : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
  * adapter.onItemClick = { text -> println(text) }
  */
 ```
-

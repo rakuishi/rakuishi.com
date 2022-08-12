@@ -1,6 +1,6 @@
 ---
 categories:
-- 開発
+  - 開発
 date: "2016-04-18T21:21:09+09:00"
 draft: falce
 slug: aniradime
@@ -13,8 +13,8 @@ title: "ネット配信されているアニラジの更新情報をまとめた
 
 {{<img alt="" src="/images/2016/04/aniradime.png" width="728" height="546">}}
 
-* [aniradime](http://radio.rakuishi.com/)
-* [rakuishi/aniradime: Gather anime radio waves.](https://github.com/rakuishi/aniradime)
+- [aniradime](http://radio.rakuishi.com/)
+- [rakuishi/aniradime: Gather anime radio waves.](https://github.com/rakuishi/aniradime)
 
 ## Library
 

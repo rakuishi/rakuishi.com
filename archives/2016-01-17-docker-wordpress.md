@@ -8,9 +8,9 @@ title: "Docker で WordPress サイト開発を始める"
 
 以前、WordPress のローカル仮想環境の構築を Vagrant を利用した [VCCW](http://vccw.cc/) で試したことがあるのですが、以下の理由から使うのを諦めたことがありました。
 
-* 仮想環境の起動が遅かった
-* 恐らくパーミッション設定が間違えているのかメディアがアップロードできなかった
-* 開発しているテーマとプラグインをどのように Git で管理するのか、サンプル記事をどのように共有するのか、イメージが湧かなかった
+- 仮想環境の起動が遅かった
+- 恐らくパーミッション設定が間違えているのかメディアがアップロードできなかった
+- 開発しているテーマとプラグインをどのように Git で管理するのか、サンプル記事をどのように共有するのか、イメージが湧かなかった
 
 仕方なくこれまで通りに [MAMP](https://www.mamp.info/en/) でローカル仮想環境を構築していた折、[Docker で WordPress サイトを開発してみよう](http://www.slideshare.net/mookjp/dockerword-press) というスライドを見かけて、Docker を始めてみました。上記の悩みを見事に解決出来たので（特に起動と破棄が一瞬だったのに感動した！）、今後は Docker を使っていくことにしました。
 
@@ -117,6 +117,6 @@ $ docker run -d -p 80:80 -v $(pwd)/public_html/wp-content:/app/wp-content/ -v $(
 
 ## 参考
 
-* [Installation on Mac OS X](https://docs.docker.com/engine/installation/mac/)
-* [tutumcloud/lamp: LAMP base docker image](https://github.com/tutumcloud/lamp)
-* [tutumcloud/wordpress: Wordpress docker image with bundled MySQL server (only for testing purposes)](https://github.com/tutumcloud/wordpress)
+- [Installation on Mac OS X](https://docs.docker.com/engine/installation/mac/)
+- [tutumcloud/lamp: LAMP base docker image](https://github.com/tutumcloud/lamp)
+- [tutumcloud/wordpress: Wordpress docker image with bundled MySQL server (only for testing purposes)](https://github.com/tutumcloud/wordpress)

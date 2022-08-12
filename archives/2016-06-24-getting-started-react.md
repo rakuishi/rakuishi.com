@@ -1,6 +1,6 @@
 ---
 categories:
-- JavaScript
+  - JavaScript
 date: "2016-06-24T00:11:32+09:00"
 slug: getting-started-react
 title: Hello, React.js!
@@ -14,8 +14,8 @@ React は JavaScript のライブラリなので jQuery と同じように、ス
 
 React では、以下のように変換が必要になる書きかたを積極的に行っています。
 
-* ES6（別名 ES2015）: 次期 JavaScript 仕様。ブラウザがサポートしていないと利用できないため、従来の ES5 仕様に変換する
-* JSX: JavaScript の中に HTML タグを書ける記法（.jsx という拡張子が使われることがある）。ブラウザ上で動かすには JavaScript で表現できるコードに変換する
+- ES6（別名 ES2015）: 次期 JavaScript 仕様。ブラウザがサポートしていないと利用できないため、従来の ES5 仕様に変換する
+- JSX: JavaScript の中に HTML タグを書ける記法（.jsx という拡張子が使われることがある）。ブラウザ上で動かすには JavaScript で表現できるコードに変換する
 
 それらの変換をブラウザ上でサポートする JavaScript はあるものの、ブラウザ上（ユーザーの手元）で行うのは効率が良くないため、予め変換し、さらに HTTP リクエスト数を削減するために、ひとつのファイルにまとめることが推奨されているというわけです。
 
@@ -37,12 +37,12 @@ $ npm install --save-dev watchify babelify babel-preset-react babel-preset-es201
 
 インストールしたライブラリを簡単に説明しておきます。
 
-* react: The core React library
-* react-dom: The ReactDom library
-* [babelify](https://github.com/babel/babelify): プリセットと組み合わせて変換してくれる
-* [preset-es2015](http://babeljs.io/docs/plugins/preset-es2015/): ES6（ES2015）
-* [preset-react](http://babeljs.io/docs/plugins/preset-react/): React, JSX が含まれている
-* [watchify](https://github.com/substack/watchify): [browserify](https://github.com/substack/node-browserify) というビルドツールをファイル変更時に自動でコンパイルする
+- react: The core React library
+- react-dom: The ReactDom library
+- [babelify](https://github.com/babel/babelify): プリセットと組み合わせて変換してくれる
+- [preset-es2015](http://babeljs.io/docs/plugins/preset-es2015/): ES6（ES2015）
+- [preset-react](http://babeljs.io/docs/plugins/preset-react/): React, JSX が含まれている
+- [watchify](https://github.com/substack/watchify): [browserify](https://github.com/substack/node-browserify) というビルドツールをファイル変更時に自動でコンパイルする
 
 babelify で使用するプリセットを .babelrc ファイルに宣言します。
 
@@ -78,7 +78,7 @@ main.js のファイルに変更があると bundle.js が出力されるはず�
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
   </head>
   <body>
     <div id="content"></div>
@@ -95,10 +95,7 @@ main.js のファイルに変更があると bundle.js が出力されるはず�
 import React from "react";
 import ReactDOM from "react-dom";
 
-ReactDOM.render(
-  <h1>Hello, World!</h1>,
-  document.getElementById('content')
-);
+ReactDOM.render(<h1>Hello, World!</h1>, document.getElementById("content"));
 ```
 
 index.html をブラウザで表示すると、「Hello, World!」と表示されているはずです。
@@ -107,12 +104,12 @@ index.html をブラウザで表示すると、「Hello, World!」と表示さ�
 
 ### 開発環境
 
-* [Reactをnpmでビルドする方法 browserify (watchify) + babelify編 | mae's blog](http://mae.chab.in/archives/2765)
-* [春からはじめるモダンJavaScript / ES2015 - Qiita](http://qiita.com/mizchi/items/3bbb3f466a3b5011b509)
+- [React を npm でビルドする方法 browserify (watchify) + babelify 編 | mae's blog](http://mae.chab.in/archives/2765)
+- [春からはじめるモダン JavaScript / ES2015 - Qiita](http://qiita.com/mizchi/items/3bbb3f466a3b5011b509)
 
 ### チュートリアル・デモ
 
-* [Tutorial | React](https://facebook.github.io/react/docs/tutorial.html)
-* [Thinking in React | React](https://facebook.github.io/react/docs/thinking-in-react.html)
-* [ruanyf/react-demos: a collection of simple demos of React.js](https://github.com/ruanyf/react-demos)
-* [rakuishi/react-js-practice: Hello, React.js!](https://github.com/rakuishi/react-js-practice)
+- [Tutorial | React](https://facebook.github.io/react/docs/tutorial.html)
+- [Thinking in React | React](https://facebook.github.io/react/docs/thinking-in-react.html)
+- [ruanyf/react-demos: a collection of simple demos of React.js](https://github.com/ruanyf/react-demos)
+- [rakuishi/react-js-practice: Hello, React.js!](https://github.com/rakuishi/react-js-practice)

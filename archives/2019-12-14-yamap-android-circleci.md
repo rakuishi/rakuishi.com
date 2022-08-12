@@ -54,7 +54,7 @@ $ java -jar bundletool-all-0.7.1.jar install-apks --apks=app.apks
 
 - release/X.X.X を作成する
 - aab を CircleCI の artifact よりダウンロードし、それを D&D してベータ配信
-- 最近は Android も審査時間があるため、ベータ配信に少し時間がかかる (2時間程度？)
+- 最近は Android も審査時間があるため、ベータ配信に少し時間がかかる (2 時間程度？)
 - ベータ配信 → 本番リリースは即反映される
 - 午前中にベータ配信して、確認して、本番リリースをポチる
 
@@ -164,7 +164,7 @@ slack-orb を利用するには、CircleCI 管理画面の Environment Variables
 ```yml
 orbs:
   slack: circleci/slack@3.4.1
- 
+
 jobs:
   build_apk_app:
     steps:

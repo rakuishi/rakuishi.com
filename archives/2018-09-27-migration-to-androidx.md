@@ -27,10 +27,10 @@ Android Studio 3.2.0 には「Refactor -> Migrate to AndroidX...」が追加さ�
 以上を書き換えてビルドした後、Fabric 1.+ では以下のエラーが出ました。最新安定版の 1.26.0 だと動作不良だったため 1.25.4 を指定します。
 
 ```
-Could not find method create() for arguments 
-[crashlyticsStoreDeobsRelease, 
-class com.crashlytics.tools.gradle.tasks.StoreMappingFileTask, 
-com.android.build.gradle.internal.scope.BuildArtifactsHolder$FinalBuildableArtifact@1711854a] 
+Could not find method create() for arguments
+[crashlyticsStoreDeobsRelease,
+class com.crashlytics.tools.gradle.tasks.StoreMappingFileTask,
+com.android.build.gradle.internal.scope.BuildArtifactsHolder$FinalBuildableArtifact@1711854a]
 on task set of type org.gradle.api.internal.tasks.DefaultTaskContainer.
 ```
 

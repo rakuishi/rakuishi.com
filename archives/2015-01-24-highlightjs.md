@@ -22,11 +22,11 @@ prettify は、ハイライトするコード部分を `<pre class="prettyprint"
 
 スタイルシートをヘッダーに貼り付けます。デモページから好きなテーマを探せます。→ [highlight.js demo](https://highlightjs.org/static/demo/)
 
-	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/default.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/default.min.css">
 
 JavaScript をフッター部分に貼り付けます。これをヘッダー部分に貼った場合、ブロッキング JavaScript になるので、フッター部分である `</body>` の直前に記述するのが良いです。
 
-	<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
-	<script>hljs.initHighlightingOnLoad();</script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
 
 以上の手順で、記事中のソースコード記述部分が、シンタックスハイライトされます。手軽にブログ記事を華やかにできるので、オススメです。

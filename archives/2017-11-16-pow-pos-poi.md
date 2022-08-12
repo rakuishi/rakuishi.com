@@ -1,10 +1,10 @@
 ---
 categories:
-- 仮想通貨
+  - 仮想通貨
 date: "2017-11-16T23:01:10+09:00"
 slug: pow-pos-poi
-title: '仮想通貨のネットワーク維持に使われている仕組みを比べてみた。Proof of Work, Proof of Stake, Proof of Importance'
-subtitle: 'ビットコインが採用した Proof of Work は問題を抱えています。それを改善するために後発の仮想通貨は Proof of Stake, Proof of Importance など異なる仕組みを実装しています。'
+title: "仮想通貨のネットワーク維持に使われている仕組みを比べてみた。Proof of Work, Proof of Stake, Proof of Importance"
+subtitle: "ビットコインが採用した Proof of Work は問題を抱えています。それを改善するために後発の仮想通貨は Proof of Stake, Proof of Importance など異なる仕組みを実装しています。"
 ---
 
 ビットコインではそのシステムを維持するために、プルーフ・オブ・ワーク（PoW）という仕組みが使われています。今のところ、ビットコインは時価総額こそは一位ですが、ビットコインが採用している PoW は問題を抱えています。

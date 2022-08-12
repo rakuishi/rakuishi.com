@@ -12,10 +12,10 @@ title: "さくらの VPS：環境設定から Web ページの表示まで"
 
 今回、以下のように設定されています（しましたが）、適宜読み替えてください。
 
-* ホスト名: host.vs.sakura.ne.jp（割り当てられたホスト名）
-* IP アドレス（割り当てられた IP アドレス）
-* 作業用ユーザー名: apps（任意）
-* 変更する ssh ポート番号: 61203（1024~65535  の範囲で任意）
+- ホスト名: host.vs.sakura.ne.jp（割り当てられたホスト名）
+- IP アドレス（割り当てられた IP アドレス）
+- 作業用ユーザー名: apps（任意）
+- 変更する ssh ポート番号: 61203（1024~65535 の範囲で任意）
 
 作業中にローカルとリモートの環境を行き来しています。どこでどのユーザーが作業しているかは、以下のように見方を知っておくと便利です。
 
@@ -27,9 +27,9 @@ apps:~ apps$ # <= Mac 側での作業
 
 ## VPS 起動
 
-申し込み後に送られてくる「[さくらのVPS] 仮登録完了のお知らせ」に書かれているコントロールパネルにアクセスし、申し込んだサーバーを起動します。
+申し込み後に送られてくる「[さくらの VPS] 仮登録完了のお知らせ」に書かれているコントロールパネルにアクセスし、申し込んだサーバーを起動します。
 
-* [さくらのVPSコントロールパネル](https://secure.sakura.ad.jp/vps/#/login)
+- [さくらの VPS コントロールパネル](https://secure.sakura.ad.jp/vps/#/login)
 
 ## ssh 接続
 
@@ -45,7 +45,7 @@ root@${ip_address}'s password: # メールに記載されていたパスワー�
 
 SAKURA Internet [Virtual Private Server SERVICE]
 
-[root@host ~]# 
+[root@host ~]#
 ```
 
 ## yum update
@@ -131,7 +131,7 @@ ssh 用のディレクトリを作成し、権限を 700 に変更します（�
 [apps@host ~]$ chmod 700 ~/.ssh
 ```
 
-既にssh 公開鍵を作っているから、鍵を作成する手順をスキップしました。以前に[この手順](https://help.github.com/articles/generating-a-new-ssh-key/)に従って作成しました。
+既に ssh 公開鍵を作っているから、鍵を作成する手順をスキップしました。以前に[この手順](https://help.github.com/articles/generating-a-new-ssh-key/)に従って作成しました。
 
 ```bash
 apps:~ apps$ ls -a .ssh/ | grep 'id_rsa'
@@ -143,8 +143,8 @@ id_rsa.pub
 
 ```bash
 apps:~ apps$ scp ~/.ssh/id_rsa.pub apps@${ip_address}:~/.ssh/authorized_keys
-apps@${ip_address}'s password: 
-id_rsa.pub 100% 744 0.7KB/s 00:00 
+apps@${ip_address}'s password:
+id_rsa.pub 100% 744 0.7KB/s 00:00
 ```
 
 すると転送後は、パスフレーズ無しでログインできるようになります。
@@ -155,7 +155,7 @@ apps:~ apps$ ssh apps@${ip_address}
 
 ## ポート番号の変更
 
-ssh の接続ポートはデフォルト TCP 22 番が割り当てられていますが、攻撃されやすいので任意の番号（1024~65535  の範囲）に変えておきます。
+ssh の接続ポートはデフォルト TCP 22 番が割り当てられていますが、攻撃されやすいので任意の番号（1024~65535 の範囲）に変えておきます。
 
 以後、ルート権限の処理が続くため、以下のコマンドを打ち込んでルートに成り代わっておきます。
 
@@ -169,8 +169,8 @@ Administrator. It usually boils down to these three things:
     #2) Think before you type.
     #3) With great power comes great responsibility.
 
-[sudo] password for apps: 
-[root@host apps]# 
+[sudo] password for apps:
+[root@host apps]#
 ```
 
 ```bash
@@ -178,7 +178,7 @@ Administrator. It usually boils down to these three things:
 [root@host apps]# vim /etc/ssh/sshd_config
 ```
 
-Port 番号を任意の数字（1024~65535  の範囲）に変更します。また、その他 2 点変更します。
+Port 番号を任意の数字（1024~65535 の範囲）に変更します。また、その他 2 点変更します。
 
 ```sh
 #Port 22
@@ -233,7 +233,7 @@ SAKURA Internet [Virtual Private Server SERVICE]
 
 ## ファイアウォールの設定
 
-引き続きルート権限での処理が続きます。ファイアウォール機能である iptables は、サーバへ接続させる通信のルールを設定できます。 
+引き続きルート権限での処理が続きます。ファイアウォール機能である iptables は、サーバへ接続させる通信のルールを設定できます。
 
 ```bash
 [root@host apps]# vim /etc/sysconfig/iptables
@@ -334,4 +334,4 @@ httpd を起動中: [  OK  ]
 
 ## 参考
 
-* [さくらのVPS入門 (全21回) - プログラミングならドットインストール](http://dotinstall.com/lessons/basic_sakura_vps)
+- [さくらの VPS 入門 (全 21 回) - プログラミングならドットインストール](http://dotinstall.com/lessons/basic_sakura_vps)

@@ -27,20 +27,20 @@ display は、要素の振る舞いを決める大事なプロパティです。
 
 ### block
 
-* width は 100% がデフォルト値
-* 中央寄せにしたいときは、`margin: 0 auto;` のように記述する
-* h1, h2, h3, p, div, header, main, footer などは標準で block 値である
+- width は 100% がデフォルト値
+- 中央寄せにしたいときは、`margin: 0 auto;` のように記述する
+- h1, h2, h3, p, div, header, main, footer などは標準で block 値である
 
 ### inline
 
-* width はコンテンツに依存する
-* width, height, margin を設定することが出来ない
-* 中央寄せにしたい時は、親要素に `text-align: center` を宣言する
-* span などは標準で inline 値である
+- width はコンテンツに依存する
+- width, height, margin を設定することが出来ない
+- 中央寄せにしたい時は、親要素に `text-align: center` を宣言する
+- span などは標準で inline 値である
 
 ### inline-block
 
-* 基本的には、inline と同じだが、width, height, margin を設定することが出来る
+- 基本的には、inline と同じだが、width, height, margin を設定することが出来る
 
 ## レスポンシブサイト作りに役立つ `box-sizing: border-box`
 
@@ -64,7 +64,7 @@ box-sizing プロパティは、幅と高さの計算方法を変える際に使
       border: 10px;
     }
 
-content-box は、全体の横幅が 360px（width + padding * 2 + border * 2）になります。一方、border-box は、全体の横幅が 300px で、その中に padding と border が詰まっています。ですので、実質的な横幅は、240px（width - padding * 2 - border * 2）となります。
+content-box は、全体の横幅が 360px（width + padding _ 2 + border _ 2）になります。一方、border-box は、全体の横幅が 300px で、その中に padding と border が詰まっています。ですので、実質的な横幅は、240px（width - padding _ 2 - border _ 2）となります。
 
 ただの計算方法の違いで終わりと言われればそうなのですが、この計算方法の違いは、レスポンシブサイトを作る時にとても重宝します。
 
@@ -77,7 +77,7 @@ content-box は、全体の横幅が 360px（width + padding * 2 + border * 2）
       padding: 0 20px;
     }
 
-これが、`box-sizing: content-box` の時は、横幅が 100% + 20px * 2 となり、100% を超えてしまうことになります。100% を超えてしまうと、横幅がデバイスよりもはみでてしまって、サイト全体がたつきます。
+これが、`box-sizing: content-box` の時は、横幅が 100% + 20px \* 2 となり、100% を超えてしまうことになります。100% を超えてしまうと、横幅がデバイスよりもはみでてしまって、サイト全体がたつきます。
 
 ## クラス名は、抽象的な名前を付ける
 
@@ -97,8 +97,8 @@ id 要素は、アンカーリンクを設定する時、JavaScript からその
 
 また、話がすこしそれますが、JavaScript によって状態を変化させる時は、以下のように決めておくと、第三者から見てもどの要素が JavaScript で変更されるかが分かりやすいです。
 
-* クラス名の先頭に `js-` と付ける
-* WAI-ARIA で定められたプロパティ（`aria-hidden` など）を踏襲する
+- クラス名の先頭に `js-` と付ける
+- WAI-ARIA で定められたプロパティ（`aria-hidden` など）を踏襲する
 
 ## ブラウザのデベロッパーツール機能を使えるようになる
 
