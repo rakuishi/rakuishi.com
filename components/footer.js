@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { categories } from "constants/categories";
+import { format } from "date-fns";
 
 export default function Footer() {
   return (
@@ -70,7 +71,9 @@ export default function Footer() {
             を設定したり、既存の Cookie を読み取ったりする場合があります。
           </p>
 
-          <p className="footer_copyright">© 2011-2021 rakuishi</p>
+          <p className="footer_copyright">
+            © 2011-{format(new Date(), "yyyy")} rakuishi
+          </p>
         </section>
       </div>
       <style jsx>
