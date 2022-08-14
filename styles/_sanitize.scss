@@ -253,7 +253,7 @@ svg {
     border-box
   );
   color: if(variable-exists(root-color), $root-color, #000000);
-  cursor: if(variable-exists(root-cursor), $root-cursor, default);
+  // cursor: if(variable-exists(root-cursor), $root-cursor, default);
   font: #{if(variable-exists(root-font-size), $root-font-size, 100%)}/#{if(
       variable-exists(root-line-height),
       $root-line-height,
