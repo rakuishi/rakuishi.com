@@ -20,12 +20,11 @@
   color: var(--primary-text-color);
   background-color: var(--primary-background-color);
   // word-break: break-all;
-  text-align: justify;
+  // text-align: justify;
   line-height: 1.7;
 
   --hljs-text-color: #ffffff;
-  --hljs-background-color: #1E2732;
-  --hljs-border-color: #1E2732;
+  --hljs-background-color: #002451;
 }
 
 [data-prefers-color-scheme="dark"] {
@@ -35,7 +34,6 @@
   --secondary-text-color: #cccccc;
   --border-color: #38444D;
   --link-color: #8ab4f8;
-  --hljs-border-color: #38444D;
 }
 
 a,
