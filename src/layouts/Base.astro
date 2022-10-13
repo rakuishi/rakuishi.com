@@ -1,0 +1,120 @@
+---
+import "../styles/sanitize.css";
+import "../styles/global.css";
+import "../styles/markdown.css";
+
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import { SITE_TITLE, SITE_DESCRIPTION } from "../config";
+
+export interface Props {
+  title: string;
+  description?: string;
+  image?: string;
+}
+
+const title = Astro.props.title
+  ? `${Astro.props.title} | ${SITE_TITLE}`
+  : SITE_TITLE;
+const description = Astro.props.description
+  ? Astro.props.description
+  : SITE_DESCRIPTION;
+const image = Astro.props.image
+  ? new URL(Astro.props.image, Astro.url)
+  : new URL("/assets/images/og.jpg", Astro.url);
+---
+
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <!-- Global Metadata -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
+    <meta name="generator" content={Astro.generator} />
+    <link rel="alternate" type="application/rss+xml" href="/rss.xml" />
+    <!-- Primary Meta Tags -->
+    <title>{title}</title>
+    <meta name="title" content={title} />
+    <meta name="description" content={description} />
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={Astro.url} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={image} />
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary" />
+    <meta property="twitter:site" content="@rakuishi07" />
+    <meta property="twitter:url" content={Astro.url} />
+    <meta property="twitter:title" content={title} />
+    <meta property="twitter:description" content={description} />
+    <meta property="twitter:image" content={image} />
+    <!-- Misc -->
+    <meta
+      name="google-site-verification"
+      content="hLAob0ZIhg0c3AeIGNo4AMQPkxMjM1UM3mBPYNvwceE"
+    />
+    <script
+      async=""
+      src="https://www.googletagmanager.com/gtag/js?id=G-FHMSX4CXEF"
+      is:inline
+    ></script>
+    <script is:inline>
+      (function () {
+        const getScheme = () => {
+          let scheme = "light";
+
+          if (localStorage.getItem("prefers-color-scheme")) {
+            scheme = localStorage.getItem("prefers-color-scheme");
+          } else if (
+            window.matchMedia("(prefers-color-scheme: dark)").matches
+          ) {
+            scheme = "dark";
+          }
+
+          return scheme;
+        };
+
+        const toggleTheme = () => {
+          const isDark = "dark" === getScheme();
+          const scheme = isDark ? "light" : "dark";
+          localStorage.setItem("prefers-color-scheme", scheme);
+          document.documentElement.setAttribute(
+            "data-prefers-color-scheme",
+            scheme
+          );
+          return scheme;
+        };
+
+        const updateThemeIcon = (scheme) => {
+          document.getElementById("theme_dark_icon").style.display =
+            scheme === "dark" ? "inline" : "none";
+          document.getElementById("theme_light_icon").style.display =
+            scheme === "dark" ? "none" : "inline";
+        };
+
+        document.documentElement.setAttribute(
+          "data-prefers-color-scheme",
+          getScheme()
+        );
+
+        document.addEventListener("DOMContentLoaded", () => {
+          updateThemeIcon(getScheme());
+
+          document
+            .getElementById("toggle_theme_button")
+            .addEventListener("click", () => {
+              updateThemeIcon(toggleTheme());
+            });
+        });
+      })();
+    </script>
+  </head>
+
+  <body>
+    <Header />
+    <slot />
+    <Footer />
+  </body>
+</html>

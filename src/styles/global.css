@@ -1,0 +1,52 @@
+:root {
+  --sans-font-family: -apple-system, system-ui, 'Noto Sans JP', Hiragino Kaku Gothic ProN, Meiryo, sans-serif;
+  --mono-font-family: "Monaco", "Menlo", "Courier New", monospace;
+  --font-size: 16px;
+  --max-width: 688px; /* テキスト領域（16px * 40）+ 余白（48px） */
+
+  --primary-background-color: #ffffff;
+  --secondary-background-color: #f5f5f5;
+  --primary-text-color: #333333;
+  --secondary-text-color: #5c5c5c;
+  --border-color: #e0e0e0;
+  --link-color: #0052cc;
+
+  font-family: var(--sans-font-family);
+  font-weight: normal;
+  font-size: var(--font-size);
+  color: var(--primary-text-color);
+  background-color: var(--primary-background-color);
+  line-height: 1.7;
+
+  --hljs-text-color: #ffffff;
+  --hljs-background-color: #002451;
+}
+
+[data-prefers-color-scheme="dark"] {
+  --primary-background-color: #161F2B;
+  --secondary-background-color: #1E2732;
+  --primary-text-color: #ffffff;
+  --secondary-text-color: #cccccc;
+  --border-color: #38444D;
+  --link-color: #8ab4f8;
+}
+
+a {
+  color: var(--link-color);
+}
+a:hover {
+  color: var(--link-color);
+}
+
+h1 {
+  line-height: 1.5;
+  font-weight: 700;
+}
+h2 {
+  line-height: 1.5;
+  font-weight: 700;
+}
+h3 {
+  line-height: 1.5;
+  font-weight: 700;
+}

@@ -1,0 +1,66 @@
+---
+import { getCategoryOrNull } from "../util";
+import Base from "./Base.astro";
+import Date from "../components/Date.astro";
+
+const {
+  content: { title, description, date, image, categories },
+} = Astro.props;
+
+const category = getCategoryOrNull(categories);
+---
+
+<Base title={title} description={description} image={image}>
+  <main>
+    <article
+      class="blog_post"
+      itemscope
+      itemtype="http://schema.org/BlogPosting"
+    >
+      <div class="blog_post_meta">
+        <Date date={date} />{
+          category && (
+            <>
+              ・
+              <a
+                class="blog_post_meta_category"
+                href={`/categories/${category.slug}/`}
+              >
+                {category.name}
+              </a>
+            </>
+          )
+        }
+      </div>
+      <h1 class="blog_post_title" itemprop="name">
+        {title}
+      </h1>
+      <div class="markdown" itemprop="text">
+        <slot />
+      </div>
+    </article>
+  </main>
+</Base>
+
+<style>
+  .blog_post {
+    max-width: var(--max-width);
+    margin: 0 auto 48px;
+    padding: 0 24px;
+  }
+  .blog_post_meta {
+    margin-bottom: 4px;
+    color: var(--secondary-text-color);
+  }
+  .blog_post_meta_category {
+    color: var(--secondary-text-color);
+  }
+  .blog_post_meta_category:hover {
+    color: var(--secondary-text-color);
+    text-decoration: underline;
+  }
+  .blog_post_title {
+    font-size: 28px;
+    margin-bottom: 48px;
+  }
+</style>

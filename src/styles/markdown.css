@@ -1,0 +1,121 @@
+.markdown h2 {
+  margin: 72px 0 24px;
+  padding-bottom: 12px;
+  font-size: 24px;
+  color: var(--primary-text-color);
+}
+.markdown h3 {
+  margin: 24px 0;
+  font-size: 20px;
+  color: var(--primary-text-color);
+}
+.markdown p {
+  margin: 24px 0;
+}
+.markdown a:hover {
+  text-decoration: underline;
+}
+.markdown small {
+  font-size: 80%;
+}
+.markdown ruby > rt {
+  font-size: 50%;
+}
+.markdown p > code {
+  padding: 2px 4px;
+  font-size: 90%;
+  font-family: var(--mono-font-family);
+  background-color: var(--secondary-background-color);
+  border-radius: 10px;
+}
+.markdown li > code {
+  padding: 2px 4px;
+  font-size: 90%;
+  font-family: var(--mono-font-family);
+  background-color: var(--secondary-background-color);
+  border-radius: 10px;
+}
+.markdown pre {
+  display: block;
+  margin: 24px 0;
+  border-radius: 10px;
+}
+.markdown pre > code {
+  display: block;
+  padding: 24px;
+  color: var(--hljs-text-color);
+}
+.markdown ul,
+.markdown ol {
+  margin: 24px 0;
+  padding-left: 24px;
+}
+.markdown ul {
+  list-style: disc;
+}
+.markdown ol {
+  list-style: decimal;
+}
+.markdown li {
+  padding-left: 8px;
+  text-align: left;
+}
+.markdown li > ul {
+  margin: 0;
+}
+.markdown hr {
+  height: 2px;
+  margin: 24px 0;
+  background-color: var(--border-color);
+  border: 0;
+}
+.markdown img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+.markdown blockquote {
+  position: relative;
+  padding-left: 24px;
+}
+.markdown blockquote:before {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  width: 4px;
+  border-radius: 8px;
+  background-color: var(--border-color);
+  content: "";
+}
+.markdown table {
+  display: block;
+  overflow-x: auto;
+  margin: 24px 0;
+  white-space: nowrap;
+}
+.markdown table th,
+.markdown table td {
+  padding: 8px;
+  border: 1px solid var(--border-color);
+}
+.markdown table th {
+  font-weight: 700;
+  color: var(--primary-text-color);
+  background-color: var(--secondary-background-color);
+}
+.markdown .iframe-wrapper {
+  position: relative;
+  overflow: hidden;
+  height: 0;
+  margin: 24px 0;
+  padding-top: 56.25%;
+}
+.markdown .iframe-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}

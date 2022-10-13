@@ -1,0 +1,74 @@
+---
+import Base from "./Base.astro";
+import Date from "../components/Date.astro";
+
+export interface Props {
+  title?: string;
+  posts: Array<any>;
+}
+
+const { title, posts } = Astro.props;
+---
+
+<Base title={title} description={null} image={null}>
+  <main class="layout">
+    {title && title.length > 0 && <h1 class="layout_title">{title}</h1>}
+    <ul class="layout_list">
+      {
+        posts.map(({ frontmatter }) => (
+          <li class="layout_list_item">
+            <a
+              href={`/archives/${frontmatter.slug}/`}
+              class="layout_list_item_inner"
+            >
+              <div class="layout_list_item_meta">
+                <Date date={frontmatter.date} />
+              </div>
+              <h2 class="layout_list_item_title">{frontmatter.title}</h2>
+              <div class="layout_list_item_summary">
+                {frontmatter.description}
+              </div>
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+  </main>
+</Base>
+
+<style>
+  .layout {
+    max-width: var(--max-width);
+    margin: 0 auto 48px;
+    padding: 0 12px;
+  }
+  .layout_title {
+    color: var(--secondary-text-color);
+    font-size: 18px;
+    margin: 16px 0 16px 16px;
+  }
+  .layout_list {
+    list-style: none;
+  }
+  .layout_list_item_inner {
+    display: block;
+    padding: 12px;
+    border-radius: 10px;
+  }
+  .layout_list_item_inner:hover {
+    background: var(--secondary-background-color);
+  }
+  .layout_list_item_meta {
+    margin-bottom: 4px;
+    color: var(--secondary-text-color);
+  }
+  .layout_list_item_title {
+    margin-bottom: 4px;
+    color: var(--primary-text-color);
+    font-size: 20px;
+  }
+  .layout_list_item_summary {
+    color: var(--secondary-text-color);
+    font-size: 14px;
+  }
+</style>
