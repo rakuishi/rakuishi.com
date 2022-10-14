@@ -1,5 +1,4 @@
 import { defineConfig } from "astro/config";
-import mdx from "@astrojs/mdx";
 import sitemap from "@astrojs/sitemap";
 import { visit } from "unist-util-visit";
 import gfm from "remark-gfm";
@@ -7,7 +6,7 @@ import gfm from "remark-gfm";
 // https://astro.build/config
 export default defineConfig({
   site: "https://rakuishi.com",
-  integrations: [mdx(), sitemap()],
+  integrations: [sitemap()],
   markdown: {
     shikiConfig: {
       theme: "nord",
