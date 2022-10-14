@@ -68,7 +68,7 @@ YAMAP では Android Wear アプリを提供しています。が、Wear は、�
 
 このように `executors` 以下に、Android アプリ向けの `app_excecutor` 設定、Wear アプリ向けの `wear_executor` 設定を定義すれば：
 
-```yml
+```yaml
 executors:
   app_excecutor:
     working_directory: ~/code
@@ -86,7 +86,7 @@ executors:
 
 後は、各 job の `executor` に、定義した executor を登録すれば OK です。
 
-```yml
+```yaml
 jobs:
   build_apk_app:
     executor:
@@ -114,7 +114,7 @@ jobs:
 
 `app_steps` という command を定義すれば：
 
-```yml
+```yaml
 commands:
   app_steps:
     steps:
@@ -131,7 +131,7 @@ commands:
 
 以下のように簡潔に各 job を書くことができます。
 
-```yml
+```yaml
 jobs:
   build_apk_app:
     executor:
@@ -161,7 +161,7 @@ Orb は CircleCI v2.1 で登場した「ジョブ、コマンド、Executor の�
 
 slack-orb を利用するには、CircleCI 管理画面の Environment Variables に `SLACK_WEBHOOK` で Webhook の URL を登録し、以下のように config.yml に記述します。
 
-```yml
+```yaml
 orbs:
   slack: circleci/slack@3.4.1
 

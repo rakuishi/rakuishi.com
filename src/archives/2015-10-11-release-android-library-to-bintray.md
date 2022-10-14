@@ -10,7 +10,7 @@ title: "Android のライブラリの作りかたと Bintray にアップロー�
 
 折角作ったならば、使う時は build.gradle に、以下のように一行追加すれば、ライブラリを使えるようにしたい。今回は、Bintray というサービスにライブラリをアップロードして、それを実現しました。
 
-```gradle
+```groovy
 dependencies {
     compile 'com.rakuishi:aileron:0.1.0'
 }
@@ -32,7 +32,7 @@ Menu → File → New → New Module からモジュールを追加します。�
 
 後は、sample の build.gradle に、dependencies を追加すれば、ライブラリを sample で使えるようになります。
 
-```gradle
+```groovy
 dependencies {
     // 省略
     compile implementation(':aileron')
@@ -49,7 +49,7 @@ dependencies {
 
 ルートディレクトリにある build.gradle に、bintray-release を追加します。
 
-```gradle
+```groovy
 buildscript {
     repositories {
         jcenter()
@@ -63,7 +63,7 @@ buildscript {
 
 次に、ライブラリディレクトリにある build.gradle を以下のように修正します。`lintOptions` ですが、自分の環境では設定しないとエラーでアップロード出来なかったため追加してます。
 
-```gradle
+```groovy
 apply plugin: 'com.android.library'
 apply plugin: 'com.novoda.bintray-release' // 追加
 
@@ -103,7 +103,7 @@ Bintray の maven にライブラリが登録されたら、次に jcenter に�
 
 自分の場合は、2 時間ぐらいで承認されました。jcenter に追加された後は、以下のように、一行追加するだけでライブラリが使用できるようになります。お疲れ様でした！
 
-```gradle
+```groovy
 dependencies {
     compile 'com.rakuishi:aileron:0.1.0'
 }

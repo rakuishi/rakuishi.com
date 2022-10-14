@@ -16,7 +16,7 @@ Error:Minimum supported Gradle version is 3.3. Current version is 2.14.1. If usi
 
 Gradle プラグインのバージョンは、プロジェクト直下にある /build.gradle に書かれています：
 
-```gradle
+```groovy
 buildscript {
     dependencies {
         classpath 'com.android.tools.build:gradle:2.3.0'
@@ -26,7 +26,7 @@ buildscript {
 
 上記と相対するように /gradle/wrapper/gradle-wrapper.properties に、使用する Gradle のバージョンを以下のように宣言する必要があります：
 
-```gradle
+```groovy
 distributionUrl=https\://services.gradle.org/distributions/gradle-3.3-all.zip
 ```
 

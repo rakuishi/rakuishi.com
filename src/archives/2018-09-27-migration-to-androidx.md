@@ -12,7 +12,7 @@ Android の下位互換性を提供している Support Library の整理の一�
 
 Android Studio 3.2.0 には「Refactor -> Migrate to AndroidX...」が追加され、基本的にはこのボタンをポチっとするだけで対応が完了するはずですが、その前に Android Gradle プラグインを 3.2.0 までバージョンを上げる必要があります：
 
-```gradle
+```groovy
 // build.gradle
 - classpath 'com.android.tools.build:gradle:3.1.3'
 + classpath 'com.android.tools.build:gradle:3.2.0'
@@ -34,7 +34,7 @@ com.android.build.gradle.internal.scope.BuildArtifactsHolder$FinalBuildableArtif
 on task set of type org.gradle.api.internal.tasks.DefaultTaskContainer.
 ```
 
-```gradle
+```groovy
 // build.gradle
 - classpath 'io.fabric.tools:gradle:1.+'
 + classpath 'io.fabric.tools:gradle:1.25.4'
