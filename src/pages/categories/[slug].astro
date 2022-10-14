@@ -1,7 +1,7 @@
 ---
 import BlogPostList from "../../layouts/BlogPostList.astro";
 import { SITE_CATEGORIES } from "../../config";
-import { findCategoryOrNull } from "../../util";
+import { requireCategory } from "../../util";
 
 export async function getStaticPaths() {
   return SITE_CATEGORIES.map((category) => ({
@@ -10,7 +10,7 @@ export async function getStaticPaths() {
 }
 
 const { slug } = Astro.params as { slug: string };
-const category = findCategoryOrNull(slug);
+const category = requireCategory(slug);
 const posts = (await Astro.glob("../../archives/*.md"))
   .filter((post) => {
     return (
@@ -21,4 +21,4 @@ const posts = (await Astro.glob("../../archives/*.md"))
   .reverse();
 ---
 
-<BlogPostList title={category?.name} posts={posts} />
+<BlogPostList title={category.name} posts={posts} />

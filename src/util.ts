@@ -1,7 +1,12 @@
 import { SITE_CATEGORIES } from './config';
 
-export function findCategoryOrNull(slug: string) {
-  return SITE_CATEGORIES.find((category) => category.slug === slug);
+export function requireCategory(slug: string) {
+  const category = SITE_CATEGORIES.find((category) => category.slug === slug);
+  if (category) {
+    return category;
+  } else {
+    throw new Error(`${slug} is not defined.`);
+  }
 }
 
 export function getCategoryOrNull(names: string[]) {
