@@ -5,7 +5,7 @@ import gfm from "remark-gfm";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://rakuishi.com",
+  site: "https://rakuishi.com/",
   integrations: [sitemap()],
   markdown: {
     shikiConfig: {

@@ -13,9 +13,9 @@
   "devDependencies": {
     "@astrojs/rss": "^1.0.2",
     "@astrojs/sitemap": "^1.0.0",
-    "astro": "^1.5.0",
+    "astro": "^2.0.4",
+    "date-fns": "^2.29.3",
     "remark-gfm": "^3.0.1",
-    "unist-util-visit": "^4.1.1",
-    "date-fns": "^2.29.3"
+    "unist-util-visit": "^4.1.1"
   }
 }
