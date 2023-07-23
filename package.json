@@ -11,9 +11,9 @@
     "deploy": "npm run build && firebase deploy"
   },
   "devDependencies": {
-    "@astrojs/rss": "^1.0.2",
-    "@astrojs/sitemap": "^1.0.0",
-    "astro": "^2.1.8",
+    "@astrojs/rss": "^2.4.3",
+    "@astrojs/sitemap": "^2.0.1",
+    "astro": "^2.9.1",
     "date-fns": "^2.29.3",
     "remark-gfm": "^3.0.1",
     "unist-util-visit": "^4.1.1"
