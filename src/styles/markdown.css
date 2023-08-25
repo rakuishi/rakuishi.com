@@ -44,6 +44,9 @@
   display: block;
   padding: 24px;
   color: var(--hljs-text-color);
+  font-family: var(--mono-font-family);
+  font-size: 14px;
+  line-height: 1.5;
 }
 .markdown ul,
 .markdown ol {
@@ -57,7 +60,6 @@
   list-style: decimal;
 }
 .markdown li {
-  padding-left: 8px;
   text-align: left;
 }
 .markdown li > ul {

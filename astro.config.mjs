@@ -9,7 +9,7 @@ export default defineConfig({
   integrations: [sitemap()],
   markdown: {
     shikiConfig: {
-      theme: "nord",
+      theme: "css-variables",
     },
     remarkPlugins: [
       gfm, // tables

@@ -1,6 +1,6 @@
 :root {
   --sans-font-family: -apple-system, system-ui, 'Noto Sans JP', Hiragino Kaku Gothic ProN, Meiryo, sans-serif;
-  --mono-font-family: "Monaco", "Menlo", "Courier New", monospace;
+  --mono-font-family: Monaco, Menlo, Courier New, monospace;
   --font-size: 16px;
   --max-width: 688px; /* テキスト領域（16px * 40）+ 余白（48px） */
 
@@ -10,6 +10,18 @@
   --secondary-text-color: #5c5c5c;
   --border-color: #e0e0e0;
   --link-color: #0052cc;
+
+  --astro-code-color-text: #333333;
+  --astro-code-color-background: #f5f5f5;
+  --astro-code-token-constant: #0550ae;
+  --astro-code-token-string: #333333;
+  --astro-code-token-comment: #6e7781;
+  --astro-code-token-keyword: #cf222e;
+  --astro-code-token-parameter: #953800;
+  --astro-code-token-function: #6639ba;
+  --astro-code-token-string-expression: #0a3069;
+  --astro-code-token-punctuation: #333333;
+  --astro-code-token-link: #0052cc;
 
   font-family: var(--sans-font-family);
   font-weight: normal;
@@ -29,6 +41,18 @@
   --secondary-text-color: #cccccc;
   --border-color: #38444D;
   --link-color: #8ab4f8;
+
+  --astro-code-color-text: #ffffff;
+  --astro-code-color-background: #1E2732;
+  --astro-code-token-constant: #79c0ff;
+  --astro-code-token-string: #ffffff;
+  --astro-code-token-comment: #8b949e;
+  --astro-code-token-keyword: #ff7b72;
+  --astro-code-token-parameter: #ffa657;
+  --astro-code-token-function: #d2a8ff;
+  --astro-code-token-string-expression: #a5d6ff;
+  --astro-code-token-punctuation: #ffffff;
+  --astro-code-token-link: #8ab4f8;
 }
 
 a {
