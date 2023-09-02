@@ -21,12 +21,12 @@ const { title, posts } = Astro.props;
               href={`/archives/${frontmatter.slug}/`}
               class="layout_list_item_inner"
             >
-              <div class="layout_list_item_meta">
-                <Date date={frontmatter.date} />
-              </div>
               <h2 class="layout_list_item_title">{frontmatter.title}</h2>
               <div class="layout_list_item_summary">
                 {frontmatter.description}
+              </div>
+              <div class="layout_list_item_meta">
+                <Date date={frontmatter.date} />
               </div>
             </a>
           </li>
@@ -58,17 +58,19 @@ const { title, posts } = Astro.props;
   .layout_list_item_inner:hover {
     background: var(--secondary-background-color);
   }
-  .layout_list_item_meta {
-    margin-bottom: 4px;
-    color: var(--secondary-text-color);
-  }
   .layout_list_item_title {
     margin-bottom: 4px;
     color: var(--primary-text-color);
     font-size: 20px;
   }
   .layout_list_item_summary {
+    margin-bottom: 4px;
     color: var(--secondary-text-color);
     font-size: 14px;
+  }
+  .layout_list_item_meta {
+    color: var(--secondary-text-color);
+    font-size: 14px;
+    font-family: var(--mono-font-family);
   }
 </style>

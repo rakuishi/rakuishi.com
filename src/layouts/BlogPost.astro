@@ -17,8 +17,11 @@ const category = getCategoryOrNull(categories);
       itemscope
       itemtype="http://schema.org/BlogPosting"
     >
+      <h1 class="blog_post_title" itemprop="name">
+        {title}
+      </h1>
       <div class="blog_post_meta">
-        <Date date={date} />{
+        <span class="blog_post_meta_date"><Date date={date} /></span>{
           category && (
             <>
               ・
@@ -32,9 +35,6 @@ const category = getCategoryOrNull(categories);
           )
         }
       </div>
-      <h1 class="blog_post_title" itemprop="name">
-        {title}
-      </h1>
       <div class="markdown" itemprop="text">
         <slot />
       </div>
@@ -48,9 +48,16 @@ const category = getCategoryOrNull(categories);
     margin: 0 auto 48px;
     padding: 0 24px;
   }
-  .blog_post_meta {
+  .blog_post_title {
+    font-size: 28px;
     margin-bottom: 4px;
+  }
+  .blog_post_meta {
+    margin-bottom: 48px;
     color: var(--secondary-text-color);
+  }
+  .blog_post_meta_date {
+    font-family: var(--mono-font-family);
   }
   .blog_post_meta_category {
     color: var(--secondary-text-color);
@@ -58,9 +65,5 @@ const category = getCategoryOrNull(categories);
   .blog_post_meta_category:hover {
     color: var(--secondary-text-color);
     text-decoration: underline;
-  }
-  .blog_post_title {
-    font-size: 28px;
-    margin-bottom: 48px;
   }
 </style>
