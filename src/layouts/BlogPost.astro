@@ -35,7 +35,10 @@ const category = getCategoryOrNull(categories);
           )
         }
       </div>
-      <div class="markdown" itemprop="text">
+      <div
+        class:list={["markdown", `category-${category?.slug ?? "none"}`]}
+        itemprop="text"
+      >
         <slot />
       </div>
     </article>

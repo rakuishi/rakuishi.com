@@ -12,6 +12,9 @@
 .markdown p {
   margin: 24px 0;
 }
+.markdown.category-blog p {
+  text-align: justify;
+}
 .markdown a:hover {
   text-decoration: underline;
 }
