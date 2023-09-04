@@ -29,14 +29,14 @@
   font-size: 90%;
   font-family: var(--mono-font-family);
   background-color: var(--secondary-background-color);
-  border-radius: 10px;
+  border-radius: 5px;
 }
 .markdown li > code {
   padding: 2px 4px;
   font-size: 90%;
   font-family: var(--mono-font-family);
   background-color: var(--secondary-background-color);
-  border-radius: 10px;
+  border-radius: 5px;
 }
 .markdown pre {
   display: block;
@@ -48,7 +48,7 @@
   padding: 24px;
   color: var(--hljs-text-color);
   font-family: var(--mono-font-family);
-  font-size: 14px;
+  font-size: 90%;
   line-height: 1.5;
 }
 .markdown ul,
