@@ -1,0 +1,12 @@
+<svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<style>
+.bg { fill: white; }
+.icon { fill: #333; }
+@media (prefers-color-scheme: dark) {
+  .bg { fill: #333; }
+  .icon { fill: white; }
+}
+</style>
+<path d="m0 0h48v48h-48z" class="bg"/>
+<path clip-rule="evenodd" d="m6 0h-6v48h6 36 6v-48h-6zm0 42h36v-36h-36zm24-12h6v6h-6zm0-6h6v-6-6h-24v6 6 6 6h6v-6h12zm0 0h-12v-6h12z" class="icon" fill-rule="evenodd"/>
+</svg>

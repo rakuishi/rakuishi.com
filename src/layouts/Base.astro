@@ -24,13 +24,13 @@ const image = Astro.props.image
   : new URL("/assets/images/og.jpg", Astro.url);
 ---
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ja">
   <head>
     <!-- Global Metadata -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
     <link rel="sitemap" href="/sitemap-index.xml" />
     <link rel="alternate" type="application/rss+xml" href="/rss.xml" />
@@ -59,8 +59,7 @@ const image = Astro.props.image
     <script
       async=""
       src="https://www.googletagmanager.com/gtag/js?id=G-FHMSX4CXEF"
-      is:inline
-    ></script>
+      is:inline></script>
     <script is:inline>
       (function () {
         const getScheme = () => {
