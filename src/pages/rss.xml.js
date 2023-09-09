@@ -7,9 +7,10 @@ function pubDate(dateStr) {
   return date;
 }
 
-export const get = () => {
-  const posts = Object.values(import.meta.globEager("../archives/*.md"));
-
+export function GET() {
+  const posts = Object.values(
+    import.meta.glob("../archives/*.md", { eager: true })
+  );
   return rss({
     title: SITE_TITLE,
     description: SITE_DESCRIPTION,
@@ -21,4 +22,4 @@ export const get = () => {
       pubDate: pubDate(item.frontmatter.date.toString()),
     })),
   });
-};
+}
