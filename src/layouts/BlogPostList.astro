@@ -64,9 +64,14 @@ const { title, posts } = Astro.props;
     font-size: 20px;
   }
   .layout_list_item_summary {
+    display: -webkit-box;
     margin-bottom: 4px;
     color: var(--secondary-text-color);
     font-size: 14px;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
   .layout_list_item_meta {
     color: var(--secondary-text-color);
