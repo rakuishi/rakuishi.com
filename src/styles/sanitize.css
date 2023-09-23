@@ -271,6 +271,7 @@ textarea {
   resize: vertical;
 }
 
+/*
 ::-moz-selection {
   background-color: #b3d4fc;
   color: #ffffff;
@@ -282,3 +283,4 @@ textarea {
   color: #ffffff;
   text-shadow: none;
 }
+*/
