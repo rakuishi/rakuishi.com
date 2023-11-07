@@ -79,6 +79,7 @@ title: "[Macbook Pro / Touch Bar] macOS Sierra 初期設定"
 - Preferences → Appearance & Behavior → Appearance → Theme → Darcula
 - Preferences → Keymap → 「Move Caret to Line End with Selection」に `Shift + Ctrl + E` を「Move Caret to Line Start with Selection」に `Shift + Ctrl + A` を追加する
 - Preferences → Keymap → 「Select Previous Tab」に `Ctrl + Shift + Tab` を「Select Next Tab」に `Ctrl + Tab` を追加する
+- Preferences → Keymap → 「Add Selection for Next Occurrence」に `Command + D` を追加する
 - Preferences → Editor → Colors & Fonts → 「Scheme」に「Darcula 2」を追加し、「Monaco 14」を設定する
 
 ### [Dropbox](https://www.dropbox.com/)
