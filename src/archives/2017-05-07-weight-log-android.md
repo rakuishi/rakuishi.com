@@ -21,7 +21,7 @@ Google Fit は API が開放されているから、サードパーティ製の�
 
 将来的には、目標体重の登録や、身長を入力しての BMI の計算、任意の期間を見る機能の追加などがあると思う。自分が使って不便だったり、要望が多ければ足していきます。
 
-[<img alt="" src="/images/2017/04/en_generic_rgb_wo_60.png" width="172" height="60">](https://play.google.com/store/apps/details?id=com.rakuishi.weight)
+[<img alt="" src="/images/2017/04/en_generic_rgb_wo_60.png" width="172" height="60" style="width: 172px !important">](https://play.google.com/store/apps/details?id=com.rakuishi.weight)
 
 - https://github.com/rakuishi/weight-log-android
 
