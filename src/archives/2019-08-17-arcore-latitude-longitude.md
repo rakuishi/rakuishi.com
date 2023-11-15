@@ -3,7 +3,7 @@ categories:
   - Android
 date: "2019-08-17T11:04:35+09:00"
 slug: arcore-latitude-longitude
-title: "[ARCore] AR 空間に緯度経度をもとにオブジェクトを配置する"
+title: "ARCore: AR 空間に緯度経度をもとにオブジェクトを配置する"
 ---
 
 Android では ARCore という AR を表現できるライブラリ群が提供されている。これを利用して、ヘンゼルとグレーテルのように、自分が歩いた場所を緯度経度として保存しておいて、その緯度経度にクッキー（球）を置くアプリを作ろうと試みた。

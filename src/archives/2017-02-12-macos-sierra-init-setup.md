@@ -3,7 +3,7 @@ categories:
   - Tech
 date: "2017-02-12T09:55:48+09:00"
 slug: macos-sierra-init-setup
-title: "[Macbook Pro / Touch Bar] macOS Sierra 初期設定"
+title: "Macbook Pro / Touch Bar: macOS Sierra 初期設定"
 ---
 
 仕事で新しい MacBook Pro / Touch Bar を使うことになったから、macOS Sierra の初期設定を自分用のメモを兼ねてまとめておきます。基本的に、[4 年前に書いた記事](/archives/5571/)から変わっていません。ガリガリ魔改造しているわけでなく、標準のシステム環境設定と、最低限のアプリを使用しています。
