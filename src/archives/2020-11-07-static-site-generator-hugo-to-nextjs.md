@@ -1,6 +1,6 @@
 ---
 categories:
-  - JavaScript
+  - Tech
 date: "2020-11-07T09:49:48+09:00"
 page: false
 slug: static-site-generator-hugo-to-nextjs

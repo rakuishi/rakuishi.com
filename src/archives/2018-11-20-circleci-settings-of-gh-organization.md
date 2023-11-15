@@ -1,6 +1,6 @@
 ---
 categories:
-  - Web Service
+  - Tech
 date: "2018-11-20T22:25:23+09:00"
 slug: circleci-settings-of-gh-organization
 title: "GitHub Organization に紐付く Project の CircleCI 設定方法"

@@ -1,6 +1,6 @@
 ---
 categories:
-  - 開発
+  - Tech
 date: "2017-05-07T09:09:24+09:00"
 slug: weight-log-android
 title: Google Fit と連携できる体重管理アプリを作りました

@@ -1,6 +1,6 @@
 ---
 categories:
-  - 投資
+  - 雑記
 date: "2017-12-08T06:05:50+09:00"
 slug: robo-advisors-wealthnavi-theo
 title: 自動で国際分散投資できるロボアドバイザー WealthNavi（ウェルスナビ）, THEO（テオ）に 30 万円 + 2 万円積立投資してみた

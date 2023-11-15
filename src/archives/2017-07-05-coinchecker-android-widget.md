@@ -1,6 +1,6 @@
 ---
 categories:
-  - 開発
+  - Tech
 date: "2017-07-05T22:48:12+09:00"
 slug: coinchecker-android-widget
 title: 仮想通貨の価格をウィジェットに表示する Android アプリを作りました

@@ -1,6 +1,6 @@
 ---
 categories:
-  - JavaScript
+  - Tech
 date: "2016-06-24T00:11:32+09:00"
 slug: getting-started-react
 title: Hello, React.js!

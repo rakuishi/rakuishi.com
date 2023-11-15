@@ -1,6 +1,6 @@
 ---
 categories:
-  - Web Service
+  - Tech
 date: "2015-09-06T10:02:52+09:00"
 slug: chrome-hijacking-media-keys
 title: "Google Play ミュージックを導入後、メディアキーで iTunes を操作できなくなった時の対処法"
