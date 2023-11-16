@@ -1,6 +1,6 @@
 ---
 categories:
-  - 仮想通貨
+  - Tech
 date: "2017-11-21T21:57:55+09:00"
 slug: risk-and-potential-of-bitcoin-2
 title: "ビットコインの抱える問題点とこれからの可能性（可能性編）"

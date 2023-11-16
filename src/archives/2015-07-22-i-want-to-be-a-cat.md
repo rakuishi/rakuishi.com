@@ -1,6 +1,6 @@
 ---
 categories:
-  - 雑記
+  - Blog
 date: "2015-07-22T23:05:01+09:00"
 slug: i-want-to-be-a-cat
 title: "何もしない休日の罪悪感"

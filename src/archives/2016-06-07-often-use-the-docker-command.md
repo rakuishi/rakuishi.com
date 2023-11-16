@@ -1,6 +1,6 @@
 ---
 categories:
-  - 雑記
+  - Blog
 date: "2016-06-07T22:44:24+09:00"
 slug: often-use-the-docker-command
 title: "Docker でよく使用するコマンド一覧"

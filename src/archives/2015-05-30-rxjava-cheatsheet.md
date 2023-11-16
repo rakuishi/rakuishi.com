@@ -1,6 +1,6 @@
 ---
 categories:
-  - Android
+  - Tech
 date: "2015-05-30T11:40:00+09:00"
 slug: rxjava-cheatsheet
 title: "RxJava Operators 私的チートシート"

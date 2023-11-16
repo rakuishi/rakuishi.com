@@ -1,6 +1,6 @@
 ---
 categories:
-  - 仮想通貨
+  - Tech
 date: "2017-11-11T16:19:33+09:00"
 slug: bitcoin-as-digital-gold
 title: "ビットコインは何故、金に例えられるか？ビットコインと金とマジックナンバー 21"

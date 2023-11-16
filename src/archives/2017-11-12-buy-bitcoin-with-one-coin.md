@@ -1,6 +1,6 @@
 ---
 categories:
-  - 仮想通貨
+  - Tech
 date: "2017-11-12T09:43:42+09:00"
 slug: buy-bitcoin-with-one-coin
 title: "仮想通貨（ビットコイン）はいくらから買えるの？実はワンコインから始められます！"

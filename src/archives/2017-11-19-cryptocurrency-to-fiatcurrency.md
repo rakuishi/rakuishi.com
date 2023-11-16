@@ -1,6 +1,6 @@
 ---
 categories:
-  - 仮想通貨
+  - Tech
 date: "2017-11-19T08:13:15+09:00"
 slug: cryptocurrency-to-fiatcurrency
 title: "｢仮想通貨をフィアット（Fiat）に戻す｣とは？"

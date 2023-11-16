@@ -1,6 +1,6 @@
 ---
 categories:
-  - 雑記
+  - Blog
 date: "2021-01-30T10:11:55+09:00"
 page: false
 slug: side-effects-of-reading

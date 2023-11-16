@@ -1,6 +1,6 @@
 ---
 categories:
-  - 雑記
+  - Blog
 date: "2015-04-01T01:33:36+09:00"
 slug: junk-code-in-march-2015
 title: "Junk code in March 2015"

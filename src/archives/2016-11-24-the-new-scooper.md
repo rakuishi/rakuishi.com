@@ -1,6 +1,6 @@
 ---
 categories:
-  - 雑記
+  - Blog
 date: "2016-11-24T07:53:38+08:00"
 slug: the-new-scooper
 title: 新しさを求める

@@ -1,6 +1,6 @@
 ---
 categories:
-  - 雑記
+  - Blog
 date: "2020-04-01T21:26:58+09:00"
 slug: standing-on-chain-scream
 title: 悲鳴の連鎖の上に立っている

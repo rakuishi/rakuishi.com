@@ -1,6 +1,6 @@
 ---
 categories:
-  - 雑記
+  - Blog
 date: "2022-08-14T10:10:59+09:00"
 page: false
 slug: my-sink-float-of-introversion

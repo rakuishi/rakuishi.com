@@ -1,6 +1,6 @@
 ---
 categories:
-  - 雑記
+  - Blog
 date: "2023-07-23T13:10:53+09:00"
 page: false
 slug: taming-the-beast-called-luck

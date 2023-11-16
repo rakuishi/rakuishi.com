@@ -1,6 +1,6 @@
 ---
 categories:
-  - 仮想通貨
+  - Tech
 date: "2017-11-07T20:24:37+09:00"
 slug: realtime-bitcoin-transactions-on-chainflyer
 title: "ビットコインの取引をリアルタイムで見てみよう"

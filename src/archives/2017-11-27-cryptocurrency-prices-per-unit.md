@@ -1,6 +1,6 @@
 ---
 categories:
-  - 仮想通貨
+  - Tech
 date: "2017-11-27T22:32:52+09:00"
 slug: cryptocurrency-prices-per-unit
 title: "何故、仮想通貨ごとに値段がかなり異なるのか？お買い得に見える仮想通貨の時価総額を見てみよう"

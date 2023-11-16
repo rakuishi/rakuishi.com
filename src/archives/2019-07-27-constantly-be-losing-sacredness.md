@@ -1,6 +1,6 @@
 ---
 categories:
-  - 雑記
+  - Blog
 date: "2019-07-27T12:07:45+09:00"
 slug: constantly-be-losing-sacredness
 title: 神聖さを失い続けている

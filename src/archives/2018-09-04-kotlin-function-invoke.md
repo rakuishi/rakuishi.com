@@ -1,6 +1,6 @@
 ---
 categories:
-  - Android
+  - Tech
 date: "2018-09-04T23:41:27+09:00"
 slug: kotlin-function-invoke
 title: "Kotlin: 関数オブジェクトと Invoke でクリックイベントをシンプルに書く"

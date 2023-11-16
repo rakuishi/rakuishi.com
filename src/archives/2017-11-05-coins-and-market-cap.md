@@ -1,6 +1,6 @@
 ---
 categories:
-  - 仮想通貨
+  - Tech
 date: "2017-11-05T09:41:47+09:00"
 slug: coins-and-market-cap
 title: "仮想通貨（ビットコイン、オルトコイン）の種類と時価総額"

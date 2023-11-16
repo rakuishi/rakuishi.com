@@ -1,6 +1,6 @@
 ---
 categories:
-  - 雑記
+  - Blog
 date: "2015-04-29T18:44:49+09:00"
 slug: talking-about-diary
 title: "日記を書いているということ"

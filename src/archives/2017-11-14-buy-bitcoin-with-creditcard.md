@@ -1,6 +1,6 @@
 ---
 categories:
-  - 仮想通貨
+  - Tech
 date: "2017-11-14T20:02:20+09:00"
 slug: buy-bitcoin-with-creditcard
 title: "仮想通貨のクレジットカード決済は便利だけれど、手数料が高め"

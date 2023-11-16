@@ -1,6 +1,6 @@
 ---
 categories:
-  - Android
+  - Tech
 date: "2018-11-10T09:34:51+09:00"
 slug: arcore-overview
 title: "Google Pixel 3: ARCore で拡張現実を体験してみた"

@@ -1,6 +1,6 @@
 ---
 categories:
-  - 雑記
+  - Blog
 date: "2015-07-05T11:54:51+09:00"
 slug: aqua-filter
 title: "アクア・フィルタ"

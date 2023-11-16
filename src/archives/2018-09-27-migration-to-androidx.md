@@ -1,6 +1,6 @@
 ---
 categories:
-  - Android
+  - Tech
 date: "2018-09-27T22:22:38+09:00"
 slug: migration-to-androidx
 title: 既存のプロジェクトの Support Library を AndroidX に移行する

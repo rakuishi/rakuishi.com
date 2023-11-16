@@ -1,6 +1,6 @@
 ---
 categories:
-  - 雑記
+  - Blog
 date: "2020-09-01T22:09:57+09:00"
 slug: how-to-change-your-mind
 title: どうにかして脳の神経伝達物質を御したい

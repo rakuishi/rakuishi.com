@@ -1,6 +1,6 @@
 ---
 categories:
-  - 雑記
+  - Blog
 date: "2016-09-11T10:05:18+08:00"
 slug: the-philippines-three-sixteenth
 title: フィリピン留学 3/16 週目

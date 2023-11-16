@@ -1,6 +1,6 @@
 ---
 categories:
-  - 雑記
+  - Blog
 date: "2017-09-06T23:33:41+09:00"
 slug: triple-trip
 title: 度々、旅を旅する

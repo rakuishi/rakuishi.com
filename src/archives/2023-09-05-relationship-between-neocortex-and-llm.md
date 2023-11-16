@@ -1,6 +1,6 @@
 ---
 categories:
-  - 雑記
+  - Blog
 date: "2023-09-05T02:26:43+09:00"
 page: false
 slug: relationship-between-neocortex-and-llm

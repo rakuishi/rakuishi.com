@@ -1,6 +1,6 @@
 ---
 categories:
-  - 仮想通貨
+  - Tech
 date: "2017-11-10T22:33:07+09:00"
 slug: what-are-bitcoin-confirmations
 title: "ビットコインを送金するときの確認・承認・Confirmation とは何なのか？"

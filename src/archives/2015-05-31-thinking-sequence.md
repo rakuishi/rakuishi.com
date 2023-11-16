@@ -1,6 +1,6 @@
 ---
 categories:
-  - 雑記
+  - Blog
 date: "2015-05-31T13:55:47+09:00"
 slug: thinking-sequence
 title: "Thinking Sequence"

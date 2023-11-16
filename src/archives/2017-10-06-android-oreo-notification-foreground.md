@@ -1,6 +1,6 @@
 ---
 categories:
-  - Android
+  - Tech
 date: "2017-10-06T21:59:23+09:00"
 slug: android-oreo-notification-foreground
 title: "Android Oreo: 通知とサービスのフォアグラウンド実行"
