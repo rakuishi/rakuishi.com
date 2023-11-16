@@ -19,6 +19,7 @@ const year = new Intl.DateTimeFormat("en-US", options).format(new Date());
         <input type="hidden" name="sitesearch" value="http://rakuishi.com" />
       </form>
       <p class="footer_categories">
+        <a class="footer_category" href="/archives">Archives</a>
         {
           SITE_CATEGORIES.map(({ name, slug }) => (
             <a class="footer_category" href={`/categories/${slug}/`}>
@@ -32,11 +33,14 @@ const year = new Intl.DateTimeFormat("en-US", options).format(new Date());
     <section class="footer_section">
       <h2 class="footer_title">Hey, I'm rakuishi</h2>
       <p class="footer_about">
-        はじめまして。<a href="/about/">rakuishi</a> といいます。大学在籍中（微生物学を専攻）の
-        2012 年 1 月に趣味で初めた iOS アプリ開発が高じて、アプリ開発とフロントエンド・デベロッパを仕事にしています。個人開発した
-        <a href="/quicka2/">Quicka</a> が有料アプリ 5 位でした（過去の栄光）。このサイトは私個人によるブログです。会社とは関係ありません。2011
-        年 8 月から記事を書いています。過去の記事は<a href="/archives">こちら</a
-        >から見れます。
+        はじめまして。<a href="/about/">rakuishi</a>
+         といいます。大学在籍中（微生物学を専攻）の 2012 年 1 月に趣味で初めた
+        iOS
+        アプリ開発が高じて、アプリ開発とフロントエンド・デベロッパを仕事にしています。個人開発した
+
+
+        <a href="/quicka2/">Quicka</a> が有料アプリ 5
+        位でした（過去の栄光）。このサイトは私個人によるブログです。会社とは関係ありません。
       </p>
 
       <p class="footer_analytics">
