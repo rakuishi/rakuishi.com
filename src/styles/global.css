@@ -29,9 +29,6 @@
   color: var(--primary-text-color);
   background-color: var(--primary-background-color);
   line-height: 1.7;
-
-  --hljs-text-color: #ffffff;
-  --hljs-background-color: #002451;
 }
 
 [data-prefers-color-scheme="dark"] {

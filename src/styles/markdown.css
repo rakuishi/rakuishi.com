@@ -46,7 +46,7 @@
 .markdown pre > code {
   display: block;
   padding: 24px;
-  color: var(--hljs-text-color);
+  color: var(--astro-code-color-text);
   font-family: var(--mono-font-family);
   font-size: 90%;
   line-height: 1.5;
