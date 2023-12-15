@@ -10,7 +10,7 @@ title: ｢オフライン郵便番号検索の決定版！ - 郵便番号検索�
 
 最近、放置していたアプリのアップデートを頑張っていて、iOS の「[Quicka2 - 検索を快適に](https://itunes.apple.com/jp/app/id725195676?mt=8&uo=4&at=11l3RT)」「[オフライン郵便番号検索の決定版！ - 郵便番号検索くん](https://itunes.apple.com/jp/app/id578073498?mt=8&uo=4&at=11l3RT)」に続いて、Android の郵便番号検索くんをアップデートしました。アップデートしたと書きましたが、実は別アプリとしてリリースしています。
 
-[<img alt="" src="/images/2017/04/en_generic_rgb_wo_60.png" width="172" height="60" style="width: 172px !important">](https://play.google.com/store/apps/details?id=com.rakuishi.postalcode2)
+[<img alt="" src="/images/2017/04/en_generic_rgb_wo_60.png" width="172" height="60">](https://play.google.com/store/apps/details?id=com.rakuishi.postalcode2)
 
 ## [オフライン郵便番号検索の決定版！ - 郵便番号検索くん](https://play.google.com/store/apps/details?id=com.rakuishi.postalcode2)
 
