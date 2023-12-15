@@ -1,6 +1,6 @@
 :root {
   --sans-font-family: -apple-system, system-ui, 'Noto Sans JP', Hiragino Kaku Gothic ProN, Meiryo, sans-serif;
-  --mono-font-family: Menlo, Monaco, monospace;
+  --mono-font-family: Monaco, monospace;
   --font-size: 16px;
   --max-width: 688px; /* テキスト領域（16px * 40）+ 余白（48px） */
 

@@ -21,10 +21,10 @@ const category = getCategoryOrNull(categories);
         {title}
       </h1>
       <div class="blog_post_meta">
-        <span class="blog_post_meta_date"><Date date={date} /></span>{
+        <Date date={date} />{
           category && (
             <>
-              ・
+              /
               <a
                 class="blog_post_meta_category"
                 href={`/categories/${category.slug}/`}
@@ -58,8 +58,6 @@ const category = getCategoryOrNull(categories);
   .blog_post_meta {
     margin-bottom: 48px;
     color: var(--secondary-text-color);
-  }
-  .blog_post_meta_date {
     font-family: var(--mono-font-family);
   }
   .blog_post_meta_category {

@@ -26,7 +26,7 @@ const { title, posts } = Astro.props;
                 {frontmatter.description}
               </div>
               <div class="layout_list_item_meta">
-                <Date date={frontmatter.date} />
+                <Date date={frontmatter.date} /> / {frontmatter.categories}
               </div>
             </a>
           </li>
@@ -44,8 +44,8 @@ const { title, posts } = Astro.props;
   }
   .layout_title {
     color: var(--secondary-text-color);
-    font-size: 18px;
-    margin: 16px 0 16px 16px;
+    font-size: 24px;
+    margin: 12px 0 12px 12px;
   }
   .layout_list {
     list-style: none;
