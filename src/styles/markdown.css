@@ -67,6 +67,7 @@
 }
 .markdown li > ul {
   margin: 0;
+  list-style: circle;
 }
 .markdown hr {
   height: 2px;
