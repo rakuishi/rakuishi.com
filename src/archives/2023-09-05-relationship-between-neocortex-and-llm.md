@@ -17,4 +17,4 @@ title: "新皮質と LLM の関連性"
 
 さらにこの文章をネットにたれながすことで新皮質と LLM の関連性が評価されて、これもいずれ学習データとして取り込まれていくだろうし、自分が読書を通して異なる物事をつなげて楽しむ遊びは LLM によってすでに高度に行われていることに虚しさを覚える。
 
-<amazon id="B09XV35SNR" title="脳は世界をどう見ているのか　知能の謎を解く「1000の脳」理論" src="https://ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B09XV35SNR&Format=_SL250_&ID=AsinImage&MarketPlace=JP&ServiceVersion=20070822&WS=1&tag=rakuishi-22&language=ja_JP">
+[脳は世界をどう見ているのか　知能の謎を解く「1000 の脳」理論](https://www.amazon.co.jp/exec/obidos/ASIN/B09XV35SNR/rakuishi-22/ref=nosim/)
