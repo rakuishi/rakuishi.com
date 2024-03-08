@@ -1,5 +1,5 @@
 :root {
-  --sans-font-family: -apple-system, system-ui, 'Noto Sans JP', Hiragino Kaku Gothic ProN, Meiryo, sans-serif;
+  --sans-font-family: -apple-system, 'Noto Sans JP', Hiragino Kaku Gothic ProN, Meiryo, sans-serif;
   --mono-font-family: Monaco, monospace;
   --font-size: 16px;
   --max-width: 688px; /* テキスト領域（16px * 40）+ 余白（48px） */
@@ -54,6 +54,7 @@
 
 a {
   color: var(--link-color);
+  text-underline-offset: 0.25rem;
 }
 a:hover {
   color: var(--link-color);
