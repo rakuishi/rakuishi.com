@@ -21,12 +21,7 @@ const { title, posts } = Astro.props;
               href={`/archives/${frontmatter.slug}/`}
               class="layout_list_item_inner"
             >
-              <h2
-                class="layout_list_item_title"
-                style={`view-transition-name: post_title_${frontmatter.slug}`}
-              >
-                {frontmatter.title}
-              </h2>
+              <h2 class="layout_list_item_title">{frontmatter.title}</h2>
               <div class="layout_list_item_summary">
                 {frontmatter.description}
               </div>
@@ -42,9 +37,6 @@ const { title, posts } = Astro.props;
 </Base>
 
 <style>
-  @view-transition {
-    navigation: auto;
-  }
   .layout {
     max-width: var(--max-width);
     margin: 0 auto 48px;
@@ -70,7 +62,6 @@ const { title, posts } = Astro.props;
     margin-bottom: 4px;
     color: var(--primary-text-color);
     font-size: 20px;
-    width: fit-content; /* view transition tips */
   }
   .layout_list_item_summary {
     display: -webkit-box;
