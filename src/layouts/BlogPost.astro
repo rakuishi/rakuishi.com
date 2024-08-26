@@ -4,7 +4,7 @@ import Base from "./Base.astro";
 import Date from "../components/Date.astro";
 
 const {
-  content: { title, description, date, image, categories },
+  content: { title, description, date, image, categories, slug },
 } = Astro.props;
 
 const category = getCategoryOrNull(categories);
@@ -17,7 +17,11 @@ const category = getCategoryOrNull(categories);
       itemscope
       itemtype="http://schema.org/BlogPosting"
     >
-      <h1 class="blog_post_title" itemprop="name">
+      <h1
+        class="blog_post_title"
+        style={`view-transition-name: post_title_${slug}`}
+        itemprop="name"
+      >
         {title}
       </h1>
       <div class="blog_post_meta">
@@ -46,6 +50,9 @@ const category = getCategoryOrNull(categories);
 </Base>
 
 <style>
+  @view-transition {
+    navigation: auto;
+  }
   .blog_post {
     max-width: var(--max-width);
     margin: 0 auto 48px;
@@ -54,6 +61,7 @@ const category = getCategoryOrNull(categories);
   .blog_post_title {
     font-size: 28px;
     margin-bottom: 4px;
+    width: fit-content; /* view transition tips */
   }
   .blog_post_meta {
     margin-bottom: 48px;
