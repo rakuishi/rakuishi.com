@@ -12,7 +12,7 @@ if (!slug) {
 const date = new Date();
 const yaml = `---
 categories:
-  - 雑記
+  - Blog
 date: "${format(new Date(), "yyyy-MM-dd'T'HH:mm:ssxxx")}"
 page: false
 slug: ${slug}
