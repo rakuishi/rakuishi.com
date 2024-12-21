@@ -11,7 +11,7 @@ export async function getStaticPaths() {
 
 const { slug } = Astro.params as { slug: string };
 const category = requireCategory(slug);
-const posts = (await Astro.glob("../../archives/*.md"))
+const posts = Object.values(import.meta.glob('../../archives/*.md', { eager: true }))
   .filter((post) => {
     return (
       post.frontmatter.categories &&

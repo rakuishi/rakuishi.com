@@ -1,7 +1,7 @@
 ---
 import BlogPostList from "../layouts/BlogPostList.astro";
 
-const posts = (await Astro.glob("../archives/*.md")).reverse().slice(0, 15);
+const posts = Object.values(import.meta.glob('../archives/*.md', { eager: true })).reverse().slice(0, 15);
 ---
 
 <BlogPostList title="" posts={posts} />
