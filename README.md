@@ -16,5 +16,7 @@ $ npm run dev
 ## Deployment
 
 ```
+$ brew install firebase-cli
+$ firebase login
 $ npm run deploy
 ```
