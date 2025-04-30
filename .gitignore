@@ -2,6 +2,9 @@
 .DS_Store
 /.firebase/
 
+# generated types
+.astro/
+
 # dependencies
 node_modules
 
