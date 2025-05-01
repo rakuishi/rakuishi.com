@@ -13,7 +13,6 @@ export default defineConfig({
     remarkPlugins: [
       gfm, // tables
       shortcodePlugin,
-      descriptionPlugin,
     ],
   },
 });
@@ -62,33 +61,5 @@ export function shortcodePlugin() {
     };
 
     traverse(tree);
-  };
-}
-
-export function descriptionPlugin() {
-  return function (tree, file) {
-    let description = "";
-    const types = ["text", "link", "inlineCode", "listItem"];
-
-    const traverse = (node) => {
-      if (types.includes(node.type) && node.value) {
-        description += node.value;
-      }
-
-      if (node.children) {
-        for (const child of node.children) {
-          traverse(child);
-        }
-      }
-    };
-
-    for (const child of tree.children) {
-      if (child.children) {
-        traverse(child);
-        if (description) break;
-      }
-    }
-
-    file.data.astro.frontmatter.description = description;
   };
 }

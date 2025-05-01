@@ -1,7 +1,10 @@
 ---
-import { SITE_CATEGORIES } from "@/config";
+import { getPosts } from "@/posts"
+
 const options = { year: "numeric" } as const;
 const year = new Intl.DateTimeFormat("en-US", options).format(new Date());
+const posts = await getPosts();
+const categories = Array.from(new Set<string>(posts.map(({ data }) => data.category)));
 ---
 
 <footer class="footer">
@@ -23,9 +26,9 @@ const year = new Intl.DateTimeFormat("en-US", options).format(new Date());
           class="footer_category"
           href="/archives">Posts</a
         >{
-          SITE_CATEGORIES.map(({ name, slug }) => (
-            <a class="footer_category" href={`/categories/${slug}/`}>
-              {name}
+          categories.map((category) => (
+            <a class="footer_category" href={`/categories/${category}/`}>
+              {category}
             </a>
           ))
         }
@@ -111,6 +114,7 @@ const year = new Intl.DateTimeFormat("en-US", options).format(new Date());
     border: 2px solid var(--border-color);
     border-radius: 16px;
     background-color: var(--primary-background-color);
+    text-transform: capitalize;
   }
   .footer_category:hover {
     border-color: var(--link-color);

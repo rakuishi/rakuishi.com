@@ -1,14 +1,16 @@
 ---
-import { getCategoryOrNull } from "@/util";
 import Base from "@/layouts/Base.astro";
 import Date from "@/components/Date.astro";
+import { type CollectionEntry } from 'astro:content';
 
-const {
-  content: { title, description, date, image, category },
-} = Astro.props;
+export interface Props {
+  post: CollectionEntry<'posts'>;
+}
+
+const { post } = Astro.props;
 ---
 
-<Base title={title} description={description} image={image}>
+<Base title={post.data.title} description={post.data.description} image={post.data.image}>
   <main>
     <article
       class="blog_post"
@@ -16,25 +18,25 @@ const {
       itemtype="http://schema.org/BlogPosting"
     >
       <h1 class="blog_post_title" itemprop="name">
-        {title}
+        {post.data.title}
       </h1>
       <div class="blog_post_meta">
-        <Date date={date} />{
-          category && (
+        <Date date={post.data.date} />{
+          post.data.category && (
             <>
               /
               <a
                 class="blog_post_meta_category"
-                href={`/categories/${category}/`}
+                href={`/categories/${post.data.category}/`}
               >
-                {category}
+                {post.data.category}
               </a>
             </>
           )
         }
       </div>
       <div
-        class:list={["markdown", `category-${category ?? "none"}`]}
+        class:list={["markdown", `category-${post.data.category ?? "none"}`]}
         itemprop="text"
       >
         <slot />
@@ -60,6 +62,7 @@ const {
   }
   .blog_post_meta_category {
     color: var(--secondary-text-color);
+    text-transform: capitalize;
   }
   .blog_post_meta_category:hover {
     color: var(--secondary-text-color);

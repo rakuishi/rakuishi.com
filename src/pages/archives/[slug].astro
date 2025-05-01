@@ -1,17 +1,24 @@
 ---
+import { getPosts } from "@/posts"
+import { render, type CollectionEntry } from "astro:content";
 import BlogPost from "@/layouts/BlogPost.astro";
 
+interface Props {
+  post: CollectionEntry<'posts'>;
+}
+
 export async function getStaticPaths() {
-  const posts = Object.values(import.meta.glob('@/archives/*.md', { eager: true }));
+  const posts = await getPosts();
   return posts.map((post) => ({
-    params: { slug: String(post.frontmatter.slug) },
-    props: post,
+    params: { slug: post.slug },
+    props: { post },
   }));
 }
 
-const { frontmatter, default: Content } = Astro.props;
+const { post } = Astro.props;
+const { Content } = await render(post);
 ---
 
-<BlogPost content={frontmatter}>
+<BlogPost post={post}>
   <Content />
 </BlogPost>

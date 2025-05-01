@@ -1,5 +1,5 @@
 import rss from "@astrojs/rss";
-import { SITE_TITLE, SITE_DESCRIPTION } from "@/config";
+import { SITE_TITLE, SITE_DESCRIPTION } from "@/const";
 
 function pubDate(dateStr) {
   const date = new Date(dateStr);

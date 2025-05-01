@@ -1,21 +1,27 @@
 ---
+import { getPosts } from "@/posts"
+import { type CollectionEntry } from 'astro:content';
 import BlogPostList from "@/layouts/BlogPostList.astro";
-import { SITE_CATEGORIES } from "@/config";
-import { requireCategory } from "@/util";
+
+interface Props {
+  posts: CollectionEntry<'posts'>[];
+  category: string;
+}
 
 export async function getStaticPaths() {
-  return SITE_CATEGORIES.map((category) => ({
-    params: { slug: String(category.slug) },
+  const posts = await getPosts();
+  const categories = Array.from(new Set<string>(posts.map(({ data }) => data.category)));
+
+  return categories.map((category) => ({
+    params: { slug: category },
+    props: { 
+      category,
+      posts: posts.filter((post) => post.data.category === category),
+    },
   }));
 }
 
-const { slug } = Astro.params as { slug: string };
-const category = requireCategory(slug);
-const posts = Object.values(import.meta.glob('@/archives/*.md', { eager: true }))
-  .filter((post) => {
-    return post.frontmatter.category;
-  })
-  .reverse();
+const { category, posts } = Astro.props;
 ---
 
-<BlogPostList title={category.name} posts={posts} />
+<BlogPostList title={category} posts={posts} />
