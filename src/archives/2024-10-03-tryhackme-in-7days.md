@@ -1,6 +1,5 @@
 ---
-categories:
-  - Tech
+category: tech
 date: "2024-10-05T07:54:28+09:00"
 page: false
 slug: tryhackme-in-7days

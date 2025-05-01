@@ -1,6 +1,5 @@
 ---
-categories:
-  - Tech
+category: tech
 date: "2018-01-27T20:01:04+09:00"
 slug: getting-started-with-keras
 title: Python の深層学習ライブラリ Keras で手書き文字の認識を始めよう

@@ -1,6 +1,5 @@
 ---
-categories:
-  - Tech
+category: tech
 date: "2017-11-09T21:58:43+09:00"
 slug: spread-of-cryptocurrency-trading
 title: "仮想通貨を売り買いするときに注意したい値段の差（スプレッド）"

@@ -1,6 +1,5 @@
 ---
-categories:
-  - Blog
+category: blog
 date: "2021-02-01T19:28:45+09:00"
 page: false
 slug: prayer-is-useless

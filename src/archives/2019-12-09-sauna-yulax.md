@@ -1,6 +1,5 @@
 ---
-categories:
-  - Blog
+category: blog
 date: "2019-12-09T19:28:58+09:00"
 slug: sauna-yulax
 title: "三大欲求に並ぶ快楽はサウナだ。湯らっくすのアウフグース体験記"

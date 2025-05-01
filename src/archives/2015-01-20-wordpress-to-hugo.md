@@ -1,6 +1,5 @@
 ---
-categories:
-  - Tech
+category: tech
 date: "2015-01-20T22:08:00+09:00"
 slug: wordpress-to-hugo
 title: "WordPress から Hugo に乗り換えました"

@@ -1,6 +1,5 @@
 ---
-categories:
-  - Tech
+category: tech
 date: "2015-10-11T14:51:01+09:00"
 slug: release-android-library-to-bintray
 title: "Android のライブラリの作りかたと Bintray にアップロードするまでの手順"

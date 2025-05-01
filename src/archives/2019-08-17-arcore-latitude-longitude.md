@@ -1,6 +1,5 @@
 ---
-categories:
-  - Tech
+category: tech
 date: "2019-08-17T11:04:35+09:00"
 slug: arcore-latitude-longitude
 title: "ARCore: AR 空間に緯度経度をもとにオブジェクトを配置する"

@@ -1,6 +1,5 @@
 ---
-categories:
-  - Tech
+category: tech
 date: "2023-09-03T07:11:38+09:00"
 page: false
 slug: improving-app-performance-with-baseline

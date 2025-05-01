@@ -1,6 +1,5 @@
 ---
-categories:
-  - Blog
+category: blog
 date: "2016-12-10T07:15:42+08:00"
 slug: i-studied-english-in-the-philippines
 title: 4 ヶ月間フィリピンに言語留学をしてきた

@@ -1,6 +1,5 @@
 ---
-categories:
-  - Tech
+category: tech
 date: "2017-11-16T23:01:10+09:00"
 slug: pow-pos-poi
 title: "仮想通貨のネットワーク維持に使われている仕組みを比べてみた。Proof of Work, Proof of Stake, Proof of Importance"

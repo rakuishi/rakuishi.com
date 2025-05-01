@@ -1,6 +1,5 @@
 ---
-categories:
-  - Tech
+category: tech
 date: "2017-11-22T22:44:21+09:00"
 slug: features-of-blockchain
 title: "仮想通貨以外にも利用されるブロックチェーンの特徴（改ざん耐性・低コスト・低障害）"

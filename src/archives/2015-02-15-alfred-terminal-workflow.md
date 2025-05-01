@@ -1,6 +1,5 @@
 ---
-categories:
-  - Tech
+category: tech
 date: "2015-02-15T11:32:16+09:00"
 slug: alfred-terminal-workflow
 title: "現在 Finder で表示しているフォルダ位置を Terminal で開く Alfred WorkFlow を作りました"

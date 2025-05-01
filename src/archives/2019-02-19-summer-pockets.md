@@ -1,6 +1,5 @@
 ---
-categories:
-  - Blog
+category: blog
 date: "2019-02-19T23:40:24+09:00"
 slug: summer-pockets
 title: Summer Pockets の感想にかえて。あの夏にポケットへ詰め込んだ記憶が眩しくて

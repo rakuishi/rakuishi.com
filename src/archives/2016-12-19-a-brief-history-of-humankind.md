@@ -1,6 +1,5 @@
 ---
-categories:
-  - Blog
+category: blog
 date: "2016-12-19T11:30:33+09:00"
 slug: a-brief-history-of-humankind
 title: 現実という仮想空間に生きる

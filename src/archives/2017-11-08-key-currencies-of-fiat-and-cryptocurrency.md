@@ -1,6 +1,5 @@
 ---
-categories:
-  - Tech
+category: tech
 date: "2017-11-08T18:33:28+09:00"
 slug: key-currencies-of-fiat-and-cryptocurrency
 title: "法定通貨と仮想通貨の基軸通貨"

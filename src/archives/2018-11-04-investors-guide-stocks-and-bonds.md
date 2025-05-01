@@ -1,6 +1,5 @@
 ---
-categories:
-  - Blog
+category: blog
 date: "2018-11-04T13:09:27+09:00"
 slug: investors-guide-stocks-and-bonds
 title: 素人投資家の投資戦略ガイド 〜投資の基本の株式と債券〜

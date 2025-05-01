@@ -1,6 +1,5 @@
 ---
-categories:
-  - Tech
+category: tech
 date: "2017-11-20T19:21:34+09:00"
 slug: problem-and-potential-of-bitcoin-1
 title: "ビットコインの抱える問題点とこれからの可能性（問題点編）"

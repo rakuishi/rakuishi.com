@@ -1,6 +1,5 @@
 ---
-categories:
-  - Blog
+category: blog
 date: "2016-02-07T22:51:38+09:00"
 slug: sento-seabed-universe
 title: "銭湯と海底と宇宙"

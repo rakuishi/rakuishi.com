@@ -13,10 +13,7 @@ const { slug } = Astro.params as { slug: string };
 const category = requireCategory(slug);
 const posts = Object.values(import.meta.glob('@/archives/*.md', { eager: true }))
   .filter((post) => {
-    return (
-      post.frontmatter.categories &&
-      post.frontmatter.categories[0] === category?.name
-    );
+    return post.frontmatter.category;
   })
   .reverse();
 ---

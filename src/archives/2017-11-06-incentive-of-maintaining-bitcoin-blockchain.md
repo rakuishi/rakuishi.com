@@ -1,6 +1,5 @@
 ---
-categories:
-  - Tech
+category: tech
 date: "2017-11-06T07:58:06+09:00"
 slug: incentive-of-maintaining-bitcoin-blockchain
 title: "仮想通貨（ビットコイン）は、それを維持する人（マイナー）への報酬をどのように用意しているのか？"

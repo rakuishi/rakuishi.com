@@ -1,6 +1,5 @@
 ---
-categories:
-  - Tech
+category: tech
 date: "2017-11-23T22:12:35+09:00"
 slug: open-vs-closed-blockchains
 title: "オープン型・クローズド型のブロックチェーンの特徴から見る、ビットコインとリップルの違い"

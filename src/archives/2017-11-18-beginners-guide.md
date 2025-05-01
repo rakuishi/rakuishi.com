@@ -1,6 +1,5 @@
 ---
-categories:
-  - Tech
+category: tech
 date: "2017-11-18T08:48:52+09:00"
 slug: beginners-guide
 title: "仮想通貨初心者ガイド（11/22 更新）"

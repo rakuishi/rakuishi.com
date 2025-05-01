@@ -1,6 +1,5 @@
 ---
-categories:
-  - Tech
+category: tech
 date: "2017-11-26T09:11:22+09:00"
 slug: generate-addresses-from-privatekey
 title: "｢お客様用ビットコインアドレスは変わることがあります。｣ってどういうこと？ビットコインのアドレスが複数作られる仕組みとは"

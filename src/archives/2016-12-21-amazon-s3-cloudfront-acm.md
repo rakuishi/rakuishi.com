@@ -1,6 +1,5 @@
 ---
-categories:
-  - Tech
+category: tech
 date: "2016-12-21T16:56:51+09:00"
 slug: amazon-s3-cloudfront-acm
 title: Amazon S3 で運用しているブログを HTTPS 化した

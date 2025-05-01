@@ -1,6 +1,5 @@
 ---
-categories:
-  - Tech
+category: tech
 date: "2016-06-04T22:50:42+09:00"
 slug: jupyter-font-family
 title: Jupyter (IPython) Notebook の Output を等幅フォントに変える

@@ -1,6 +1,5 @@
 ---
-categories:
-  - Blog
+category: blog
 date: "2019-08-16T00:06:34+09:00"
 slug: the-octopus-the-sea-and-the-deep-origins-of-consciousness
 title: ｢タコの心身問題｣を読んだ

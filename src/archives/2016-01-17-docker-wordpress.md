@@ -1,6 +1,5 @@
 ---
-categories:
-  - Tech
+category: tech
 date: "2016-01-17T14:53:50+09:00"
 slug: docker-wordpress
 title: "Docker で WordPress サイト開発を始める"

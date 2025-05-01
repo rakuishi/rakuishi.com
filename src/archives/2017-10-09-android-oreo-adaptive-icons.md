@@ -1,6 +1,5 @@
 ---
-categories:
-  - Tech
+category: tech
 date: "2017-10-09T11:14:17+09:00"
 slug: android-oreo-adaptive-icons
 title: "Android Oreo: アダプティブアイコン実装ガイド"

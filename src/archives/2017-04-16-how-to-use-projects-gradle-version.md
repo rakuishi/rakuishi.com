@@ -1,6 +1,5 @@
 ---
-categories:
-  - Tech
+category: tech
 date: "2017-04-16T09:26:44+09:00"
 slug: how-to-use-projects-gradle-version
 title: Error:Minimum supported Gradle version is 3.3. Current version is 2.14.1.

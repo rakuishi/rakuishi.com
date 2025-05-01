@@ -1,6 +1,5 @@
 ---
-categories:
-  - Blog
+category: blog
 date: "2015-03-15T09:39:40+09:00"
 slug: freshwater-shrimp
 title: "株式投資と Money Foward／あれも足りないこれも足りない／ヌマエビの綺麗な消化管"

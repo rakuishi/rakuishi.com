@@ -1,6 +1,5 @@
 ---
-categories:
-  - Tech
+category: tech
 date: "2023-12-07T19:23:29+09:00"
 page: false
 slug: android-app-improvement-2023

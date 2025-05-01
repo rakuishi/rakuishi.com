@@ -1,6 +1,5 @@
 ---
-categories:
-  - Blog
+category: blog
 date: "2018-12-04T20:26:22+09:00"
 slug: panda-diary
 title: パンダ日記

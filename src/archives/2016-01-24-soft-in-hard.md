@@ -1,6 +1,5 @@
 ---
-categories:
-  - Blog
+category: blog
 date: "2016-01-24T23:15:13+09:00"
 slug: soft-in-hard
 title: "I識→♥"

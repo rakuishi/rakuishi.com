@@ -1,6 +1,5 @@
 ---
-categories:
-  - Tech
+category: tech
 date: "2017-11-13T20:35:04+09:00"
 slug: zengin-net
 title: "仮想通貨の普及により全銀ネットは消えてなくなる？全銀ネットとは？"

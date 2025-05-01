@@ -1,6 +1,5 @@
 ---
-categories:
-  - Tech
+category: tech
 date: "2017-11-04T10:23:41+09:00"
 slug: mechanism-of-cryptocurrency
 title: "仮想通貨（ビットコイン）と電子マネーはどう違うのか？"

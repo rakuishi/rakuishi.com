@@ -1,6 +1,5 @@
 ---
-categories:
-  - Blog
+category: blog
 date: "2016-08-18T09:42:26+09:00"
 slug: learning-english-in-philippines
 title: フィリピンに英語留学に行くことにした

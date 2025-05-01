@@ -1,6 +1,5 @@
 ---
-categories:
-  - Tech
+category: tech
 date: "2018-12-07T23:14:32+09:00"
 slug: android-app-bundle
 title: Android App Bundle でアプリサイズを削減

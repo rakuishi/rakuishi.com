@@ -1,6 +1,5 @@
 ---
-categories:
-  - Tech
+category: tech
 date: "2017-11-15T21:15:16+09:00"
 slug: reasons-of-bitcoin-fork
 title: "何故、ビットコインは分裂するのか？まだまだ成長途中のシステムか、あるいは継ぎ接ぎだらけのシステムか？"

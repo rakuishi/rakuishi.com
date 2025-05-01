@@ -1,6 +1,5 @@
 ---
-categories:
-  - Tech
+category: tech
 date: "2022-10-13T20:52:16+09:00"
 page: false
 slug: static-site-generator-nextjs-to-astro

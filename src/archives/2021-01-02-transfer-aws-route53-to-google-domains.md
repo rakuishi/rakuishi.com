@@ -1,6 +1,5 @@
 ---
-categories:
-  - Tech
+category: tech
 date: "2021-01-02T11:32:07+09:00"
 page: false
 slug: transfer-aws-route53-to-google-domains

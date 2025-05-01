@@ -1,6 +1,5 @@
 ---
-categories:
-  - Blog
+category: blog
 date: "2015-04-04T22:29:53+09:00"
 slug: donation-of-blood
 title: "定期的に献血に行っている"

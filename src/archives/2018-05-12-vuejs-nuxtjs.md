@@ -1,6 +1,5 @@
 ---
-categories:
-  - Tech
+category: tech
 date: "2018-05-12T23:11:45+09:00"
 slug: vuejs-nuxtjs
 title: Vue.js / Nuxt.js を採用した Web 開発で得た知見
