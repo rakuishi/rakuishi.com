@@ -1,7 +1,7 @@
 ---
-import BlogPostList from "../../layouts/BlogPostList.astro";
-import { SITE_CATEGORIES } from "../../config";
-import { requireCategory } from "../../util";
+import BlogPostList from "@/layouts/BlogPostList.astro";
+import { SITE_CATEGORIES } from "@/config";
+import { requireCategory } from "@/util";
 
 export async function getStaticPaths() {
   return SITE_CATEGORIES.map((category) => ({
@@ -11,7 +11,7 @@ export async function getStaticPaths() {
 
 const { slug } = Astro.params as { slug: string };
 const category = requireCategory(slug);
-const posts = Object.values(import.meta.glob('../../archives/*.md', { eager: true }))
+const posts = Object.values(import.meta.glob('@/archives/*.md', { eager: true }))
   .filter((post) => {
     return (
       post.frontmatter.categories &&

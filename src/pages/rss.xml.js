@@ -1,5 +1,5 @@
 import rss from "@astrojs/rss";
-import { SITE_TITLE, SITE_DESCRIPTION } from "../config";
+import { SITE_TITLE, SITE_DESCRIPTION } from "@/config";
 
 function pubDate(dateStr) {
   const date = new Date(dateStr);
@@ -9,7 +9,7 @@ function pubDate(dateStr) {
 
 export function GET() {
   const posts = Object.values(
-    import.meta.glob("../archives/*.md", { eager: true })
+    import.meta.glob("@/archives/*.md", { eager: true })
   );
   return rss({
     title: SITE_TITLE,

@@ -1,8 +1,8 @@
 ---
-import BlogPost from "../../layouts/BlogPost.astro";
+import BlogPost from "@/layouts/BlogPost.astro";
 
 export async function getStaticPaths() {
-  const posts = Object.values(import.meta.glob('../../archives/*.md', { eager: true }));
+  const posts = Object.values(import.meta.glob('@/archives/*.md', { eager: true }));
   return posts.map((post) => ({
     params: { slug: String(post.frontmatter.slug) },
     props: post,
