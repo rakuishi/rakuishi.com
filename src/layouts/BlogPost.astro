@@ -10,7 +10,7 @@ export interface Props {
 const { post } = Astro.props;
 ---
 
-<Base title={post.data.title} description={post.data.description} image={post.data.image}>
+<Base title={post.data.title} description={post.body.slice(0, 200)} image={post.data.image}>
   <main>
     <article
       class="blog_post"
@@ -22,7 +22,7 @@ const { post } = Astro.props;
       </h1>
       <div class="blog_post_meta">
         <Date date={post.data.date} />{
-          post.data.category && (
+          (post.data.category && post.data.page === false ) && (
             <>
               /
               <a
