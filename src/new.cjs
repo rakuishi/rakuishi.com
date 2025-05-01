@@ -19,6 +19,6 @@ title: ""
 ---
 `;
 const filename = `${format(date, "yyyy-MM-dd")}-${slug}.md`;
-const dest = path.join(process.cwd(), "src/archives", filename);
+const dest = path.join(process.cwd(), "src/content/posts", filename);
 fs.writeFileSync(dest, yaml);
 exec(`open ${dest}`);
