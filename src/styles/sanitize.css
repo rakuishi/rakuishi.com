@@ -53,16 +53,19 @@ html {
 input {
   -webkit-border-radius: 0;
 }
-input[type=button], input[type=reset], input[type=submit] {
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
   -webkit-appearance: button;
 }
-input[type=number] {
+input[type="number"] {
   width: auto;
 }
-input[type=search] {
+input[type="search"] {
   -webkit-appearance: textfield;
 }
-input[type=search]::-webkit-search-cancel-button, input[type=search]::-webkit-search-decoration {
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
@@ -168,7 +171,7 @@ svg {
   fill: currentColor;
 }
 
-[aria-busy=true] {
+[aria-busy="true"] {
   cursor: progress;
 }
 
@@ -180,12 +183,12 @@ svg {
   cursor: default;
 }
 
-[hidden][aria-hidden=false] {
+[hidden][aria-hidden="false"] {
   clip: rect(0 0 0 0);
   display: inherit;
   position: absolute;
 }
-[hidden][aria-hidden=false]:focus {
+[hidden][aria-hidden="false"]:focus {
   clip: auto;
 }
 
@@ -200,7 +203,7 @@ svg {
   background-color: #ffffff;
   box-sizing: border-box;
   color: #000000;
-  font: 100%/1.5 sans-serif;
+  font: 100% / 1.5 sans-serif;
 }
 
 a {
@@ -225,22 +228,22 @@ textarea {
 }
 
 button,
-[type=button],
-[type=date],
-[type=datetime],
-[type=datetime-local],
-[type=email],
-[type=month],
-[type=number],
-[type=password],
-[type=reset],
-[type=search],
-[type=submit],
-[type=tel],
-[type=text],
-[type=time],
-[type=url],
-[type=week],
+[type="button"],
+[type="date"],
+[type="datetime"],
+[type="datetime-local"],
+[type="email"],
+[type="month"],
+[type="number"],
+[type="password"],
+[type="reset"],
+[type="search"],
+[type="submit"],
+[type="tel"],
+[type="text"],
+[type="time"],
+[type="url"],
+[type="week"],
 select,
 textarea {
   min-height: 1.5em;
@@ -250,7 +253,7 @@ code,
 kbd,
 pre,
 samp {
-  font-family: monospace, monospace;
+  font-family: monospace;
 }
 
 nav ol,

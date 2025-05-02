@@ -1,10 +1,12 @@
 ---
-import { getPosts } from "@/posts"
+import { getPosts } from "@/posts";
 
 const options = { year: "numeric" } as const;
 const year = new Intl.DateTimeFormat("en-US", options).format(new Date());
 const posts = await getPosts();
-const categories = Array.from(new Set<string>(posts.map(({ data }) => data.category)));
+const categories = Array.from(
+  new Set<string>(posts.map(({ data }) => data.category)),
+);
 ---
 
 <footer class="footer">

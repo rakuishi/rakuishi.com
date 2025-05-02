@@ -1,37 +1,35 @@
 ---
-import Base from "@/layouts/Base.astro";
+import type { CollectionEntry } from "astro:content";
 import Date from "@/components/Date.astro";
-import { type CollectionEntry } from 'astro:content';
+import Base from "@/layouts/Base.astro";
 
 export interface Props {
   title: string;
-  posts: CollectionEntry<'posts'>[];
+  posts: CollectionEntry<"posts">[];
 }
 
 const { title, posts } = Astro.props;
 
-const capitalize = function(text: string): string {
-  return text.charAt(0).toUpperCase() + text.slice(1).toLowerCase();
-};
+const capitalize = (text: string): string =>
+  text.charAt(0).toUpperCase() + text.slice(1).toLowerCase();
 
-const getPostsByYear = (posts: CollectionEntry<'posts'>[]) => {
-  const group: { [key: number]: CollectionEntry<'posts'>[] } = {};
-  posts.forEach(post => {
+const getPostsByYear = (posts: CollectionEntry<"posts">[]) => {
+  const group: { [key: number]: CollectionEntry<"posts">[] } = {};
+  for (const post of posts) {
     const year = post.data.date.getFullYear();
     if (!group[year]) {
       group[year] = [post];
     } else {
       group[year].push(post);
     }
-  });
+  }
   return group;
 };
 
 const postsByYear = getPostsByYear(posts);
 const years = Object.keys(postsByYear).sort((a, b) => {
-  return parseInt(b) - parseInt(a);
+  return Number.parseInt(b) - Number.parseInt(a);
 });
-
 ---
 
 <Base title={capitalize(title)}>

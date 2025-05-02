@@ -1,7 +1,7 @@
-const fs = require("fs");
-const path = require("path");
+const fs = require("node:fs");
+const path = require("node:path");
 const { format } = require("date-fns");
-const { exec } = require("child_process");
+const { exec } = require("node:child_process");
 
 const slug = process.argv[2];
 if (!slug) {

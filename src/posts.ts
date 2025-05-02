@@ -1,9 +1,9 @@
-import { getCollection, type CollectionEntry } from 'astro:content';
+import { type CollectionEntry, getCollection } from "astro:content";
 
 export async function getPosts(
-  isPage: boolean = false,
-): Promise<CollectionEntry<'posts'>[]> {
-  return (await getCollection('posts'))
+  isPage = false,
+): Promise<CollectionEntry<"posts">[]> {
+  return (await getCollection("posts"))
     .filter((post) => {
       return post.data.page === isPage;
     })

@@ -1,20 +1,22 @@
 ---
-import { getPosts } from "@/posts"
-import { type CollectionEntry } from 'astro:content';
+import type { CollectionEntry } from "astro:content";
 import BlogPostList from "@/layouts/BlogPostList.astro";
+import { getPosts } from "@/posts";
 
 interface Props {
-  posts: CollectionEntry<'posts'>[];
+  posts: CollectionEntry<"posts">[];
   category: string;
 }
 
 export async function getStaticPaths() {
   const posts = await getPosts();
-  const categories = Array.from(new Set<string>(posts.map(({ data }) => data.category)));
+  const categories = Array.from(
+    new Set<string>(posts.map(({ data }) => data.category)),
+  );
 
   return categories.map((category) => ({
     params: { slug: category },
-    props: { 
+    props: {
       category,
       posts: posts.filter((post) => post.data.category === category),
     },

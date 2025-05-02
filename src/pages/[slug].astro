@@ -1,10 +1,10 @@
 ---
-import { getPosts } from "@/posts"
-import { render, type CollectionEntry } from "astro:content";
+import { type CollectionEntry, render } from "astro:content";
 import BlogPost from "@/layouts/BlogPost.astro";
+import { getPosts } from "@/posts";
 
 interface Props {
-  post: CollectionEntry<'posts'>;
+  post: CollectionEntry<"posts">;
 }
 
 export async function getStaticPaths() {

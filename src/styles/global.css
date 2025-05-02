@@ -1,5 +1,6 @@
 :root {
-  --sans-font-family: -apple-system, 'Noto Sans JP', Hiragino Kaku Gothic ProN, Meiryo, sans-serif;
+  --sans-font-family: -apple-system, "Noto Sans JP", Hiragino Kaku Gothic ProN,
+    Meiryo, sans-serif;
   --mono-font-family: Monaco, monospace;
   --font-size: 16px;
   --max-width: 688px; /* テキスト領域（16px * 40）+ 余白（48px） */
@@ -32,15 +33,15 @@
 }
 
 [data-prefers-color-scheme="dark"] {
-  --primary-background-color: #161F2B;
-  --secondary-background-color: #1E2732;
+  --primary-background-color: #161f2b;
+  --secondary-background-color: #1e2732;
   --primary-text-color: #ffffff;
   --secondary-text-color: #cccccc;
-  --border-color: #38444D;
+  --border-color: #38444d;
   --link-color: #8ab4f8;
 
   --astro-code-foreground: #ffffff;
-  --astro-code-background: #1E2732;
+  --astro-code-background: #1e2732;
   --astro-code-token-constant: #79c0ff;
   --astro-code-token-string: #ffffff;
   --astro-code-token-comment: #8b949e;
