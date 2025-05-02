@@ -1,19 +1,21 @@
 {
-  "name": "rakuishi.com",
-  "version": "1.0.0",
-  "scripts": {
-    "dev": "astro dev",
-    "start": "astro dev",
-    "build": "astro build",
-    "preview": "astro preview",
-    "astro": "astro",
-    "new": "node src/new.cjs",
-    "deploy": "npm run build && firebase deploy"
-  },
-  "devDependencies": {
-    "@astrojs/rss": "^4.0.11",
-    "@astrojs/sitemap": "^3.3.1",
-    "astro": "^5.7.9",
-    "date-fns": "^4.1.0"
-  }
+	"name": "rakuishi.com",
+	"version": "1.0.0",
+	"scripts": {
+		"dev": "astro dev",
+		"start": "astro dev",
+		"build": "astro build",
+		"preview": "astro preview",
+		"astro": "astro",
+		"new": "node src/new.cjs",
+		"deploy": "npm run build && firebase deploy",
+		"check": "npx @biomejs/biome check --write ./src"
+	},
+	"devDependencies": {
+		"@astrojs/rss": "^4.0.11",
+		"@astrojs/sitemap": "^3.3.1",
+		"@biomejs/biome": "1.9.4",
+		"astro": "^5.7.9",
+		"date-fns": "^4.1.0"
+	}
 }
