@@ -1,8 +1,0 @@
----
-import { getPosts } from "@/posts"
-import BlogPostList from "@/layouts/BlogPostList.astro";
-
-const posts = await getPosts();
----
-
-<BlogPostList title="Archives" posts={posts} />

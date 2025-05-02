@@ -16,6 +16,13 @@
       "firebase.json",
       "**/.*",
       "**/node_modules/**"
+    ],
+    "redirects": [
+      {
+        "source": "/archives/:post*",
+        "destination": "/posts/:post",
+        "type": 301
+      }
     ]
   }
 }

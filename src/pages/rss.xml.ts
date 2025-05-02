@@ -14,7 +14,7 @@ export async function GET(context: APIContext) {
       title: post.data.title,
       pubDate: new Date(post.data.date),
       description: post.body.slice(0, 200),
-      link: `/archives/${post.slug}`,
+      link: `/posts/${post.slug}`,
     })),
   });
 }
