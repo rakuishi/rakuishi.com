@@ -9,9 +9,14 @@ export interface Props {
 }
 
 const { title, posts } = Astro.props;
+
+const capitalize = function(text: string): string {
+  return text.charAt(0).toUpperCase() + text.slice(1).toLowerCase();
+};
+
 ---
 
-<Base title={title}>
+<Base title={capitalize(title)}>
   <main class="layout">
     {title && title.length > 0 && <h1 class="layout_title">{title}</h1>}
     <ul class="layout_list">
