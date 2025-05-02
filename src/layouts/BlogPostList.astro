@@ -14,31 +14,55 @@ const capitalize = function(text: string): string {
   return text.charAt(0).toUpperCase() + text.slice(1).toLowerCase();
 };
 
+const getPostsByYear = (posts: CollectionEntry<'posts'>[]) => {
+  const group: { [key: number]: CollectionEntry<'posts'>[] } = {};
+  posts.forEach(post => {
+    const year = post.data.date.getFullYear();
+    if (!group[year]) {
+      group[year] = [post];
+    } else {
+      group[year].push(post);
+    }
+  });
+  return group;
+};
+
+const postsByYear = getPostsByYear(posts);
+const years = Object.keys(postsByYear).sort((a, b) => {
+  return parseInt(b) - parseInt(a);
+});
+
 ---
 
 <Base title={capitalize(title)}>
   <main class="layout">
     {title && title.length > 0 && <h1 class="layout_title">{title}</h1>}
-    <ul class="layout_list">
-      {
-        posts.map(post => (
-          <li class="layout_list_item">
-            <a
-              href={`/archives/${post.slug}/`}
-              class="layout_list_item_inner"
-            >
-              <h2 class="layout_list_item_title">{post.data.title}</h2>
-              <div class="layout_list_item_summary">
-                {post.body.slice(0, 200)}
-              </div>
-              <div class="layout_list_item_meta">
-                <Date date={post.data.date} /> / <span class="layout_list_item_category">{post.data.category}</span>
-              </div>
-            </a>
-          </li>
-        ))
-      }
-    </ul>
+    {
+      years.map(year => (
+        <section class="layout_section">
+          <h2 class="layout_section_title">{year}</h2>
+          <ul class="layout_list">
+            {
+              postsByYear[year].map(post => (
+                <li class="layout_list_item">
+                  <a
+                    href={`/archives/${post.slug}/`}
+                    class="layout_list_item_inner"
+                  >
+                    <span class="layout_list_item_meta">
+                      <Date date={post.data.date} omitYear={true} /> 
+                    </span>
+                    <span class="layout_list_item_title">
+                      {post.data.title}
+                    </span>
+                  </a>
+                </li>
+              ))
+            }
+          </ul>
+        </section>
+      ))
+    }
   </main>
 </Base>
 
@@ -54,36 +78,37 @@ const capitalize = function(text: string): string {
     margin: 12px 0 12px 12px;
     text-transform: capitalize;
   }
+  .layout_section_title {
+    color: var(--secondary-text-color);
+    font-size: 20px;
+    font-family: var(--mono-font-family);
+    margin: 24px 0 12px 12px;
+    text-transform: capitalize;
+  }  
   .layout_list {
     list-style: none;
   }
   .layout_list_item_inner {
-    display: block;
-    padding: 12px;
+    display: flex;
+    align-items: center;
+    padding: 4px 12px;
     border-radius: 8px;
   }
   .layout_list_item_inner:hover {
     background: var(--secondary-background-color);
   }
-  .layout_list_item_title {
-    margin-bottom: 4px;
-    color: var(--primary-text-color);
-    font-size: 20px;
-  }
-  .layout_list_item_summary {
-    display: -webkit-box;
-    margin-bottom: 4px;
-    color: var(--secondary-text-color);
-    font-size: 14px;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 3;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
   .layout_list_item_meta {
+    flex: 0 0 auto;
+    margin-right: 12px;
     color: var(--secondary-text-color);
-    font-size: 14px;
+    font-size: 16px;
     font-family: var(--mono-font-family);
+    align-self: flex-start;
+  }
+  .layout_list_item_title {
+    flex: 1 1 auto;
+    font-size: 16px;
+    color: var(--primary-text-color);
   }
   .layout_list_item_category {
     text-transform: capitalize;

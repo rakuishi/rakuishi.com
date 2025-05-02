@@ -17,38 +17,19 @@ import { SITE_TITLE } from "@/const";
     </a>
   </h1>
   <nav class="header_nav">
+    <a href="/about/" class="header_menu_text">
+      About
+    </a>
     <button
       id="toggle_theme_button"
-      class="header_menu header_menu_button"
+      class="header_menu_button"
       aria-label="Darkmode ⇄ Lightmode"
     >
-      <svg
-        id="theme_dark_icon"
-        fill="none"
-        height="48"
-        viewBox="0 0 48 48"
-        width="48"
-        xmlns="http://www.w3.org/2000/svg"
-        aria-label="Darkmode"
-        style="display: none;"
-      >
-        <path
-          d="m23.01 15.05c-4.5.49-8.01 4.31-8.01 8.95 0 4.97 4.03 9 9 9 4.63 0 8.45-3.5 8.95-8 .09-.79-.78-1.42-1.54-.95-.84.54-1.84.85-2.91.85-2.98 0-5.4-2.42-5.4-5.4 0-1.06.31-2.06.84-2.89.45-.67-.04-1.63-.93-1.56z"
-        ></path>
+      <svg id="theme_dark_icon" aria-label="Darkmode" style="display: none;" xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px">
+        <path d="M480.03-121.83q-149.36 0-253.78-104.49Q121.83-330.8 121.83-480.07q0-149.26 104.47-253.85Q330.76-838.5 480-838.5q8.57 0 18.12.58 9.55.59 22.38 1.92-36.83 31.5-57.42 77.67-20.58 46.16-20.58 98.2 0 90.84 63.44 154.23 63.44 63.4 154.06 63.4 52.27 0 98.33-19.61 46.06-19.62 77.67-54.39 1.33 11.5 1.92 20.05.58 8.55.58 16.45 0 149.24-104.55 253.7-104.56 104.47-253.92 104.47Z"/>
       </svg>
-      <svg
-        id="theme_light_icon"
-        fill="none"
-        height="48"
-        viewBox="0 0 48 48"
-        width="48"
-        xmlns="http://www.w3.org/2000/svg"
-        aria-label="Lightmode"
-        style="display: inline;"
-      >
-        <path
-          d="m24 29c-1.3833 0-2.5625-.4875-3.5375-1.4625s-1.4625-2.1542-1.4625-3.5375.4875-2.5625 1.4625-3.5375 2.1542-1.4625 3.5375-1.4625 2.5625.4875 3.5375 1.4625 1.4625 2.1542 1.4625 3.5375-.4875 2.5625-1.4625 3.5375-2.1542 1.4625-3.5375 1.4625zm-10.25-4.25c-.2167 0-.3958-.0708-.5375-.2125s-.2125-.3208-.2125-.5375.0708-.3958.2125-.5375.3208-.2125.5375-.2125h2.5c.2167 0 .3958.0708.5375.2125s.2125.3208.2125.5375-.0708.3958-.2125.5375-.3208.2125-.5375.2125zm18 0c-.2167 0-.3958-.0708-.5375-.2125s-.2125-.3208-.2125-.5375.0708-.3958.2125-.5375.3208-.2125.5375-.2125h2.5c.2167 0 .3958.0708.5375.2125s.2125.3208.2125.5375-.0708.3958-.2125.5375-.3208.2125-.5375.2125zm-7.75-7.75c-.2167 0-.3958-.0708-.5375-.2125s-.2125-.3208-.2125-.5375v-2.5c0-.2167.0708-.3958.2125-.5375s.3208-.2125.5375-.2125.3958.0708.5375.2125.2125.3208.2125.5375v2.5c0 .2167-.0708.3958-.2125.5375s-.3208.2125-.5375.2125zm0 18c-.2167 0-.3958-.0708-.5375-.2125s-.2125-.3208-.2125-.5375v-2.5c0-.2167.0708-.3958.2125-.5375s.3208-.2125.5375-.2125.3958.0708.5375.2125.2125.3208.2125.5375v2.5c0 .2167-.0708.3958-.2125.5375s-.3208.2125-.5375.2125zm-6-15.95-1.425-1.4c-.15-.15-.2208-.3292-.2125-.5375s.0792-.3875.2125-.5375c.15-.15.3292-.225.5375-.225s.3875.075.5375.225l1.4 1.425c.1333.15.2.325.2.525s-.0667.3667-.2.5c-.1333.15-.3042.225-.5125.225s-.3875-.0667-.5375-.2zm12.35 12.375-1.4-1.425c-.1333-.15-.2-.3292-.2-.5375s.075-.3792.225-.5125c.1333-.15.3-.225.5-.225s.375.075.525.225l1.425 1.4c.15.15.2208.3292.2125.5375s-.0792.3875-.2125.5375c-.15.15-.3292.225-.5375.225s-.3875-.075-.5375-.225zm-1.4-12.375c-.15-.15-.225-.325-.225-.525s.075-.375.225-.525l1.4-1.425c.15-.15.3292-.2208.5375-.2125s.3875.0792.5375.2125c.15.15.225.3292.225.5375s-.075.3875-.225.5375l-1.425 1.4c-.1333.1333-.3042.2-.5125.2s-.3875-.0667-.5375-.2zm-12.375 12.375c-.15-.15-.225-.3292-.225-.5375s.075-.3875.225-.5375l1.425-1.4c.15-.15.325-.225.525-.225s.375.075.525.225.225.325.225.525-.075.375-.225.525l-1.4 1.425c-.15.15-.3292.2208-.5375.2125s-.3875-.0792-.5375-.2125z"
-          fill="#000"></path>
+      <svg id="theme_light_icon" aria-label="Lightmode" style="display: none;" xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px">
+        <path d="M480.03-281.83q-82.36 0-140.28-57.99-57.92-57.98-57.92-140.25 0-82.26 57.99-140.35 57.98-58.08 140.25-58.08 82.26 0 140.35 58.05 58.08 58.05 58.08 140.42 0 82.36-58.05 140.28t-140.42 57.92ZM198.5-448.5H41.83v-63.33H198.5v63.33Zm720 0H761.83v-63.33H918.5v63.33Zm-470-313.33V-918.5h63.33v156.67H448.5Zm0 720V-198.5h63.33v156.67H448.5Zm-188.5-616-98.33-94.5 45.66-47 94.5 98-41.83 43.5Zm493.33 496.5-95.16-98.34 42.5-43.5 97.66 95.5-45 46.34Zm-96.16-539.34 95.16-97.66 47 45-97.33 95.5-44.83-42.84ZM161.33-207.33l97.67-95.5 44.17 43.5-95 97.16-46.84-45.16Z"/>
       </svg>
     </button>
   </nav>
@@ -85,25 +66,46 @@ import { SITE_TITLE } from "@/const";
     line-height: 56px;
     text-transform: uppercase;
   }
-  .header_menu {
-    display: inline-block;
-    min-width: 48px;
-    padding: 0 12px;
-    color: var(--primary-text-color);
-    font-size: 16px;
-    font-weight: 700;
-    text-transform: uppercase;
-    line-height: 48px;
-    border-radius: 8px;
+  .header_nav {
+    display: flex;
+    align-items: center;
   }
-  .header_menu:hover {
+  .header_menu_text {
+    display: inline-block;
+    height: 32px;
+    padding: 0 10px;
+    font-size: 14px;
+    line-height: 28px;
+    color: var(--secondary-text-color);
+    border: 2px solid var(--border-color);
+    border-radius: 16px;
+    background-color: var(--primary-background-color);
+    text-transform: capitalize;
+    margin-right: 8px;
+  }
+  .header_menu_text:hover {
     background: var(--secondary-background-color);
   }
   .header_menu_button {
-    padding: 0;
+    display: flex;
+    width: 32px;
+    height: 32px;
+    line-height: 28px;
+    color: var(--primary-text-color);
+    border: 2px solid var(--border-color);
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
     cursor: pointer;
-    appearance: none;
-    background: none;
-    border-radius: 24px;
+    /* appearance: none; */
+    /* background: none; */
+    border-radius: 16px;
+    fill: var(--secondary-text-color);
+  }
+  .header_menu_button svg {
+    fill: var(--secondary-text-color);
+  }
+  .header_menu_button:hover {
+    background: var(--secondary-background-color);
   }
 </style>

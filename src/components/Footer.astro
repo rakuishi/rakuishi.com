@@ -22,10 +22,7 @@ const categories = Array.from(new Set<string>(posts.map(({ data }) => data.categ
         <input type="hidden" name="sitesearch" value="http://rakuishi.com" />
       </form>
       <p class="footer_categories">
-        <a class="footer_category" href="/about">About</a><a
-          class="footer_category"
-          href="/archives">Posts</a
-        >{
+        {
           categories.map((category) => (
             <a class="footer_category" href={`/categories/${category}/`}>
               {category}
@@ -117,7 +114,7 @@ const categories = Array.from(new Set<string>(posts.map(({ data }) => data.categ
     text-transform: capitalize;
   }
   .footer_category:hover {
-    border-color: var(--link-color);
+    background-color: var(--secondary-background-color);
   }
   .footer_title {
     font-size: 18px;

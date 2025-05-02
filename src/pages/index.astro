@@ -2,8 +2,7 @@
 import { getPosts } from "@/posts"
 import BlogPostList from "@/layouts/BlogPostList.astro";
 
-const posts = await getPosts()
-    .then((posts) => posts.slice(0, 15));
+const posts = await getPosts();
 ---
 
 <BlogPostList title="" posts={posts} />

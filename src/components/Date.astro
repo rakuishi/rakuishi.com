@@ -1,9 +1,12 @@
 ---
-const { date } = Astro.props;
+const { 
+  date,
+  omitYear = false,
+} = Astro.props;
 const options = { year: "numeric", month: "2-digit", day: "2-digit" } as const;
 const [{ value: year }, , { value: month }, , { value: day }] =
   new Intl.DateTimeFormat("ja-JP", options).formatToParts(globalThis.Date.parse(date));
-const formattedDate = `${year}-${month}-${day}`;
+const formattedDate = omitYear ? `${month}/${day}` : `${year}/${month}/${day}`;
 ---
 
 <time datetime={date}>{formattedDate}</time>
