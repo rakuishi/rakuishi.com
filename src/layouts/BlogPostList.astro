@@ -1,6 +1,6 @@
 ---
 import type { CollectionEntry } from "astro:content";
-import Date from "@/components/Date.astro";
+import Date, { Format } from "@/components/Date.astro";
 import Base from "@/layouts/Base.astro";
 
 export interface Props {
@@ -48,7 +48,7 @@ const years = Object.keys(postsByYear).sort((a, b) => {
                     class="layout_list_item_inner"
                   >
                     <span class="layout_list_item_meta">
-                      <Date date={post.data.date} omitYear={true} /> 
+                      <Date date={post.data.date} format={Format.MMDD} /> 
                     </span>
                     <span class="layout_list_item_title">
                       {post.data.title}
