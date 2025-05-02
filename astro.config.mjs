@@ -1,6 +1,5 @@
 import { defineConfig } from "astro/config";
 import sitemap from "@astrojs/sitemap";
-import gfm from "remark-gfm";
 
 // https://astro.build/config
 export default defineConfig({
@@ -10,10 +9,7 @@ export default defineConfig({
     shikiConfig: {
       theme: "css-variables",
     },
-    remarkPlugins: [
-      gfm, // tables
-      shortcodePlugin,
-    ],
+    remarkPlugins: [shortcodePlugin],
   },
 });
 
