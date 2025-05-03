@@ -1,6 +1,6 @@
 ---
 import type { CollectionEntry } from "astro:content";
-import Date from "@/components/Date.astro";
+import DateTime from "@/components/DateTime.astro";
 import Base from "@/layouts/Base.astro";
 
 export interface Props {
@@ -21,7 +21,7 @@ const { post } = Astro.props;
         {post.data.title}
       </h1>
       <div class="blog_post_meta">
-        <Date date={post.data.date} />{
+        <DateTime date={post.data.date} />{
           (post.data.category && post.data.page === false ) && (
             <>
               /

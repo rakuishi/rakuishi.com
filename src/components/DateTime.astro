@@ -1,12 +1,12 @@
 ---
 import { Temporal } from "@js-temporal/polyfill";
 
-export const Format = {
+export const DateTimeFormat = {
   YYYYMMDD: "YYYYMMDD",
   MMDD: "MMDD",
 };
 
-const { date, format = Format.YYYYMMDD } = Astro.props;
+const { date, format = DateTimeFormat.YYYYMMDD } = Astro.props;
 
 const instant = Temporal.Instant.fromEpochMilliseconds(date.getTime());
 const dateTime = instant.toZonedDateTimeISO("Asia/Tokyo");
@@ -15,7 +15,9 @@ const month = dateTime.month.toString().padStart(2, "0");
 const day = dateTime.day.toString().padStart(2, "0");
 
 const formattedDate =
-  format === Format.YYYYMMDD ? `${year}/${month}/${day}` : `${month}/${day}`;
+  format === DateTimeFormat.YYYYMMDD
+    ? `${year}/${month}/${day}`
+    : `${month}/${day}`;
 ---
 
 <time datetime={date}>{formattedDate}</time>
