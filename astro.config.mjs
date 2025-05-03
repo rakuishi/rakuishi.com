@@ -42,7 +42,7 @@ export function shortcodePlugin() {
         // youtube
         node.value = node.value.replace(
           /<youtube (.+?)>/g,
-          '<div class="iframe-wrapper"><iframe width="640" height="360" src="https://www.youtube.com/embed/$1" allowfullscreen frameborder="0"></iframe></div>'
+          '<div class="iframe-wrapper"><iframe width="640" height="360" src="https://www.youtube.com/embed/$1" allowfullscreen frameborder="0" loading="lazy"></iframe></div>'
         );
 
         // cryptocurrency
