@@ -36,14 +36,14 @@ const categories = Array.from(
 
     <section class="footer_section">
       <h2 class="footer_title">Hey, I'm rakuishi</h2>
-      <p class="footer_about">
+      <p class="footer_body">
         はじめまして。<a href="/about/">rakuishi</a>
         といいます。大学在籍中（微生物学を専攻）の 2012 年 1 月に趣味で初めた iOS
         アプリ開発が高じて、アプリ開発とフロントエンド・デベロッパを仕事にしています。個人開発した
         <a href="/quicka2/">Quicka</a> が有料アプリ 5 位でした（過去の栄光）。このサイトは私個人によるブログです。会社とは関係ありません。
       </p>
 
-      <p class="footer_analytics">
+      <p class="footer_body">
         このウェブサイトでは訪問者の行動を把握するために <a
           href="https://www.google.com/analytics/terms/jp.html"
           rel="noopener"
@@ -122,21 +122,17 @@ const categories = Array.from(
     font-size: 18px;
     margin-bottom: 8px;
   }
-  .footer_about {
+  .footer_body {
     margin-bottom: 12px;
     font-size: 14px;
     color: var(--secondary-text-color);
   }
-  .footer_about a:hover {
-    text-decoration: underline;
-  }
-  .footer_analytics {
-    margin-bottom: 12px;
-    font-size: 14px;
+  .footer_body a {
     color: var(--secondary-text-color);
-  }
-  .footer_analytics a:hover {
     text-decoration: underline;
+  }
+  .footer_body a:hover {
+    color: var(--link-color);
   }
   .footer_copyright {
     font-size: 14px;

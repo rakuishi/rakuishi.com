@@ -15,8 +15,12 @@
 .markdown.category-blog p {
   text-align: justify;
 }
-.markdown a:hover {
+.markdown a {
   text-decoration: underline;
+}
+.markdown a:hover {
+  color: var(--link-color);
+  text-decoration: underline dotted;
 }
 .markdown small {
   font-size: 80%;
