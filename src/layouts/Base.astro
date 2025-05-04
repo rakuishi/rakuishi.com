@@ -5,7 +5,7 @@ import "@/styles/markdown.css";
 
 import Footer from "@/components/Footer.astro";
 import Header from "@/components/Header.astro";
-import { SITE_DESCRIPTION, SITE_TITLE } from "@/const";
+import { SITE } from "@/const";
 
 export interface Props {
   title: string;
@@ -14,11 +14,11 @@ export interface Props {
 }
 
 const title = Astro.props.title
-  ? `${Astro.props.title} | ${SITE_TITLE}`
-  : SITE_TITLE;
+  ? `${Astro.props.title} | ${SITE.title}`
+  : SITE.title;
 const description = Astro.props.description
   ? Astro.props.description
-  : SITE_DESCRIPTION;
+  : SITE.description;
 const image = Astro.props.image
   ? new URL(Astro.props.image, Astro.url)
   : new URL("/assets/images/og.jpg", Astro.url);
