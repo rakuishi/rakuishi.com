@@ -30,6 +30,7 @@
   color: var(--primary-text-color);
   background-color: var(--primary-background-color);
   line-height: 1.7;
+  overflow-wrap: break-word;
 }
 
 [data-prefers-color-scheme="dark"] {
