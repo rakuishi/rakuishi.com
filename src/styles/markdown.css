@@ -1,11 +1,10 @@
 .markdown h2 {
   margin: 72px 0 24px;
-  padding-bottom: 12px;
   font-size: 24px;
   color: var(--primary-text-color);
 }
 .markdown h3 {
-  margin: 24px 0;
+  margin: 48px 0 24px;
   font-size: 20px;
   color: var(--primary-text-color);
 }
