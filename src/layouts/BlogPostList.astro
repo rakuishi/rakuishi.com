@@ -28,7 +28,7 @@ const getPostsByYear = (posts: CollectionEntry<"posts">[]) => {
 
 const postsByYear = getPostsByYear(posts);
 const years = Object.keys(postsByYear).sort((a, b) => {
-  return Number.parseInt(b) - Number.parseInt(a);
+  return Number.parseInt(b, 10) - Number.parseInt(a, 10);
 });
 ---
 

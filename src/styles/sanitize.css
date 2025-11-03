@@ -3,7 +3,6 @@
  * Normalization
  */
 abbr[title] {
-  text-decoration: underline;
   text-decoration: underline dotted;
 }
 
