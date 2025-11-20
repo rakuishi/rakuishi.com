@@ -24,7 +24,7 @@ title: "ABOUT ME"
 
 - 遭難防止に役立つ登山・アウトドア用 GPS アプリの企画、開発（Android）を担当
 - 大規模 Web サイトの Vue.js / Nuxt.js による開発
-- 2023.07 - 2024.06, 職能チームマネージャー
+- 2023.07 - 2024.06, Android Team Manager
 - 2024.07 - Now, Engineering Manager
 
 ### 2015.03 - 2016.07, apprime Inc.
