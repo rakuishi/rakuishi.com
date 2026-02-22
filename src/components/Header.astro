@@ -55,9 +55,13 @@ import { SITE } from "@/const";
   }
   .header_title {
     display: inline-block;
+    min-width: 0;
+    overflow: hidden;
   }
   .header_title_inner {
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    max-width: 100%;
     height: 56px;
     padding: 0 12px;
     border-radius: 8px;
@@ -66,8 +70,8 @@ import { SITE } from "@/const";
     background: var(--secondary-background-color);
   }
   .header_title_logo {
-    vertical-align: top;
-    margin: 12px 8px 0 0;
+    flex-shrink: 0;
+    margin-right: 8px;
   }
   .header_title_name {
     color: var(--primary-text-color);
@@ -75,10 +79,14 @@ import { SITE } from "@/const";
     font-weight: 700;
     line-height: 56px;
     text-transform: uppercase;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
   .header_nav {
     display: flex;
     align-items: center;
+    flex-shrink: 0;
   }
   .header_menu_text {
     display: inline-block;
