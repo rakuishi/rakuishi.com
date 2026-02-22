@@ -31,6 +31,19 @@
   background-color: var(--primary-background-color);
   line-height: 1.7;
   overflow-wrap: break-word;
+  transition:
+    color 0.2s,
+    background-color 0.2s;
+}
+
+*,
+*::before,
+*::after {
+  transition:
+    color 0.2s,
+    background-color 0.2s,
+    border-color 0.2s,
+    fill 0.2s;
 }
 
 [data-prefers-color-scheme="dark"] {
