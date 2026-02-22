@@ -1,5 +1,6 @@
 import { defineConfig } from "astro/config";
 import sitemap from "@astrojs/sitemap";
+import { transformerFilename } from 'shiki-transformer-filename';
 
 // https://astro.build/config
 export default defineConfig({
@@ -8,6 +9,9 @@ export default defineConfig({
   markdown: {
     shikiConfig: {
       theme: "css-variables",
+      transformers: [
+        transformerFilename(),
+      ],
     },
     remarkPlugins: [shortcodePlugin],
   },
