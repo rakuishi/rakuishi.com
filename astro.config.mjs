@@ -1,5 +1,5 @@
-import { defineConfig } from "astro/config";
 import sitemap from "@astrojs/sitemap";
+import { defineConfig } from "astro/config";
 import { transformerFilename } from 'shiki-transformer-filename';
 
 // https://astro.build/config
@@ -18,29 +18,33 @@ export default defineConfig({
 });
 
 export function shortcodePlugin() {
-  return function (tree, _) {
+  return (tree, _) => {
     const traverse = (node) => {
       if (node.type === "html" && node.value) {
         // img
         node.value = node.value.replace(
-          /<img alt="(.*?)" src="(.+?)" width="(\d*?)" height="(\d*?)">/g,
-          '<p><img alt="$1" src="$2" width="$3" height="$4" loading="lazy"></p>'
+          /<img alt="([^"]*)" src="([^"]*)" width="(\d+)" height="(\d+)">/g,
+          '<figure><img alt="$1" src="$2" width="$3" height="$4" loading="lazy"></figure>'
         );
         node.value = node.value.replace(
-          /<img alt="(.*?)" src="(.+?)">/g,
-          '<p><img alt="$1" src="$2" loading="lazy"></p>'
+          /<img alt="([^"]*)" src="([^"]*)">/g,
+          '<figure><img alt="$1" src="$2" loading="lazy"></figure>'
+        );
+        node.value = node.value.replace(
+          /<img src="([^"]*)" alt="([^"]*)">/g,
+          '<figure><img alt="$2" src="$1" loading="lazy"></figure>'
         );
 
         // amazon
         node.value = node.value.replace(
           /<amazon id="(.+?)" title="(.+?)" src="(.+?)">/g,
-          '<p><a href="http://www.amazon.co.jp/exec/obidos/ASIN/$1/rakuishi-22/ref=nosim/" target="_blank" rel="noopener"><img src="$3" align="left" alt="$2" width="200" style="margin-right: 10px;" loading="lazy"></a><a href="http://www.amazon.co.jp/exec/obidos/ASIN/$1/rakuishi-22/ref=nosim/" rel="noopener" target="_blank">$2</a><br style="clear: both;"></p>'
+          '<p><a href="http://www.amazon.co.jp/exec/obidos/ASIN/$1/rakuishi-22/ref=nosim/" target="_blank" rel="noopener"><img src="$3" align="left" alt="$2" width="200" style="width: 200px; margin-right: 10px;" loading="lazy"></a><a href="http://www.amazon.co.jp/exec/obidos/ASIN/$1/rakuishi-22/ref=nosim/" rel="noopener" target="_blank">$2</a><br style="clear: both;"></p>'
         );
 
         // app
         node.value = node.value.replace(
           /<app id="(\d+?)" title="(.+?)" src="(.+?)">/g,
-          '<p><a href="https://itunes.apple.com/jp/app/id$1?at=11l3RT"><img src="$3" align="left" alt="$2" width="100" height="100" style="margin-right: 10px;" loading="lazy"></a><a href="https://itunes.apple.com/jp/app/id$1?at=11l3RT" target="_blank">$2</a><br style="clear: both;"></p>'
+          '<p><a href="https://itunes.apple.com/jp/app/id$1?at=11l3RT"><img src="$3" align="left" alt="$2" width="100" height="100" style="width: 100px; margin-right: 10px;" loading="lazy"></a><a href="https://itunes.apple.com/jp/app/id$1?at=11l3RT" target="_blank">$2</a><br style="clear: both;"></p>'
         );
 
         // youtube
