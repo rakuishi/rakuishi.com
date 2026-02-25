@@ -6,15 +6,15 @@
   width: 100%;
 }
 .markdown > * {
-  width: min(calc(100vw - 48px), 640px);
+  width: var(--width-text);
 }
 .markdown > pre,
 .markdown > .shiki-filename {
-  width: min(calc(100vw - 48px), 688px);
+  width: var(--width-wide);
 }
 .markdown > p:has(> img),
 .markdown > figure {
-  width: min(calc(100vw - 48px), 688px);
+  width: var(--width-wide);
 }
 .markdown h2 {
   margin-top: 48px;
@@ -137,7 +137,7 @@
   background-color: var(--secondary-background-color);
 }
 .markdown .iframe-wrapper {
-  width: min(calc(100vw - 48px), 688px);
+  width: var(--width-wide);
   aspect-ratio: 16 / 9;
 }
 .markdown .iframe-wrapper iframe {

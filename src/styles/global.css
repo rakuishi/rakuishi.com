@@ -3,7 +3,11 @@
     -apple-system, "Noto Sans JP", Hiragino Kaku Gothic ProN, Meiryo, sans-serif;
   --mono-font-family: Monaco, monospace;
   --font-size: 16px;
-  --max-width: 688px; /* テキスト領域（16px * 40）+ 余白（48px） */
+  --content-padding: 48px; /* markdown の左右余白の合計 (24px × 2) */
+  --max-width: 688px; /* コード・画像の最大幅 */
+  --content-width: 640px; /* 本文の最大幅 */
+  --width-wide: min(calc(100vw - var(--content-padding)), var(--max-width));
+  --width-text: min(calc(100vw - var(--content-padding)), var(--content-width));
 
   --primary-background-color: #ffffff;
   --secondary-background-color: #f5f5f5;
@@ -66,6 +70,7 @@
   --astro-code-token-punctuation: #ffffff;
   --astro-code-token-link: #8ab4f8;
 }
+
 
 a {
   color: var(--link-color);

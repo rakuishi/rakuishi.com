@@ -51,18 +51,18 @@ const { post } = Astro.props;
     flex-direction: column;
     align-items: center;
     width: 100%;
-    margin: 0 auto 48px;
+    margin-bottom: 48px;
   }
   .blog_post_title {
     font-size: 28px;
     margin-bottom: 4px;
-    width: min(calc(100vw - 48px), 640px);
+    width: var(--width-text);
   }
   .blog_post_meta {
     margin-bottom: 48px;
     color: var(--secondary-text-color);
     font-family: var(--mono-font-family);
-    width: min(calc(100vw - 48px), 640px);
+    width: var(--width-text);
   }
   .blog_post_meta_category {
     color: var(--secondary-text-color);
