@@ -14,7 +14,7 @@ subtitle: "仮想通貨販売所では、仮想通貨を買うときと売ると
 
 ここで [coincheck](https://coincheck.com/?c=h_3cAbRPgrw) のビットコイン販売所の、同じ時間での買い値と売り値、さらに買い値に対する売り値の比率を調べてみます。
 
-<img src="/images/2017/11/spread-of-cryptocurrency-trading-1.png">
+<img src="/images/2017/11/spread-of-cryptocurrency-trading-1.png" alt="">
 
 - 買い値：¥836,450 / 1BTC
 - 売り値：¥827,800 / 1BTC
@@ -22,7 +22,7 @@ subtitle: "仮想通貨販売所では、仮想通貨を買うときと売ると
 
 また、同時間の [bitFlyer](https://bitflyer.jp/?bf=hus1mkdt) のビットコイン販売所も見ていきましょう。
 
-<img src="/images/2017/11/spread-of-cryptocurrency-trading-2.png">
+<img src="/images/2017/11/spread-of-cryptocurrency-trading-2.png" alt="">
 
 - 買い値：¥849,684 / 1BTC
 - 売り値：¥816,704 / 1BTC
@@ -38,7 +38,7 @@ subtitle: "仮想通貨販売所では、仮想通貨を買うときと売ると
 
 最後に、Ripple（単位は XRP）というアルトコインを見てみます。
 
-<img src="/images/2017/11/spread-of-cryptocurrency-trading-3.png">
+<img src="/images/2017/11/spread-of-cryptocurrency-trading-3.png" alt="">
 
 - 買い値：¥24.319 / 1XRP
 - 売り値：¥22.862 / 1XRP

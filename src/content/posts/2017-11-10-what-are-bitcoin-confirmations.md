@@ -20,7 +20,7 @@ subtitle: "ビットコインを送金するのには時間がかかります。
 
 試しに、chainFlyer のサイトに行って、上から降ってくる金平糖みたいのをクリックしてみてください。恐らく「未確認！」という赤文字が表示されていると思います。
 
-<img src="/images/2017/11/what-are-bitcoin-confirmations-1.png">
+<img src="/images/2017/11/what-are-bitcoin-confirmations-1.png" alt="">
 
 これはまだ、トランザクションがまだブロックチェーン上に記述されていないことを意味しています。ブロックと、ブロックチェーンに関する説明は、以下の記事に詳しく書いています。
 
@@ -34,11 +34,11 @@ subtitle: "ビットコインを送金するのには時間がかかります。
 
 一番左のブロックは「未確定（1 確認）」です。
 
-<img src="/images/2017/11/what-are-bitcoin-confirmations-2.png">
+<img src="/images/2017/11/what-are-bitcoin-confirmations-2.png" alt="">
 
 6 個目にあるブロックは「6 確認」となっていて、未確定ではありませんね。
 
-<img src="/images/2017/11/what-are-bitcoin-confirmations-3.png">
+<img src="/images/2017/11/what-are-bitcoin-confirmations-3.png" alt="">
 
 ここから分かるように、**取引が含まれているブロックがどれほど古いかによって、確認の数が変わります**。ここでまとめておきましょう。
 

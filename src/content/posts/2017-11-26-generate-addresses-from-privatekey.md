@@ -20,11 +20,11 @@ subtitle: "秘密鍵からアドレスを作りだす一方向の仕組みと、
 
 この秘密鍵はランダムに生成されます。bitaddress.org では、ユーザーのマウスのランダムな動きから秘密鍵を生成しています。このランダムな数値を作る難しさは、参考記事が詳しいです。→ [乱数生成器とゲームと諜報活動の話｜ Rui Ueyama ｜ note](https://note.mu/ruiu/n/nb5c3fe7e4e7d)
 
-<img src="/images/2017/11/generate-addresses-from-privatekey-2.png">
+<img src="/images/2017/11/generate-addresses-from-privatekey-2.png" alt="">
 
 100% にすると、秘密鍵（プライベートキー）とアドレスが生成されます。本当はこの秘密鍵は誰にも漏らしてはいけません。それぞれ長い文字列が生成されているのが分かります。
 
-<img src="/images/2017/11/generate-addresses-from-privatekey-3.png">
+<img src="/images/2017/11/generate-addresses-from-privatekey-3.png" alt="">
 
 ## 秘密鍵からアドレスを作る仕組み
 
