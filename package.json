@@ -12,11 +12,11 @@
 		"check": "npx @biomejs/biome check --write ./src"
 	},
 	"devDependencies": {
-		"@astrojs/rss": "^4.0.15",
-		"@astrojs/sitemap": "^3.7.0",
+		"@astrojs/rss": "^4.0.17",
+		"@astrojs/sitemap": "^3.7.1",
 		"@biomejs/biome": "^2.3.14",
 		"@js-temporal/polyfill": "^0.5.1",
-		"astro": "^5.17.1",
+		"astro": "^6.0.5",
 		"shiki-transformer-filename": "github:rakuishi/shiki-transformer-filename"
 	}
 }

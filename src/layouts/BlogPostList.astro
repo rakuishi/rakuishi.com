@@ -44,7 +44,7 @@ const years = Object.keys(postsByYear).sort((a, b) => {
               postsByYear[year].map(post => (
                 <li class="layout_list_item">
                   <a
-                    href={`/posts/${post.slug}/`}
+                    href={`/posts/${post.data.slug}/`}
                     class="layout_list_item_inner"
                   >
                     <span class="layout_list_item_meta">
