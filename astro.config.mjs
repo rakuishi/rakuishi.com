@@ -1,3 +1,4 @@
+import { unified } from "@astrojs/markdown-remark";
 import sitemap from "@astrojs/sitemap";
 import { defineConfig } from "astro/config";
 import { transformerFilename } from 'shiki-transformer-filename';
@@ -13,7 +14,7 @@ export default defineConfig({
         transformerFilename(),
       ],
     },
-    remarkPlugins: [shortcodePlugin],
+    processor: unified({ remarkPlugins: [shortcodePlugin] }),
   },
 });
 

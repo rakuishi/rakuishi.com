@@ -71,7 +71,6 @@
   --astro-code-token-link: #8ab4f8;
 }
 
-
 a {
   color: var(--link-color);
   text-underline-offset: 0.25rem;
