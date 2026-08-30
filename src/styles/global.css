@@ -52,16 +52,6 @@
     background-color 0.2s;
 }
 
-*,
-*::before,
-*::after {
-  transition:
-    color 0.2s,
-    background-color 0.2s,
-    border-color 0.2s,
-    fill 0.2s;
-}
-
 [data-prefers-color-scheme="dark"] {
   --primary-background-color: #161f2b;
   --secondary-background-color: #1e2732;
