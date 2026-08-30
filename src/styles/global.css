@@ -3,11 +3,19 @@
     -apple-system, "Noto Sans JP", Hiragino Kaku Gothic ProN, Meiryo, sans-serif;
   --mono-font-family: Monaco, monospace;
   --font-size: 16px;
-  --content-padding: 48px; /* markdown の左右余白の合計 (24px × 2) */
-  --max-width: 688px; /* コード・画像の最大幅 */
-  --content-width: 640px; /* 本文の最大幅 */
-  --width-wide: min(calc(100vw - var(--content-padding)), var(--max-width));
-  --width-text: min(calc(100vw - var(--content-padding)), var(--content-width));
+  --content-padding: 48px; /* 左右余白の合計 (24px × 2) */
+  --width-site: calc(
+    640px +
+    var(--content-padding)
+  ); /* ヘッダー・フッター・記事一覧の枠（本文幅 + 左右余白） */
+  --width-text: min(
+    calc(100vw - var(--content-padding)),
+    640px
+  ); /* 本文の最大幅 */
+  --width-wide: min(
+    calc(100vw - var(--content-padding)),
+    688px
+  ); /* コード・画像の最大幅 */
   --width-slide: min(
     calc(100vw - var(--content-padding)),
     1280px
