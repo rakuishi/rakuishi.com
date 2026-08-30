@@ -35,6 +35,7 @@ const { width, height } = images[0];
           class:list={["slide-viewer-page", { active: i === 0 }]}
           alt={`Slide page ${i + 1}`}
           decoding="async"
+          fetchpriority={i === 0 ? "high" : undefined}
         />
       ))
     }
