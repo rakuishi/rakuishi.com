@@ -1,7 +1,7 @@
 import rss from "@astrojs/rss";
 import type { APIContext } from "astro";
 import { SITE } from "@/const";
-import { getPosts } from "@/posts";
+import { extractSummary, getPosts } from "@/posts";
 
 export async function GET(context: APIContext) {
   const posts = await getPosts();
@@ -17,11 +17,4 @@ export async function GET(context: APIContext) {
       link: `/posts/${post.data.slug}`,
     })),
   });
-}
-
-function extractSummary(body: string): string {
-  return body
-    .replace(/!\[.*?\]\(.*?\)/g, "")
-    .replace(/\[(.*?)\]\(.*?\)/g, "$1")
-    .slice(0, 200);
 }

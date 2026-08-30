@@ -3,10 +3,10 @@ import { glob } from "astro/loaders";
 import { z } from "astro/zod";
 
 const posts = defineCollection({
-  loader: glob({ pattern: "**/*.md", base: "./src/content/posts" }),
+  loader: glob({ pattern: "**/*.{md,mdx}", base: "./src/content/posts" }),
   schema: z.object({
     title: z.string(),
-    category: z.enum(["blog", "tech"]).default("blog"),
+    category: z.enum(["blog", "tech", "slide"]).default("blog"),
     date: z.coerce.date(),
     page: z.boolean().default(false),
     slug: z.string(),

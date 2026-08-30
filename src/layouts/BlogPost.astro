@@ -2,6 +2,7 @@
 import type { CollectionEntry } from "astro:content";
 import DateTime from "@/components/DateTime.astro";
 import Base from "@/layouts/Base.astro";
+import { extractSummary } from "@/posts";
 
 export interface Props {
   post: CollectionEntry<"posts">;
@@ -10,7 +11,7 @@ export interface Props {
 const { post } = Astro.props;
 ---
 
-<Base title={post.data.title} description={post.body.slice(0, 200)} image={post.data.image}>
+<Base title={post.data.title} description={extractSummary(post.body)} image={post.data.image}>
   <main>
     <article
       class="blog_post"

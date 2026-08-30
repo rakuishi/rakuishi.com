@@ -3,6 +3,9 @@
 /.firebase/
 .claude/
 
+# Source PDFs for talk slides (only the converted images are committed)
+/slides/
+
 # generated types
 .astro/
 
