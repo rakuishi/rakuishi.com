@@ -1,0 +1,219 @@
+---
+category: slide
+date: "2026-09-02T12:20:00+09:00"
+page: false
+slug: "droidkaigi-2026-fgs"
+title: "DroidKaigi 2026：Foreground Service と歩んだ運用記"
+---
+
+import SlideViewer from "@/components/SlideViewer.astro";
+
+<SlideViewer slug="droidkaigi-2026-fgs" />
+
+1. Foreground Service と歩んだ運用記 登山アプリが制約と向き合ってきた軌跡 DroidKaigi 2026 落石浩一郎（OCHIISHI Koichiro）
+2. 自己紹介。落石浩一郎（OCHIISHI Koichiro）、SNS: rakuishi。登山アプリを運営する YAMAP の Android エンジニアとして 10 年目。現在は VPoE としてマネジメントをしながら、プレーヤーとしても働いています。GitHub は https://github.com/rakuishi でやっています。写真は 2026/7 に訪れた雲ノ平です。
+3. 今日お話すること。0. Foreground Service とは？ 1. 登山アプリ YAMAP と Foreground Service の利用シーンの紹介 2. FGS 制約の歴史（Android 8 → 17） 3. 現在の実装 4. 運用トラブル記 5. Foreground Service と WorkManager の使い分け 6. まとめ
+4. 今日のテーマの Foreground Service とは？ Foreground Service、略して FGS。Service 同様にバックグラウンド処理を扱うが、通知表示と紐付けるため、ユーザーから見える。プロセス優先度がフォアグラウンド相当に引き上げられ、メモリ逼迫時に殺されにくい（現在、Service 単体ではアプリがバックグラウンドにまわった後、数分後に停止される）。FGS を正しく実装すれば、数日間、起動し続けてもプロセスが生き続ける（もちろん山の上でも）。Foreground services overview: https://developer.android.com/develop/background-work/services/fgs
+5. 1\. 登山アプリ YAMAP と Foreground Service の利用シーンの紹介
+6. 登山アプリ YAMAP の紹介。携帯キャリアの電波が届かない山の中でも、楽しく安全に山を登ることができるアプリ。GPS で現在地を捕捉し、事前にダウンロードした地図を参照し、アプリ内 SNS で自分の記録を共有する。オフライン環境下の利用、バックグラウンド処理（FGS、Worker）、Bluetooth、Mapbox（地図 SDK）などの利用が特徴。運用 13 年目、iOS 含め 580 万ダウンロード。現在、YAMAP ではモバイルエンジニアの採用を行っています。ぜひ、このあと話しかけてください。https://www.wantedly.com/companies/yamap
+7. YAMAP における FGS の利用例 1/3（登山前の地図ダウンロード）。登山前に地図データをダウンロードする処理で、地図のタイル画像データ、登山道データ、ランドマークデータなどを扱う。ダウンロード中もユーザーが他の動作を行えるように FGS として定義。foregroundServiceType：dataSync。YAMAP の歴史的に地図ダウンロード処理には FGS を利用していますが、今では Worker の FGS も利用できます。
+8. YAMAP における FGS の利用例 2/3（登山中の位置情報記録）。登山アプリのコア機能。山行中の位置情報の記録をポケットの中でも記録し続ける。明示的に FGS を停止するまではプロセスが生き続け、数日間、山の上で起動し続けてもプロセスが生きている。foregroundServiceType：location
+9. YAMAP における FGS の利用例 3/3（登山後の動画保存）。登山後に山行を 3D 動画で振り返る機能があり、それを画面収録して動画保存する。画面収録機能（Media projection）は、現在は FGS と組み合わせる必要がある。foregroundServiceType：mediaProjection。Media projection: https://developer.android.com/media/grow/media-projection
+10. 2\. Foreground Service 制約の歴史 Android 8 → 17 年表
+11. なんでも裏で動いた Service 時代（〜 Android 7）。シンプルな実装でバックグラウンド処理を記述できていた。当時、YAMAP も地図ダウンロード処理や位置情報取得処理を Service として実装していた。「Android メジャーバージョンアップ = FGS の手入れが毎年の恒例行事」になるとは……。
+    ```kotlin title="LocationService.kt"
+    class LocationService : Service() {
+
+        // intent に値がある場合はユーザー起動、値がない場合は sticky 再起動経由
+        override fun onStartCommand(intent: Intent?, flags: Int, startId: Int): Int {
+            // 位置情報の記録を開始
+            requestLocationUpdatesIfNeeded()
+            return START_STICKY // メモリ逼迫時に kill されてもシステムが再起動してくれる
+        }
+
+        override fun onBind(intent: Intent?): IBinder? = null
+        private fun requestLocationUpdatesIfNeeded() { /* 省略 */ }
+    }
+
+    // 呼び出し側
+    context.startService(Intent(context, LocationService::class.java))
+    ```
+12. 表で動かす Foreground Service 時代（Android 8〜）。制限が厳しくなった背景は、お行儀の悪いアプリが画面、カメラ、マイク、位置情報をバックグラウンドで取得していたこと、電池とメモリの消費とプライバシー問題、Android 6 で Doze / App Standby の省電力機能が導入されるなどバッテリー寿命の改善へ向かったこと。アプリがフォアグラウンドにいない時も生き続けるプロセスは、FGS の実装が必須になった。補足：Doze は端末全体を、App Standby は使われていないアプリを idle にする機能です。Doze の発動条件は、非充電・画面オフ・静止状態の継続のため、登山中は端末が動き続けるため発動しにくい。App Standby は FGS 実行中のアプリは対象外になります。https://developer.android.com/training/monitoring-device-state/doze-standby
+13. 制約の年表 1/3。Android 8（API 26）は Context.startForegroundService() 導入、サービス起動後 5 秒以内に Service.startForeground() を呼ばないとクラッシュ。Android 9（API 28）は AndroidManifest に FOREGROUND_SERVICE 権限の記載が必要に。Android 10（API 29）は AndroidManifest に foregroundServiceType 属性の導入、位置情報にアクセスする FGS は location の宣言が必須に、ACCESS_BACKGROUND_LOCATION 権限の導入。Android 11（API 30）は camera / microphone タイプ必須化、バックグラウンドからのカメラ・マイクアクセス遮断、ACCESS_BACKGROUND_LOCATION は単独リクエスト必須に。補足：startForeground() 自体は API 5 から存在しますが、Android 8 以降に長時間生き続ける Service は FGS として実装必須になりました。Changes to foreground services：https://developer.android.com/develop/background-work/services/fgs/changes
+14. 制約の年表 2/3。Android 12（API 31）はバックグラウンドからの FGS 起動が原則禁止に、ForegroundServiceStartNotAllowedException 導入（※ 月 1,000 件の例外に遭遇。トラブル記でお話します）。Android 13（API 33）は FGS Task Manager 導入、POST_NOTIFICATIONS ランタイム権限化。Android 14（API 34）は全 FGS でタイプ宣言必須化、Play Console での申告必須化（※ ストア掲載文リジェクト。トラブル記でお話します）、location 等の while-in-use 系タイプは起動時に権限の実効状態がチェックされバックグラウンド起動だと SecurityException、setOngoing(true) の FGS 通知であってもスワイプで消せるように（サービスは動き続ける）。FGS Task Manager は通知センターを全展開したあと、i マークから起動でき、FGS プロセスを確認できます：https://developer.android.com/develop/background-work/services/fgs/handle-user-stopping
+15. 制約の年表 3/3。Android 15（API 35）は dataSync / mediaProcessing にタイプごとに 24 時間あたり 6 時間の実行制限、mediaProcessing タイプ新設、BOOT_COMPLETED から起動できる FGS タイプの制限。Android 16（API 36）は FGS への大きな追加制約なし、ただし JobScheduler 割り当てが厳格化され、FGS と同時に実行されるジョブも実行制限の対象に。Android 17（API 37）はバックグラウンド音声の制限強化、バックグラウンドでの音声再生には FGS が必須に。バックグラウンド音声の制限強化: https://developer.android.com/about/versions/17/changes/bg-audio
+16. 3\. 現在の実装
+17. FGS の実装手順。まず AndroidManifest.xml へ記載する。利用する FGS の種類により camera, connectedDevice, dataSync, health, location, mediaPlayback, mediaProcessing, mediaProjection, microphone, phoneCall, remoteMessaging, shortService, specialUse, systemExempted から選択し、これが Play Console での申告に利用されたり、タイプごとの制約に繋がる。次に Service 起動後、5 秒以内に Service.startForeground() を実行し、通知と Foreground Service Type を指定する。最後に Context.startForegroundService による呼び出しを行う。Foreground service types: https://developer.android.com/develop/background-work/services/fgs/service-types
+18. FGS の実装例：AndroidManifest.xml
+    ```xml title="AndroidManifest.xml"
+    <!-- 権限：FGS 本体（Android 9+） -->
+    <uses-permission
+        android:name="android.permission.FOREGROUND_SERVICE" />
+
+    <!-- 権限：タイプ別（Android 14+）使用するタイプごとに宣言する
+       ~ https://developer.android.com/develop/background-work/services/fgs/service-types -->
+    <uses-permission
+        android:name="android.permission.FOREGROUND_SERVICE_LOCATION" />
+
+    <!-- Service 宣言：タイプを明示 -->
+    <service
+        android:name=".LocationService"
+        android:exported="false"
+        android:foregroundServiceType="location" />
+    ```
+19. FGS の実装例：Service / 全体図
+    ```kotlin title="LocationService.kt"
+    class LocationService : Service() {
+
+        override fun onStartCommand(intent: Intent?, flags: Int, startId: Int): Int {
+            // FGS 昇格処理は onCreate でも良いが、開始要求ごとに呼ばれる onStartCommand が公式推奨
+            // https://developer.android.com/develop/background-work/services/fgs/launch#promote-service
+            // また、サービス内で利用する権限チェックもこの段階で入れておく
+            if (!startForegroundSafely()) { // Foreground 昇格処理
+                stopSelf()              // 昇格拒否されたら止める
+                return START_NOT_STICKY // sticky 再起動ループを断ち切る
+            }
+            // 位置情報の記録を開始
+            requestLocationUpdatesIfNeeded()
+            return START_STICKY // メモリ逼迫時に kill されてもシステムが再起動してくれる
+        }
+
+        override fun onBind(intent: Intent?): IBinder? = null
+
+        private fun startForegroundSafely(): Boolean   { /* 次のページに記載 */ }
+        private fun createNotification(): Notification { /* 次の次のページに記載 */ }
+        private fun requestLocationUpdatesIfNeeded()   { /* 省略 */ }
+    }
+    ```
+20. FGS の実装例：Service / フォアグラウンド起動
+    ```kotlin title="LocationService.kt"
+    const val NOTIFICATION_ID = 1 // companion object 内に記載
+
+    private fun startForegroundSafely(): Boolean {
+        return try {
+            ServiceCompat.startForeground(
+                this, NOTIFICATION_ID, createNotification(),
+                ServiceInfo.FOREGROUND_SERVICE_TYPE_LOCATION,
+            )
+            true
+        } catch (e: Exception) {
+            // バックグラウンドでの sticky 再起動時、昇格が拒否される（この後の運用トラブル記で補足します）
+            val rejected =
+                (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S &&
+                    e is ForegroundServiceStartNotAllowedException) ||
+                (Build.VERSION.SDK_INT >= Build.VERSION_CODES.UPSIDE_DOWN_CAKE &&
+                    e is SecurityException)
+            if (!rejected) throw e // 想定外の例外は握りつぶさない
+            false
+        }
+    }
+    ```
+21. FGS の実装例：Service / 通知の作成
+    ```kotlin title="LocationService.kt"
+    const val CHANNEL_ID = "location_channel" // companion object 内に記載
+
+    private fun createNotification(): Notification {
+        val notificationManager =
+            getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
+        // NotificationChannel 作成（設定 ＞ アプリ ＞ 通知のカテゴリに表示される）
+        notificationManager.createNotificationChannel(
+            NotificationChannel(CHANNEL_ID, "位置情報の取得", NotificationManager.IMPORTANCE_LOW)
+        )
+        return NotificationCompat.Builder(this, CHANNEL_ID)
+            .setContentTitle("位置情報を記録中")
+            .setSmallIcon(R.drawable.ic_notification)
+            .setContentIntent(
+                PendingIntent.getActivity(
+                    this, 0, Intent(this, MainActivity::class.java),
+                    PendingIntent.FLAG_IMMUTABLE,
+                )
+            )
+            .build()
+    }
+    ```
+22. FGS の実装例：呼び出し
+    ```kotlin title="MainActivity.kt"
+    val intent = Intent(context, LocationService::class.java)
+    context.startForegroundService(intent)
+    ```
+23. Play Console での申告（Android 14〜）。使用する FGS タイプごとに Play Console で利用目的の申告が必要で、Google Play Console ＞ モニタリングと改善 ＞ ポリシーとプログラム ＞ アプリのコンテンツ ＞ フォアグラウンド サービスの権限から行う。申告内容は、権限を使用する必要があるタスクの種類の選択（チェックリスト）、どのように使用するかを示す動画の提示（動画リンク。アプリを起動してから FGS を利用するまでを撮影したもの）、権限の使用についての説明（テキスト）。上記にプラスして、YAMAP の場合ストア掲載文への記載も必要だった（運用トラブル記で紹介します）。公式の申告方法の手順：https://support.google.com/googleplay/android-developer/answer/13392821?hl=ja
+24. 4\. 運用トラブル記
+25. 省電力機能（Android OS、スマホメーカー各社）との戦い。Android OS 標準のバッテリーセーバーでは、位置情報サービスは画面オフ時に無効化し得る。メーカー独自の省電力機能は問答無用で FGS のプロセスを殺しに来るが、メーカーは「バッテリーが長時間持ちます」を製品のウリにしたいため、基本的に開発者から回避できる手はない。特に YAMAP では位置情報記録中に FGS が死ぬと、再度アプリを立ち上げるまで位置情報が取得できず、前の座標から新しい座標へ飛ぶ現象が発生する（社内では、軌跡飛び問題と呼んでいます）。個別に対応するのは難しく、ユーザーへの案内や機能でカバーしている。Battery saver improvements：https://developer.android.com/about/versions/pie/power#battery-saver メーカーごとの kill 挙動をまとめたサイト：https://dontkillmyapp.com/ YAMAP ヘルプセンター（端末ごとのご案内）：https://help.yamap.com/hc/ja/articles/900000921583
+26. 対策：省電力機能の設定の見直しをお願いする涙ぐましい図。OS 標準のバッテリーセーバーが有効なとき、特定のメーカー端末を検知したとき、実際に軌跡が途切れてしまったとき、それぞれに案内を出している。
+27. 対策：それでも軌跡は飛ぶので、アルゴリズムでならす。軌跡飛びの発生原因は、バッテリー最適化による FGS プロセスの停止と、GPS チップの性能が低い端末を利用していること（右の図はこの症状）。アルゴリズムによって軌跡を滑らかにするため、間引き、精度フィルタ（Location.accuracy）、移動平均、標高補正（標高タイル参照）を行う。活動日記のデータ精度を向上させる「軌跡の標準化」について：https://info.yamap.com/archives/2613
+28. Play Console での申告後、リジェクトメールが届く
+29. 対策：ストア掲載文に「フォアグラウンドサービス権限の使用について」を記載。申告後、ストア掲載文に FGS に関する記載を求められた。プライバシーなどの観点から、ユーザーに伝える文章の掲載が必要。ストア掲載文より抜粋：【フォアグラウンドサービス権限の使用について】・登山中の位置情報取得に関して。YAMAP アプリは登山中に軌跡を記録するためフォアグラウンドの位置情報取得を必要とします。ご利用の端末によっては正しく取得できない場合があります。詳しい設定方法については以下のヘルプページをご確認ください。https://help.yamap.com/hc/ja/articles/900000921583 ・mediaProjection の利用について。登山の記録を写真とともに立体的にふりかえることができる 3D リプレイ機能では、動画を記録する際にスクリーンレコーディングのフォアグラウンド機能を利用します。https://help.yamap.com/hc/ja/articles/21271985055769 ・dataSync の利用について。活動に利用する地図データのダウンロード処理をフォアグラウンドで動かすのに利用します。YAMAP のストア文章：https://play.google.com/store/apps/details?id=jp.co.yamap&hl=ja
+30. startForeground 時に Firebase Crashlytics に記録されるクラッシュとの戦い。location の FGS で実装は正しいはずなのに、Android 12 以降、例外が 1,000 件／月発生していた。再現手順は、1. ユーザーが位置情報の記録を開始、2. メモリ逼迫やバッテリー最適化でプロセスごと kill される、3. START_STICKY により Service を再起動するが、バックグラウンドからの起動は禁止、4. startForeground() が OS に拒否され、例外が投げられる。onStartCommand の START_STICKY は Android 12 未満では機能するが、12 以上では制約がある。例外の種類は、Android 12–13 が ForegroundServiceStartNotAllowedException、Android 14+（location 等 while-in-use 系タイプ）が SecurityException。
+31. 対策：仕方なく発生するものとして受け入れ、握りつぶし、ユーザーに知らせる
+    ```kotlin title="LocationService.kt"
+    // 実装例：Service / startForeground の catch 処理を抜粋
+
+    // 同じ「バックグラウンドでの sticky 再起動」が OS で別の例外型になる:
+    // ・Android 12-13: ForegroundServiceStartNotAllowedException
+    // ・Android 14+ で while-in-use 権限（location 等）が必要な type: SecurityException
+    val rejected =
+        (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S &&
+            e is ForegroundServiceStartNotAllowedException) ||
+        (Build.VERSION.SDK_INT >= Build.VERSION_CODES.UPSIDE_DOWN_CAKE &&
+            e is SecurityException)
+    if (!rejected) throw e // 想定外の例外は握りつぶさない
+
+    // 停止後に通知が残らないようキャンセル
+    notificationManager.cancel(NOTIFICATION_ID)
+    // ユーザーに FGS の再起動に失敗したことをトーストや通知で知らせる
+    Toast.makeText(this, "サービスが終了しました。アプリを再起動してください", Toast.LENGTH_LONG).show()
+
+    stopSelf() // サービスを停止する
+    ```
+    公式の FGS トラブルシューティング：https://developer.android.com/develop/background-work/services/fgs/troubleshooting
+32. 5\. Foreground Service と WorkManager の使い分け
+33. OS に委ねる選択肢：WorkManager。FGS と同じくバックグラウンド処理を扱える WorkManager は、タスクを予約・管理する仕組みで、Worker は実行されるタスク。WorkManager に登録して動かす。WorkManager は実行タイミングと実行条件を指定でき、バックグラウンド処理を様々な条件で行うのに便利。YAMAP における利用例は、山行データを通信復帰時にアップロードする、取得と保存に十数秒かかる非同期保存を切り出し、入山予定日の前日に登山計画の確認を促す通知を発火する、など。Work Manager の概要：https://developer.android.com/develop/background-work/background-tasks/persistent/getting-started 補足：バックグラウンド処理は、他に SyncAdapter, JobScheduler, AlarmManager もあります。正確な時刻に発火させる処理には AlarmManager が利用できますが、それ以外は FGS か WorkManager の利用が推奨されています。
+34. Worker の実行タイミングと実行条件。実行タイミングは、即時 OneTimeWorkRequest（すぐに開始し、すぐに完了するタスク）、延期可能 PeriodicWorkRequest（後から開始するスケジュールされたタスク。定期実行も可能）、長時間実行 OneTimeWorkRequest（10 分を超える可能性がある長めのタスク）の 3 種類。実行条件（Constraints）は、setRequiredNetworkType(NetworkType)（どのネットワークがある場合か、Wi-Fi の場合など）、setRequiresCharging(true)（充電中の場合）、setRequiresBatteryNotLow(true)（バッテリー低下状態ではない場合）、setRequiresStorageNotLow(true)（ストレージ残量が少なくない場合）、setRequiresDeviceIdle(true)（端末がアイドル状態の場合）、addContentUriTrigger（指定 URI の変更をトリガーに実行）。
+35. 長時間実行 Worker の登場。Worker は 10 分以内の利用が推奨されており、10 分以上実行したい場合は長時間実行 Worker を利用する。Worker 内で setForeground を呼ぶと、WorkManager 内部の SystemForegroundService を FGS として起動・管理してくれる。通常の FGS と同様に長期間の実行が保証されており、試しに位置情報を取得し続ける Worker を作ってみたが、止めるまでは起動していた。長時間稼働ワーカーをサポートする：https://developer.android.com/develop/background-work/background-tasks/persistent/how-to/long-running
+36. 長時間実行 Worker の実装例：AndroidManifest.xml
+    ```xml title="AndroidManifest.xml"
+    <!-- android.permission.FOREGROUND_SERVICE は不要 -->
+
+    <!-- 権限：タイプ別（Android 14+）使用するタイプごとに宣言する
+       ~ https://developer.android.com/develop/background-work/services/fgs/service-types -->
+    <uses-permission
+        android:name="android.permission.FOREGROUND_SERVICE_DATA_SYNC" />
+
+    <!-- Android 14+ は type 指定が必須
+       ~ tools:node="merge" で追記し、既存の宣言に属性を足す -->
+    <service
+        android:name="androidx.work.impl.foreground.SystemForegroundService"
+        android:foregroundServiceType="dataSync"
+        tools:node="merge" />
+    ```
+37. 長時間実行 Worker の実装例：Worker
+    ```kotlin title="DownloadWorker.kt"
+    class DownloadWorker(context: Context, params: WorkerParameters) : CoroutineWorker(context, params) {
+
+        override suspend fun doWork(): Result {
+            setForeground(createForegroundInfo()) // FGS に昇格
+            download()
+            return Result.success()
+        }
+
+        private fun createForegroundInfo(): ForegroundInfo =
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.UPSIDE_DOWN_CAKE) {
+                ForegroundInfo(ID, createNotification(), ServiceInfo.FOREGROUND_SERVICE_TYPE_DATA_SYNC)
+            } else {
+                ForegroundInfo(ID, createNotification())
+            }
+
+        private fun createNotification(): Notification { /* 省略 */ }
+        private suspend fun download() { /* 省略 */ }
+    }
+
+    // 呼び出し
+    val request = OneTimeWorkRequestBuilder<DownloadWorker>().build()
+    WorkManager.getInstance(context)
+        .enqueueUniqueWork(WORK_NAME, ExistingWorkPolicy.KEEP, request)
+    ```
+38. Worker の FGS と通常の FGS の使い分け。ざっくりした使い分けとして、Worker は遅延・破棄されても次の機会にやり直せる処理（例：DB 同期、ファイルダウンロード、単発の位置情報送信）、FGS は確実に継続して動かないと体験が壊れる処理（例：ナビ、ランニング記録、音楽再生、通話）。判断軸ごとに見ると、タスクかセッションかでは、Worker の FGS はタスク（開始、完了をあらかじめ定義）、通常の FGS はセッション（ユーザーが終わりを決める）。UI との接続では、Worker の FGS は setProgress の Worker → UI の単方向、通常の FGS は bindService の Service ↔ UI の双方向。その他、実行タイミング・条件を OS に委ねたいなら Worker の FGS、画面収録（mediaProjection）、音楽再生（mediaPlayback）などは Service 前提。mediaProjection の FGS 実装例：https://developer.android.com/media/grow/media-projection mediaPlayback の FGS 実装例：https://developer.android.com/media/media3/session/background-playback
+39. 6\. まとめ
+40. まとめ。長時間実行するバックグラウンド処理には FGS。シンプルな FGS 処理であれば現在は Worker を利用できるが、確実に継続して動かないと体験が壊れる処理には FGS を利用しよう。そして、毎年のアップデートに追従して、みんなでお行儀の良いアプリを作ろう。
+41. ご清聴ありがとうございました
+42. 要項の正誤表。要項：私たちが開発する登山アプリ YAMAP では、登山中の位置情報記録（location）、オフライン地図ダウンロード（dataSync）、画面録画（mediaProjection）という、foregroundServiceType が異なる複数の Foreground Service を 8 年以上運用してきました。Foreground Service はステータスバーに通知を表示しながら処理を非同期で実行できる仕組みですが、Android 8 で startForegroundService() が導入されて以来、OS バージョンごとに制約が増え続けてきました。foregroundServiceType の~~必須化~~導入（Android 10）、バックグラウンドからの起動禁止（Android 12）、Play Console での申告の必須化（Android 14）、dataSync の 6 時間タイムアウト（Android 15）、そして Android 17 で導入されるバックグラウンドでの音声操作のサイレント失敗──。本セッションでは、公式ドキュメントだけでは見えない実プロダクトでの運用知を元に、Android の非同期処理（Worker, ForegroundService）の整理から、Foreground Service の Android 8 から今までの歴史、実装方法、実運用で遭遇したリジェクトやクラッシュをどのように解決したかを扱います。受講対象者は、Foreground Service の概要を掴みたい方、Worker と Foreground Service の使い分けに悩んでいる方、位置情報・メディア処理など、長時間バックグラウンド処理を扱うアプリの開発者。
