@@ -15,9 +15,37 @@ export default defineConfig({
         transformerFilename(),
       ],
     },
-    processor: unified({ remarkPlugins: [shortcodePlugin] }),
+    processor: unified({
+      remarkPlugins: [shortcodePlugin],
+      rehypePlugins: [externalLinksPlugin],
+    }),
   },
 });
+
+// 外部リンクだけ別タブで開く。ルート相対や自サイトの絶対 URL は対象外
+export function externalLinksPlugin() {
+  return (tree, _) => {
+    const traverse = (node) => {
+      if (
+        node.type === "element" &&
+        node.tagName === "a" &&
+        /^https?:\/\//.test(node.properties?.href ?? "") &&
+        !node.properties.href.startsWith("https://rakuishi.com")
+      ) {
+        node.properties.target = "_blank";
+        node.properties.rel = ["noopener", "noreferrer"];
+      }
+
+      if (node.children) {
+        for (const child of node.children) {
+          traverse(child);
+        }
+      }
+    };
+
+    traverse(tree);
+  };
+}
 
 export function shortcodePlugin() {
   return (tree, _) => {
