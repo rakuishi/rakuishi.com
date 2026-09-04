@@ -136,6 +136,22 @@
   color: var(--primary-text-color);
   background-color: var(--secondary-background-color);
 }
+/* amazon・app ショートコードが生成するサムネイル付きリンク */
+.markdown .media {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+.markdown .media-thumbnail {
+  flex: 0 0 auto;
+  line-height: 0;
+}
+.markdown .media-thumbnail-book {
+  width: 200px;
+}
+.markdown .media-thumbnail-app {
+  width: 100px;
+}
 .markdown .iframe-wrapper {
   width: var(--width-wide);
   aspect-ratio: 16 / 9;

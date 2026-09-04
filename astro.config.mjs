@@ -68,19 +68,19 @@ export function shortcodePlugin() {
         // amazon
         node.value = node.value.replace(
           /<amazon id="(.+?)" title="(.+?)" src="(.+?)">/g,
-          '<p><a href="http://www.amazon.co.jp/exec/obidos/ASIN/$1/rakuishi-22/ref=nosim/" target="_blank" rel="noopener"><img src="$3" align="left" alt="$2" width="200" style="width: 200px; margin-right: 10px;" loading="lazy"></a><a href="http://www.amazon.co.jp/exec/obidos/ASIN/$1/rakuishi-22/ref=nosim/" rel="noopener" target="_blank">$2</a><br style="clear: both;"></p>'
+          '<p class="media"><a class="media-thumbnail media-thumbnail-book" href="https://www.amazon.co.jp/exec/obidos/ASIN/$1/rakuishi-22/ref=nosim/" target="_blank" rel="noopener"><img src="$3" alt="$2" width="200" loading="lazy"></a><a href="https://www.amazon.co.jp/exec/obidos/ASIN/$1/rakuishi-22/ref=nosim/" target="_blank" rel="noopener">$2</a></p>'
         );
 
         // app
         node.value = node.value.replace(
           /<app id="(\d+?)" title="(.+?)" src="(.+?)">/g,
-          '<p><a href="https://itunes.apple.com/jp/app/id$1?at=11l3RT"><img src="$3" align="left" alt="$2" width="100" height="100" style="width: 100px; margin-right: 10px;" loading="lazy"></a><a href="https://itunes.apple.com/jp/app/id$1?at=11l3RT" target="_blank">$2</a><br style="clear: both;"></p>'
+          '<p class="media"><a class="media-thumbnail media-thumbnail-app" href="https://apps.apple.com/jp/app/id$1?at=11l3RT" target="_blank" rel="noopener"><img src="$3" alt="$2" width="100" height="100" loading="lazy"></a><a href="https://apps.apple.com/jp/app/id$1?at=11l3RT" target="_blank" rel="noopener">$2</a></p>'
         );
 
         // youtube
         node.value = node.value.replace(
           /<youtube (.+?)>/g,
-          '<div class="iframe-wrapper"><iframe width="640" height="360" src="https://www.youtube.com/embed/$1" allowfullscreen frameborder="0" loading="lazy"></iframe></div>'
+          '<div class="iframe-wrapper"><iframe src="https://www.youtube.com/embed/$1" title="YouTube" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe></div>'
         );
 
         // cryptocurrency
