@@ -18,6 +18,11 @@ const formattedDate =
   format === DateTimeFormat.YYYYMMDD
     ? `${year}/${month}/${day}`
     : `${month}/${day}`;
+
+const machineDate = instant.toString({
+  timeZone: "Asia/Tokyo",
+  smallestUnit: "second",
+});
 ---
 
-<time datetime={date}>{formattedDate}</time>
+<time datetime={machineDate}>{formattedDate}</time>
