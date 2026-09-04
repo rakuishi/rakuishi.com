@@ -3,6 +3,7 @@ import "@/styles/sanitize.css";
 import "@/styles/global.css";
 import "@/styles/markdown.css";
 
+import ogImage from "@/assets/og.jpg";
 import Footer from "@/components/Footer.astro";
 import Header from "@/components/Header.astro";
 import { SITE } from "@/const";
@@ -19,9 +20,7 @@ const title = Astro.props.title
 const description = Astro.props.description
   ? Astro.props.description
   : SITE.description;
-const image = Astro.props.image
-  ? new URL(Astro.props.image, Astro.url)
-  : new URL("/assets/images/og.jpg", Astro.url);
+const image = new URL(Astro.props.image ?? ogImage.src, Astro.url);
 ---
 
 <!doctype html>
